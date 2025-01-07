@@ -15,7 +15,7 @@
 #   https://typetr.fontdue.com/admin/settings/website
 #
 #   http://localhost/typetr/index.html
-#   https://petrvanblokland.github.io/TYPE-TRY/index.html
+#   https://petrvanblokland.github.io/TYPETR-Store/index.html
 #
 #
 import os, shutil, codecs
@@ -41,6 +41,7 @@ CONTENT = {
     'pageTitle': 'getPageTitle',
     'collection-slug': 'getCollectionSlug',
     'slideShow': 'getSlideShow',
+    'footer': 'getFooter',
 }  
 
 class Page:
@@ -85,6 +86,72 @@ class Page:
                 html.append(f'<div class="slide"><img src="images/2022/{imageName}" alt="Slide {imageName}"></div>')
 
         return '\n'.join(html)
+
+    def XXXgetSlideShow(self, pages):
+        html = ["""
+        <div class="slideshow-container">
+          <div class="slideshow">
+        """]
+        htmlImages = []
+        imageNames = []
+        allImageNames = []
+        tag = self.name.replace(' ', '_')
+        for fileName in sorted(os.listdir('images/2022/')):
+            allImageNames.append(fileName)
+            if tag in fileName:
+                imageNames.append(fileName)
+        if not imageNames:
+            imageNames = allImageNames
+        while len(imageNames) < 10: # Not enough images, then duplicate the list
+            imageNames += imageNames + imageNames
+        for imageName in imageNames:
+            if imageName.split('.')[-1] in ('jpg', 'png', 'gif'):
+                htmlImages.append(f'<div class="slide"><img src="images/2022/{imageName}" alt="Slide {imageName}"></div>')
+
+        # Duplicate first slide for smooth transition
+        htmlImages.append(htmlImages[0])
+        html += htmlImages
+        html.append('</div></div>')
+    
+        return '\n'.join(html)
+
+    def getCssSlideShowKeyFrames(self, pages):
+        """
+        @keyframes slideShow {
+  {{slideShowKeyFrames}}
+  0% { transform: translateX(0); }
+  10% { transform: translateX(-100%); }
+  20% { transform: translateX(-200%); }
+  30% { transform: translateX(-300%); }
+  40% { transform: translateX(-400%); }
+  50% { transform: translateX(-500%); }
+  60% { transform: translateX(-600%); }
+  70% { transform: translateX(-700%); }
+  80% { transform: translateX(-800%); }
+  90% { transform: translateX(-900%); }
+  100% { transform: translateX(0); }
+}
+    """
+
+    def getFooter(self, pages):
+        html = """
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/type-try-logo.gif" alt="Logo" width="50%"/>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="licensing.html">Licensing</a></li>
+                    <li><a href="usage.html">Usage</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+    """
+        return html
 
     def menuPageLinks(self, pages):
         html = ''
@@ -150,6 +217,7 @@ if DO_BUILD:
     site.appendPage(Page('About', templateName='index'))
     site.appendPage(Page('Licensing', templateName='index'))
     site.appendPage(Page('Contact', templateName='index'))
+    site.appendPage(Page('TYPETR in use', templateName='index'))
 
     site.appendPage(Page('Presti', slug='tp-presti', templateName='index', collectionSlug='Presti Display'))
     site.appendPage(Page('Proforma Pro', slug='tp-proforma', templateName='index'))
