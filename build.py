@@ -35,15 +35,89 @@ IMAGES_PATH = 'images/'
 MAMP_PATH = '/Users/petr/Sites/localhost/typetr'
 TEMPLATE_PATH = 'templates/'
 
-BITCOUNT = 'Bitcount'
-UPGRADE = 'Upgrade'
-PRESTI = 'TP Presti'
-PRESTI_VF = 'TP Presti VF'
+TP_PRESTI = 'tp-presti'
+PRESTI_VF = 'presti-vf'
+PRESTI_DISPLAY = 'presti-display'
+PRESTI_HEAD = 'presti-head'
+PRESTI_DECK = 'presti-deck'
+PRESTI_TEXT = 'presti-text'
+PRESTI_SMALL = 'presti-small'
 
-FONT_IDS = {
-    PRESTI_VF:      'Rm9udENvbGxlY3Rpb246MTkyMDQ3OTc4MjM2MjU4OTc3Nw==',
-    PRESTI:         'Rm9udENvbGxlY3Rpb246MTkyMDQ3OTcwMDEwMzg5OTcyMg==',
+TP_POWERLIFT = 'tp-powerLift'
+POWERLIFT = 'powerLift'
+
+TP_PRODUCTUS = 'tp-productus'
+PRODUCTUS = 'productus'
+
+TP_PROFORMA = 'tp-proforma'
+PROFORMA = 'proforma'
+
+TP_RESPONDER_P = 'tp-responde-p'
+RESPONDER_P_VF = 'responder-p-vf'
+RESPONDER_P = 'responder-p'
+
+TP_UPGRADE = 'tp-upgrade]'
+UPGRADE = 'upgrade'
+
+TP_BITCOUNT_GRID = 'tp-bitcount-grid]'
+BITCOUNT_GRID_DOUBLE = 'bitcount-grid-double'
+BITCOUNT_GRID_SINGLE = 'bitcount-grid-single'
+
+TP_BITCOUNT_MONO = 'tp-bitcount-mono]'
+BITCOUNT_MONO_DOUBLE = 'bitcount-mono-double'
+BITCOUNT_MONO_SINGLE = 'bitcount-mono-single'
+
+TP_BITCOUNT_PROP = 'tp-bitcount-prop]'
+BITCOUNT_PROP_DOUBLE = 'bitcount-prop-double'
+BITCOUNT_PROP_SINGLE = 'bitcount-prop-single'
+
+
+class Font:
+    def __init__(self, name, family, slug, id):
+        self.name = name
+        self.family = family # Filter name to collect relevant images.
+        self.slug = slug
+        self.id = id
+
+# Copying Fontdue data here, since font id's are not likelt to changed easily.
+FONTS = {
+    TP_PRESTI:              Font(name='TP Presti', family='Presti', slug=TP_PRESTI, id='Rm9udENvbGxlY3Rpb246MTkyMDQ3OTcwMDEwMzg5OTcyMg=='),
+    PRESTI_VF:              Font(name='Presti VF', family='Presti', slug=PRESTI_VF, id='Rm9udENvbGxlY3Rpb246MTkyMDQ3OTc4MjM2MjU4OTc3Nw=='),
+    PRESTI_DISPLAY:         Font(name='Presti Display', family='Presti', slug=PRESTI_DISPLAY, id='Rm9udENvbGxlY3Rpb246MTkyMDQ4MDM2NDg2NzUyOTI5OA=='),
+    PRESTI_HEAD:            Font(name='Presti Head', family='Presti', slug=PRESTI_HEAD, id='Rm9udENvbGxlY3Rpb246MTkyMDQ4MzU4Mzc5NDUyMjc3MA=='),
+    PRESTI_DECK:            Font(name='Presti Deck', family='Presti', slug=PRESTI_DECK, id='Rm9udENvbGxlY3Rpb246MTkyMDQ4NDIwOTIwNzE5MjI1Nw=='),
+    PRESTI_TEXT:            Font(name='Presti Text', family='Presti', slug=PRESTI_DECK, id='Rm9udENvbGxlY3Rpb246MTkyMDQ4NDUxMTg5MzMzNDc2OA=='),
+    PRESTI_SMALL:           Font(name='Presti Small', family='Presti', slug=PRESTI_SMALL, id='Rm9udENvbGxlY3Rpb246MTkyMDQ4NDc0OTIwNzA1NTEzNQ=='),
+
+    TP_POWERLIFT:           Font(name='TP PowerLift', family='PowerLift', slug=TP_POWERLIFT, id='Rm9udENvbGxlY3Rpb246MTkyMDQ4NTAyOTI0Mzk1NjA0Ng=='),
+    POWERLIFT:              Font(name='PowerLift', family='PowerLift', slug=POWERLIFT, id='Rm9udENvbGxlY3Rpb246MTkyMDQ4NTEzMjQ1NzM4ODg4NQ=='),
+
+    TP_PRODUCTUS:           Font(name='TP Productus', family='Productus', slug=TP_PRODUCTUS, id='Rm9udENvbGxlY3Rpb246MTkyMDQ4OTA3MzQ1MDU5MzExOQ=='),
+    PRODUCTUS:              Font(name='Productus', family='Productus', slug=PRODUCTUS, id='Rm9udENvbGxlY3Rpb246MTkyMDQ4OTE0MDgxMTExNTM4Mg=='),
+
+    TP_PROFORMA:            Font(name='TP Proforma', family='Proforma', slug=TP_PROFORMA, id='Rm9udENvbGxlY3Rpb246MTkyMDQ5MzE4MTc4ODEzODM2Mg=='),
+    PROFORMA:               Font(name='Proforma', family='Proforma', slug=PROFORMA, id='Rm9udENvbGxlY3Rpb246MTkyMDQ5MzI5Mjk1Mzk3MTYyOQ=='),
+
+    TP_RESPONDER_P:         Font(name='TP Responder P', family='ResponderP', slug=TP_RESPONDER_P, id='Rm9udENvbGxlY3Rpb246MTkyMDQ5NDE3NzEzODQyMDY1Nw=='),
+    RESPONDER_P_VF:         Font(name='Responder P VF', family='ResponderP', slug=RESPONDER_P_VF, id='Rm9udENvbGxlY3Rpb246MTkyMDQ5NDE4MDMzNDQ4MDM0NQ=='),
+    RESPONDER_P:            Font(name='Responder P', family='ResponderP', slug=RESPONDER_P, id='Rm9udENvbGxlY3Rpb246MTkyMDQ5NDE3NzE2MzU4NjQ4Mw=='),
+
+    TP_UPGRADE:             Font(name='TP Upgrade', family='Upgrade', slug=TP_UPGRADE, id='Rm9udENvbGxlY3Rpb246MTkyMDQ5NDg4MjQ2OTM1ODU2MA=='),
+    UPGRADE:                Font(name='Upgrade]', family='Upgrade', slug=UPGRADE, id='Rm9udENvbGxlY3Rpb246MTkyMDQ5NTAxMjU0MzExMzIzNQ=='),
+
+    TP_BITCOUNT_GRID:       Font(name='TP Bitcount Grid', family='Bitcount', slug=TP_BITCOUNT_GRID, id='Rm9udENvbGxlY3Rpb246MTkyMDQ5NjEyNTY0NDI4NTk3NQ=='),
+    BITCOUNT_GRID_DOUBLE:   Font(name='Bitcount Grid Double]', family='Bitcount', slug=BITCOUNT_GRID_DOUBLE, id='Rm9udENvbGxlY3Rpb246MTkyMDQ5NjEyNTY2MTA2MzE5Mw=='),
+    BITCOUNT_GRID_SINGLE:   Font(name='Bitcount Grid Single]', family='Bitcount', slug=BITCOUNT_GRID_SINGLE, id='Rm9udENvbGxlY3Rpb246MTkyMDQ5NjEyNzMwNTIzMDQ2Mw=='),
+
+    TP_BITCOUNT_MONO:       Font(name='TP Bitcount Mono', family='Bitcount', slug=TP_BITCOUNT_MONO, id='Rm9udENvbGxlY3Rpb246MTkyMDQ5NjEyNTY0NDI4NTk3NQ=='),
+    BITCOUNT_MONO_DOUBLE:   Font(name='Bitcount Mono Double]', family='Bitcount', slug=BITCOUNT_MONO_DOUBLE, id='Rm9udENvbGxlY3Rpb246MTkyMDQ5Nzk0NTI3NTk2NzcyNA=='),
+    BITCOUNT_MONO_SINGLE:   Font(name='Bitcount Mono Single]', family='Bitcount', slug=BITCOUNT_MONO_SINGLE, id='Rm9udENvbGxlY3Rpb246MTkyMDQ5Nzk0ODAyNzQzMTI1MA=='),
+
+    TP_BITCOUNT_PROP:       Font(name='TP Bitcount Prop', family='Bitcount', slug=TP_BITCOUNT_PROP, id='Rm9udENvbGxlY3Rpb246MTkyMDQ5OTMyMzg4NDk3MjQ3NQ=='),
+    BITCOUNT_PROP_DOUBLE:   Font(name='Bitcount Prop Double]', family='Bitcount', slug=BITCOUNT_PROP_DOUBLE, id='Rm9udENvbGxlY3Rpb246MTkyMDQ5OTMyMzkxMDEzODMwMQ=='),
+    BITCOUNT_PROP_SINGLE:   Font(name='Bitcount Prop Single]', family='Bitcount', slug=BITCOUNT_PROP_SINGLE, id='Rm9udENvbGxlY3Rpb246MTkyMDQ5OTMyNjUxMDYwNjg4Mw=='),
 }
+
 # Key values replace the {{key}} references in the templated-binary/index.html templates. 
 CONTENT = {
     'logo': '<img src="images/type-try-logo.gif" width="50%"/>',
