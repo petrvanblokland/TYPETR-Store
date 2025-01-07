@@ -19,6 +19,7 @@
 #
 #
 import os, shutil, codecs
+from random import shuffle
 
 URL = 'typetr.com'
 
@@ -42,6 +43,8 @@ CONTENT = {
     'collection-slug': 'getCollectionSlug',
     'slideShow': 'getSlideShow',
     'footer': 'getFooter',
+
+    'bitcountImage': 'getBitcountImage'
 }  
 
 class Page:
@@ -52,6 +55,7 @@ class Page:
         self.templateName = templateName or name
         self.id = id or name
         self.collectionSlug = collectionSlug or ''
+        self.fontImages() # Make an inventory of all available images into a self.images dictionary. Key is fontname, value is list of file names.
         self.readTemplate(self.templateName)
 
     def readTemplate(self, templateName):
@@ -67,23 +71,27 @@ class Page:
     def getCollectionSlug(self, pages):
         return self.collectionSlug
 
+    def findImages(self):
+
     def getSlideShow(self, pages):
         # Find relevant images
         imageNames = []
         allImageNames = []
         html = []
         tag = self.name.replace(' ', '_')
-        for fileName in sorted(os.listdir('images/2022/')):
-            allImageNames.append(fileName)
-            if tag in fileName:
-                imageNames.append(fileName)
+        for year in (2022, 2023, 2024):
+            for fileName in sorted(os.listdir(f'images/{year}/')):
+                allImageNames.append((year, fileName))
+                if tag in fileName:
+                    imageNames.append((year, fileName))
         if not imageNames:
             imageNames = allImageNames
         while len(imageNames) < 10:
             imageNames += imageNames + imageNames
-        for imageName in imageNames:
+        shuffle(imageNames)
+        for year, imageName in imageNames:
             if imageName.split('.')[-1] in ('jpg', 'png', 'gif'):
-                html.append(f'<div class="slide"><img src="images/2022/{imageName}" alt="Slide {imageName}"></div>')
+                html.append(f'<div class="slide"><img src="images/{year}/{imageName}" alt="Slide {imageName}"></div>')
 
         return '\n'.join(html)
 
