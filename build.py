@@ -35,6 +35,15 @@ IMAGES_PATH = 'images/'
 MAMP_PATH = '/Users/petr/Sites/localhost/typetr'
 TEMPLATE_PATH = 'templates/'
 
+BITCOUNT = 'Bitcount'
+UPGRADE = 'Upgrade'
+PRESTI = 'TP Presti'
+PRESTI_VF = 'TP Presti VF'
+
+FONT_IDS = {
+    PRESTI_VF:      'Rm9udENvbGxlY3Rpb246MTkyMDQ3OTc4MjM2MjU4OTc3Nw==',
+    PRESTI:         'Rm9udENvbGxlY3Rpb246MTkyMDQ3OTcwMDEwMzg5OTcyMg==',
+}
 # Key values replace the {{key}} references in the templated-binary/index.html templates. 
 CONTENT = {
     'logo': '<img src="images/type-try-logo.gif" width="50%"/>',
@@ -55,7 +64,7 @@ class Page:
         self.templateName = templateName or name
         self.id = id or name
         self.collectionSlug = collectionSlug or ''
-        self.fontImages() # Make an inventory of all available images into a self.images dictionary. Key is fontname, value is list of file names.
+        self.findImages() # Make an inventory of all available images into a self.images dictionary. Key is fontname, value is list of file names.
         self.readTemplate(self.templateName)
 
     def readTemplate(self, templateName):
@@ -72,6 +81,7 @@ class Page:
         return self.collectionSlug
 
     def findImages(self):
+        self.images = {}
 
     def getSlideShow(self, pages):
         # Find relevant images

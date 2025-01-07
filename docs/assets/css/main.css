@@ -2,13 +2,13 @@
 @import url(fonts.css);
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-    font-family: "Presti Display Regular", sans-serif;
     margin: 0;
     padding: 0;
     border: 0;
     font-size: 100%;
     vertical-align: baseline;
     letter-spacing: 1pt;
+    font-feature-settings: "kern" 1, "clig" 1;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -207,7 +207,7 @@ div.header h1 {
 /* Styling voor de tekst in de box */
 .text {
     padding: 20px;
-    background-color: yellow; /* Standarde achtergrondkleur is geel */
+    background-color: yellow; /* Standaard achtergrondkleur is geel */
 }
 
  h2 {
@@ -217,7 +217,7 @@ div.header h1 {
   font-style: normal;
   font-weight: 400;
   font-size: 6rem; /* Grotere lettergrootte */
-  color: yellow; /* Donkere tekstkleur */
+  color: black; /* Donkere tekstkleur */
   margin: 10px;
   padding:5px;
   display:inline-block;
@@ -231,14 +231,14 @@ h3 {
   font-weight: 400;
   font-size: 4rem; /* Grotere lettergrootte */
   font-weight: normal;
-  color: yellow; /* Donkere tekstkleur */
+  color: black; /* Donkere tekstkleur */
   margin: 10px; /* Verwijder marges */
   padding:5px;
 }
 
 p {
   font-size: 1.3rem; /* Standaard tekstgrootte */
-  color: yellow; /* Neutrale kleur */
+  color: black; /* Neutrale kleur */
   line-height: 1.6; /* Betere leesbaarheid */
   margin: 10px; /* Verwijder marges */
   display:inline-block;
