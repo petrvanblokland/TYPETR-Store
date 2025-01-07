@@ -36,7 +36,7 @@ TEMPLATE_PATH = 'templates/'
 
 # Key values replace the {{key}} references in the templated-binary/index.html templates. 
 CONTENT = {
-    'logo': '<img src="images/type-try-logo.gif", width="50%"/>',
+    'logo': '<img src="images/type-try-logo.gif" width="50%"/>',
     'menuPageLinks': 'menuPageLinks',
     'pageTitle': 'getPageTitle',
     'collection-slug': 'getCollectionSlug',
