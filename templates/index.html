@@ -54,10 +54,22 @@
     </head>
 <body>
     <fontdue-store-modal></fontdue-store-modal>
-    <div class='logo'>
-        <!--<a href='index.html'>{{logo}}</a>-->
-        {{logo}}
-    </div>
+    <header id="header">
+      <div class='logo'>
+          <!--<a href='index.html'>{{logo}}</a>-->
+          {{logo}}
+        <a href="#menu" style="background-color: #FFFFFF"><span>Menu</span></a>
+      </div>
+    </header>
+
+    <!-- Nav -->
+      <nav id="menu">
+        <ul class="links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="article.html">Generic</a></li>
+          <li><a href="elements.html">Elements</a></li>
+        </ul>
+      </nav>
 
     <div class="header">
       <div class="slideshow">
@@ -69,7 +81,7 @@
       </div>
     </div>
 
-    {{page.fontPromo('tp-upgrade', imageRight=False, typeTester=True,)}}
+    {{page.fontPromo('tp-upgrade', imageRight=False, typeTester=True, characterViewer=True)}}
     {{page.fontPromo('tp-powerlift', typeTester=True, style='Tight')}}
     
     {{page.fontPromo('presti-display', imageRight=False, typeTester=True)}}

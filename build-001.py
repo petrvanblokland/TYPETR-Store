@@ -154,7 +154,7 @@ class Page:
         self.id = id or name
         self.collectionSlug = collectionSlug or ''
         self.findImages() # Make an inventory of all available images into a self.images dictionary. Key is fontname, value is list of file names.
-        self.readTemplate(self.templateName)
+        self.readTemplate(self.templateName) # Read the template source for this page into self.html
 
     def readTemplate(self, templateName):
         f = codecs.open(f'{TEMPLATE_PATH}{templateName}.html', 'r', encoding='UTF-8')
