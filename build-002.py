@@ -229,7 +229,7 @@ class Page(Element):
     <footer class="footer">
         <div class="footer-content">
             <div class="footer-logo">
-                <img src="{logo.path}" alt="Logo" width="50%"/>
+                <a class="logo"> <img src="{logo.path}" alt="Logo" width="50%"/></a>
             </div>
             <div class="footer-links">
                 <ul>
