@@ -36,7 +36,7 @@ for year in range(2018, 2026):
 
 if os.path.exists('_docs/'):
     EXPORT_PATH = '_docs/' # Jasper computer
-    MAMP_PATH = '/Applications/MAMP/htdocs/typetr'
+    MAMP_PATH = '/Applications/MAMP/htdocs'
 else:
     EXPORT_PATH = 'docs/'
     MAMP_PATH = '/Users/petr/Sites/localhost/typetr' # Petr computer
