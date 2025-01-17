@@ -26,9 +26,7 @@ from random import shuffle
 URL = 'typetr.com'
 
 DO_BUILD = True
-USE_MAMP = True
 
-EXPORT_PATH = 'docs/'
 ASSETS_PATH = 'assets/'
 TEMPLATES_PATH = 'templates/'
 IMAGES_PATH = 'images/'
@@ -36,7 +34,12 @@ IMAGES_PATHS = [IMAGES_PATH]
 for year in range(2018, 2026):
     IMAGES_PATHS.append(f'{IMAGES_PATH}{year}/')
 
-MAMP_PATH = '/Users/petr/Sites/localhost/typetr'
+if os.path.exists('_docs/'):
+    EXPORT_PATH = '_docs/' # Jasper computer
+    MAMP_PATH = None
+else:
+    EXPORT_PATH = 'docs/'
+    MAMP_PATH = '/Users/petr/Sites/localhost/typetr' # Petr computer
 
 IMAGES_EXT = ('.jpg', '.jpeg', '.png', '.gif')
 
@@ -498,7 +501,7 @@ if DO_BUILD:
 
     site.build()
 
-if USE_MAMP:
+if MAMP_PATH is not None:
     # Start MAMP to see this website on localhost, port 80
     # Since we modify the 'docs/', better make a tree copy than exporting again.
     mampPath = MAMP_PATH #+ site.id
