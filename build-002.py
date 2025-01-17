@@ -508,7 +508,7 @@ if MAMP_PATH is not None:
     if os.path.exists(mampPath):
         print('... Remove old site at', mampPath)
         shutil.rmtree(mampPath)
-    shutil.copytree(EPORT_PATH, mampPath)
+    shutil.copytree(EXPORT_PATH, mampPath)
     #website.export(mampPath)
 
     # Open the local website on docs/, assuming that MAMP is running
