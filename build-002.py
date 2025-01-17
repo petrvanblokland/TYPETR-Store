@@ -36,7 +36,7 @@ for year in range(2018, 2026):
 
 if os.path.exists('_docs/'):
     EXPORT_PATH = '_docs/' # Jasper computer
-    MAMP_PATH = '/Applications/MAMP/htdocs'
+    MAMP_PATH = '/Applications/MAMP/htdocs/typetr'
 else:
     EXPORT_PATH = 'docs/'
     MAMP_PATH = '/Users/petr/Sites/localhost/typetr' # Petr computer
@@ -508,7 +508,7 @@ if MAMP_PATH is not None:
     if os.path.exists(mampPath):
         print('... Remove old site at', mampPath)
         shutil.rmtree(mampPath)
-    shutil.copytree('docs/', mampPath)
+    shutil.copytree(EPORT_PATH, mampPath)
     #website.export(mampPath)
 
     # Open the local website on docs/, assuming that MAMP is running
