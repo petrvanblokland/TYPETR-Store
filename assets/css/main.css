@@ -68,6 +68,7 @@ body {
     z-index: 10002;
   }
 
+
     #menu > ul {
       margin: 0 0 1em 0;
     }
@@ -121,11 +122,12 @@ body {
       width: 7em;
     }
 
-      #menu .close:before {
+
+      #menu .close::before {
         content: "";
         -moz-osx-font-smoothing: grayscale;
         -webkit-font-smoothing: antialiased;
-        font-family: "{{logoFontFamily}}";
+        font-family: "{{iconFontFamily}}";
         font-style: normal;
         font-weight: normal;
         text-transform: none !important;
@@ -163,6 +165,8 @@ body {
         padding: 2.5em 1.75em;
       }
 
+
+
     }
 
 
@@ -173,7 +177,7 @@ body {
     display: flex; /* Zorgt ervoor dat de afbeelding goed wordt uitgelijnd */
     justify-content: flex-start; /* Plaatst de afbeelding aan de linkerkant */
     align-items: center; /* Centreert de afbeelding verticaal */
-    padding-left: 10px; /* Optioneel, voegt wat ruimte toe aan de linkerkant */
+    padding-left: 0; /* Optioneel, voegt wat ruimte toe aan de linkerkant */
     border-bottom: 1px solid white; /* Witte lijn aan de onderkant */
 }
 .logo img {
@@ -392,6 +396,35 @@ p {
   height: 100%; /* Vul de hoogte van de header */
   display: flex;
   animation: slideShow 25s infinite;
+}
+
+
+#header nav a {
+  -moz-transition: color 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+  display: inline-block;
+  padding: 0 0.75em;
+    padding-right: 0.75em;
+  color: inherit;
+  text-decoration: none;
+}
+
+#menu > ul.links > li > a:not(.button) {
+  border: 0;
+    border-top-width: 0px;
+    border-top-style: none;
+    border-top-color: currentcolor;
+  border-top: solid 1px rgba(255, 255, 255, 0.25);
+  color: inherit;
+  display: block;
+  line-height: 3.5em;
+  text-decoration: none;
+}
+
+#header {
+  text-align: left;
 }
 
 .slide {
