@@ -259,7 +259,9 @@ body {
 }
 
 
-
+.type-tester__slider__handle:hover {
+  color: green;
+}
 
 .fontSample {
   display: flex;
