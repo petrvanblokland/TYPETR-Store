@@ -60,28 +60,26 @@
     <header id="header">
       <div class='logo'>
         <a class="logo" href='index.html'>{{logo}}</a>
-      <nav>
-              <a href="#menu">M E N U</a>
-      </nav>
+        <a id="menuButton" href="#menu" >M E N U</a>
       </div>
     </header>
 
     <!-- Nav -->
-       <nav id="menu" class="visible">
-        <ul class="links">
-    <li><a href="index.html">Index</a></li>
-    <li><a href="presti.html">Presti</a></li>
-    <li><a href="proforma-pro.html">Proforma Pro</a></li>
-    <li><a href="powerlift.html">Powerlift</a></li>
-    <li><a href="responder.html">Responder</a></li>
-    <li><a href="upgrade.html">Upgrade</a></li>
-    <li><a href="upgrade-neon.html">Upgrade Neon</a></li>
-    <li><a href="upgrade-outline.html">Upgrade Outline</a></li>
-    <li><a href="about-typetr.html">About TYPETR</a></li>
-    <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-
+    <nav id="menu">
+      <ul class="links">
+        <li><a href="index.html">Index</a></li>
+        <li><a href="presti.html">Presti</a></li>
+        <li><a href="proforma-pro.html">Proforma Pro</a></li>
+        <li><a href="powerlift.html">Powerlift</a></li>
+        <li><a href="responder.html">Responder</a></li>
+        <li><a href="upgrade.html">Upgrade</a></li>
+        <li><a href="upgrade-neon.html">Upgrade Neon</a></li>
+        <li><a href="upgrade-outline.html">Upgrade Outline</a></li>
+        <li><a href="about-typetr.html">About TYPETR</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  
     <div class="header">
       <div class="slideshow">
         {{slideShow}}
@@ -105,4 +103,27 @@
 
 </body>
 
+<script>
+// Function to toggle visibility
+function toggleVisibility(targetId) {
+    let targetElement = document.getElementById(targetId);
+
+    if (targetElement) {
+        // Check current visibility and toggle
+        if (targetElement.style.visibility === 'hidden') {
+            targetElement.style.visibility = 'visible';
+        } else {
+            targetElement.style.visibility = 'hidden';
+        }
+    } else {
+        console.error(`Element with ID "${targetId}" not found.`);
+    }
+}
+
+// Add a click event listener to the button
+document.getElementById('menuButton').addEventListener('click', function() {
+    toggleVisibility('menu');
+});
+
+</script>
 </html>

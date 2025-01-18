@@ -42,6 +42,7 @@ body {
 }
 
 /* Menu */
+/* Menu */
 
   #menu {
     -moz-transform: translateX(20em);
@@ -170,6 +171,7 @@ body {
     }
 
 
+
 /* Layout stuff */
 .logo {
     height: 60px; /* Stelt de hoogte van de logo in */
@@ -259,7 +261,9 @@ body {
 }
 
 
-
+.type-tester__slider__handle:hover {
+  color: green;
+}
 
 .fontSample {
   display: flex;
