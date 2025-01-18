@@ -220,7 +220,7 @@ body {
   display: flex;
   flex-wrap: wrap; /* Laat flex-items wrappen op kleinere schermen */
   margin: 0 auto;
-  max-width: 1200px; /* Max breedte voor grote schermen */
+  max-width: 1800px; /* Max breedte voor grote schermen */
 }
 
 /* Stijl voor de linkerkolom */

@@ -429,9 +429,9 @@ class Site:
                 Page('TYPETR in use', templateName='index'),
 
                 Page('Presti', slug='tp-presti', templateName='index', collectionSlug='Presti Display'),
-                Page('Proforma Pro', slug='tp-proforma', templateName='index'),
+                Page('Proforma', slug='tp-proforma', templateName='index'),
                 Page('Powerlift', slug='tp-powerlif', templateName='index'),
-                Page('Responder', slug='tp-responder', templateName='index'),
+                Page('Responder', slug='tp-responder-vf', templateName='index'),
                 Page('Upgrade', slug='tp-upgrade', templateName='index'),
                 Page('Upgrade Neon', templateName='index'),
                 Page('Upgrade Outline', templateName='index'),
