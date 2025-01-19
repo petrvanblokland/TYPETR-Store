@@ -120,9 +120,6 @@ body {
       visibility: visible;
     }
 
-
-
-
 /* Layout stuff */
 .logo {
     height: 60px; /* Stelt de hoogte van de logo in */
@@ -131,7 +128,7 @@ body {
     justify-content: flex-start; /* Plaatst de afbeelding aan de linkerkant */
     align-items: center; /* Centreert de afbeelding verticaal */
     padding-left: 0; /* Optioneel, voegt wat ruimte toe aan de linkerkant */
-    border-bottom: 1px solid white; /* Witte lijn aan de onderkant */
+    border:none;
 }
 .logo img {
     height: 100%; /* Zorgt ervoor dat de afbeelding de volledige hoogte van de .logo div vult */
