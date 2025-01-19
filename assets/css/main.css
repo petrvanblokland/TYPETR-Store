@@ -64,8 +64,8 @@ body {
     position: fixed;
     right: 0;
     top: 0;
-    visibility: hidden;
     width: 40em;
+    opacity: 0;
     z-index: 10002;
   }
 
@@ -502,3 +502,33 @@ p {
 .read-more-btn:hover {
   background-color: #0056b3; /* Maak de achtergrondkleur donkerder bij hover */
 }
+
+.type-tester{
+  display: inline-block;
+  border:none;
+  background-color:#202124;
+  color:white;
+  width:100%;
+  padding-top:1px;
+  padding-bottom:20px;
+  margin-bottom:0px;
+}
+
+.type-tester__toolbar{
+  padding-top:10px;
+  padding-left:30px;
+}
+
+.type-tester__text {
+  padding-left:20px;  
+}
+
+.type-tester__features-button {
+  padding-right: 30px;
+  color:white;
+}
+
+.type-tester__features-button__text {
+  padding-left:30px;
+}
+
