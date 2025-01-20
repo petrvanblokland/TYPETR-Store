@@ -218,6 +218,14 @@ body {
     color: Khaki; /* Blauw voor even .box */
 }
 
+.box h2:hover{
+  color: #202124;
+}
+
+.box h3{
+  padding-top:0px;
+  margin-top:0px;
+}
 
 .type-tester__slider__handle:hover {
   color: green;
@@ -377,17 +385,24 @@ p {
     position: absolute;
     right: 0; /* Zorgt ervoor dat het element aan de rechterkant van de container wordt uitgelijnd */
     top: 10px; /* Correct de pz naar px aangepast */
-    padding-right: 10px; /* Optioneel, voor een beetje ruimte rondom de knop */
+    padding:10px;
     width: 60px; /* Breedte van de knop */
     height: 40px; /* Hoogte van de knop */
-    background: url('hamburger.svg') no-repeat center;
     background-size: 32px 32px; /* Grootte van het icoon */
     background-color: none;
     cursor: pointer; /* Hand-cursor bij hover */
 }
 
-#menuButton:hover {
-    color: red; 
+#menuButton svg{
+  fill:white;
+  stroke:white;
+  color:white;
+}
+
+#menuButton svg:hover{
+  fill:red;
+  stroke:red;
+  color:red;
 }
 
 #header nav a {
