@@ -41,6 +41,16 @@ body {
     -webkit-text-size-adjust: none;
 }
 
+::-moz-selection { /* Code for Firefox */
+  color: #202124;
+  background-color: yellow;
+}
+
+::selection {
+  color: #202124;
+  background-color: yellow;
+}
+
 /* Menu */
 /* Menu */
 
@@ -220,6 +230,10 @@ body {
   max-width: 1800px; /* Max breedte voor grote schermen */
 }
 
+.haeder{
+    border-bottom: solid 1px #202124; 
+}
+
 /* Stijl voor de linkerkolom */
 .fontSample .left {
   flex: 1; /* Gelijke breedte bij voldoende ruimte */
@@ -303,6 +317,9 @@ div.header h1 {
   display:inline-block;
 }
 
+h2:hover{
+  color:red;
+}
 h3 {
   font-family: "Presti Deck Bold";
   /*font-family: "Responder P Book";*/
@@ -350,6 +367,28 @@ p {
   animation: slideShow 25s infinite;
 }
 
+/* Standaard stijlen voor de slides */
+.slideshow-content {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+#menuButton {
+    position: absolute;
+    right: 0; /* Zorgt ervoor dat het element aan de rechterkant van de container wordt uitgelijnd */
+    top: 10px; /* Correct de pz naar px aangepast */
+    padding-right: 10px; /* Optioneel, voor een beetje ruimte rondom de knop */
+    width: 60px; /* Breedte van de knop */
+    height: 40px; /* Hoogte van de knop */
+    background: url('hamburger.svg') no-repeat center;
+    background-size: 32px 32px; /* Grootte van het icoon */
+    background-color: none;
+    cursor: pointer; /* Hand-cursor bij hover */
+}
+
+#menuButton:hover {
+    color: red; 
+}
 
 #header nav a {
   -moz-transition: color 0.2s ease-in-out;
@@ -544,6 +583,11 @@ p {
 
 .type-tester__features-button__text {
   padding-left:30px;
+  color:white;
+}
+
+.type-tester__features-button button{
+  color:white;
 }
 
 .buy-button{
