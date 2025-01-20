@@ -143,6 +143,7 @@ body {
 .logo img {
     height: 100%; /* Zorgt ervoor dat de afbeelding de volledige hoogte van de .logo div vult */
     width: auto; /* Handhaaft de proporties van de afbeelding */
+    margin-left: 10px;
 }
 
 .box{
@@ -643,6 +644,7 @@ p {
   border-radius: 10px;
   border: solid 1px white; 
   background-color:white;
+  margin-top: 0px;
   margin-left:20px;
   margin:20px;
   font-family:"Upgrade Regular", Fallback;
