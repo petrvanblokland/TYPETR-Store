@@ -334,7 +334,7 @@ h3 {
   font-feature-settings: "kern" 1, "clig" 1;
   font-style: normal;
   font-weight: 400;
-  font-size: 4rem; /* Grotere lettergrootte */
+  font-size: 3.3rem; /* Grotere lettergrootte */
   font-weight: normal;
   color: black; /* Donkere tekstkleur */
   margin: 10px; /* Verwijder marges */
@@ -343,9 +343,11 @@ h3 {
 
 p {
   font-size: 1.3rem; /* Standaard tekstgrootte */
+  font-family:"Upgrade Regular", Fallback;
   color: black; /* Neutrale kleur */
   line-height: 1.6; /* Betere leesbaarheid */
   margin: 10px; /* Verwijder marges */
+  margin-left:20px;
   display:inline-block;
 }
 
@@ -559,6 +561,13 @@ p {
   background-color: #0056b3; /* Maak de achtergrondkleur donkerder bij hover */
 }
 
+.fontdueBox{
+  background-color:#202124;
+  border-top: solid 1px white; 
+  border-bottom: solid 1px white; 
+  display: inline-block;
+}
+
 .type-tester{
   display: inline-block;
   border:none;
@@ -572,14 +581,6 @@ p {
 
 .type-tester:last-child {
   padding-bottom:20px;
-}
-
-.type-tester:nth-child(1){
-  border-top: solid 1px white; 
-}
-
-.type-tester:last-child {
-  border-bottom: solid 1px white; 
 }
 
 .type-tester__toolbar{
@@ -601,6 +602,10 @@ p {
   color:white;
 }
 
+.type-tester__toolbar {
+  font-family:"Upgrade Regular", Fallback;
+}
+
 .type-tester__features-button button{
   color:white;
 }
@@ -608,15 +613,16 @@ p {
 .buy-button{
   display: inline-block;
   border-radius: 10px;
-  border:white;
+  border: solid 1px white; 
   background-color:white;
   margin-left:20px;
-  margin:10px;
+  margin:20px;
+  font-family:"Upgrade Regular", Fallback;
 }
 
 .buy-button:hover{
   border-radius: 10px;
-  border:none;
+  border: solid 1px white; 
   background-color: #202124;
 }
 
@@ -626,8 +632,4 @@ p {
 
 .box:nth-child(2n+1) button:hover{
   color:white;
-}
-
-.fontSample .buy-button:last-child{
-  display:none;
 }

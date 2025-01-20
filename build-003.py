@@ -314,7 +314,7 @@ class Page(Element):
               <div class="{side1}">
                 <div class="text">
                   <h2 style="font-family:{font.cssName} {style};{headSize}">{head}</h2>
-                  <h3 style="font-family:{font.cssName} {style};{subheadSize}">{subhead}</h3>
+                  <h3 style="font-family:{font.cssName} {style};{subheadSize}">An awesome font{subhead}</h3>
                   <p>{deck} {'aaaaaa<br>' * 10}</p>
         """
         if buyButton:
@@ -328,9 +328,10 @@ class Page(Element):
               <div class="{side2}" style="background-image: url('{image.path}'); background-size: cover;background-position: center">
               </div> <!-- side -->
             """
+
         if typeTester or characterViewer:
             self.html += f"""
-                  <div style="font-family:{font.familyName} {style}">
+                  <div class="fontdueBox" style="font-family:{font.familyName} {style}">
                 """
             if typeTester:
                 self.html += f"""<fontdue-type-testers collection-slug="{font.slug}"></fontdue-type-testers>"""
