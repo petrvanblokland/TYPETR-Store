@@ -89,9 +89,11 @@
       <div class="slideshow">
         {{slideShow}}
       </div>
+        <button class="slideshow-arrow left">&larr;</button>
+        <button class="slideshow-arrow right">&rarr;</button>
       <div class="overlay">
         <h1>TYPETR-Shop</h1>
-        <h3>{{page.name}}</h3>
+        <h3>Fonts that speak volumes {{page.name}}</h3>
       </div>
     </div>
 
@@ -131,4 +133,54 @@ document.getElementById('menuButton').addEventListener('click', function() {
 });
 
 </script>
+
+<script>
+const slideshow = document.querySelector('.slideshow');
+const content = document.querySelector('.slideshow-content');
+const leftArrow = document.querySelector('.slideshow-arrow.left');
+const rightArrow = document.querySelector('.slideshow-arrow.right');
+
+let isDragging = false;
+let startX;
+let scrollLeft;
+
+// Klikbare pijlen functionaliteit
+leftArrow.addEventListener('click', () => {
+  content.scrollBy({
+    left: -slideshow.offsetWidth,
+    behavior: 'smooth',
+  });
+});
+
+rightArrow.addEventListener('click', () => {
+  content.scrollBy({
+    left: slideshow.offsetWidth,
+    behavior: 'smooth',
+  });
+});
+
+// Drag functionaliteit
+content.addEventListener('mousedown', (e) => {
+  isDragging = true;
+  startX = e.pageX - content.offsetLeft;
+  scrollLeft = content.scrollLeft;
+});
+
+content.addEventListener('mouseleave', () => {
+  isDragging = false;
+});
+
+content.addEventListener('mouseup', () => {
+  isDragging = false;
+});
+
+content.addEventListener('mousemove', (e) => {
+  if (!isDragging) return;
+  e.preventDefault();
+  const x = e.pageX - content.offsetLeft;
+  const walk = (x - startX) * 1.5; // Snelheid van drag
+  content.scrollLeft = scrollLeft - walk;
+});
+</script>
+
 </html>
