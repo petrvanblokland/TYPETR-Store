@@ -60,13 +60,7 @@
     <header id="header">
       <div class='logo'>
         <a class="logo" href='index.html'>{{logo}}</a>
-        <a id="menuButton" href="#menu" >
-          <svg class="hamburger">
-            <rect y="4" width="24" height="2" />
-            <rect y="11" width="24" height="2" />
-            <rect y="18" width="24" height="2" />
-          </svg>
-        </a>
+        <a id="menuButton" href="#menu">MENU</a>
       </div>
     </header>
 
@@ -132,55 +126,6 @@ document.getElementById('menuButton').addEventListener('click', function() {
     toggleVisibility('menu');
 });
 
-</script>
-
-<script>
-const slideshow = document.querySelector('.slideshow');
-const content = document.querySelector('.slideshow-content');
-const leftArrow = document.querySelector('.slideshow-arrow.left');
-const rightArrow = document.querySelector('.slideshow-arrow.right');
-
-let isDragging = false;
-let startX;
-let scrollLeft;
-
-// Klikbare pijlen functionaliteit
-leftArrow.addEventListener('click', () => {
-  content.scrollBy({
-    left: -slideshow.offsetWidth,
-    behavior: 'smooth',
-  });
-});
-
-rightArrow.addEventListener('click', () => {
-  content.scrollBy({
-    left: slideshow.offsetWidth,
-    behavior: 'smooth',
-  });
-});
-
-// Drag functionaliteit
-content.addEventListener('mousedown', (e) => {
-  isDragging = true;
-  startX = e.pageX - content.offsetLeft;
-  scrollLeft = content.scrollLeft;
-});
-
-content.addEventListener('mouseleave', () => {
-  isDragging = false;
-});
-
-content.addEventListener('mouseup', () => {
-  isDragging = false;
-});
-
-content.addEventListener('mousemove', (e) => {
-  if (!isDragging) return;
-  e.preventDefault();
-  const x = e.pageX - content.offsetLeft;
-  const walk = (x - startX) * 1.5; // Snelheid van drag
-  content.scrollLeft = scrollLeft - walk;
-});
 </script>
 
 </html>

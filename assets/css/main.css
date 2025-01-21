@@ -79,7 +79,6 @@ body {
     z-index: 10002;
   }
 
-
     #menu > ul {
       margin: 0 0 1em 0;
     }
@@ -301,10 +300,17 @@ div.text {
 /* Typography */
 div.header h1 {
   font-family: "Presti Deck Regular";
-  font-style: normal;
+  font-style: bold;
   font-weight: 400;
   font-size: 5em;
-  color: black;
+  color: #202124;
+  padding:10px;
+  padding-left:0px;
+  padding-right:0px;
+  background-color: white;
+  opacity: 80%;
+  margin-bottom: 10px;
+  border-radius: 10px;
 }
 
 /* Styling voor de tekst in de box */
@@ -413,12 +419,6 @@ p {
   right: 20px;
 }
 
-/* Standaard stijlen voor de slides */
-.slideshow-content {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
 #menuButton {
     position: absolute;
     right: 0; /* Zorgt ervoor dat het element aan de rechterkant van de container wordt uitgelijnd */
@@ -495,17 +495,17 @@ p {
 }
 
 .overlay h3 {
-  font-family: "Presti Deck Bold";
   font-size: 3rem;
-  margin-top: 10px;
-  background: none;
+  margin-top: 5px;
   display: inline-block;
-  color:black;
+  color:#202124;
   padding:10px;
   padding-left:15px;
   padding-right:15px;
   background-color: white;
+  opacity:70%;
   font-family:"Upgrade Regular", Fallback;
+  border-radius: 10px;
 }
 
 /* Animaties */
@@ -539,7 +539,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px; /* Optioneel: stel een maximale breedte in voor de footer */
+  max-width: 1800px; /* Optioneel: stel een maximale breedte in voor de footer */
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -548,7 +548,12 @@ p {
   height: 60px; /* Pas de hoogte van het logo aan */
 }
 
+.footer-links{
+  margin-right: 20px;
+}
+
 .footer-links ul {
+  font-family:"Upgrade Regular", Fallback;
   display: flex;
   list-style: none;
   padding: 0;
@@ -556,7 +561,7 @@ p {
 }
 
 .footer-links ul li {
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
 .footer-links ul li a {
@@ -567,6 +572,7 @@ p {
 
 .footer-links ul li a:hover {
   text-decoration: underline; /* Voeg onderlijning toe bij hover */
+  color: red;
 }
 
 
@@ -618,7 +624,7 @@ p {
 }
 
 .type-tester__text {
-  padding-left:20px;  
+  padding-left:30px;  
 }
 
 .type-tester__features-button {
