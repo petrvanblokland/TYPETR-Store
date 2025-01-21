@@ -60,7 +60,7 @@
     <header id="header">
       <div class='logo'>
         <a class="logo" href='index.html'>{{logo}}</a>
-        <a id="menuButton" href="#menu">MENU</a>
+        <a id="menuButton" href="#menu">M E N U</a>
       </div>
     </header>
 
@@ -105,27 +105,18 @@
 </body>
 
 <script>
-// Function to toggle visibility
-function toggleVisibility(targetId) {
-    let targetElement = document.getElementById(targetId);
-
-    if (targetElement) {
-        // Check current visibility and toggle
-        if (targetElement.style.visibility === 'visible') {
-            targetElement.style.visibility = 'hidden';
-        } else {
-            targetElement.style.visibility = 'visible';
-        }
+  // Function to toggle the menu
+  function toggleMenu() {
+    const menu = document.getElementById('menu');
+    if (menu) {
+      menu.classList.toggle('visible');
     } else {
-        console.error(`Element with ID "${targetId}" not found.`);
+      console.error('Menu element not found.');
     }
-}
+  }
 
-// Add a click event listener to the button
-document.getElementById('menuButton').addEventListener('click', function() {
-    toggleVisibility('menu');
-});
-
+  // Add click event listener to the button
+  document.getElementById('menuButton').addEventListener('click', toggleMenu);
 </script>
 
 </html>
