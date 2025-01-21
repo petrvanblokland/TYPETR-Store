@@ -32,6 +32,8 @@
 
     <link rel="stylesheet" href="assets/css/main.css" />
     
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+
     <script>
      fontdue.initialize({
         url: "https://store.typetr.com",
@@ -60,13 +62,7 @@
     <header id="header">
       <div class='logo'>
         <a class="logo" href='index.html'>{{logo}}</a>
-        <a id="menuButton" href="#menu" >
-          <svg class="hamburger">
-            <rect y="4" width="24" height="2" />
-            <rect y="11" width="24" height="2" />
-            <rect y="18" width="24" height="2" />
-          </svg>
-        </a>
+        <a id="menuButton" href="#menu"><span class="material-symbols-outlined">menu</span></a>
       </div>
     </header>
 
@@ -77,7 +73,7 @@
         <li><a href="presti.html" style="font-family: 'Presti VF Regular';font-size: 5em;line-height: 1.4em;">Presti</a></li>
         <li><a href="proforma.html" style="font-family: 'Proforma Book';font-size: 3em;line-height: 1.4em;">Proforma</a></li>
         <li><a href="powerlift.html" style="font-family: 'PowerLift Tight';font-size: 3em;line-height: 1.4em;">Powerlift</a></li>
-        <li><a href="responder.html" style="font-family: 'Responder P VF Regular';font-size: 3em;line-height: 1.4em;">Responder P</a></li>
+        <li><a href="responder.html" style="font-family: 'Responder P VF Regular';font-size: 3em;line-height: 1.8em;">Responder P</a></li>
         
         <li><a href="upgrade.html" style="font-family: 'Upgrade Thin';font-size: 5em;line-height: 1.4em;">Upgrade</a></li>
         <li><a href="about-typetr.html">About TYPETR</a></li>
@@ -111,76 +107,18 @@
 </body>
 
 <script>
-// Function to toggle visibility
-function toggleVisibility(targetId) {
-    let targetElement = document.getElementById(targetId);
-
-    if (targetElement) {
-        // Check current visibility and toggle
-        if (targetElement.style.visibility === 'visible') {
-            targetElement.style.visibility = 'hidden';
-        } else {
-            targetElement.style.visibility = 'visible';
-        }
+  // Function to toggle the menu
+  function toggleMenu() {
+    const menu = document.getElementById('menu');
+    if (menu) {
+      menu.classList.toggle('visible');
     } else {
-        console.error(`Element with ID "${targetId}" not found.`);
+      console.error('Menu element not found.');
     }
-}
+  }
 
-// Add a click event listener to the button
-document.getElementById('menuButton').addEventListener('click', function() {
-    toggleVisibility('menu');
-});
-
-</script>
-
-<script>
-const slideshow = document.querySelector('.slideshow');
-const content = document.querySelector('.slideshow-content');
-const leftArrow = document.querySelector('.slideshow-arrow.left');
-const rightArrow = document.querySelector('.slideshow-arrow.right');
-
-let isDragging = false;
-let startX;
-let scrollLeft;
-
-// Klikbare pijlen functionaliteit
-leftArrow.addEventListener('click', () => {
-  content.scrollBy({
-    left: -slideshow.offsetWidth,
-    behavior: 'smooth',
-  });
-});
-
-rightArrow.addEventListener('click', () => {
-  content.scrollBy({
-    left: slideshow.offsetWidth,
-    behavior: 'smooth',
-  });
-});
-
-// Drag functionaliteit
-content.addEventListener('mousedown', (e) => {
-  isDragging = true;
-  startX = e.pageX - content.offsetLeft;
-  scrollLeft = content.scrollLeft;
-});
-
-content.addEventListener('mouseleave', () => {
-  isDragging = false;
-});
-
-content.addEventListener('mouseup', () => {
-  isDragging = false;
-});
-
-content.addEventListener('mousemove', (e) => {
-  if (!isDragging) return;
-  e.preventDefault();
-  const x = e.pageX - content.offsetLeft;
-  const walk = (x - startX) * 1.5; // Snelheid van drag
-  content.scrollLeft = scrollLeft - walk;
-});
+  // Add click event listener to the button
+  document.getElementById('menuButton').addEventListener('click', toggleMenu);
 </script>
 
 </html>

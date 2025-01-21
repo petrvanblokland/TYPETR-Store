@@ -54,30 +54,40 @@ body {
 /* Menu */
 /* Menu */
 
-  #menu {
-    -moz-transform: translateX(20em);
-    -webkit-transform: translateX(20em);
-    -ms-transform: translateX(20em);
-    transform: translateX(20em);
-    -moz-transition: -moz-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
-    -webkit-transition: -webkit-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
-    -ms-transition: -ms-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
-    transition: transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
-    -webkit-overflow-scrolling: touch;
-    background: #f64242;
-    box-shadow: none;
-    color: #ffffff;
-    height: 100%;
-    max-width: 80%;
-    overflow-y: auto;
-    padding: 3em 2em;
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 40em;
-    opacity: 0;
-    z-index: 10002;
-  }
+#menu {
+  -moz-transform: translateX(20em);
+  -webkit-transform: translateX(20em);
+  -ms-transform: translateX(20em);
+  transform: translateX(20em);
+  -moz-transition: -moz-transform 0.5s ease, box-shadow 0.5s ease;
+  -webkit-transition: -webkit-transform 0.5s ease, box-shadow 0.5s ease;
+  -ms-transition: -ms-transform 0.5s ease, box-shadow 0.5s ease;
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+  -webkit-overflow-scrolling: touch;
+  background: #f64242;
+  box-shadow: none;
+  color: #ffffff;
+  height: 100%;
+  max-width: 40%;
+  overflow-y: auto;
+  padding: 3em 2em;
+  position: fixed;
+  right: 0;
+  top: 0;
+  visibility: hidden;
+  width: 20em;
+  z-index: 10002;
+  border-left: solid 1px #202124;
+}
+
+#menu.visible {
+  -moz-transform: translateX(0);
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0);
+  box-shadow: 0 0 1.5em 0 rgba(0, 0, 0, 0.2);
+  visibility: visible;
+}
 
 
     #menu > ul {
@@ -91,11 +101,15 @@ body {
 
         #menu > ul.links > li {
           padding: 0;
+          font-family:"Upgrade Regular", Fallback;
+        }
+
+        #menu > ul.links > li:hover {
+          color:#202124;
         }
 
           #menu > ul.links > li > a:not(.button) {
-            border: 0;
-            border-top: solid 1px rgba(255, 255, 255, 0.25);
+            border-top: solid 2px yellow;
             color: inherit;
             display: block;
             line-height: 3.5em;
@@ -116,19 +130,10 @@ body {
 
         #menu .close {
           height: 4em;
-          line-height: 4em;
         }
 
       }
 
-    #menu.visible {
-      -moz-transform: translateX(0);
-      -webkit-transform: translateX(0);
-      -ms-transform: translateX(0);
-      transform: translateX(0);
-      box-shadow: 0 0 1.5em 0 rgba(0, 0, 0, 0.2);
-      visibility: visible;
-    }
 
 /* Layout stuff */
 .logo {
@@ -301,10 +306,17 @@ div.text {
 /* Typography */
 div.header h1 {
   font-family: "Presti Deck Regular";
-  font-style: normal;
+  font-style: bold;
   font-weight: 400;
   font-size: 5em;
-  color: black;
+  color: #202124;
+  padding:10px;
+  padding-left:0px;
+  padding-right:0px;
+  background-color: white;
+  opacity: 80%;
+  margin-bottom: 10px;
+  border-radius: 10px;
 }
 
 /* Styling voor de tekst in de box */
@@ -413,27 +425,27 @@ p {
   right: 20px;
 }
 
-/* Standaard stijlen voor de slides */
-.slideshow-content {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
+#menuButton{
+  position: absolute;
+  right: 0px;
+  z-index: 3000000;
+  padding-right: 20px;
 }
 
-#menuButton {
-    position: absolute;
-    right: 0; /* Zorgt ervoor dat het element aan de rechterkant van de container wordt uitgelijnd */
-    top: 10px; /* Correct de pz naar px aangepast */
-    padding:10px;
-    width: 60px; /* Breedte van de knop */
-    height: 60px; /* Hoogte van de knop */
-    background-size: 42px 42px; /* Grootte van het icoon */
-    background-color: none;
-    cursor: pointer; /* Hand-cursor bij hover */
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 32;
+  color:white;
+  font-size: 24pt!important;
 }
 
-#menuButton svg{
-  fill:white;
+.material-symbols-outlined:hover {
+  color:yellow;
 }
+
 
 #header nav a {
   -moz-transition: color 0.2s ease-in-out;
@@ -452,11 +464,15 @@ p {
     border-top-width: 0px;
     border-top-style: none;
     border-top-color: currentcolor;
-  border-top: solid 1px rgba(255, 255, 255, 0.25);
+  border-top: solid 0.5px white;
   color: inherit;
   display: block;
   line-height: 3.5em;
   text-decoration: none;
+}
+
+#menu > ul.links > li > a:hover{
+  color:yellow;
 }
 
 #header {
@@ -495,17 +511,17 @@ p {
 }
 
 .overlay h3 {
-  font-family: "Presti Deck Bold";
   font-size: 3rem;
-  margin-top: 10px;
-  background: none;
+  margin-top: 5px;
   display: inline-block;
-  color:black;
+  color:#202124;
   padding:10px;
   padding-left:15px;
   padding-right:15px;
   background-color: white;
+  opacity:70%;
   font-family:"Upgrade Regular", Fallback;
+  border-radius: 10px;
 }
 
 /* Animaties */
@@ -539,7 +555,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1200px; /* Optioneel: stel een maximale breedte in voor de footer */
+  max-width: 1800px; /* Optioneel: stel een maximale breedte in voor de footer */
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -548,7 +564,12 @@ p {
   height: 60px; /* Pas de hoogte van het logo aan */
 }
 
+.footer-links{
+  margin-right: 20px;
+}
+
 .footer-links ul {
+  font-family:"Upgrade Regular", Fallback;
   display: flex;
   list-style: none;
   padding: 0;
@@ -556,7 +577,7 @@ p {
 }
 
 .footer-links ul li {
-  margin-left: 20px;
+  margin-left: 30px;
 }
 
 .footer-links ul li a {
@@ -567,6 +588,7 @@ p {
 
 .footer-links ul li a:hover {
   text-decoration: underline; /* Voeg onderlijning toe bij hover */
+  color: red;
 }
 
 
@@ -575,7 +597,7 @@ p {
   margin-top: 10px; /* Voeg wat ruimte boven de knop toe */
   padding: 10px 20px; /* Voeg wat padding toe om de knop groter te maken */
   font-size: 1rem; /* Stel de tekstgrootte in */
-  color: white; /* Witte tekstkleur */
+   lor: white; /* Witte tekstkleur */
   border: none; /* Verwijder de rand */
   border-radius: 20px; /* Maak de hoeken van de knop afgerond */
   cursor: pointer; /* Verander de cursor naar een pointer bij hover */
@@ -618,7 +640,7 @@ p {
 }
 
 .type-tester__text {
-  padding-left:20px;  
+  padding-left:30px;  
 }
 
 .type-tester__features-button {
