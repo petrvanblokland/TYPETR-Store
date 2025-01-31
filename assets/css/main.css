@@ -271,6 +271,14 @@ body {
 
 }
 
+/* Info block types */
+div.promo {
+  background-color: red;
+}
+div.familyInfo {
+  background-color: yellow;
+}
+
 /* Responsieve media query voor tablets */
 @media screen and (max-width: 768px) {
   .fontSample {

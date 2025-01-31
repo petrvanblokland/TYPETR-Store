@@ -300,7 +300,92 @@ class Page(Element):
 
         self.html += f"""
         <div class="box">
-          <div class="fontSample">
+          <div class="fontSample promo">
+        """
+
+        if not imageRight:
+            self.html += f"""
+              <div class="{side2}" style="background-image: url('{image.path}'); background-size: cover;background-position: center">
+              </div> <!-- side -->
+            """
+        if 0 and not imageRight:
+            self.html += f"""
+              <div class="{side2}" width="500px" height="200px" style="overflow: hidden">
+                  <img src="{image.path}" width="100%" height="100%" style="object-fit: cover"/>
+              </div> <!-- side -->
+            """
+        self.html += f"""
+              <div class="{side1}">
+                <div class="text">
+                  <h2 style="font-family:{font.cssName} {style};{headSize}">{head}</h2>
+                  <h3 style="font-family:{font.cssName} {style};{subheadSize}">An awesome font{subhead}</h3>
+                  <p>{deck} {'aaaaaa<br>' * 10}</p>
+        """
+        if buyButton:
+            self.html += f"""<fontdue-buy-button collection-slug="{font.slug}"></fontdue-buy-button>"""
+        self.html += f"""
+                </div>
+              </div> <!-- side1 -->
+        """
+        if imageRight:
+            self.html += f"""
+              <div class="{side2}" style="background-image: url('{image.path}'); background-size: cover;background-position: center">
+              </div> <!-- side -->
+            """
+
+        if typeTester or characterViewer:
+            self.html += f"""
+                  <div class="fontdueBox" style="font-family:{font.familyName} {style}">
+                """
+            if typeTester:
+                self.html += f"""<fontdue-type-testers collection-slug="{font.slug}"></fontdue-type-testers>"""
+                if buyButton:
+                    self.html += f"""<fontdue-buy-button collection-slug="{font.slug}"></fontdue-buy-button>"""
+            if characterViewer:
+                self.html += f"""<fontdue-character-viewer collection-slug="{font.slug}"></fontdue-character-viewer>"""
+
+            self.html += """
+                </div> <!-- fontdue -->           
+            """
+
+        self.html += """
+          </div> <!-- fontSample -->
+        </div> <!-- box -->
+        """
+
+    def familyInfo(self, slug, imageRight=True, typeTester=False, buyButton=True, characterViewer=False, randomImage=True, style=None,
+            head=None, headSize=None, subhead=None, subheadSize=None, deck=None,):
+        if style is None:
+            style = 'Regular'
+        if slug not in self.site.fonts:
+            print('###### Cannot find slug', slug)
+            return
+
+        font = self.site.fonts[slug]
+        image = self.site.findPromoImage(font, doRandom=randomImage)
+
+        if head is None:
+            head = font.familyName
+        if headSize is not None:
+            headSize = f'font-size:{headSize};'
+        if subhead is None:
+            subhead = '###'
+        if subheadSize is not None:
+            subheadSize = f'font-size:{subheadSize};'
+        if deck is None:
+            deck = '@@@@@'
+
+        if imageRight:
+            side1 = 'left'
+            side2 = 'right'
+        else:
+            side1 = 'right'
+            side2 = 'left'
+
+
+        self.html += f"""
+        <div class="box">
+          <div class="fontSample familyInfo">
         """
 
         if not imageRight:
