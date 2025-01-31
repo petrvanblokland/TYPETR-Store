@@ -42,7 +42,7 @@ elif os.path.exists('/Users/petr'):
     MAMP_PATH = '/Users/petr/Sites/localhost/typetr' # Petr computer
 else:
     EXPORT_PATH = 'docs/'
-    MAMP_PATH = '/Users/jaspervanblokland/Sites/localhost/typetr' # Jasper computer
+    MAMP_PATH = '/Users/@@@Jouw folder naam her@@@' # Jasper computer
 
 IMAGES_EXT = ('.jpg', '.jpeg', '.png', '.gif')
 

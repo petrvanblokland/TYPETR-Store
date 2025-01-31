@@ -11,7 +11,7 @@ source venv/bin/activate
 
 pip install --upgrade pip
 
-pip install Pillow
+pip install pillow
 pip install numpy
 
 pip install git+https://github.com/typemytype/drawbot
