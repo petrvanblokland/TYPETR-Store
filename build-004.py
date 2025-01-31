@@ -17,6 +17,8 @@
 #   http://localhost/typetr/index.html
 #   https://petrvanblokland.github.io/TYPETR-Store/index.html
 #
+#   Content examples
+#   https://upgrade.typenetwork.com
 #
 import os, shutil, codecs
 import weakref
