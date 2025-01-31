@@ -275,6 +275,10 @@ class Page(Element):
             head=None, headSize=None, subhead=None, subheadSize=None, deck=None,):
         if style is None:
             style = 'Regular'
+        if slug not in self.site.fonts:
+            print('###### Cannot find slug', slug)
+            return
+
         font = self.site.fonts[slug]
         image = self.site.findPromoImage(font, doRandom=randomImage)
 
@@ -432,14 +436,16 @@ class Site:
                 Page('Contact', templateName='index'),
                 Page('TYPETR in use', templateName='index'),
 
-                Page('Presti', slug='tp-presti', templateName='index', collectionSlug='Presti Display'),
-                Page('Proforma', slug='tp-proforma', templateName='index'),
-                Page('Powerlift', slug='tp-powerlif', templateName='index'),
-                Page('Responder', slug='tp-responder-vf', templateName='index'),
-                Page('Upgrade', slug='tp-upgrade', templateName='index'),
-                Page('Upgrade Neon', templateName='index'),
-                Page('Upgrade Outline', templateName='index'),
+                Page('Presti', slug=TP_PRESTI, templateName='family', collectionSlug='Presti Display'),
+                Page('Proforma', slug=TP_PROFORMA, templateName='family'),
+                Page('Powerlift', slug=TP_POWERLIFT, templateName='family'),
+                Page('Responder', slug=TP_RESPONDER_P, templateName='family'),
+                Page('Upgrade', slug=TP_UPGRADE, templateName='family'),
+                
+                #Page('Upgrade Neon', slug='???????', templateName='family'),
+                #Page('Upgrade Outline', slug='???????', templateName='family'),
                 Page('About TYPETR', templateName='index'),
+
             ):
             self.pages.append(page)
             page.site = self # Make x-ref
