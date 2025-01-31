@@ -165,3 +165,7 @@ _local
 _images
 _docs
 .DS_Store
+—prompt*
+—prompt=TYPETR-Store*
+
+
