@@ -1,6 +1,13 @@
 @charset "UTF-8";
 @import url(fonts.css);
 
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
     margin: 0;
     padding: 0;
@@ -275,8 +282,10 @@ body {
 div.promo {
   background-color: red;
 }
-div.familyInfo {
+.familyInfo {
   background-color: yellow;
+  color:green!important;
+  border-bottom: solid 5px red;
 }
 
 /* Responsieve media query voor tablets */
@@ -700,4 +709,218 @@ p {
 
 .box:nth-child(2n+1) button:hover{
   color:white;
+}
+
+/* Family */
+
+<!-- Algemene reset -->
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hero Image */
+.hero-image {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    background-image: url('https://via.placeholder.com/1920x500');
+    background-size: cover;
+    background-position: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.hero-image-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Zorgt ervoor dat de afbeelding gecentreerd wordt */
+    width: 100%; /* Zorgt ervoor dat de afbeelding de breedte vult */
+    height: 100%; /* Zorgt ervoor dat de afbeelding de hoogte vult */
+    object-fit: cover; /* Zorgt ervoor dat de afbeelding wordt bijgesneden zonder vervorming */
+}
+
+/* De rest van de code blijft hetzelfde */
+.hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+}
+
+/* Three Columns (30%, 30%, 30%) */
+.three-columns {
+    display: flex;
+    background-color: #c6f6d5;
+    padding: 20px;
+    /* Verwijder de vaste hoogte, zodat kolommen zichzelf kunnen aanpassen */
+}
+
+.column {
+    background-color: #ffffff;
+    width: 30%;
+    padding: 10px;
+    text-align: left; /* Linkslijnende tekst voor de kolommen */
+    /* Verwijder hoogte-instellingen, zodat kolommen zich aan de inhoud aanpassen */
+}
+
+.heading {
+    font-size: 1.5rem;
+    font-weight: bold; /* Dikgedrukte koppen in de kolommen */
+}
+
+.text {
+    font-size: 1rem;
+}
+
+
+
+.cta-btn {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+/* Container Grid (vierkant masker) */
+.container-grid.square {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Drie kolommen */
+    gap: 10px;
+    background-color: #c6f6d5; /* Lichtgroene achtergrondkleur */
+    height: 200px;
+}
+
+.grid-item {
+    position: relative;
+    background-color: #ffffff;
+    overflow: hidden; /* Verbergt alles buiten het masker */
+}
+
+.image-overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; /* Horizontaal centreren */
+    align-items: center; /* Verticaal centreren */
+}
+
+.grid-item img {
+    width: 100%; /* Zorgt ervoor dat de afbeelding de breedte vult */
+    height: 100%; /* Zorgt ervoor dat de afbeelding de hoogte vult */
+    object-fit: cover; /* Zorgt ervoor dat de afbeelding wordt bijgesneden zonder vervorming */
+}
+
+.overlay-text {
+    position: absolute;
+    color: white;
+    font-size: 1.2rem;
+    background-color: rgba(0, 0, 0, 0.5); /* Lichte transparantie achtergrond voor de tekst */
+    padding: 10px;
+    text-align: center;
+}
+
+/* Cijferblok (horizontale lijst) */
+.number-block {
+    display: flex;
+    justify-content: space-between;
+    background-color: gray;
+    padding: 20px;
+}
+
+.number-item {
+    text-align: center;
+    background-color: #c6f6d5; /* Lichtgroene achtergrondkleur */
+    height: 200px;
+    width: 23%;
+    display: flex; /* Flexbox gebruiken om de inhoud te centreren */
+    flex-direction: column; /* Zorgt ervoor dat de inhoud verticaal gestapeld wordt */
+    justify-content: center; /* Verticaal centreren */
+    align-items: center; /* Horizontaal centreren */
+}
+
+.number-header {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px; /* Ruimte tussen de header en het cijfer */
+}
+
+.number-item .number {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.number-item .description {
+    font-size: 1rem;
+}
+
+/* Three Columns (30%, 30%, 30%) */
+.three-columns {
+    display: flex;
+    justify-content: space-between;
+    background-color: #c6f6d5;
+    padding: 20px;
+}
+
+.column {
+    background-color: #ffffff;
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+}
+
+.heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.text {
+    font-size: 1rem;
+}
+
+/* Two Columns (70%, 30%) */
+.two-columns-70 {
+    display: flex;
+    justify-content: space-between;
+    background-color: #c6f6d5; /* Lichtgroene achtergrondkleur */
+    padding: 20px;
+}
+
+.two-columns-70 .column {
+    background-color: #ffffff;
+    padding: 10px;
+    text-align: center;
+}
+
+.two-columns-70 .column:first-child {
+    width: 70%; /* Eerste kolom krijgt 70% breedte */
+}
+
+.two-columns-70 .column:last-child {
+    width: 30%; /* Tweede kolom krijgt 30% breedte */
+}
+
+.two-columns-70 .heading {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.two-columns-70 .text {
+    font-size: 1rem;
+}
+
+/* Animatie Fade-In */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
