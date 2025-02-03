@@ -372,10 +372,10 @@ h3 {
 }
 
 p {
-  font-size: 1.3rem; /* Standaard tekstgrootte */
+  font-size: 1.5rem; /* Standaard tekstgrootte */
   font-family:"Upgrade Regular", Fallback;
   color: black; /* Neutrale kleur */
-  line-height: 1.6; /* Betere leesbaarheid */
+  line-height: 1.7; /* Betere leesbaarheid */
   margin: 10px; /* Verwijder marges */
   margin-left:20px;
   display:inline-block;
@@ -629,7 +629,7 @@ p {
 }
 
 .fontdueBox{
-  background-color:#202124;
+  background-color:white;
   border-top: solid 1px white; 
   border-bottom: solid 1px white; 
   display: inline-block;
@@ -639,12 +639,10 @@ p {
 .type-tester{
   display: inline-block;
   border:none;
-  background-color:#202124;
-  color:white;
   width:100%;
   padding-top:1px;
   padding-bottom:10px;
-  margin-bottom:0px;
+  xtom:0px;
 }
 
 .type-tester:last-child {
@@ -662,12 +660,10 @@ p {
 
 .type-tester__features-button {
   padding-right: 30px;
-  color:white;
 }
 
 .type-tester__features-button__text {
   padding-left:30px;
-  color:white;
 }
 
 .type-tester__toolbar {
@@ -698,9 +694,7 @@ p {
 .buy-button:hover{
   border-radius: 10px;
   border: solid 1px white; 
-  background-color: #202124;
   font-weight: bold;
-  color:white;
 }
 
 .box:nth-child(2n+1) button{
@@ -755,35 +749,37 @@ p {
     border-radius: 5px;
 }
 
+.headerBox {
+    width: 100%; /* Volledige breedte van de browser */
+    box-sizing: border-box; /* Zorgt ervoor dat de padding binnen de breedte valt */
+    height:120px;
+}
+
 .section-header {
     font-size: 2rem;
     text-align: left;
-    margin: 10px 0;
     color: #333;
-    text-transform: uppercase;
     letter-spacing: 1px;
-    width: 100vw; /* Volle breedte van de viewport */
+    width:80%;
     background-color: #f8f8f8; /* Optionele achtergrondkleur */
     display: block;
-    margin-top: 20px; /* Zorgt ervoor dat de secties niet onder de navbar verdwijnen */
-    padding-left: 20px;
+    float: left;
+    margin-top: 10px; /* Zorgt ervoor dat de secties niet onder de navbar verdwijnen */
     font-family:"Upgrade Bold", Fallback;
+    float: left;
 }
 
 .sub-header {
     font-size: 1.8rem;
     text-align: left;
     color: #333;
-    text-transform: uppercase;
+    width:80%;
     letter-spacing: 1px;
-    width: 100vw; /* Volle breedte van de viewport */
+    float:left;
     background-color: #f8f8f8; /* Optionele achtergrondkleur */
     display: block;
-    padding-left: 20px;
     font-family:"Upgrade Light", Fallback;
 }
-
-
 
 /* Hero Image */
 .hero-image {
@@ -820,25 +816,15 @@ p {
 .three-columns {
     display: flex;
     background-color: #c6f6d5;
-    padding: 20px;
+    padding:0px;
     /* Verwijder de vaste hoogte, zodat kolommen zichzelf kunnen aanpassen */
 }
 
-.column {
-    background-color: #ffffff;
-    width: 30%;
-    padding: 10px;
-    text-align: left; /* Linkslijnende tekst voor de kolommen */
-    /* Verwijder hoogte-instellingen, zodat kolommen zich aan de inhoud aanpassen */
-}
+
 
 .heading {
     font-size: 1.5rem;
     font-weight: bold; /* Dikgedrukte koppen in de kolommen */
-}
-
-.text {
-    font-size: 1rem;
 }
 
 .cta-btn {
@@ -860,20 +846,12 @@ p {
     border: solid 1px white; 
 }
 
-.grid-item {
-    position: relative;
-    background-color: #ffffff;
-    overflow: hidden; /* Verbergt alles buiten het masker */
-    border: solid 1px white; 
-}
-
 .image-overlay {
     position: relative;
     width: 100%;
     height: 100%;
-    display: flex;
-    justify-content: center; /* Horizontaal centreren */
-    align-items: center; /* Verticaal centreren */
+    justify-content: center;
+    align-items: center;
 }
 
 .grid-item img {
@@ -912,7 +890,7 @@ p {
 .number-header {
     font-size: 1.2rem;
     font-weight: bold;
-    margin-bottom: 10px; /* Ruimte tussen de header en het cijfer */
+    margin-bottom: 0px; /* Ruimte tussen de header en het cijfer */
 }
 
 .number-item .number {
@@ -929,32 +907,50 @@ p {
     display: flex;
     justify-content: space-between;
     background-color: #f6f6f6;
-    padding:0px;
+    padding:none;
+    margin-bottom: 0px;
+    display: inline-block;
+    padding:;
+}
+
+.grid-item {
+  background-color: white;
+  float:left;
+  text-align: left;
+  margin:0px;
+  text-overflow: hidden;
+  text-align: left; /* Linkslijnende tekst voor de kolommen */
+  position: relative;
+  width: 100%; /* Zorgt ervoor dat het grid-item de breedte van zijn container aanneemt */
+  overflow: hidden; /* Zorgt ervoor dat alles buiten het vierkant wordt verborgen */
 }
 
 .column {
   background-color: white;
-  width: 33.3%;
+  width: 33.333333%;
   float:left;
   text-align: left;
-  margin:10px;
+  margin:0px;
   text-overflow: hidden;
-  border: solid 1px gray; 
+  border: solid 1px #e2e2e2; 
+  text-align: left; /* Linkslijnende tekst voor de kolommen */
 }
 
 .column h2 {
   display: inline-block;
   float: left;
   font-family:"Upgrade Medium", Fallback;
+  text-align: left;
 }
 
-.column p {
+.column h3 {
   display: inline-block;
   float: left;
   width:100%;
   font-family:"Upgrade Regular", Fallback;
   font-size: 30pt;
   line-height: 27pt;
+  text-align: left;
 }
 
 .def{
@@ -965,41 +961,35 @@ p {
     font-weight: bold;
 }
 
-.text {
-    font-size: 1rem;
-}
-
 /* Two Columns (70%, 30%) */
 .two-columns-70 {
     display: flex;
     justify-content: space-between;
     background-color: #c6f6d5; /* Lichtgroene achtergrondkleur */
-    padding: 20px;
+    padding: 1px;
 }
 
 .two-columns-70 .column {
     background-color: #ffffff;
-    padding: 10px;
-    text-align: center;
+    padding:0px;
 }
 
-.two-columns-70 .column:first-child {
-    width: 70%; /* Eerste kolom krijgt 70% breedte */
+.two-columns-70 .column img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Zorgt ervoor dat de afbeelding het vierkante gebied vult zonder te vervormen */
+    height: auto; /* Zorgt ervoor dat de beeldverhouding behouden blijft */
+    display: block; /* Voorkomt ongewenste witruimte onder de afbeelding */
 }
 
-.two-columns-70 .column:last-child {
-    width: 30%; /* Tweede kolom krijgt 30% breedte */
+.two-columns-70 .column {
+    width: 50%; /* Eerste kolom krijgt 70% breedte */
+    padding-left: 10px;
 }
 
-.two-columns-70 .heading {
-    font-size: 1.5rem;
-    font-weight: bold;
+.two-columns-70 .column p {
+    padding: 20px; 
 }
-
-.two-columns-70 .text {
-    font-size: 1rem;
-}
-
 
 /* Animatie Fade-In */
 @keyframes fadeIn {
@@ -1010,34 +1000,43 @@ p {
         opacity: 1;
     }
 }
+@media screen and (max-width: 800px) {
+  /* Maak de drie kolommen onder elkaar in plaats van naast elkaar */
+  .two-columns-70{
+    display: block; /* Zet de drie kolommen onder elkaar */
+    padding:0px;
+    height:100%;
+    text-align:left;
+  }
+
+  .two-columns-70 {
+    display: block; /* Zet de drie kolommen onder elkaar */
+    padding:0px; 
+  }
+
+  .two-columns-70 .column:first-child, .two-columns-70 .column:last-child {
+    width: 100%; /* Zorgt ervoor dat de kolommen de volledige breedte innemen */
+    margin-bottom:0px; /* Ruimte tussen de kolommen */
+    text-align: left; /* Optioneel, om tekst in het midden te plaatsen */
+  }
+}
 
 @media screen and (max-width: 1200px) {
   /* Maak de drie kolommen onder elkaar in plaats van naast elkaar */
   .three-columns, .container-grid.square, .number-block  {
     display: block; /* Zet de drie kolommen onder elkaar */
     padding:0px;
-    height:45%;
+    height:50%;
+    text-align:left; 
   }
 
   .three-columns, .container-grid.square, .number-block {
     display: block; /* Zet de drie kolommen onder elkaar */
-    padding:0px;
   }
 
   .column, .grid-item, .number-item {
-    width: 45%; /* Zorgt ervoor dat de kolommen de volledige breedte innemen */
-    margin-bottom: 20px; /* Ruimte tussen de kolommen */
-    text-align: center; /* Optioneel, om tekst in het midden te plaatsen */
-  }
-
-  /* Voor de twee kolommen met 70% en 30% */
-  .two-columns-70 {
-    display: block; /* Zet de twee kolommen onder elkaar */
-  }
-
-  .two-columns-70 .column {
-    width: 45%; /* Beide kolommen nemen de volledige breedte */
-    margin-bottom: 20px; /* Ruimte tussen de kolommen */
+    width: 50%; /* Zorgt ervoor dat de kolommen de volledige breedte innemen */
+    margin-bottom:0px; /* Ruimte tussen de kolommen */
   }
 }
 
@@ -1047,6 +1046,7 @@ p {
     display: block; /* Zet de drie kolommen onder elkaar */
     padding:0px;
     height:100%;
+    text-align:left;
   }
 
   .three-columns, .container-grid.square, .number-block {
@@ -1056,18 +1056,8 @@ p {
 
   .column, .grid-item, .number-item {
     width: 100%; /* Zorgt ervoor dat de kolommen de volledige breedte innemen */
-    margin-bottom: 20px; /* Ruimte tussen de kolommen */
-    text-align: center; /* Optioneel, om tekst in het midden te plaatsen */
-  }
-
-  /* Voor de twee kolommen met 70% en 30% */
-  .two-columns-70 {
-    display: block; /* Zet de twee kolommen onder elkaar */
-  }
-
-  .two-columns-70 .column {
-    width: 100%; /* Beide kolommen nemen de volledige breedte */
-    margin-bottom: 20px; /* Ruimte tussen de kolommen */
+    margin-bottom:0px; /* Ruimte tussen de kolommen */
+    text-align: left; /* Optioneel, om tekst in het midden te plaatsen */
   }
 }
 
@@ -1102,6 +1092,10 @@ p {
 
 .smcp{
   font-feature-settings: "smcp"
+}
+
+.zero{
+  font-feature-settings: "zero"
 }
 
 
