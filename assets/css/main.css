@@ -873,13 +873,31 @@ p {
 .number-block {
     display: flex;
     justify-content: space-between;
-    background-color: gray;
+    background-color: #202121;
     padding: 20px;
+    font-family:"Upgrade Bold", Fallback;
+    color:white;
+}   
+
+.number-header,
+.number,
+.description {
+  color:white;
+  padding:10px;
+}
+
+.number-header{
+  font-family:"Upgrade Regular", Fallback;
+}
+.number{
+  font-family:"Upgrade Bold", Fallback;  
+}
+.description {
+  font-family:"Upgrade Regular", Fallback;
 }
 
 .number-item {
     text-align: center;
-    background-color: #c6f6d5; /* Lichtgroene achtergrondkleur */
     width: 23%;
     display: flex; /* Flexbox gebruiken om de inhoud te centreren */
     flex-direction: column; /* Zorgt ervoor dat de inhoud verticaal gestapeld wordt */
@@ -889,7 +907,6 @@ p {
 
 .number-header {
     font-size: 1.2rem;
-    font-weight: bold;
     margin-bottom: 0px; /* Ruimte tussen de header en het cijfer */
 }
 
@@ -909,7 +926,6 @@ p {
     background-color: #f6f6f6;
     padding:none;
     margin-bottom: 0px;
-    display: inline-block;
     padding:;
 }
 
@@ -1023,18 +1039,18 @@ p {
 
 @media screen and (max-width: 1200px) {
   /* Maak de drie kolommen onder elkaar in plaats van naast elkaar */
-  .three-columns, .container-grid.square, .number-block  {
+  .three-columns, .container-grid.square {
     display: block; /* Zet de drie kolommen onder elkaar */
     padding:0px;
     height:50%;
     text-align:left; 
   }
 
-  .three-columns, .container-grid.square, .number-block {
+  .three-columns, .container-grid.square  {
     display: block; /* Zet de drie kolommen onder elkaar */
   }
 
-  .column, .grid-item, .number-item {
+  .column, .grid-item {
     width: 50%; /* Zorgt ervoor dat de kolommen de volledige breedte innemen */
     margin-bottom:0px; /* Ruimte tussen de kolommen */
   }
