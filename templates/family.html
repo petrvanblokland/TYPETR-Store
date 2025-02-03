@@ -83,9 +83,6 @@
 
     <!-- Family -->
 
-
-
-
 <!-- Hero Image -->
 <section class="hero-image">
     <img src="https://upgrade.typenetwork.com/images/glyphsbyweights.png" alt="Image 1" class="hero-image-img">
@@ -96,7 +93,115 @@
     </div>
 </section>
 
+<nav class="navbar">
+    <ul>
+        <li><a href="#info">Styles & axes</a></li>
+        <li><a href="#columns">Features</a></li>
+        <li><a href="#grid">Afbeelding Raster</a></li>
+        <li><a href="#stats">Statistieken</a></li>
+    </ul>
+</nav>
+
+<!-- Two Columns (70%, 30%) -->
+<h2 id="axes" class="section-header">Styles & axes</h2>
+<section class="two-columns-70">
+    <div class="column">
+        <h2 class="heading">Titel van de Eerste Kolom</h2>
+        <p class="text">Gerrit Noordzij’s cube is based on a merger of expansion contrast (sharp-nib pencil) and translation contrast (broad-nib pencil). The type of contrast used in Upgrade is based on translation, with little difference between vertical thick and horizontal thin strokes. The animation (based on software by Just van Rossum’s Daily Drawbot) shows where the contrast principle of Upgrade is located in Noordzij’s cube. Upgrade styles shown in this example are Light, Book, Regular, Semibold, and Black.</p>
+    </div>
+    <div class="column">
+        <img src="https://upgrade.typenetwork.com/images/NoordzijCube-test-x-1000MMTranspUpgrade.gif" alt="Image 1">
+    </div>
+</section>
+
+<!-- Three Columns (30%, 30%, 30%) -->
+<h2 id="Features" class="section-header">Upgrade features</h2>
+<h3 id="Features" class="sub-header">The Upgrade family implements an extended OpenType feature set</h3>
+<section class="three-columns">
+    <div class="column">
+        <h2 class="heading">CSS ligatures [liga]</h2>
+        <p class="text def">file, fjord, flow, loft</p>
+        <p class="text liga">file, fjord, flow, loft</p>
+    </div>
+    <div class="column">
+        <h2 class="heading">CSS fractions [frac]</h2>
+        <p class="text def">1/2 1/3 1/4 1/5 234/567</p>
+        <p class="text frac">1/2 1/3 1/4 1/5 234/567</p>
+    </div>
+    <div class="column">
+        <h2 class="heading">CSS tabular figures [tnum]</h2>
+        <p class="text def">0123456789</p>
+        <p class="text tnum">0123456789</p>
+    </div>
+</section>
+<section class="three-columns">
+    <div class="column">
+        <h2 class="heading">CSS oldstyle figures [onum]</h2>
+        <p class="text def">0123456789</p>
+        <p class="text onum">0123456789</p>
+    </div>
+    <div class="column">
+        <h2 class="heading">CSS superior figures [sups]</h2>
+        <p class="text def">0123456789</p>
+        <p class="text sups">0123456789</p>
+    </div>
+    <div class="column">
+        <h2 class="heading">CSS inferior figures [sinf]</h2>
+        <p class="text def">0123456789</p>
+        <p class="text sinf">0123456789</p>
+    </div>
+</section>
+<section class="three-columns">
+    <div class="column">
+        <h2 class="heading">CSS superior lowercase [sups]</h2>
+        <p class="text def">AaBbCcDdEeFfGgHhIiJj</p>
+        <p class="text sups">AaBbCcDdEeFfGgHhIiJj</p>
+    </div>
+    <div class="column">
+        <h2 class="heading">CSS inferior lowercase [sinf]</h2>
+        <p class="text def">AaBbCcDdEeFfGgHhIiJj</p>
+        <p class="text sinf">AaBbCcDdEeFfGgHhIiJ.</p>
+    </div>
+    <div class="column">
+        <h2 class="heading">CSS caps to small caps [c2sc]</h2>
+        <p class="text def">Design is detail management</p>
+        <p class="text c2sc">Design is detail management</p>
+    </div>
+</section>
+<section class="three-columns">
+    <div class="column">
+        <h2 class="heading">CSS lowercase to small caps [smcp]</h2>
+        <p class="text def">Design is detail management</p>
+        <p class="text smcp">Design is detail management</p>
+    </div>
+    <div class="column">
+        <h2 class="heading">CSS caps to small caps [c2sc] + [smcp]</h2>
+        <p class="text def">Design is detail management</p>
+        <p class="text c2sc smcp">Design is detail management</p>
+    </div>
+</section>
 <!-- Container Grid (vierkant masker) -->
+<h2 id="grid" class="section-header">Usage</h2>
+<section class="container-grid square">
+    <div class="grid-item">
+        <div class="image-overlay">
+            <img src="https://upgrade.typenetwork.com/images/glyphsbyweights.png" alt="Image 1">
+            <div class="overlay-text">Tekst Overlay 1</div>
+        </div>
+    </div>
+    <div class="grid-item">
+        <div class="image-overlay">
+            <img src="https://upgrade.typenetwork.com/images/glyphsbyweights.png" alt="Image 2">
+            <div class="overlay-text">Tekst Overlay 2</div>
+        </div>
+    </div>
+    <div class="grid-item">
+        <div class="image-overlay">
+            <img src="https://upgrade.typenetwork.com/images/glyphsbyweights.png" alt="Image 3">
+            <div class="overlay-text">Tekst Overlay 3</div>
+        </div>
+    </div>
+</section>
 <section class="container-grid square">
     <div class="grid-item">
         <div class="image-overlay">
@@ -119,6 +224,7 @@
 </section>
 
 <!-- Cijferblok (horizontale lijst) -->
+<h2 id="stats" class="section-header">Stats</h2>
 <section class="number-block">
     <div class="number-item">
         <h3 class="number-header">Aantal Verkopen</h3>
@@ -139,33 +245,6 @@
         <h3 class="number-header">Aantal Projecten</h3>
         <div class="number">50</div>
         <div class="description">Projecten</div>
-    </div>
-</section>
-<!-- Three Columns (30%, 30%, 30%) -->
-<section class="three-columns">
-    <div class="column">
-        <h2 class="heading">Kolom 1</h2>
-        <p class="text">During this monthlong course, type designers learn from scratch how to script micro and macro tasks during their type-design process. In a series of short specific assignments that are closely related to their daily tasks (if possible), designers learn to recognize patterns that can be automated, breaking them down into existing functions and ones that need to be developed.</p>
-    </div>
-    <div class="column">
-        <h2 class="heading">Kolom 2</h2>
-        <p class="text">During this monthlong course, type designers learn from scratch how to script micro and macro tasks during their type-design process. In a series of short specific assignments that are closely related to their daily tasks (if possible), designers learn to recognize patterns that can be automated, breaking them down into existing functions and ones that need to be developed.</p>
-    </div>
-    <div class="column">
-        <h2 class="heading">Kolom 3</h2>
-        <p class="text">During this monthlong course, type designers learn from scratch how to script micro and macro tasks during their type-design process. In a series of short specific assignments that are closely related to their daily tasks (if possible), designers learn to recognize patterns that can be automated, breaking them down into existing functions and ones that need to be developed.</p>
-    </div>
-</section>
-
-<!-- Two Columns (70%, 30%) -->
-<section class="two-columns-70">
-    <div class="column">
-        <h2 class="heading">Titel van de Eerste Kolom</h2>
-        <p class="text">During this monthlong course, type designers learn from scratch how to script micro and macro tasks during their type-design process. In a series of short specific assignments that are closely related to their daily tasks (if possible), designers learn to recognize patterns that can be automated, breaking them down into existing functions and ones that need to be developed.</p>
-    </div>
-    <div class="column">
-        <h2 class="heading">Titel van de Tweede Kolom</h2>
-        <p class="text">During this monthlong course, type designers learn from scratch how to script micro and macro tasks during their type-design process. In a series of short specific assignments that are closely related to their daily tasks (if possible), designers learn to recognize patterns that can be automated, breaking them down into existing functions and ones that need to be developed.</p>
     </div>
 </section>
 
