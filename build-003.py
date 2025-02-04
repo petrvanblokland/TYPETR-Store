@@ -35,14 +35,14 @@ for year in range(2018, 2026):
     IMAGES_PATHS.append(f'{IMAGES_PATH}{year}/')
 
 if os.path.exists('_docs/'):
-    EXPORT_PATH = '_docs/' # Jasper computer
+    EXPORT_PATH = '_docs/x' # Jasper computer
     MAMP_PATH = '/Applications/MAMP/htdocs/typetr'
 elif os.path.exists('/Users/petr'):
     EXPORT_PATH = 'docs/'
     MAMP_PATH = '/Users/petr/Sites/localhost/typetr' # Petr computer
 else:
     EXPORT_PATH = 'docs/'
-    MAMP_PATH = '/Users/@@@Jouw folder naam her@@@' # Jasper computer
+    MAMP_PATH = '/Users/jaspervanblokland/Sites/localhost/typetr' # Jasper computer
 
 IMAGES_EXT = ('.jpg', '.jpeg', '.png', '.gif')
 
