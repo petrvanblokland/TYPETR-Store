@@ -299,7 +299,6 @@ class Page(Element):
             side1 = 'right'
             side2 = 'left'
 
-
         self.html += f"""
         <div class="box">
           <div class="fontSample promo">

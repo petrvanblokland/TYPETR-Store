@@ -14,7 +14,7 @@ body {
 }
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
-    font-size: 100%;
+    font-size: 16pt;
     vertical-align: baseline;
     letter-spacing: 1pt;
     font-feature-settings: "kern" 1, "clig" 1;
@@ -324,150 +324,6 @@ div.text {
 }
 
 
-/* TYPOGRAPHY */
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: normal; /* Verwijder eventueel standaard vetgedrukte stijl */
-  margin-top: 0;   /* Verwijder de marge boven de kop */
-  margin-bottom: 10px; /* Pas de marge onder de koppen aan naar wens */
-}
-
-/* Specifieke stijlen voor h1 */
-h1 {
-  font-size: 5rem; /* 40px bij standaard lettergrootte */
-  text-transform: uppercase; /* Hoofdletters voor een sterkere uitstraling */
-  font-family:"Upgrade Bold", Fallback;
-  text-align: center; /* Centreer de hoofdheader */
-  color:white;
-}
-
-div.header h1 {
-  font-family: "Presti Deck Regular";
-  font-style: bold;
-  font-weight: 400;
-  font-size: 5em;
-  color: #202124;
-  padding:10px;
-  padding-left:0px;
-  padding-right:0px;
-  background-color: white;
-  opacity: 80%;
-  margin-bottom: 10px;
-  border-radius: 10px;
-}
-
-h2 {
-  font-size: 3rem; /* 32px */
-  line-height: 1em;
-  font-family:"Upgrade Bold", Fallback;
-  color: black;
-  text-align: left;
-  float: left;
-  margin:0px;
-  margin-top: 10px; /* Zorgt ervoor dat de secties niet onder de navbar verdwijnen */
-  display: block;
-  width:100vw;
-  letter-spacing: 1px;
-  padding-left:20px;
-  padding-top:10px;
-}
-
-h2.sub{
-  color:white;
-  text-align: center;
-}
-
-h2.topic{
-  font-size: 2rem;
-  text-align: left;
-}
-
-/* Specifieke stijlen voor h3 */
-h3 {
-  font-size: 2.5rem;
-  line-height: 1em;
-  font-family:"Upgrade Light", Fallback;
-  color: black;
-  text-align: left;
-  float: left;
-  margin:0px;
-  margin-top: 10px; /* Zorgt ervoor dat de secties niet onder de navbar verdwijnen */
-  display: block;
-  width:100vw;
-  letter-spacing: 1px;
-  padding-left:20px;
-  padding-top:5px;
-}
-
-
-/* Specifieke stijlen voor h4 */
-h4 {
-  font-size: 2.2rem;
-  line-height: 1em;
-  font-family:"Upgrade Bold", Fallback;
-  color: black;
-  text-align: left;
-  float: left;
-  margin-top: 10px; /* Zorgt ervoor dat de secties niet onder de navbar verdwijnen */
-  display: block;
-  width:100%;
-  letter-spacing: 1px;
-  padding-left:20px;
-  padding-top:20px;
-  padding-bottom:5px;
-}
-
-/* Specifieke stijlen voor h5 */
-h5 {
-  font-size: 2.2rem;
-  line-height: 1em;
-  font-family:"Upgrade Regular", Fallback;
-  color: black;
-  text-align: left;
-  margin-top: 10px; /* Zorgt ervoor dat de secties niet onder de navbar verdwijnen */
-  letter-spacing: 1px;
-  padding-left:20px;
-}
-
-/* Specifieke stijlen voor h6 */
-h6 {
-  font-size: 1rem; /* 16px */
-  font-weight: normal;
-  color: #888;
-  font-style: italic;
-  letter-spacing: 0.05em;
-  text-align: left;
-}
-
-/* Paragraaf stijlen */
-p {
-  font-family:"Upgrade Regular", Fallback;
-  font-size: 1.7rem; /* 16px, basisgrootte */
-  line-height: 3rem;
-  color: #333;
-  word-wrap: break-word; 
-  display:inline-block;
-  padding:20px;
-}
-
-p.summary {
-    color: #666;
-    text-align: center;
-    font-size: 2rem;
-    line-height: 2.8rem;
-}
-
-p.topic {
-  font-family:"Upgrade Regular", Fallback;
-  font-size: 1.3rem; /* 16px, basisgrootte */
-  line-height: 1.8rem;
-  color: #333;
-  word-wrap: break-word; 
-  display:inline-block;
-  padding-left:20px;
-  padding-top:0px;
-}
-
 
 /* Styling voor een p in een apart blok (zoals een blockquote) */
 blockquote p {
@@ -488,67 +344,6 @@ blockquote p {
   h1 {
     font-size: 4rem; /* Iets kleiner voor betere leesbaarheid */
   }
-}
-
-.header {
-  position: relative;
-  width: 100%;
-  height: 100vh; /* Volledige schermhoogte */
-  overflow: hidden;
-  border-bottom: solid 1px #202124;
-}
-
-/* Slideshow styling */
-/* Slideshow Header */
-.header {
-  position: relative;
-  width: 100%;
-  height: 500px; /* Vaste hoogte ingesteld */
-  overflow: hidden;
-}
-
-.slideshow {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%; /* Vul de hoogte van de header */
-  display: flex;
-  animation: slideShow 25s infinite;
-}
-
-/* Standaard stijlen voor de slides */
-.slideshow-content {
-  display: flex;
-  transition: transform 0.5s ease-in-out;
-}
-
-/* Pijlen voor navigatie */
-.slideshow-arrow {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 50px;
-  height: 50px;
-  background-color: #202124;
-  opacity:50%;
-  color: white;
-  font-size: 24px;
-  border: none;
-  cursor: pointer;
-  z-index: 10;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 40%;
-}
-
-.slideshow-arrow.left {
-  left: 20px;
-}
-
-.slideshow-arrow.right {
-  right: 20px;
 }
 
 #menuButton{
@@ -602,9 +397,15 @@ blockquote p {
 }
 
 #header {
+  width: 100%;
+  position: fixed;
+  top:0px;
+  z-index: 1000;
   text-align: left;
   border-bottom: solid 1px white;
   animation: fadeIn 2s ease-in-out;
+  box-shadow: 0 -20px 20px rgba(0, 0, 0, 0.3), /* Bovenschaduw */
+              0 20px 20px rgba(0, 0, 0, 0.3);  /* Onderschaduw */
 }
 
 .slide {
@@ -860,47 +661,18 @@ blockquote p {
 }
 
 .headerBox {
-    width: 100vw; /* Volledige breedte van de browser */
-    box-sizing: border-box; /* Zorgt ervoor dat de padding binnen de breedte valt */
-}
-
-/* Hero Image */
-.hero-image {
-    position: relative;
-    width: 100%;
-    height: 700px;
-    background-image: url('https://via.placeholder.com/1920x500');
-    background-size: cover;
-    background-position: center;
-    animation: fadeIn 2s ease-in-out;
-}
-
-.hero-image-img {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%); /* Zorgt ervoor dat de afbeelding gecentreerd wordt */
-    width: 100%; /* Zorgt ervoor dat de afbeelding de breedte vult */
-    height: 100%; /* Zorgt ervoor dat de afbeelding de hoogte vult */
-    object-fit: cover; /* Zorgt ervoor dat de afbeelding wordt bijgesneden zonder vervorming */
-}
-
-/* De rest van de code blijft hetzelfde */
-.hero-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-align: center;
+    width: 100vw; 
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 /* Three Columns (30%, 30%, 30%) */
 .three-columns {
     display: flex;
     background-color: #c6f6d5;
-    padding:0px;
-    /* Verwijder de vaste hoogte, zodat kolommen zichzelf kunnen aanpassen */
 }
 
 .cta-btn {
@@ -921,28 +693,189 @@ blockquote p {
     height: 400px;
 }
 
-.image-overlay {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-}
-
 .grid-item img {
     width: 100%; /* Zorgt ervoor dat de afbeelding de breedte vult */
     height: 100%; /* Zorgt ervoor dat de afbeelding de hoogte vult */
     object-fit: cover; /* Zorgt ervoor dat de afbeelding wordt bijgesneden zonder vervorming */
 }
 
-.overlay-text {
-    position: absolute;
-    color: white;
-    font-size: 1.2rem;
-    background-color: rgba(0, 0, 0, 0.5); /* Lichte transparantie achtergrond voor de tekst */
-    padding: 10px;
-    text-align: center;
+.headerBox, .two-columns-70, .three-columns, .number-block, .topic-block, .container-grid .square, .summary {
+    width: 100%; /* De container  neemt 100% van de breedte van de pagina in beslag */
+    max-width: 1200px; /* De inhoud wordt niet breder dan 1200px */   
+    display: flex;
+    margin: 0 auto;      
+    animation: fadeIn 2s ease-in;
 }
+
+.summary {
+    background: white;
+    padding: 20px;
+    max-width: 1200px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* TYPOGRAPHY */
+
+h1, h2, h3, h4, h5, h6, p, figcaption {
+  font-family: "Upgrade", Fallback;
+  margin-top: 0; 
+  margin-bottom: 10px; 
+}
+
+h1, h2 {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+}
+
+h1 {
+  font-size: 5em; 
+  font-weight: 800; 
+  text-align: center;
+  color:white;
+  text-transform: uppercase; 
+}
+
+h2 {
+  font-size: 3em; /* 32px */
+  line-height: 1em;
+  font-weight: 500; 
+  margin:0px;
+  margin-top: 10px; 
+  display: block;
+  letter-spacing: 1px;
+}
+
+h2.sub{
+  color:white;
+  text-align: center;
+}
+
+h2.topic{
+  font-size: 2rem;
+  text-align: left;
+}
+
+h3 {
+  font-size: 2.5em;
+  line-height: 1em;
+  font-weight: 700; 
+  color: black;
+  text-align: left;
+  float: left;
+  margin:0px;
+  margin-top: 10px; 
+  display: block;
+  width:100vw;
+  letter-spacing: 1px;
+  padding-top:5px;
+}
+
+h3.sub{
+  font-size: 1.8em;
+  font-weight: 500; 
+}
+
+h4 {
+  font-size: 2em;
+  line-height: 1em;
+  font-weight: 500; 
+  color: black;
+  text-align: left;
+  float: left;
+  margin-top: 10px;
+  display: block;
+  width:100%;
+  letter-spacing: 1px;
+}
+
+h5 {
+  font-size: 1.2rem;
+  line-height: 1em;
+  font-weight: 500; 
+  color: black;
+  text-align: left;
+  margin-top: 10px; 
+  letter-spacing: 1px;
+}
+
+h6 {
+  font-size: 1.7rem;
+  font-weight: 400; 
+  color: #888;
+  font-style: italic;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+
+p, figcaption {
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  font-size: 1.1em; 
+  line-height: 1.5em;
+  color: #474747;
+  word-wrap: break-word; 
+  display:inline-block;
+  margin-top: 20px;
+}
+
+p.summary {
+    color: #474747;
+    font-weight: 400;
+    text-align: center;
+    font-size: 2rem;
+    line-height: 2.8rem;
+}
+
+figcaption{
+  font-size: 0.8em; 
+  line-height: 1.7em;  
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* RESPONSIVE TYPOGRAPHY */
+
+@media screen and (max-width: 1000px) {
+  h1 { font-size: 4.5rem;}
+  h2 { font-size: 3rem;}
+  h3 { font-size: 2.5rem;}
+  h4 { font-size: 2.2rem;}
+  h5 { font-size: 2.5rem;}
+  h6 { font-size: 1rem;}
+  p { font-size: 1.7rem;}
+}
+
+@media screen and (max-width: 900px) {
+  h1 { font-size: 4.2rem;}
+  h2 { font-size: 2.8rem;}
+  h3 { font-size: 2.5rem;}
+  h4 { font-size: 2.2rem;}
+  h5 { font-size: 2.5rem;}
+  h6 { font-size: 1rem;}
+  p { font-size: 1.7rem;}
+}
+
+@media screen and (max-width: 750px) {
+  h1 {font-size: 4rem;}
+  h2 { font-size: 2.5rem;}
+  h3 { font-size: 2.5rem;}
+  h4 { font-size: 2.2rem;}
+  h5 { font-size: 2.5rem;}
+  h6 { font-size: 1rem;}
+  p { font-size: 1.7rem;}
+}
+
+@media screen and (max-width: 600px) {
+  h1 {font-size: 3.9rem;}
+  h2 { font-size: 2.3rem;}
+  h3 { font-size: 2.5rem;}
+  h4 { font-size: 2.2rem;}
+  h5 { font-size: 2.5rem;}
+  h6 { font-size: 1rem;}
+  p { font-size: 1.7rem;}
+}
+
+/* PARALLAX */
 
 .parallax {
   margin: 0;
@@ -959,6 +892,91 @@ blockquote p {
   overflow-x: hidden;
 }
 
+/* COLUMS */
+
+.one-colum, .two-colum, .three-colum, .four-colum, .five-colum.square,
+.one-colum-flex, .two-colum-flex, .three-colum-flex, .four-colum-flex, .five-colum-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%;
+  margin: 0 auto
+}
+
+.one-colum, .two-colum, .three-colum, .four-colum, .five-colum {
+  max-width: 1200px;
+}
+
+.flex {
+  max-width: 100%;  
+}
+
+.one-item, .two-items, .three-items, .four-items, .five-items {
+  box-sizing: border-box;
+  float:left;
+}
+
+.flex-item{
+  width:200px;
+}
+
+.one-item {
+    width:100%;
+}
+
+.two-items {
+    width:50%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.three-items {
+    width:33.333%;
+}
+
+.four-items {
+    width:25%;
+}
+
+.five-items {
+    width:20%;
+}
+
+/* RESPONSIVE COLUMS */
+
+@media screen and (max-width: 1000px) {
+  .five-items{width:25%;}
+  .five-items:nth-child(5):has(.image-block) {display:none;}
+}
+
+@media screen and (max-width: 900px) {
+  .four-items{width:50%;}
+  .five-items{width:33.333%;}
+  .five-items:nth-child(4):has(.image-block) {display:none;}
+  .five-items:nth-child(5):has(.image-block) {display:none;}
+}
+
+@media screen and (max-width: 750px) {
+  .three-items{width:50%;}
+  .three-items:nth-child(3):has(.image-block) {display:none;}
+  .four-items{width:50%;}
+  .five-items{width:50%;}
+  .five-items:nth-child(4):has(.image-block) {display:block;}
+  .five-items:nth-child(5):has(.image-block) {display:none;}
+}
+
+@media screen and (max-width: 600px) {
+  .two-items{width:100%;}
+  .three-items{width:100%;}
+  .three-items:nth-child(3):has(.image-block) {display:block;}
+  .four-items{width:100%;}
+  .five-items{width:100%;}
+  .five-items:nth-child(5):has(.image-block) {display:block;}
+}
+
+/* BLOCKS */
+
 .block{
   width: 100vw;
   margin-top: 100px;
@@ -970,35 +988,247 @@ blockquote p {
   border-bottom: solid 0.5px white; 
 }
 
-.darkblock{
-   background-color: white;
+.dark{
    background-color: #202121; 
-  box-shadow: 0 -20px 20px rgba(0, 0, 0, 0.3), /* Bovenschaduw */
-              0 20px 20px rgba(0, 0, 0, 0.3);  /* Onderschaduw */
+}
+
+/* COMPONENTS */
+
+.tile {
+  border: solid 0.5px gray;
+  height: 100%;
+  padding:10px;
+}
+
+.article { 
+  width: 80%;
+  border-top: solid 1px gray;
+  margin: 20px auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media screen and (max-width: 1000px) {
+  .article { 
+    width: 100%;
+  }
+}
+
+.article-plus { 
+  border-top: solid 1px gray;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.flex {
+  width:100%;
+}
+
+.flex img {
+  max-width: 100%; /* Zorgt ervoor dat de afbeelding zich schaalt */
+  height: auto; /* Behoudt de aspect-ratio */
 }
 
 .firstblock{
-  margin-top: 0px;
+  margin-top:60px;
 }
 
 .lastblock{
   margin-bottom: 0px;
 }
 
-.headerBox, .two-columns-70, .three-columns, .number-block, .topic-block, .container-grid .square, .summary {
-    width: 100%; /* De container  neemt 100% van de breedte van de pagina in beslag */
-    max-width: 1500px; /* De inhoud wordt niet breder dan 1200px */   
-    display: flex;
-    margin: 0 auto;      
-    animation: fadeIn 2s ease-in;
+.flux{
+margin-left: 30%;
 }
 
-.summary {
-    background: white;
-    padding: 20px;
-    max-width: 1200px;
+.rot{
+  padding-top: 30px;
+  margin-left: 10%;
+}
+
+.image-block {
+    width: 100%;
+}
+
+.image-block img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.topic {
+  margin: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: solid 1px #757575; 
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.topic-block {
+    background-color: white;
+    paddin-top: 20px;
+    paddin-bottom: 20px;
+    font-family:"Upgrade Bold", Fallback;
+    color:white;
+}   
+
+.topic-item {
+    text-align: left;
+    width: 25%;
+    border: 1px solid #757575;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding:10px;
+}
+
+.topic-img {
+    width: 100%; 
+    height: 160px; 
+    object-fit: cover;
+    padding-bottom:15px ;
+}
+
+/* TOP */
+
+.header, 
+.hero-image{ 
+    position: relative;
+    width: 100%;
+    height: 700px;
+    animation: fadeIn 2s ease-in-out;
+}
+/* SLIDESHOW */
+
+.header {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-bottom: solid 1px #202124;
+}
+
+.slideshow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Vul de hoogte van de header */
+  display: flex;
+  animation: slideShow 25s infinite;
+}
+
+.slideshow-content {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slideshow-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 50px;
+  height: 50px;
+  background-color: #202124;
+  opacity:50%;
+  color: white;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 40%;
+}
+
+.slideshow-arrow.left {
+  left: 20px;
+}
+
+.slideshow-arrow.right {
+  right: 20px;
+}
+
+/* HERO OVERLAY */
+.hero-image {
+    background-image: url('https://via.placeholder.com/1920x500');
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-image-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Zorgt ervoor dat de afbeelding gecentreerd wordt */
+    width: 100%; /* Zorgt ervoor dat de afbeelding de breedte vult */
+    height: 100%; /* Zorgt ervoor dat de afbeelding de hoogte vult */
+    object-fit: cover; /* Zorgt ervoor dat de afbeelding wordt bijgesneden zonder vervorming */
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
     text-align: center;
-    border-radius: 10px;
+}
+
+.overlay-text {
+    position: absolute;
+    color: white;
+    font-size: 1.2rem;
+    background-color: rgba(0, 0, 0, 0.5); /* Lichte transparantie achtergrond voor de tekst */
+    padding: 10px;
+    text-align: center;
+}
+
+.image-overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* FONT FEATURES */
+
+.liga{
+  font-feature-settings: "liga"
+}
+
+.frac{
+  font-feature-settings: "frac"
+}
+
+.tnum{
+  font-feature-settings: "tnum"
+}
+
+.onum{
+  font-feature-settings: "onum"
+}
+
+.sups{
+  font-feature-settings: "sups"
+}
+
+.sinf{
+  font-feature-settings: "sinf"
+}
+
+.c2sc{
+  font-feature-settings: "c2sc"
+}
+
+.smcp{
+  font-feature-settings: "smcp"
+}
+
+.zero{
+  font-feature-settings: "zero"
 }
 
 /* Numbers */
@@ -1019,29 +1249,6 @@ blockquote p {
     flex-direction: column; /* Zorgt ervoor dat de inhoud verticaal gestapeld wordt */
     justify-content: center; /* Verticaal centreren */
     align-items: center; /* Horizontaal centreren */
-}
-
-.topic-block {
-    background-color: white;
-    paddin-top: 20px;
-    paddin-bottom: 20px;
-    font-family:"Upgrade Bold", Fallback;
-    color:white;
-}   
-
-.topic-item {
-    text-align: left;
-    width: 25%;
-    border: 1px solid black; /* Zwarte rand om elk item */
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding:10px;
-}
-
-.topic-img {
-    width: 100%; /* Volledige breedte van de div */
-    height: 160px; /* Hoogte van het masker */
-    object-fit: cover; /* Snijdt de afbeelding bij */
 }
 
 .number-header,
