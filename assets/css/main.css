@@ -110,7 +110,7 @@ body {
 
         #menu > ul.links > li {
           padding: 0;
-          font-family:"Upgrade Regular", Fallback;
+          font-family:"Upgrade Regular";
         }
 
         #menu > ul.links > li:hover {
@@ -448,7 +448,7 @@ blockquote p {
   padding-right:15px;
   background-color: white;
   opacity:70%;
-  font-family:"Upgrade Regular", Fallback;
+  font-family:"Upgrade Regular";
   border-radius: 10px;
 }
 
@@ -497,7 +497,7 @@ blockquote p {
 }
 
 .footer-links ul {
-  font-family:"Upgrade Regular", Fallback;
+  font-family:"Upgrade Regular";
   display: flex;
   list-style: none;
   padding: 0;
@@ -531,7 +531,7 @@ blockquote p {
   cursor: pointer; /* Verander de cursor naar een pointer bij hover */
   text-align: center; /* Centreer de tekst */
   width: auto;
-  font-weight: 600;
+  font-family:"Upgrade Bold";
   letter-spacing: 1pt;
 }
 
@@ -578,7 +578,7 @@ blockquote p {
 }
 
 .type-tester__toolbar {
-  font-family:"Upgrade Regular", Fallback;
+  font-family:"Upgrade Regular";
 }
 
 .type-tester__features-button button{
@@ -593,7 +593,7 @@ blockquote p {
   margin-top: 0px;
   margin-left:20px;
   margin:20px;
-  font-family:"Upgrade Regular", Fallback;
+  font-family:"Upgrade Regular";
   font-size: 14pt;
   padding-right:20px;
   padding-left:20px;
@@ -605,7 +605,7 @@ blockquote p {
 .buy-button:hover{
   border-radius: 10px;
   border: solid 1px white; 
-  font-weight: bold;
+  font-family:"Upgrade Bold";
 }
 
 .box:nth-child(2n+1) button{
@@ -719,7 +719,6 @@ blockquote p {
 /* TYPOGRAPHY */
 
 h1, h2, h3, h4, h5, h6, p, figcaption {
-  font-family: "Upgrade", Fallback;
   margin-top: 0; 
   margin-bottom: 10px; 
 }
@@ -730,7 +729,8 @@ h1, h2 {
 
 h1 {
   font-size: 5em; 
-  font-weight: 800; 
+  font-family:"Upgrade";
+  font-weight:Black;
   text-align: center;
   color:white;
   text-transform: uppercase; 
@@ -739,7 +739,8 @@ h1 {
 h2 {
   font-size: 3em; /* 32px */
   line-height: 1em;
-  font-weight: 500; 
+  font-family:"Upgrade";
+  font-weight:Bold;
   margin:0px;
   margin-top: 10px; 
   display: block;
@@ -759,7 +760,8 @@ h2.topic{
 h3 {
   font-size: 2.5em;
   line-height: 1em;
-  font-weight: 700; 
+  font-family:"Upgrade";
+  font-weight:Ultra Black;
   color: black;
   text-align: left;
   float: left;
@@ -773,13 +775,15 @@ h3 {
 
 h3.sub{
   font-size: 1.8em;
-  font-weight: 500; 
+  font-family:"Upgrade";
+  font-weight:Bold;
 }
 
 h4 {
   font-size: 2em;
   line-height: 1em;
-  font-weight: 500; 
+  font-family:"Upgrade";
+  font-weight:Bold;
   color: black;
   text-align: left;
   float: left;
@@ -792,7 +796,8 @@ h4 {
 h5 {
   font-size: 1.2rem;
   line-height: 1.3em;
-  font-weight: 500; 
+  font-family:"Upgrade";
+  font-weight:Bold;
   color: black;
   text-align: left;
   margin-top: 10px; 
@@ -801,7 +806,8 @@ h5 {
 
 h6 {
   font-size: 1.7rem;
-  font-weight: 400; 
+  font-family:"Upgrade";
+  font-weight:Bold;
   color: #888;
   font-style: italic;
   letter-spacing: 0.05em;
@@ -809,7 +815,8 @@ h6 {
 }
 
 p, figcaption {
-  font-weight: 400;
+  font-family:"Upgrade";
+  font-weight:Regular;
   letter-spacing: 0.02em;
   font-size: 1.1em; 
   line-height: 1.5em;
@@ -820,11 +827,12 @@ p, figcaption {
 }
 
 p.summary {
-    color: #474747;
-    font-weight: 400;
-    text-align: center;
-    font-size: 2rem;
-    line-height: 2.8rem;
+  color: #474747;
+  font-family:"Upgrade";
+  font-weight:Regular;
+  text-align: center;
+  font-size: 2rem;
+  line-height: 2.8rem;
 }
 
 figcaption{
@@ -1139,7 +1147,7 @@ figcaption{
     background-color: white;
     paddin-top: 20px;
     paddin-bottom: 20px;
-    font-family:"Upgrade Bold", Fallback;
+    font-family:"Upgrade Bold";
     color:white;
 }   
 
@@ -1307,7 +1315,7 @@ figcaption{
     justify-content: space-between;
     background-color: #202121;
     padding: 20px;
-    font-family:"Upgrade Bold", Fallback;
+    font-family:"Upgrade Bold";
     color:white;
 }   
 
@@ -1328,13 +1336,13 @@ figcaption{
 }
 
 .number-header{
-  font-family:"Upgrade Regular", Fallback;
+  font-family:"Upgrade Regular";
 }
 .number{
-  font-family:"Upgrade Bold", Fallback;  
+  font-family:"Upgrade Bold";  
 }
 .description {
-  font-family:"Upgrade Regular", Fallback;
+  font-family:"Upgrade Regular";
 }
 
 .number-header {
@@ -1345,7 +1353,7 @@ figcaption{
 
 .number-item .number {
     font-size: 2rem;
-    font-weight: bold;
+    font-family:"Upgrade Regular";
     text-align: center;
 }
 
@@ -1394,7 +1402,7 @@ figcaption{
 .column h2 {
   display: inline-block;
   float: left;
-  font-family:"Upgrade Medium", Fallback;
+  font-family:"Upgrade Medium";
   text-align: left;
 }
 
@@ -1402,7 +1410,7 @@ figcaption{
   display: inline-block;
   float: left;
   width:100%;
-  font-family:"Upgrade Regular", Fallback;
+  font-family:"Upgrade Regular";
   font-size: 30pt;
   line-height: 27pt;
   text-align: left;
@@ -1413,7 +1421,7 @@ figcaption{
 }
 
 .heading {
-    font-family:"Upgrade Bold", Fallback;
+    font-family:"Upgrade Bold";
     color:white;
     font-size: 4em;
 }
