@@ -41,7 +41,7 @@ if os.path.exists('/Users/jaspervanblokland'):
     MAMP_PATH = '/Applications/MAMP/htdocs/typetr'
 elif os.path.exists('/Users/petr'):
     EXPORT_PATH = 'docs/'
-    MAMP_PATH = '/Users/petr/Sites/localhost/typetr' # Petr computer
+    MAMP_PATH = '/Users/petr/Sites/localhost/typetr/' # Petr computer
 
 IMAGES_EXT = ('.jpg', '.jpeg', '.png', '.gif')
 
@@ -592,9 +592,8 @@ if MAMP_PATH is not None:
     mampPath = MAMP_PATH #+ site.id
     if os.path.exists(mampPath):
         print('... Remove old site at', mampPath)
-        os.system("rm  -r  /Applications/MAMP/htdocs/typetr")
+        os.system(f"rm  -r  {MAMP_PATH}") #/Applications/MAMP/htdocs/typetr")
     shutil.copytree(EXPORT_PATH, mampPath)
-    #website.export(mampPath)
 
     # Open the local website on docs/, assuming that MAMP is running
     os.system(u'/usr/bin/open %s/%s' % (site.url, site.id))
