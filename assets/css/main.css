@@ -50,6 +50,16 @@ body {
     -webkit-text-size-adjust: none;
 }
 
+hr {
+  border: none;
+  height: 1px;
+  width:80%;
+  background: gray;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom:0px;
+}
+
 ::-moz-selection { /* Code for Firefox */
   color: #202124;
   background-color: yellow;
@@ -791,6 +801,7 @@ h4 {
   display: block;
   width:100%;
   letter-spacing: 1px;
+  position: sticky;
 }
 
 h5 {
@@ -871,11 +882,12 @@ figcaption{
   h2 { font-size: 2.1rem;}
   h3 { font-size: 2.5rem;}
   h4 { font-size: 1.7rem;}
-  h5 { font-size: 2.5rem;}
+  h5 { font-size: 1.7rem;}
   h6 { font-size: 1rem;}
   p.summary { font-size: 1.4rem; line-height:1.4; }
   p { font-size: 1rem;}
 }
+
 
 /* PARALLAX */
 
@@ -898,28 +910,55 @@ figcaption{
 
 .one-colum, .two-colum, .three-colum, .four-colum, .five-colum, .six-colum,
 .one-colum-flex, .two-colum-flex, .three-colum-flex, .four-colum-flex, .five-colum-flex, .six-colum-flex {
-  display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
   width: 100%;
-  margin: 0 auto
+  margin: 0 auto;
 }
 
-.one-colum, .two-colum, .three-colum, .four-colum, .five-colum, .six-colum {
+@media screen and (min-width: 600px) {
+  .one-colum, .two-colum, .three-colum, .four-colum, .five-colum, .six-colum,
+  .one-colum-flex, .two-colum-flex, .three-colum-flex, .four-colum-flex, .five-colum-flex, .six-colum-flex {
+    display: flex;
+  }
+}
+
+.one-colum, .two-colum, .container, .three-colum, .four-colum, .five-colum, .six-colum {
   max-width: 1200px;
-  display: flex;
 }
 
 .flex {
   max-width: 100%;  
 }
 
+.container {
+  display: flex;
+  margin: 0 auto;
+  width:100vw;
+  box-sizing: border-box;
+}
+
+.column {
+  flex: 1;
+  background-color: lightgray;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  border: solid 1px gray; 
+}
+
 .one-item-flex, .two-items-flex, .three-items-flex, .four-items-flex, .five-items-flex, .six-items-flex,
 .one-item, .two-items, .three-items, .four-items, .five-items, .six-items {
   box-sizing: border-box;
   float:left;
-  display: flex;
+}
+
+@media screen and (min-width: 600px) {
+  .one-item-flex, .two-items-flex, .three-items-flex, .four-items-flex, .five-items-flex, .six-items-flex,
+  .one-item, .two-items, .three-items, .four-items, .five-items, .six-items {
+    flex:1;
+  }
 }
 
 .flex-item{
@@ -935,7 +974,6 @@ figcaption{
 .two-items, .two-items-flex {
     width:50%;
     display: flex;
-    flex: 1;
 }
 
 .three-items, .three-items-flex {
@@ -952,21 +990,6 @@ figcaption{
 
 .six-items, .six-items-flex {
     width:16.6%;
-}
-
-.container {
-  display: flex;
-  gap: 20px; /* Ruimte tussen kolommen */
-  margin: 0 auto;
-  width:100vw;
-  box-sizing: border-box;
-}
-
-.column {
-    flex: 1;
-    background-color: lightgray;
-    padding: 20px;
-    padding-right: 0px;
 }
 
 /* RESPONSIVE COLUMS */
@@ -1028,7 +1051,6 @@ figcaption{
   .two-items{width:100%;}
   .four-items{width:100%;}
 }
-
 
 /* BLOCKS */
 
@@ -1177,6 +1199,7 @@ figcaption{
 }
 
 .topic {
+  flex:1;
   margin: 10px;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -1236,6 +1259,14 @@ figcaption{
     height: 700px;
     animation: fadeIn 2s ease-in-out;
 }
+
+.hero-image-small{ 
+    position: relative;
+    width: 100%;
+    height: 400px;
+    animation: fadeIn 2s ease-in-out;
+}
+
 /* SLIDESHOW */
 
 .header {
@@ -1310,6 +1341,7 @@ figcaption{
     transform: translate(-50%, -50%);
     color: white;
     text-align: center;
+    width:100%;
 }
 
 .overlay-text {
@@ -1446,16 +1478,6 @@ figcaption{
   position: relative;
   width: 100%; /* Zorgt ervoor dat het grid-item de breedte van zijn container aanneemt */
   overflow: hidden; /* Zorgt ervoor dat alles buiten het vierkant wordt verborgen */
-}
-
-.column {
-  background-color: white;
-  width: 33.333333%;
-  float:left;
-  text-align: left;
-  margin:0px;
-  text-overflow: hidden;
-  text-align: left; /* Linkslijnende tekst voor de kolommen */
 }
 
 .column h2 {
