@@ -57,7 +57,7 @@ hr {
   background: gray;
   margin: 0 auto;
   margin-top: 20px;
-  margin-bottom:0px;
+  margin-bottom:40px;
 }
 
 ::-moz-selection { /* Code for Firefox */
@@ -834,15 +834,14 @@ p, figcaption {
   color: #474747;
   word-wrap: break-word; 
   display:inline-block;
-  margin-top: 20px;
 }
 
 p.summary {
-  color: #474747;
+  color: black;
   font-family:"Upgrade";
   font-weight:Regular;
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
   line-height: 2.8rem;
 }
 
@@ -928,24 +927,44 @@ figcaption{
   max-width: 1200px;
 }
 
+.container-flex {
+  max-width: 1700px;
+}
+
 .flex {
   max-width: 100%;  
 }
 
-.container {
+.container, .container-flex {
   display: flex;
   margin: 0 auto;
   width:100vw;
   box-sizing: border-box;
 }
 
-.column {
+.column, .column-flex {
   flex: 1;
-  background-color: lightgray;
+  border-radius: 10px;
+}
+
+.column {
   margin: 20px;
   padding: 20px;
-  border-radius: 10px;
-  border: solid 1px gray; 
+}
+
+.column, .column-flex {
+  margin: 0px;
+  padding: 0px;
+}
+
+.topic{
+    border: solid 1px gray; 
+}
+
+.column.topic img {
+  border-radius: 5px;
+  vertical-align: bottom;
+  display: inline-block;
 }
 
 .one-item-flex, .two-items-flex, .three-items-flex, .four-items-flex, .five-items-flex, .six-items-flex,
@@ -1064,7 +1083,6 @@ figcaption{
   border-top: solid 0.5px white; 
   border-bottom: solid 0.5px white; 
 }
-
 
 .scroll-section {
     position: relative;
