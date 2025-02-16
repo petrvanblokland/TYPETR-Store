@@ -923,9 +923,66 @@ figcaption{
   }
 }
 
-.one-colum, .two-colum, .container, .three-colum, .four-colum, .five-colum, .six-colum {
+.container,
+.one-colum, .two-colum, .three-colum, .four-colum, .five-colum, .six-colum {
   max-width: 1200px;
 }
+
+
+.container2, .container3, .container4 {
+  max-width: 1200px;
+}
+
+
+.container2, .container3, .container4 {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 100vw;
+  box-sizing: border-box;
+}
+
+.column2, .column3, .column4 {
+  flex: 1;
+  border-radius: 10px;
+} 
+
+.column2 {
+  background-color: red;
+}
+
+.column3 {
+  flex: 1 1 33.3%;
+}
+ 
+.column4 {
+  background-color: green;
+}
+
+@media (max-width: 480px) {
+  .container2, .container3, .container4 {
+    flex-direction: column;
+    align-items: center; 
+  }
+  .column2, .column3, .column4  {flex: 1 1 100%;}
+}
+
+@media (max-width: 768px) {
+  .column2 {flex: 1 1 100%;}
+  .column3 {flex: 1 1 100%;}
+}
+
+@media (max-width: 1024px) {
+  .column2 {flex: 1 1 50%;}
+  .column3 {flex: 1 1 50%;}
+}
+
+@media (min-width: 1024px) {
+  .column2 {flex: 1 1 50%;}
+  .column3 {flex: 1 1 33.3%;}
+}
+
 
 .container-flex {
   max-width: 1700px;
@@ -935,7 +992,8 @@ figcaption{
   max-width: 100%;  
 }
 
-.container, .container-flex {
+.container, 
+.container-flex {
   display: flex;
   margin: 0 auto;
   width:100vw;
@@ -945,23 +1003,13 @@ figcaption{
 .column, .column-flex {
   flex: 1;
   border-radius: 10px;
-}
-
-.column {
   margin: 20px;
   padding: 20px;
 }
 
-.column, .column-flex {
-  margin: 0px;
-  padding: 0px;
-}
 
-.topic{
-    border: solid 1px gray; 
-}
 
-.column.topic img {
+.column.topic img, .column2.topic img {
   border-radius: 5px;
   vertical-align: bottom;
   display: inline-block;
@@ -1114,7 +1162,7 @@ figcaption{
 /* COMPONENTS */
 
 .tile {
-  border: solid 0.5px gray;
+  border: solid 1px gray;
   height: 100%;
   padding:10px;
 }
@@ -1165,8 +1213,9 @@ figcaption{
 }
 
 .flux{
-  width: 60%;
+  width: 500px;
   margin-left: 200px;
+  float:right;
 }
 
 @media screen and (max-width: 1200px) {
@@ -1217,12 +1266,8 @@ figcaption{
 }
 
 .topic {
-  flex:1;
-  margin: 10px;
-  margin-top: 20px;
   margin-bottom: 20px;
-  border: solid 1px #757575; 
-  border-radius: 10px;
+  border: solid 1px gray; 
   padding: 20px;
 }
 
