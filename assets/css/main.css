@@ -67,9 +67,10 @@ h1, h2, h3, h4, h5, h6, p, figcaption {
   margin-bottom: 10px; 
 }
 
-h1, h2 {
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+h1, h2, h2.sub {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
 }
+
 
 h1 {
   font-size: 5em; 
@@ -89,6 +90,11 @@ h2 {
   margin-top: 10px; 
   display: block;
   letter-spacing: 1px;
+}
+
+.fontSample h2 {
+  text-shadow: none; 
+  color:black;
 }
 
 h2.sub{
@@ -124,7 +130,7 @@ h3.sub{
 }
 
 h4 {
-  font-size: 2em;
+  font-size: 1.6em;
   line-height: 1em;
   font-family:"Upgrade";
   font-weight:Bold;
@@ -132,6 +138,7 @@ h4 {
   text-align: left;
   float: left;
   margin-top: 10px;
+  padding-bottom: 10px;
   display: block;
   width:100%;
   letter-spacing: 1px;
@@ -186,17 +193,42 @@ figcaption{
   padding-right: 20px;
 }
 
+blockquote {
+  font-size: 1.25rem;
+  color: #444;
+  margin: 1rem 0;
+  padding-left: 1.5rem;
+  border-left: 4px solid #ddd;
+}
+
+.column h2 {
+  display: inline-block;
+  float: left;
+  font-family:"Upgrade Medium";
+  text-align: left;
+}
+
+.column h3 {
+  display: inline-block;
+  float: left;
+  width:100%;
+  font-family:"Upgrade Regular";
+  font-size: 30pt;
+  line-height: 27pt;
+  text-align: left;
+}
+
 /* RESPONSIVE TYPOGRAPHY */
 
 @media screen and (max-width: 1200px) {
   h1 { font-size: 4.5rem;}
   h2 { font-size: 3rem;}
   h3 { font-size: 2.5rem;}
-  h4 { font-size: 2.2rem;}
+  h4 { font-size: 1.6rem;}
   h5 { font-size: 2.5rem;}
   h6 { font-size: 1rem;}
   p.summary { font-size: 1.7rem; line-height:1.4; }
-  p { font-size: 1.7rem;}
+  p { font-size: 1.2rem;}
 }
 
 @media screen and (max-width: 1000px) {
@@ -309,11 +341,9 @@ figcaption{
 
 
 @media screen and (max-width: 736px) {
-
   #menu .close {
     height: 4em;
   }
-
 }
 
 /* LOGO */
@@ -434,19 +464,12 @@ figcaption{
 
 }
 
-/* Info block types */
-
-
-div.promo {
-  background-color: red;
-}
 .familyInfo {
   background-color: yellow;
   color:green!important;
   border-bottom: solid 5px red;
 }
 
-/* Responsieve media query voor tablets */
 @media screen and (max-width: 768px) {
   .fontSample {
     flex-direction: column; /* Schakel naar kolomlay-out */
@@ -478,28 +501,6 @@ div.text {
     padding:20px;
     margin:20px;
 }
-
-
-blockquote p {
-  font-size: 1.25rem;
-  color: #444;
-  margin: 1rem 0;
-  padding-left: 1.5rem;
-  border-left: 4px solid #ddd;
-}
-
-@media screen and (max-width: 800px) {
-  h1 {
-    font-size: 1rem; /* Nog kleiner voor kleinere schermen */
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  h1 {
-    font-size: 4rem; /* Iets kleiner voor betere leesbaarheid */
-  }
-}
-
 
 #menuButton{
   position: absolute;
@@ -625,22 +626,21 @@ blockquote p {
 
 /* Footer Styling */
 .footer {
-  background-color: black; /* Zwarte achtergrond voor de footer */
-  color: white; /* Witte tekst */
-  padding: 20px 0; /* Ruimte boven en onder de footer */
+  background-color: black;
+  color: white;
   position: relative;
   bottom: 0;
   width: 100%;
-  border-top: solid 1px white;
+  border-top: solid 0.5px white;
 }
 
 .footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1800px; /* Optioneel: stel een maximale breedte in voor de footer */
+  max-width: 1800px; 
   margin: 0 auto;
-  padding: 0 20px;
+  margin-right: 20px;
 }
 
 .footer-logo img {
@@ -665,9 +665,10 @@ blockquote p {
 .footer-links ul li a {
   color: white;
   text-decoration: none;
-  font-size: 1.1rem;
+  font-size: 1rem;
   font-family:"Upgrade";
   font-weight:Regular;
+  letter-spacing: 0.1em;
 }
 
 .footer-links ul li a:hover {
@@ -888,38 +889,16 @@ blockquote p {
 } 
 
 .column2 {
-  background-color: red;
 }
 
 .column3, .column3m {
   flex: 1 1 33.3%;
 }
  
-.column4, .column4m {
-  background-color: green;
+.column4 {
 }
 
-@media (max-width: 768px) {
-  .container-flex, .container2, .container3, .container4 {
-    flex-direction: column;
-    align-items: center; 
-  }
-  .column-flex {flex: 1 1 100%;}
-  .column2 {flex: 1 1 100%;}
-  .column3 {flex: 1 1 100%;}
-  .column3m {flex: 1 1 100%;}
-  .column4 {flex: 1 1 100%;}
-}
-
-@media (max-width: 1024px) {
-  .column-flex {flex: 1 1 50%;}
-  .column2 {flex: 1 1 50%;}
-  .column3 {flex: 1 1 50%;}
-  .column3m {flex: 1 1 100%;}
-  .column4 {flex: 1 1 50%;}
-}
-
-@media (min-width: 1024px) {
+@media screen and (min-width: 1200px) {
   .column-flex {flex: 1 1 50%;}
   .column2 {flex: 1 1 50%;}
   .column3 {flex: 1 1 33.3%;}
@@ -927,13 +906,30 @@ blockquote p {
   .column4 {flex: 1 1 25%;}
 }
 
+@media screen and (max-width: 1000px) {
+  .container-flex, .container2, .container3, .container4 {
+    flex-direction: column;
+    align-items: center; 
+  }
+  .column-flex {flex: 1 1 50%;}
+  .column2 {flex: 1 1 50%;}
+  .column3 {flex: 1 1 50%;}
+  .column3m {flex: 1 1 100%;}
+  .column4 {flex: 1 1 5 50%;}
+}
+
+@media screen and (max-width: 750px) {
+  .column-flex {flex: 1 1 100%;}
+  .column2 {flex: 1 1 100%;}
+  .column3 {flex: 1 1 100%;}
+  .column3m {flex: 1 1 100%;}
+  .column4 {flex: 1 1 100%;}
+}
+
 
 .flex {
   max-width: 100%;  
 }
-
-
-
 
 .column.topic img, .column2.topic img {
   border-radius: 5px;
@@ -947,7 +943,7 @@ blockquote p {
   float:left;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
   .one-item-flex, .two-items-flex, .three-items-flex, .four-items-flex, .five-items-flex, .six-items-flex,
   .one-item, .two-items, .three-items, .four-items, .five-items, .six-items {
     flex:1;
@@ -1030,21 +1026,6 @@ blockquote p {
   .six-items-flex:nth-child(6):has(.image-block) {display:block;}
 }
 
-/* RESPONSIVE COLUMS */
-
-@media screen and (max-width: 1200px) {
-  .four-items{width:50%;}
-}
-
-@media screen and (max-width: 1000px) {
-  .three-items{width:100%;}
-}
-
-@media screen and (max-width: 800px) {
-  .two-items{width:100%;}
-  .four-items{width:100%;}
-}
-
 /* BLOCKS */
 
 .block{
@@ -1057,6 +1038,23 @@ blockquote p {
   border-top: solid 0.5px white; 
   border-bottom: solid 0.5px white; 
 }
+
+@media screen and (min-width: 1200px) {
+  .block{background-color: white}
+}
+
+@media screen and (max-width: 1200px) {
+  .block{background-color: orange}
+}
+
+@media screen and (max-width: 1000px) {
+  .block{background-color: green}
+}
+
+@media screen and (max-width: 750px) {
+  .block{background-color: white}
+}
+
 
 .scroll-section {
     position: relative;
@@ -1085,10 +1083,28 @@ blockquote p {
    background-color: #202121; 
 }
 
-/* COMPONENTS */
+/* CODE */
+
+.css-code {
+    background: #eee;
+    border: solid 0.5px #eee;
+    padding: 10px;
+    font-size: 14px;
+    font-family: monospace;
+    border-radius: 5px;
+    text-align: left;
+    white-space: pre;
+    margin-top: 20px;
+}
+
+.css-code:hover {
+  border: solid 0.5px gray;
+}
+
+/* TILE */
 
 .tile {
-  border: solid 1px gray;
+  border: solid 0.5px gray;
   height: 100%;
   padding:10px;
 }
@@ -1126,22 +1142,37 @@ blockquote p {
 }
 
 .flex img {
-  max-width: 100%; /* Zorgt ervoor dat de afbeelding zich schaalt */
-  height: auto; /* Behoudt de aspect-ratio */
+  max-width: 100%; 
+  height: auto; 
+    width:100vw;
+}
+
+@media screen and (max-width: 1000px) {
+
 }
 
 .firstblock{
   margin-top:60px;
 }
 
+.firstblock:before{
+  box-shadow: inset 0px -30px 50px rgba(0, 0, 0, 0.2);
+}
+
 .lastblock{
   margin-bottom: 0px;
 }
+
+.lastblock:before{
+  box-shadow: inset 0px -30px 50px rgba(0, 0, 0, 0.2);
+}
+
 
 .flux{
   width: 500px;
   margin-left: 200px;
   float:right;
+  margin-right:50px;
 }
 
 @media screen and (max-width: 1200px) {
@@ -1152,13 +1183,26 @@ blockquote p {
 
 @media screen and (max-width: 1000px) {
   .flux{
-    margin-left: 10px;
+    margin-left:0px;
+    width:100vw;
+  }
+  .flux img {
+    display: block;
+    max-width: 100%;
+    width: auto;
+    margin: 0 auto;
   }
 }
 
 @media screen and (max-width: 750px) {
   .flux{
-    margin-left: 10px;
+    margin-left:0px;
+  }
+  .flux img {
+    display: block;
+    max-width: 100%;
+    width: auto;
+    margin: 0 auto;
   }
 }
 
@@ -1191,23 +1235,45 @@ blockquote p {
     display: block;
 }
 
+/* TOPIC */
+
 .topic {
   margin-bottom: 20px;
+  padding-bottom:20px;
+  border-radius: 10px;
   border: solid 1px gray; 
+}
+
+.text-block{
   padding: 20px;
 }
 
 @media screen and (max-width: 1200px) {
+  .topic{
+    margin-left:20px;
+    margin-right:20px;
+    padding:10px;
+  }
 }
 
 @media screen and (max-width: 1000px) {
+  .topic{
+    margin-left:10px;
+    margin-right:10px;
+    padding:10px;
+  }
+  .text-block{
+    padding: 20px;
+  }
 }
 
 @media screen and (max-width: 750px) {
   .topic{
-    margin: 0px;
-    padding:0px;
-    padding-bottom:20px;
+    margin-left:0px;
+    margin-right:0px;
+    padding:10px;
+    border:none;
+    border-top: solid 1px gray; 
     border-radius: 0px;
   }
   .text-block{
@@ -1254,7 +1320,30 @@ blockquote p {
     width: 100%;
     height: 400px;
     animation: fadeIn 2s ease-in-out;
+    box-shadow: inset 0px 40px 100px rgba(0,0,0,0.6);
 }
+
+.hero-image-small {
+    position: relative;
+    display: inline-block;
+    overflow: hidden; /* Zorgt ervoor dat de shadow niet buiten de div komt */
+    border-radius: 10px; /* Optioneel: voor afgeronde hoeken */
+}
+
+.hero-image-small::before {
+    content: "";
+    position: absolute;
+    inset: 0; /* Bedekt de gehele div */
+    box-shadow: inset 0px -30px 50px rgba(0, 0, 0, 0.2);
+    pointer-events: none;
+    z-index: 2;
+}
+
+.hero-image-img {
+    width: 100%;
+    display: block;
+}
+
 
 /* SLIDESHOW */
 
@@ -1309,6 +1398,7 @@ blockquote p {
 
 /* HERO OVERLAY */
 
+
 .hero-image {
     background-size: cover;
     background-position: center;
@@ -1333,7 +1423,7 @@ blockquote p {
     text-align: center;
     width:100%;
 }
-
+x
 .overlay-text {
     position: absolute;
     color: white;
@@ -1356,6 +1446,23 @@ blockquote p {
 
 .def{
   color:lightgray;
+}
+
+@media screen and (max-width: 1200px) {
+  .tile h5 {font-size: 1.2em}
+  .tile h6 {font-size: 2em}
+}
+
+
+@media screen and (max-width: 1000px) {
+  .tile h5 {font-size: 1em}
+  .tile h6 {font-size: 2em}
+}
+
+@media screen and (max-width: 750px) {
+  .tile{width:100vw}
+  .tile h5 {font-size: 1em}
+  .tile h6 {font-size: 2em;}
 }
 
 .liga{
@@ -1396,87 +1503,37 @@ blockquote p {
 
 /* NUMBERS */
 
-.number-block {
-    display: flex;
-    justify-content: space-between;
-    background-color: #202121;
-    padding: 20px;
-    font-family:"Upgrade Bold";
-    color:white;
-}   
-
-.number-item {
-    text-align: center;
-    width: 23%;
-    display: flex; /* Flexbox gebruiken om de inhoud te centreren */
-    flex-direction: column; /* Zorgt ervoor dat de inhoud verticaal gestapeld wordt */
-    justify-content: center; /* Verticaal centreren */
-    align-items: center; /* Horizontaal centreren */
-}
-
 .number-header,
 .number,
 .description {
   color:white;
-  padding:10px;
 }
 
 .number-header{
-  font-family:"Upgrade Regular";
 }
 .number{
-  font-family:"Upgrade Bold";  
 }
 .description {
-  font-family:"Upgrade Regular";
 }
 
 .number-header {
-    font-size: 1.2rem;
-    margin-bottom: 0px; /* Ruimte tussen de header en het cijfer */
-    text-align: center;
+  font-size: 1.2rem;
+  margin-bottom: 0px;
+  text-align: center;
 }
 
 .number-item .number {
-    font-size: 2rem;
-    font-family:"Upgrade Regular";
-    text-align: center;
+  font-size: 2rem;
+  font-family:"Upgrade Regular";
+  text-align: center;
 }
 
 
 .number-item .description {
-    font-size: 1rem;
-    text-align: center;
+  font-size: 1rem;
+  text-align: center;
 }
 
-.grid-item {
-  background-color: white;
-  float:left;
-  text-align: left;
-  margin:0px;
-  text-overflow: hidden;
-  text-align: left; /* Linkslijnende tekst voor de kolommen */
-  position: relative;
-  width: 100%; /* Zorgt ervoor dat het grid-item de breedte van zijn container aanneemt */
-  overflow: hidden; /* Zorgt ervoor dat alles buiten het vierkant wordt verborgen */
-}
-
-.column h2 {
-  display: inline-block;
-  float: left;
-  font-family:"Upgrade Medium";
-  text-align: left;
-}
-
-.column h3 {
-  display: inline-block;
-  float: left;
-  width:100%;
-  font-family:"Upgrade Regular";
-  font-size: 30pt;
-  line-height: 27pt;
-  text-align: left;
-}
 
 .heading {
     font-family:"Upgrade Bold";
