@@ -2,6 +2,8 @@
 @import url(fonts.css);
 
 
+/* GENERAL ATTRIBUTES */
+
 body {
     margin: 0;
     padding: 0;
@@ -60,6 +62,168 @@ hr {
   margin-bottom:40px;
 }
 
+h1, h2, h3, h4, h5, h6, p, figcaption {
+  margin-top: 0; 
+  margin-bottom: 10px; 
+}
+
+h1, h2 {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+}
+
+h1 {
+  font-size: 5em; 
+  font-family:"Upgrade";
+  font-weight:Black;
+  text-align: center;
+  color:white;
+  text-transform: uppercase; 
+}
+
+h2 {
+  font-size: 3em; /* 32px */
+  line-height: 1em;
+  font-family:"Upgrade";
+  font-weight:Bold;
+  margin:0px;
+  margin-top: 10px; 
+  display: block;
+  letter-spacing: 1px;
+}
+
+h2.sub{
+  color:white;
+  text-align: center;
+}
+
+h2.topic{
+  font-size: 2rem;
+  text-align: left;
+}
+
+h3 {
+  font-size: 2.5em;
+  line-height: 1em;
+  font-family:"Upgrade";
+  font-weight:Ultra Black;
+  color: black;
+  text-align: left;
+  float: left;
+  margin:0px;
+  margin-top: 10px; 
+  display: block;
+  width:100vw;
+  letter-spacing: 1px;
+  padding-top:5px;
+}
+
+h3.sub{
+  font-size: 1.8em;
+  font-family:"Upgrade";
+  font-weight:Bold;
+}
+
+h4 {
+  font-size: 2em;
+  line-height: 1em;
+  font-family:"Upgrade";
+  font-weight:Bold;
+  color: black;
+  text-align: left;
+  float: left;
+  margin-top: 10px;
+  display: block;
+  width:100%;
+  letter-spacing: 1px;
+  position: sticky;
+}
+
+h5 {
+  font-size: 1.2rem;
+  line-height: 1.3em;
+  font-family:"Upgrade";
+  font-weight:Bold;
+  color: black;
+  text-align: left;
+  margin-top: 10px; 
+  letter-spacing: 1px;
+}
+
+h6 {
+  font-size: 1.7rem;
+  font-family:"Upgrade";
+  font-weight:Bold;
+  color: #888;
+  font-style: italic;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+
+p, figcaption {
+  font-family:"Upgrade";
+  font-weight:Regular;
+  letter-spacing: 0.02em;
+  font-size: 1.1em; 
+  line-height: 1.5em;
+  color: #474747;
+  word-wrap: break-word; 
+  display:inline-block;
+}
+
+p.summary {
+  color: black;
+  font-family:"Upgrade";
+  font-weight:Regular;
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+
+figcaption{
+  font-size: 0.8em; 
+  line-height: 1.7em;  
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* RESPONSIVE TYPOGRAPHY */
+
+@media screen and (max-width: 1200px) {
+  h1 { font-size: 4.5rem;}
+  h2 { font-size: 3rem;}
+  h3 { font-size: 2.5rem;}
+  h4 { font-size: 2.2rem;}
+  h5 { font-size: 2.5rem;}
+  h6 { font-size: 1rem;}
+  p.summary { font-size: 1.7rem; line-height:1.4; }
+  p { font-size: 1.7rem;}
+}
+
+@media screen and (max-width: 1000px) {
+  h1 { font-size: 4.5rem;}
+  h2 { font-size: 3rem;}
+  h3 { font-size: 2.5rem;}
+  h4 { font-size: 2.2rem;}
+  h5 { font-size: 2.5rem;}
+  h6 { font-size: 1rem;}
+  p.summary { font-size: 1.7rem; line-height:1.4; }
+  p { font-size: 1rem;}
+}
+
+@media screen and (max-width: 750px) {
+  h1 {font-size: 2.8rem;}
+  h2 { font-size: 2.1rem;}
+  h3 { font-size: 2.5rem;}
+  h4 { font-size: 1.7rem;}
+  h5 { font-size: 1.7rem;}
+  h6 { font-size: 1rem;}
+  p.summary { font-size: 1.4rem; line-height:1.4; }
+  p { font-size: 1rem;}
+}
+
+
+/* SELECTION */
+
 ::-moz-selection { /* Code for Firefox */
   color: #202124;
   background-color: yellow;
@@ -70,8 +234,7 @@ hr {
   background-color: yellow;
 }
 
-/* Menu */
-/* Menu */
+/* MENU */
 
 #menu {
   -moz-transform: translateX(20em);
@@ -109,52 +272,52 @@ hr {
 }
 
 
-    #menu > ul {
-      margin: 0 0 1em 0;
-    }
+#menu > ul {
+  margin: 0 0 1em 0;
+}
 
-      #menu > ul.links {
-        list-style: none;
-        padding: 0;
-      }
+#menu > ul.links {
+  list-style: none;
+  padding: 0;
+}
 
-        #menu > ul.links > li {
-          padding: 0;
-          font-family:"Upgrade Regular";
-        }
+#menu > ul.links > li {
+  padding: 0;
+  font-family:"Upgrade Regular";
+}
 
-        #menu > ul.links > li:hover {
-          color:#202124;
-        }
+#menu > ul.links > li:hover {
+  color:#202124;
+}
 
-          #menu > ul.links > li > a:not(.button) {
-            border-top: solid 2px yellow;
-            color: inherit;
-            display: block;
-            line-height: 3.5em;
-            text-decoration: none;
-          }
+#menu > ul.links > li > a:not(.button) {
+  border-top: solid 2px yellow;
+  color: inherit;
+  display: block;
+  line-height: 3.5em;
+  text-decoration: none;
+}
 
-          #menu > ul.links > li > .button {
-            display: block;
-            margin: 0.5em 0 0 0;
-          }
+#menu > ul.links > li > .button {
+  display: block;
+  margin: 0.5em 0 0 0;
+}
 
-          #menu > ul.links > li:first-child > a:not(.button) {
-            border-top: 0 !important;
-          }
-
-
-      @media screen and (max-width: 736px) {
-
-        #menu .close {
-          height: 4em;
-        }
-
-      }
+#menu > ul.links > li:first-child > a:not(.button) {
+  border-top: 0 !important;
+}
 
 
-/* Layout stuff */
+@media screen and (max-width: 736px) {
+
+  #menu .close {
+    height: 4em;
+  }
+
+}
+
+/* LOGO */
+
 .logo {
     height: 60px; /* Stelt de hoogte van de logo in */
     background-color: black; /* Zwarte achtergrondkleur */
@@ -171,76 +334,9 @@ hr {
 }
 
 .box{
-  max-width: 100%; /* Max breedte voor grote schermen */
-}
-
-/* BOX */
-.box:nth-child(odd) {
-  background-color: #CCE6F4; /* Geel voor oneven elementen */
-}
-
-.box:nth-child(even) {
-  background-color: #E8F7CC; /* Rood voor even elementen */
-}
-
-/* FONTSAMPLE */
-.box:nth-child(odd) > .fontSample{
-  background-color: #99CEE9; /* Geel voor oneven elementen */
-}
-
-.box:nth-child(even) > .fontSample{
-  background-color: #D1EF99; /* Rood voor even elementen */
-}
-
-/* TEXT */
-.box:nth-child(odd) .text {
-    background-color: Cornflowerblue; /* Geel voor oneven .box */
-}
-
-.box:nth-child(even) .text {
-    background-color: Darkkhaki; /* Blauw voor even .box */
-}
-
-/* H2/H3 */
-.box:nth-child(odd) h2, .box:nth-child(odd) h3, .box:nth-child(odd) p {
-    color: Lavender; /* Geel voor oneven .box */
-}
-
-.box:nth-child(even) h2, .box:nth-child(even) h3, .box:nth-child(even) p {
-    color: Lightgoldenrodyellow; /* Blauw voor even .box */
-}
-
-/* read-more-btn */
-.box:nth-child(odd) .read-more-btn {
-    background-color: Skyblue; /* Geel voor oneven .box */
-}
-
-.box:nth-child(even) .read-more-btn {
-    background-color: Khaki; /* Blauw voor even .box */
-}
-
-.box:nth-child(odd) .read-more-btn:hover {
-    background-color: Darkcyan; /* Geel voor oneven .box */
-}
-
-.box:nth-child(even) .read-more-btn:hover {
-    background-color: Olive; /* Blauw voor even .box */
-}
-
-.box:nth-child(odd) button {
-    color: Darkcyan; /* Geel voor oneven .box */
-}
-
-.box:nth-child(even) button {
-    color: Olive; /* Blauw voor even .box */
-}
-
-.box:nth-child(odd) button:hover {
-    color: Skyblue; /* Geel voor oneven .box */
-}
-
-.box:nth-child(even) button:hover {
-    color: Khaki; /* Blauw voor even .box */
+  max-width: 100%; 
+  background-color: #CCE6F4; 
+  color: Lavender; 
 }
 
 .box h2:hover{
@@ -252,30 +348,78 @@ hr {
   margin-top:0px;
 }
 
+/* FONTDUE TYPETESTERE */
+
 .type-tester__slider__handle:hover {
   color: green;
 }
 
+.fontdueBox{
+  background-color:white;
+  border-top: solid 1px white; 
+  border-bottom: solid 1px white; 
+  display: inline-block;
+  width:100%;
+}
+
+.type-tester{
+  display: inline-block;
+  border:none;
+  width:100%;
+  padding-top:1px;
+  padding-bottom:10px;
+  xtom:0px;
+}
+
+.type-tester:last-child {
+  padding-bottom:20px;
+}
+
+.type-tester__toolbar{
+  padding-top:10px;
+  padding-left:30px;
+}
+
+.type-tester__text {
+  padding-left:30px;  
+}
+
+.type-tester__features-button {
+  padding-right: 30px;
+}
+
+.type-tester__features-button__text {
+  padding-left:30px;
+}
+
+.type-tester__toolbar {
+  font-family:"Upgrade Regular";
+}
+
+.type-tester__features-button button{
+  color:white;
+}
+
+/* FONTSAMPLE */
+
 .fontSample {
   display: flex;
-  flex-wrap: wrap; /* Laat flex-items wrappen op kleinere schermen */
+  flex-wrap: wrap;
   margin: 0 auto;
-  max-width: 1800px; /* Max breedte voor grote schermen */
+  max-width: 1800px;
 }
 
 .haeder{
     border-bottom: solid 1px #202124; 
 }
 
-/* Stijl voor de linkerkolom */
 .fontSample .left {
-  flex: 1; /* Gelijke breedte bij voldoende ruimte */
-  min-width: 300px; /* Minimale breedte van elk blok */
-  max-width: 50%; /* Maximaal de helft van de container */
+  flex: 1; 
+  min-width: 300px;
+  max-width: 50%;
   box-sizing: border-box;
 }
 
-/* Stijl voor de rechterkolom */
 .fontSample .right {
   flex: 1;
   min-width: 300px;
@@ -291,6 +435,8 @@ hr {
 }
 
 /* Info block types */
+
+
 div.promo {
   background-color: red;
 }
@@ -334,8 +480,6 @@ div.text {
 }
 
 
-
-/* Styling voor een p in een apart blok (zoals een blockquote) */
 blockquote p {
   font-size: 1.25rem;
   color: #444;
@@ -355,6 +499,7 @@ blockquote p {
     font-size: 4rem; /* Iets kleiner voor betere leesbaarheid */
   }
 }
+
 
 #menuButton{
   position: absolute;
@@ -507,7 +652,6 @@ blockquote p {
 }
 
 .footer-links ul {
-  font-family:"Upgrade Regular";
   display: flex;
   list-style: none;
   padding: 0;
@@ -522,6 +666,8 @@ blockquote p {
   color: white;
   text-decoration: none;
   font-size: 1.1rem;
+  font-family:"Upgrade";
+  font-weight:Regular;
 }
 
 .footer-links ul li a:hover {
@@ -531,7 +677,7 @@ blockquote p {
 
 
 .read-more-btn {
-  display: inline-block; /* Zorg ervoor dat de knop inline wordt weergegeven */
+  display: inline-block; 
   margin-top: 10px; /* Voeg wat ruimte boven de knop toe */
   padding: 10px 20px; /* Voeg wat padding toe om de knop groter te maken */
   font-size: 1rem; /* Stel de tekstgrootte in */
@@ -547,52 +693,6 @@ blockquote p {
 
 .read-more-btn:hover {
   background-color: #0056b3; /* Maak de achtergrondkleur donkerder bij hover */
-}
-
-.fontdueBox{
-  background-color:white;
-  border-top: solid 1px white; 
-  border-bottom: solid 1px white; 
-  display: inline-block;
-  width:100%;
-}
-
-.type-tester{
-  display: inline-block;
-  border:none;
-  width:100%;
-  padding-top:1px;
-  padding-bottom:10px;
-  xtom:0px;
-}
-
-.type-tester:last-child {
-  padding-bottom:20px;
-}
-
-.type-tester__toolbar{
-  padding-top:10px;
-  padding-left:30px;
-}
-
-.type-tester__text {
-  padding-left:30px;  
-}
-
-.type-tester__features-button {
-  padding-right: 30px;
-}
-
-.type-tester__features-button__text {
-  padding-left:30px;
-}
-
-.type-tester__toolbar {
-  font-family:"Upgrade Regular";
-}
-
-.type-tester__features-button button{
-  color:white;
 }
 
 .buy-button{
@@ -726,168 +826,6 @@ blockquote p {
     border-radius: 10px;
 }
 
-/* TYPOGRAPHY */
-
-h1, h2, h3, h4, h5, h6, p, figcaption {
-  margin-top: 0; 
-  margin-bottom: 10px; 
-}
-
-h1, h2 {
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
-}
-
-h1 {
-  font-size: 5em; 
-  font-family:"Upgrade";
-  font-weight:Black;
-  text-align: center;
-  color:white;
-  text-transform: uppercase; 
-}
-
-h2 {
-  font-size: 3em; /* 32px */
-  line-height: 1em;
-  font-family:"Upgrade";
-  font-weight:Bold;
-  margin:0px;
-  margin-top: 10px; 
-  display: block;
-  letter-spacing: 1px;
-}
-
-h2.sub{
-  color:white;
-  text-align: center;
-}
-
-h2.topic{
-  font-size: 2rem;
-  text-align: left;
-}
-
-h3 {
-  font-size: 2.5em;
-  line-height: 1em;
-  font-family:"Upgrade";
-  font-weight:Ultra Black;
-  color: black;
-  text-align: left;
-  float: left;
-  margin:0px;
-  margin-top: 10px; 
-  display: block;
-  width:100vw;
-  letter-spacing: 1px;
-  padding-top:5px;
-}
-
-h3.sub{
-  font-size: 1.8em;
-  font-family:"Upgrade";
-  font-weight:Bold;
-}
-
-h4 {
-  font-size: 2em;
-  line-height: 1em;
-  font-family:"Upgrade";
-  font-weight:Bold;
-  color: black;
-  text-align: left;
-  float: left;
-  margin-top: 10px;
-  display: block;
-  width:100%;
-  letter-spacing: 1px;
-  position: sticky;
-}
-
-h5 {
-  font-size: 1.2rem;
-  line-height: 1.3em;
-  font-family:"Upgrade";
-  font-weight:Bold;
-  color: black;
-  text-align: left;
-  margin-top: 10px; 
-  letter-spacing: 1px;
-}
-
-h6 {
-  font-size: 1.7rem;
-  font-family:"Upgrade";
-  font-weight:Bold;
-  color: #888;
-  font-style: italic;
-  letter-spacing: 0.05em;
-  text-align: left;
-}
-
-p, figcaption {
-  font-family:"Upgrade";
-  font-weight:Regular;
-  letter-spacing: 0.02em;
-  font-size: 1.1em; 
-  line-height: 1.5em;
-  color: #474747;
-  word-wrap: break-word; 
-  display:inline-block;
-}
-
-p.summary {
-  color: black;
-  font-family:"Upgrade";
-  font-weight:Regular;
-  text-align: center;
-  font-size: 1.8rem;
-  line-height: 2.8rem;
-}
-
-figcaption{
-  font-size: 0.8em; 
-  line-height: 1.7em;  
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-/* RESPONSIVE TYPOGRAPHY */
-
-@media screen and (max-width: 1200px) {
-  h1 { font-size: 4.5rem;}
-  h2 { font-size: 3rem;}
-  h3 { font-size: 2.5rem;}
-  h4 { font-size: 2.2rem;}
-  h5 { font-size: 2.5rem;}
-  h6 { font-size: 1rem;}
-  p { font-size: 1.7rem;}
-  p.summary { font-size: 1.7rem; line-height:1.4; }
-}
-
-@media screen and (max-width: 1000px) {
-  h1 { font-size: 4.5rem;}
-  h2 { font-size: 3rem;}
-  h3 { font-size: 2.5rem;}
-  h4 { font-size: 2.2rem;}
-  h5 { font-size: 2.5rem;}
-  h6 { font-size: 1rem;}
-  p { font-size: 1rem;}
-  p.summary { font-size: 1.7rem; line-height:1.4; }
-}
-
-@media screen and (max-width: 750px) {
-  h1 {font-size: 2.8rem;}
-  h2 { font-size: 2.1rem;}
-  h3 { font-size: 2.5rem;}
-  h4 { font-size: 1.7rem;}
-  h5 { font-size: 1.7rem;}
-  h6 { font-size: 1rem;}
-  p.summary { font-size: 1.4rem; line-height:1.4; }
-  p { font-size: 1rem;}
-}
-
-
 /* PARALLAX */
 
 .parallax {
@@ -928,14 +866,15 @@ figcaption{
   max-width: 1200px;
 }
 
+.container-flex {
+  max-width: 1700px;
+}
 
 .container2, .container3, .container4 {
   max-width: 1200px;
 }
 
-
-.container2, .container3, .container4 {
-  max-width: 1200px;
+.container-flex, .container2, .container3, .container4 {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
@@ -943,7 +882,7 @@ figcaption{
   box-sizing: border-box;
 }
 
-.column2, .column3, .column4 {
+.column-flex, .column2, .column3, .column3m, .column4 {
   flex: 1;
   border-radius: 10px;
 } 
@@ -952,60 +891,47 @@ figcaption{
   background-color: red;
 }
 
-.column3 {
+.column3, .column3m {
   flex: 1 1 33.3%;
 }
  
-.column4 {
+.column4, .column4m {
   background-color: green;
 }
 
-@media (max-width: 480px) {
-  .container2, .container3, .container4 {
+@media (max-width: 768px) {
+  .container-flex, .container2, .container3, .container4 {
     flex-direction: column;
     align-items: center; 
   }
-  .column2, .column3, .column4  {flex: 1 1 100%;}
-}
-
-@media (max-width: 768px) {
+  .column-flex {flex: 1 1 100%;}
   .column2 {flex: 1 1 100%;}
   .column3 {flex: 1 1 100%;}
+  .column3m {flex: 1 1 100%;}
+  .column4 {flex: 1 1 100%;}
 }
 
 @media (max-width: 1024px) {
+  .column-flex {flex: 1 1 50%;}
   .column2 {flex: 1 1 50%;}
   .column3 {flex: 1 1 50%;}
+  .column3m {flex: 1 1 100%;}
+  .column4 {flex: 1 1 50%;}
 }
 
 @media (min-width: 1024px) {
+  .column-flex {flex: 1 1 50%;}
   .column2 {flex: 1 1 50%;}
   .column3 {flex: 1 1 33.3%;}
+  .column3m {flex: 1 1 33.3%;}
+  .column4 {flex: 1 1 25%;}
 }
 
-
-.container-flex {
-  max-width: 1700px;
-}
 
 .flex {
   max-width: 100%;  
 }
 
-.container, 
-.container-flex {
-  display: flex;
-  margin: 0 auto;
-  width:100vw;
-  box-sizing: border-box;
-}
-
-.column, .column-flex {
-  flex: 1;
-  border-radius: 10px;
-  margin: 20px;
-  padding: 20px;
-}
 
 
 
@@ -1382,6 +1308,7 @@ figcaption{
 }
 
 /* HERO OVERLAY */
+
 .hero-image {
     background-size: cover;
     background-position: center;
@@ -1427,6 +1354,10 @@ figcaption{
 
 /* FONT FEATURES */
 
+.def{
+  color:lightgray;
+}
+
 .liga{
   font-feature-settings: "liga"
 }
@@ -1463,7 +1394,7 @@ figcaption{
   font-feature-settings: "zero"
 }
 
-/* Numbers */
+/* NUMBERS */
 
 .number-block {
     display: flex;
@@ -1518,19 +1449,6 @@ figcaption{
     text-align: center;
 }
 
-/* Three Columns (30%, 30%, 30%) */
-.three-columns {
-    display: flex;
-    justify-content: space-between;
-    background-color: #f6f6f6;
-    padding:none;
-    margin-bottom: 0px;
-}
-
-.three-columns:last-child {
-    padding-bottom:40px;
-}
-
 .grid-item {
   background-color: white;
   float:left;
@@ -1560,42 +1478,14 @@ figcaption{
   text-align: left;
 }
 
-.def{
-  color:lightgray;
-}
-
 .heading {
     font-family:"Upgrade Bold";
     color:white;
     font-size: 4em;
 }
 
-/* Two Columns (70%, 30%) */
-.two-columns-70 {
-    display: flex;
-    justify-content: space-between;
-    background-color: #c6f6d5; /* Lichtgroene achtergrondkleur */
-    padding: 1px;
-}
+/* ANIMATOE FADE IN */
 
-.two-columns-70 .column {
-    background-color: #ffffff;
-    padding:0px;
-}
-
-.two-columns-70 .column img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Zorgt ervoor dat de afbeelding het vierkante gebied vult zonder te vervormen */
-    height: auto; /* Zorgt ervoor dat de beeldverhouding behouden blijft */
-    display: block; /* Voorkomt ongewenste witruimte onder de afbeelding */
-}
-
-.two-columns-70 .column {
-    width: 50%; /* Eerste kolom krijgt 70% breedte */
-}
-
-/* Animatie Fade-In */
 @keyframes fadeIn {
     0% {
         opacity: 0;
@@ -1604,102 +1494,4 @@ figcaption{
         opacity: 1;
     }
 }
-@media screen and (max-width: 800px) {
-  /* Maak de drie kolommen onder elkaar in plaats van naast elkaar */
-  .two-columns-70{
-    display: block; /* Zet de drie kolommen onder elkaar */
-    padding:0px;
-    height:100%;
-    text-align:left;
-  }
-
-  .two-columns-70 {
-    display: block; /* Zet de drie kolommen onder elkaar */
-    padding:0px; 
-  }
-
-  .two-columns-70 .column:first-child, .two-columns-70 .column:last-child {
-    width: 100%; /* Zorgt ervoor dat de kolommen de volledige breedte innemen */
-    margin-bottom:0px; /* Ruimte tussen de kolommen */
-    text-align: left; /* Optioneel, om tekst in het midden te plaatsen */
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  /* Maak de drie kolommen onder elkaar in plaats van naast elkaar */
-  .three-columns, .container-grid.square, .topic-block {
-    display: block; /* Zet de drie kolommen onder elkaar */
-    padding:0px;
-    height:50%;
-    text-align:left; 
-  }
-
-  .three-columns, .container-grid.square, .topic-block  {
-    display: block; /* Zet de drie kolommen onder elkaar */
-  }
-
-  .column, .grid-item, .topic-item {
-    width: 50%; /* Zorgt ervoor dat de kolommen de volledige breedte innemen */
-    margin-bottom:0px; /* Ruimte tussen de kolommen */
-  }
-}
-
-@media screen and (max-width: 700px) {
-  /* Maak de drie kolommen onder elkaar in plaats van naast elkaar */
-  .three-columns, .container-grid.square, .number-block, .topic-block  {
-    display: block; /* Zet de drie kolommen onder elkaar */
-    padding:0px;
-    height:100%;
-    text-align:left;
-  }
-
-  .three-columns, .container-grid.square, .number-block, .topic-block {
-    display: block; /* Zet de drie kolommen onder elkaar */
-    padding:0px;
-  }
-
-  .column, .grid-item, .number-item .topic-item {
-    width: 100%; /* Zorgt ervoor dat de kolommen de volledige breedte innemen */
-    margin-bottom:0px; /* Ruimte tussen de kolommen */
-    text-align: left; /* Optioneel, om tekst in het midden te plaatsen */
-  }
-}
-
-
-.liga{
-  font-feature-settings: "liga"
-}
-
-.frac{
-  font-feature-settings: "frac"
-}
-
-.tnum{
-  font-feature-settings: "tnum"
-}
-
-.onum{
-  font-feature-settings: "onum"
-}
-
-.sups{
-  font-feature-settings: "sups"
-}
-
-.sinf{
-  font-feature-settings: "sinf"
-}
-
-.c2sc{
-  font-feature-settings: "c2sc"
-}
-
-.smcp{
-  font-feature-settings: "smcp"
-}
-
-.zero{
-  font-feature-settings: "zero"
-}
-
 
