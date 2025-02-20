@@ -53,7 +53,82 @@
           },
       },
     });
+
+      function smoothScroll(target) {
+      const headerHeight = document.getElementById('header').offsetHeight;
+      const offset = 60; // Extra ruimte boven de sectie
+      const targetPosition = document.getElementById(target).offsetTop - headerHeight - offset;
+      const startPosition = window.scrollY;
+      const distance = targetPosition - startPosition;
+      const duration = 6; // Animatietijd in ms
+      let startTime = null;
+
+      function animation(currentTime) {
+        if (startTime === null) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const run = ease(timeElapsed, startPosition, distance, duration);
+        window.scrollTo(0, run);
+
+        if (timeElapsed < duration) requestAnimationFrame(animation);
+      }
+
+      function ease(t, b, c, d) {
+        t /= d / 2;
+        if (t < 1) return (c / 2) * t * t + b;
+        t--;
+        return (-c / 2) * (t * (t - 2) - 1) + b;
+      }
+
+      requestAnimationFrame(animation);
+    }
+
+    document.querySelectorAll('.menu a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        smoothScroll(targetId);
+      });
+    });
   </script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", () => {
+      const counters = document.querySelectorAll('.counter');
+      const speed = 3000; // 60 seconden
+
+      const startCounting = (counter) => {
+          let count = 0;
+          const target = +counter.getAttribute('data-target');
+          const increment = target / (speed / 10); // Kleine stapjes
+
+          counter.style.opacity = 1; // Start de fade-in
+
+          const updateCount = () => {
+              if (count < target) {
+                  count += increment;
+                  counter.innerText = Math.ceil(count);
+                  setTimeout(updateCount, 10);
+              } else {
+                  counter.innerText = target;
+              }
+          };
+          updateCount();
+      };
+
+      const observer = new IntersectionObserver((entries, observer) => {
+          entries.forEach(entry => {
+              if (entry.isIntersecting) {
+                  startCounting(entry.target);
+                  observer.unobserve(entry.target);
+              }
+          });
+      }, { threshold: 1 });
+
+      counters.forEach(counter => {
+          observer.observe(counter);
+      });
+  });
+</script>
 
 </head>
   <body>
@@ -64,6 +139,15 @@
     <header id="header">
       <div class='logo'>
         <a class="logo" href='index.html'>{{logo}}</a>
+        <nav class="menu">
+          <ul>
+            <li><a href="#styles">Styles & axes</a></li>
+            <li><a href="#glyphs">Glyphs</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#making">Making</a></li>
+            <li><a href="#usage">Usage</a></li>
+          </ul>
+        </nav>
         <a id="menuButton" href="#menu"><span class="material-symbols-outlined">menu</span></a>
       </div>
     </header>
@@ -248,7 +332,7 @@
     </div>
 
 
-    <div class="block">  
+    <div class="block" id="About">  
       <!-- ARTICLE  1-->
       <div class="one-colum">  
         <div class="article">  
@@ -274,7 +358,7 @@
     </div>    
 
     <!-- TWO COLUMNS TOPICS -->
-    <div class="block">  
+    <div class="block" id="topics">  
       <div class="one-colum"> 
         <div class="one-item"> 
           <div class="headerBox">
@@ -323,7 +407,7 @@
     </div>
 
     <!-- TWO COLUMNS TOPICS -->
-    <div class="block">  
+    <div class="block" id="topics">  
       <div class="one-colum"> 
         <div class="one-item"> 
           <div class="headerBox">
@@ -363,7 +447,7 @@
     </div>
 
     <!-- TWO COLUMNS TOPICS -->
-    <div class="block">  
+    <div class="block id="topics">  
       <div class="one-colum"> 
         <div class="one-item"> 
           <div class="headerBox">
@@ -394,7 +478,7 @@
     </div>
 
     <!-- ARTICLE GROUP-->
-    <div class="block">  
+    <div class="block" id="interests">  
       <div class="one-colum"> 
         <div class="one-item"> 
           <div class="headerBox">
@@ -427,7 +511,7 @@
     </div>    
 
     <!-- TWO COLUMNS TEXT -->
-    <div class="block">  
+    <div class="block" id="styles">  
       <div class="one-colum"> 
         <div class="one-item"> 
           <div class="headerBox">
@@ -488,24 +572,51 @@
     </div>
 
   <div class="block dark">  
-    <div class="container4">
-      <div class="column4 topic">
+      <div class="container4">
+          <div class="column4">
+              <span class="counter" data-target="6">0</span>
+              <div class="number-header">Weights</div>
+          </div>
+          <div class="column4">
+              <span class="counter" data-target="4">0</span>
+              <div class="number-header">Axes</div>
+          </div>
+          <div class="column4">
+              <span class="counter" data-target="6">0</span>
+              <div class="number-header">Weights</div>
+          </div>
+          <div class="column4">
+              <span class="counter" data-target="4">0</span>
+              <div class="number-header">Axes</div>
+          </div>
       </div>
-      <div class="column4 topic">
+  </div>
+
+  <!-- THREE COLUMNS IMAGES -->
+  <div class="block" id="glyphs">  
+    <div class="one-colum"> 
+      <div class="one-item"> 
+        <div class="headerBox">
+          <h3>Upgrade glyph set</h3>
+          <h3 class="sub">The Upgrade family implements “Latin 1 Extended”</h3>
+        </div>
       </div>
-      <div class="column4 topic">
-      </div>
-      <div class="column4 topic">
-      </div>
+    </div>
+    <div class="one-colum">  
+      <div class="article">  
+        <div class="text-block">
+          <p>Typetester</p>
+        </div>
+      </div>     
     </div>
   </div>
 
   <!-- THREE COLUMNS IMAGES -->
-  <div class="block">  
+  <div class="block" id="features">  
     <div class="one-colum"> 
       <div class="one-item"> 
         <div class="headerBox">
-          <h3>Upgrade Feutures</h3>
+          <h3>Upgrade Features</h3>
           <h3 class="sub">The Upgrade family implements an extended OpenType feature set</h3>
         </div>
       </div>
@@ -604,7 +715,7 @@
   </div>
   <!-- HERO IMAGE SMALL -->
 
-  <div class="block">  
+  <div class="block" id="making">  
     <section class="hero-image-small">
       <img src="https://cms.typenetwork.com/media/original_images/UpgradeReleaseLede02_5TdLdy6.svg" class="hero-image-img">
       <div class="hero-overlay">
@@ -646,9 +757,44 @@
     </div>
   </div>
 
-  <div class="block">  
+
+  <!-- USAGE -->
+  <div class="block" id="usage">  
+    <div class="one-colum"> 
+      <div class="one-item"> 
+        <div class="headerBox">
+          <h3>Upgrade usage</h3>
+          <h3 class="sub">Usage in various media</h3>
+        </div>
+      </div>
+    </div>
+    <div class="four-colum-flex">  
+      <div class="four-items-flex">
+        <div class="image-block">
+          <img src="./images/2022/Presti_in_use_pure_care_02.jpg">
+        </div>   
+      </div>
+      <div class="four-items-flex">
+        <div class="image-block">
+          <img src="./images/2022/Presti_in_use_songs of love and hate_01.jpg">
+        </div>   
+      </div>
+      <div class="four-items-flex">
+        <div class="image-block">
+          <img src="./images/2022/Presti_in_use_06_Chocolate heaven_neon.jpg">
+        </div>   
+      </div>
+      <div class="four-items-flex">
+        <div class="image-block">
+          <img src="./images/2022/Presti_in_use_09_freekdejonge.jpg">
+        </div>   
+      </div>
+    </div>
+  </div>
+
+  <div class="block" id="article">  
     <section class="hero-image-small">
-      <img src="https://cms.typenetwork.com/media/original_images/UpgradeReleaseLede02_5TdLdy6.svg" class="hero-image-img">
+      <img src="./images/2022/Presti_in_use_pure_care_02.jpg" class="hero-image-img">
       <div class="hero-overlay">
           <h2 class="sub">TYPETR delivers Upgrade</h2>
       </div>

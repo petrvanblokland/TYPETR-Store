@@ -7,9 +7,12 @@
 body {
     margin: 0;
     padding: 0;
-    scroll-behavior: smooth;
-    background-color: black
+    scroll-behavior: auto;
+    background-color: black;
+    width: 100vw;
+    overflow-x: hidden;
 }
+
 
 * {
     box-sizing: border-box;
@@ -20,6 +23,10 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     vertical-align: baseline;
     letter-spacing: 1pt;
     font-feature-settings: "kern" 1, "clig" 1;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -59,7 +66,7 @@ hr {
   background: gray;
   margin: 0 auto;
   margin-top: 20px;
-  margin-bottom:40px;
+  margin-bottom:40px;  
 }
 
 h1, h2, h3, h4, h5, h6, p, figcaption {
@@ -73,7 +80,7 @@ h1, h2, h2.sub {
 
 
 h1 {
-  font-size: 5em; 
+  font-size: 4.3em; 
   font-family:"Upgrade";
   font-weight:Black;
   text-align: center;
@@ -100,6 +107,8 @@ h2 {
 h2.sub{
   color:white;
   text-align: center;
+  font-family:"Upgrade";
+  font-weight:Medium;
 }
 
 h2.topic{
@@ -126,7 +135,7 @@ h3 {
 h3.sub{
   font-size: 1.8em;
   font-family:"Upgrade";
-  font-weight:Bold;
+  font-weight:Medium;
 }
 
 h4 {
@@ -221,7 +230,7 @@ blockquote {
 /* RESPONSIVE TYPOGRAPHY */
 
 @media screen and (max-width: 1200px) {
-  h1 { font-size: 4.5rem;}
+  h1 { font-size: 4rem;}
   h2 { font-size: 3rem;}
   h3 { font-size: 2.5rem;}
   h4 { font-size: 1.6rem;}
@@ -311,6 +320,7 @@ blockquote {
 #menu > ul.links {
   list-style: none;
   padding: 0;
+  font-family:"Upgrade";
 }
 
 #menu > ul.links > li {
@@ -335,8 +345,9 @@ blockquote {
   margin: 0.5em 0 0 0;
 }
 
-#menu > ul.links > li:first-child > a:not(.button) {
+#menu > ul.links > li:first-child > a:not(.button), #menu > ul.links > li:last-child > a:not(.button) {
   border-top: 0 !important;
+  font-family:"Upgrade";
 }
 
 
@@ -524,33 +535,8 @@ div.text {
 }
 
 
-#header nav a {
-  -moz-transition: color 0.2s ease-in-out;
-  -webkit-transition: color 0.2s ease-in-out;
-  -ms-transition: color 0.2s ease-in-out;
-  transition: color 0.2s ease-in-out;
-  display: inline-block;
-  padding: 0 0.75em;
-    padding-right: 0.75em;
-  color: inherit;
-  text-decoration: none;
-}
+/* NAVIGATION BAR */
 
-#menu > ul.links > li > a:not(.button) {
-  border: 0;
-    border-top-width: 0px;
-    border-top-style: none;
-    border-top-color: currentcolor;
-  border-top: solid 0.5px white;
-  color: inherit;
-  display: block;
-  line-height: 3.5em;
-  text-decoration: none;
-}
-
-#menu > ul.links > li > a:hover{
-  color:yellow;
-}
 
 #header {
   width: 100%;
@@ -562,6 +548,37 @@ div.text {
   animation: fadeIn 2s ease-in-out;
   box-shadow: 0 -20px 20px rgba(0, 0, 0, 0.3), /* Bovenschaduw */
               0 20px 20px rgba(0, 0, 0, 0.3);  /* Onderschaduw */
+}
+
+nav{
+  margin: 0 auto;
+}
+
+#header nav a {
+  -moz-transition: color 0.3s ease-in-out;
+  -webkit-transition: color 0.3s ease-in-out;
+  -ms-transition: color 0.3s ease-in-out;
+  transition: color 0.3s ease-in-out;
+  display: inline-block;
+  padding: 5px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 5px;
+  margin-left:10px;
+  margin-right:10px;
+  color: inherit;
+  text-decoration: none;
+}
+
+#header nav a:hover {
+  color: red;
+  background-color: white;
+}
+
+@media screen and (max-width: 1200px) {
+  nav{
+    display: none;
+  }
 }
 
 .slide {
@@ -604,7 +621,8 @@ div.text {
   padding-right:15px;
   background-color: white;
   opacity:70%;
-  font-family:"Upgrade Regular";
+  font-family:"Upgrade";
+  font-weight:Medium;
   border-radius: 10px;
 }
 
@@ -626,21 +644,21 @@ div.text {
 
 /* Footer Styling */
 .footer {
-  background-color: black;
-  color: white;
+  background-color: black; /* Zwarte achtergrond voor de footer */
+  color: white; /* Witte tekst */
   position: relative;
   bottom: 0;
   width: 100%;
-  border-top: solid 0.5px white;
+  border-top: solid 1px white;
 }
 
 .footer-content {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1800px; 
+  max-width: 1800px; /* Optioneel: stel een maximale breedte in voor de footer */
   margin: 0 auto;
-  margin-right: 20px;
+  padding: 0 20px;
 }
 
 .footer-logo img {
@@ -651,7 +669,17 @@ div.text {
   margin-right: 20px;
 }
 
-.footer-links ul {
+  {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.menu{
+  color:white;
+}
+
+.menu ul, .footer-links ul {
   display: flex;
   list-style: none;
   padding: 0;
@@ -662,20 +690,18 @@ div.text {
   margin-left: 30px;
 }
 
-.footer-links ul li a {
+.menu ul li a, .footer-links ul li a {
   color: white;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-family:"Upgrade";
   font-weight:Regular;
-  letter-spacing: 0.1em;
 }
 
-.footer-links ul li a:hover {
+.menu ul li a:hover, .footer-links ul li a:hover {
   text-decoration: underline; /* Voeg onderlijning toe bij hover */
   color: red;
 }
-
 
 .read-more-btn {
   display: inline-block; 
@@ -873,6 +899,12 @@ div.text {
 
 .container2, .container3, .container4 {
   max-width: 1200px;
+  display: flex;
+  gap: 10px;
+}
+
+.container3:has(.tile) {
+  gap: 0px;
 }
 
 .container-flex, .container2, .container3, .container4 {
@@ -884,46 +916,39 @@ div.text {
 }
 
 .column-flex, .column2, .column3, .column3m, .column4 {
-  flex: 1;
-  border-radius: 10px;
+  box-sizing: border-box;
+  float:left;
 } 
 
-.column2 {
-}
-
-.column3, .column3m {
-  flex: 1 1 33.3%;
-}
- 
-.column4 {
+@media screen and (min-width: 1000px) {
+  .column-flex, .column2, .column3, .column3m, .column4 {
+    flex: 1;
+  } 
 }
 
 @media screen and (min-width: 1200px) {
-  .column-flex {flex: 1 1 50%;}
-  .column2 {flex: 1 1 50%;}
-  .column3 {flex: 1 1 33.3%;}
-  .column3m {flex: 1 1 33.3%;}
-  .column4 {flex: 1 1 25%;}
+  .column-flex {width:50%;}
+  .column2 {width: 50%;}
+  .column3 {width: 33.3%;}
+  .column3m {width: 33.3%;}
+  .column4 {width: 25%;}
 }
 
 @media screen and (max-width: 1000px) {
-  .container-flex, .container2, .container3, .container4 {
-    flex-direction: column;
-    align-items: center; 
-  }
-  .column-flex {flex: 1 1 50%;}
-  .column2 {flex: 1 1 50%;}
-  .column3 {flex: 1 1 50%;}
-  .column3m {flex: 1 1 100%;}
-  .column4 {flex: 1 1 5 50%;}
+  .column-flex {width: 50%;}
+  .column2 {width: 50%;}
+  .column3 {width: 50%;}
+  .column3m {width: 100%;}
+  .column4 {width: 50%;}
+  .block{background-color: red;}
 }
 
 @media screen and (max-width: 750px) {
-  .column-flex {flex: 1 1 100%;}
-  .column2 {flex: 1 1 100%;}
-  .column3 {flex: 1 1 100%;}
-  .column3m {flex: 1 1 100%;}
-  .column4 {flex: 1 1 100%;}
+  .column-flex {width: 100%;}
+  .column2 {width: 100%;}
+  .column3 {width: 100%;}
+  .column3m {width: 100%;}
+  .column4 {width: 100%;}
 }
 
 
@@ -1044,11 +1069,11 @@ div.text {
 }
 
 @media screen and (max-width: 1200px) {
-  .block{background-color: orange}
+  .block{background-color: white}
 }
 
 @media screen and (max-width: 1000px) {
-  .block{background-color: green}
+  .block{background-color: white}
 }
 
 @media screen and (max-width: 750px) {
@@ -1147,35 +1172,21 @@ div.text {
     width:100vw;
 }
 
-@media screen and (max-width: 1000px) {
-
-}
-
 .firstblock{
   margin-top:60px;
-}
-
-.firstblock:before{
-  box-shadow: inset 0px -30px 50px rgba(0, 0, 0, 0.2);
 }
 
 .lastblock{
   margin-bottom: 0px;
 }
 
-.lastblock:before{
-  box-shadow: inset 0px -30px 50px rgba(0, 0, 0, 0.2);
-}
-
-
 .flux{
-  width: 500px;
   margin-left: 200px;
   float:right;
   margin-right:50px;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1400px) {
   .flux{
     margin-left: 10px;
   }
@@ -1184,7 +1195,6 @@ div.text {
 @media screen and (max-width: 1000px) {
   .flux{
     margin-left:0px;
-    width:100vw;
   }
   .flux img {
     display: block;
@@ -1212,6 +1222,10 @@ div.text {
   margin:0px;
 }
 
+.rot img{
+  border-radius: 5px 0px 0px 5px; 
+}
+
 .vot {
   margin-left: 10%;
   width: 100%;
@@ -1225,8 +1239,12 @@ div.text {
   object-fit: cover;
 }
 
+/* IMAGE BLOCK */
+
 .image-block {
     width: 100%;
+    transition: all 0.3s ease-in-out;
+
 }
 
 .image-block img {
@@ -1308,11 +1326,15 @@ div.text {
 /* TOP */
 
 .header, 
-.hero-image{ 
+.hero-image, .hero-image-last{ 
     position: relative;
     width: 100%;
     height: 700px;
     animation: fadeIn 2s ease-in-out;
+}
+
+.hero-image-last{
+  box-shadow: inset 0px 60px 100px rgba(0,0,0, 1);
 }
 
 .hero-image-small{ 
@@ -1320,21 +1342,21 @@ div.text {
     width: 100%;
     height: 400px;
     animation: fadeIn 2s ease-in-out;
-    box-shadow: inset 0px 40px 100px rgba(0,0,0,0.6);
+    box-shadow: inset 0px 60px 100px rgba(0,0,0, 1);
+    border-bottom: solid 1px black;
 }
 
 .hero-image-small {
     position: relative;
     display: inline-block;
-    overflow: hidden; /* Zorgt ervoor dat de shadow niet buiten de div komt */
-    border-radius: 10px; /* Optioneel: voor afgeronde hoeken */
+    overflow: hidden; 
 }
 
 .hero-image-small::before {
     content: "";
     position: absolute;
     inset: 0; /* Bedekt de gehele div */
-    box-shadow: inset 0px -30px 50px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0px -30px 30px rgba(0, 0, 0, 0.3);
     pointer-events: none;
     z-index: 2;
 }
@@ -1516,10 +1538,33 @@ x
 .description {
 }
 
+.counter {
+    font-size: 2rem;
+    font-weight: bold;
+    display: block;
+    margin: 10px 0;
+    color: white;
+    font-family:"Upgrade";
+    font-weight:Medium;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 6s linear;
+}
+
+#stats {
+    text-align: center;
+    padding: 50px 0;
+    background: white;
+}
+
 .number-header {
   font-size: 1.2rem;
   margin-bottom: 0px;
   text-align: center;
+  font-weight: Regular;
+  color: white;
+  font-family:"Upgrade";
+  font-weight:Medium;
 }
 
 .number-item .number {
@@ -1528,12 +1573,10 @@ x
   text-align: center;
 }
 
-
 .number-item .description {
   font-size: 1rem;
   text-align: center;
 }
-
 
 .heading {
     font-family:"Upgrade Bold";
