@@ -1266,21 +1266,29 @@ nav{
   align-items: center; 
   justify-content: center; 
   color: white;
-  font-weight: bold;
   text-align: center;
   background: rgba(0, 0, 0, 0.4); 
   font-family:"Upgrade";
+  font-weight:Regular;
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
+  flex-direction: column;
 }
 
-.image-block .overlay-block h2{
+.image-block .overlay-block h2 {
   font-size: 32px;
-  font-weight: Regular;
-  color:white;
-  font-weight: Medium;
+  font-family:"Upgrade";
+  font-weight:Regular;
+  margin: 0 auto;
 }
 
+.image-block .overlay-block p{
+  font-size: 26pt;
+}
+
+.image-block .overlay-block h2, .image-block .overlay-block p{
+  color:white;
+}
 
 .image-block:hover .overlay-block {
   opacity: 1;
@@ -1295,6 +1303,10 @@ nav{
   height: auto;
 }
 
+.grid .image-block{
+  border: solid 0.25px gray; 
+}
+
 .image-block img {
     width: 100%;
     height: auto;
@@ -1306,8 +1318,7 @@ nav{
 .four-colum-flex .image-block:hover img,
 .five-colum-flex .image-block:hover img,
 .six-colum-flex .image-block:hover img {
-  filter: brightness(60%);
-  box-shadow: inset 0px 0px 0px 20px black;
+  filter: brightness(80%);
   transition: filter 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 }
 
@@ -1503,7 +1514,7 @@ nav{
     text-align: center;
     width:100%;
 }
-x
+
 .overlay-text {
     position: absolute;
     color: white;
