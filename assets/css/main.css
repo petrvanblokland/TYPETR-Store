@@ -5,14 +5,15 @@
 /* GENERAL ATTRIBUTES */
 
 body {
-    margin: 0;
-    padding: 0;
-    scroll-behavior: auto;
-    background-color: black;
-    width: 100vw;
-    overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: auto;
+  background-color: black;
+  width: 100vw;
+  overflow-x: hidden;
+  line-height: 1;
+  -webkit-text-size-adjust: none;
 }
-
 
 * {
     box-sizing: border-box;
@@ -33,10 +34,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
     display: block;
 }
 
-body {
-    line-height: 1;
-}
-
 ol, ul {
     list-style: none;
 }
@@ -55,9 +52,6 @@ table {
     border-spacing: 0;
 }
 
-body {
-    -webkit-text-size-adjust: none;
-}
 
 hr {
   border: none;
@@ -69,12 +63,14 @@ hr {
   margin-bottom:40px;  
 }
 
+/* TYPOGRAPHY */
+
 h1, h2, h3, h4, h5, h6, p, figcaption {
   margin-top: 0; 
   margin-bottom: 10px; 
 }
 
-h1, h2, h2.sub {
+h1, h2, h2.sub, .image-block .overlay-block h2, .image-block .overlay-block p {
   text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5); 
 }
 
@@ -134,8 +130,7 @@ h3 {
 
 h3.sub{
   font-size: 1.8em;
-  font-family:"Upgrade";
-  font-weight:RΩ∂ƒegular;
+  font-family:"Upgrade Book";
 }
 
 h4 {
@@ -157,8 +152,7 @@ h4 {
 h5 {
   font-size: 1.2rem;
   line-height: 1.3em;
-  font-family:"Upgrade";
-  font-weight:Bold;
+  font-family:"Upgrade Medium";
   color: black;
   text-align: left;
   margin-top: 10px; 
@@ -389,7 +383,7 @@ blockquote {
   margin-top:0px;
 }
 
-/* FONTDUE TYPETESTERE */
+/* FONTDUE */
 
 .type-tester__slider__handle:hover {
   color: green;
@@ -481,6 +475,10 @@ blockquote {
   border-bottom: solid 5px red;
 }
 
+
+/* RESPONSIVE FONTDUE */
+
+
 @media screen and (max-width: 768px) {
   .fontSample {
     flex-direction: column; /* Schakel naar kolomlay-out */
@@ -537,7 +535,6 @@ div.text {
 
 /* NAVIGATION BAR */
 
-
 #header {
   width: 100%;
   position: fixed;
@@ -583,16 +580,17 @@ nav{
 
 .slide {
   min-width: 100%;
-  height: 100%; /* Vul de hoogte van de slideshow */
+  height: 100%; 
 }
 
 .slide img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Vul de slide zonder vervorming */
+  object-fit: cover; 
 }
 
-/* Titel en ondertitel */
+/* OVERLAY HERO IMAGE */
+
 .overlay {
   position: absolute;
   top: 50%;
@@ -626,26 +624,21 @@ nav{
   border-radius: 10px;
 }
 
-/* Animaties */
+/* GENERAL ATTRIBUTES */
+
 @keyframes slideShow {
-  0% { transform: translateX(0); }
-  10% { transform: translateX(0); }
-  20% { transform: translateX(-100%); }
-  30% { transform: translateX(-100%); }
-  40% { transform: translateX(-200%); }
-  50% { transform: translateX(-200%); }
-  60% { transform: translateX(-300%); }
-  70% { transform: translateX(-300%); }
-  80% { transform: translateX(-400%); }
-  90% { transform: translateX(-400%); }
+  0%, 20% { transform: translateX(0); }
+  25%, 45% { transform: translateX(-100%); }
+  50%, 70% { transform: translateX(-200%); }
+  75%, 95% { transform: translateX(-300%); }
   100% { transform: translateX(0); }
 }
 
+/* FOOTER */
 
-/* Footer Styling */
 .footer {
-  background-color: black; /* Zwarte achtergrond voor de footer */
-  color: white; /* Witte tekst */
+  background-color: black; 
+  color: white; 
   position: relative;
   bottom: 0;
   width: 100%;
@@ -669,11 +662,7 @@ nav{
   margin-right: 20px;
 }
 
-  {
-  flex-grow: 1;
-  display: flex;
-  justify-content: center;
-}
+/* MENU */
 
 .menu{
   color:white;
@@ -722,6 +711,8 @@ nav{
   background-color: #0056b3; /* Maak de achtergrondkleur donkerder bij hover */
 }
 
+/* BUY BUTTON */
+
 .buy-button{
   display: inline-block;
   border-radius: 10px;
@@ -753,15 +744,7 @@ nav{
   color:white;
 }
 
-/* Family */
-
-
-<!-- Algemene reset -->
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* NAVBAR */
 
 .navbar {
     position: fixed;
@@ -807,7 +790,6 @@ nav{
     padding-left: 20px;
 }
 
-/* Three Columns (30%, 30%, 30%) */
 .three-columns {
     display: flex;
     background-color: #c6f6d5;
@@ -822,7 +804,6 @@ nav{
     margin-top: 20px;
 }
 
-/* Container Grid (vierkant masker) */
 .container-grid.square {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Drie kolommen */
@@ -918,6 +899,7 @@ nav{
 .column-flex, .column2, .column3, .column3m, .column4 {
   box-sizing: border-box;
   float:left;
+  padding-bottom: 20px;
 } 
 
 @media screen and (min-width: 1000px) {
@@ -1050,10 +1032,8 @@ nav{
 
 /* BLOCKS */
 
-.block{
+.block, .block-small{
   width: 100vw;
-  margin-top: 100px;
-  margin-bottom: 100px;
   background-color: white;
   box-shadow: 0 -20px 20px rgba(0, 0, 0, 0.3), /* Bovenschaduw */
               0 20px 20px rgba(0, 0, 0, 0.3);  /* Onderschaduw */
@@ -1061,26 +1041,21 @@ nav{
   border-bottom: solid 0.5px white; 
 }
 
-@media screen and (min-width: 1200px) {
-  .block{background-color: white}
+.block {
+  margin-top: 100px;
+  margin-bottom: 100px;
 }
 
-@media screen and (max-width: 1200px) {
-  .block{background-color: white}
+.block-small {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
-@media screen and (max-width: 1000px) {
-  .block{background-color: white}
-}
-
-@media screen and (max-width: 750px) {
-  .block{background-color: white}
-}
-
+/* STICKY */
 
 .scroll-section {
     position: relative;
-    height: 100vh; /* Specifiek gedeelte waar de sticky begint */
+    height: 100vh;
     background-color: white;
     padding: 20px;
 }
@@ -1203,7 +1178,7 @@ nav{
 
 @media screen and (max-width: 750px) {
   .flux{
-    margin-left:0px;
+    margin:0px;
   }
   .flux img {
     display: block;
@@ -1219,7 +1194,7 @@ nav{
   margin:0px;
 }
 
-.rot img {
+.rot img, .topic img {
   border-radius: 5px;
 }
 
@@ -1237,6 +1212,12 @@ nav{
 
 @media screen and (max-width: 750px) {
   .rot img {
+    border-radius: 0;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .topic img {
     border-radius: 0;
   }
 }
@@ -1290,6 +1271,14 @@ nav{
   color:white;
 }
 
+@media screen and (max-width: 1000px) {
+
+}
+
+@media screen and (max-width: 750px) {
+
+}
+
 .image-block:hover .overlay-block {
   opacity: 1;
 }
@@ -1308,9 +1297,9 @@ nav{
 }
 
 .image-block img {
-    width: 100%;
-    height: auto;
-    display: block;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 .two-colum-flex .image-block:hover img,
@@ -1329,6 +1318,7 @@ nav{
   padding-bottom:20px;
   border-radius: 10px;
   border: solid 1px gray; 
+  height:100%;
 }
 
 .text-block{
@@ -1337,8 +1327,8 @@ nav{
 
 @media screen and (max-width: 1200px) {
   .topic{
-    margin-left:20px;
-    margin-right:20px;
+    margin-left:0px;
+    margin-right:10px;
     padding:10px;
   }
 }
@@ -1358,7 +1348,7 @@ nav{
   .topic{
     margin-left:0px;
     margin-right:0px;
-    padding:10px;
+    padding:0px;
     border:none;
     border-top: solid 1px gray; 
     border-radius: 0px;
@@ -1651,7 +1641,7 @@ nav{
     font-size: 4em;
 }
 
-/* ANIMATOE FADE IN */
+/* ANIMATE FADE IN */
 
 @keyframes fadeIn {
     0% {
@@ -1661,4 +1651,38 @@ nav{
         opacity: 1;
     }
 }
+
+/* IMAGE OVERLAY */
+
+.overlayBox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    justify-content: center;
+    align-items: center;
+}
+.overlayBox img {
+    max-width: 80%;
+    max-height: 80%;
+}
+.close-overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.nav-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+.nav-arrow.left { left: 20px; }
+.nav-arrow.right { right: 20px; }
+
 
