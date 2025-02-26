@@ -1024,6 +1024,7 @@ nav{
 
 /* SCROLL ANCHOR */
 
+<<<<<<< Updated upstream
 .block, .block-small{
   scroll-snap-align: start;
 }
@@ -1036,6 +1037,14 @@ nav{
   .column2, .column3, .column3m, .column4 {
     scroll-snap-align: start;    
   }
+=======
+.block, .block-small,
+.image-block, .text-block, .rot, .tile,
+.one-item-flex, .two-items-flex, .three-items-flex, .four-items-flex, .five-items-flex, .six-items-flex,
+.container-flex, .container2, .container3, .container4,
+.column2, .column3, .column3m, .column4 {
+  scroll-snap-align: start; 
+>>>>>>> Stashed changes
 }
 
 /* BLOCKS */
