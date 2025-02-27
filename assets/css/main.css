@@ -4,6 +4,17 @@
 
 /* GENERAL ATTRIBUTES */
 
+@view-transition {
+  navigation: auto;
+}
+
+:root {
+  --primary-text-color: #222;
+  --secondary-text-color: #fff;
+  --primary-bg-color: #222;
+  --secondary-bg-color: brown;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -28,6 +39,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 html {
   scroll-behavior: smooth;
+  scroll-padding-top: 61px;
+  scroll-snap-type: y proximity;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -542,7 +555,6 @@ div.text {
   z-index: 1000;
   text-align: left;
   border-bottom: solid 1px white;
-  animation: fadeIn 2s ease-in-out;
   box-shadow: 0 -20px 20px rgba(0, 0, 0, 0.3), /* Bovenschaduw */
               0 20px 20px rgba(0, 0, 0, 0.3);  /* Onderschaduw */
 }
@@ -1032,19 +1044,6 @@ nav{
 
 /* SCROLL ANCHOR */
 
-.block, .block-small{
-  scroll-snap-align: start;
-}
-
-@media screen and (max-width: 1000px) {
-  .block, .block-small
-  .image-block, .text-block, .rot, .tile,
-  .one-item-flex, .two-items-flex, .three-items-flex, .four-items-flex, .five-items-flex, .six-items-flex,
-  .container-flex, .container2, .container3, .container4,
-  .column2, .column3, .column3m, .column4 {
-    scroll-snap-align: start;    
-  }
-
 .block, .block-small,
 .image-block, .text-block, .rot, .tile,
 .one-item-flex, .two-items-flex, .three-items-flex, .four-items-flex, .five-items-flex, .six-items-flex,
@@ -1062,6 +1061,7 @@ nav{
               0 20px 20px rgba(0, 0, 0, 0.3);  /* Onderschaduw */
   border-top: solid 0.5px white; 
   border-bottom: solid 0.5px white; 
+  animation: fadeIn 1s ease-out forwards;
 }
 
 .block {
@@ -1412,7 +1412,6 @@ nav{
     position: relative;
     width: 100%;
     height: 700px;
-    animation: fadeIn 2s ease-in-out;
 }
 
 .hero-image-last{
@@ -1423,7 +1422,6 @@ nav{
     position: relative;
     width: 100%;
     height: 400px;
-    animation: fadeIn 2s ease-in-out;
     box-shadow: inset 0px 60px 100px rgba(0,0,0, 1);
     border-bottom: solid 1px black;
 }

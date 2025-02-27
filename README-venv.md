@@ -5,7 +5,7 @@ mkdir venv
 
 cd  /Users/jaspervanblokland/Documents/GitHub/TYPETR-Store 
 
-python -m venv venv --prompt=TYPETR-Store
+python3 -m venv venv --prompt=TYPETR-Store
 
 source venv/bin/activate
 
@@ -18,4 +18,4 @@ pip install git+https://github.com/typemytype/drawbot
 
 ###
 
-python build-004.py
+python3 build-004.py
