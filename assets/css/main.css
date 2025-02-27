@@ -269,6 +269,27 @@ blockquote {
   p { font-size: 1rem;}
 }
 
+/* ANIMATE */
+
+@keyframes moveDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
 
 /* SELECTION */
 
@@ -1048,7 +1069,7 @@ nav{
 .image-block, .text-block, .rot, .tile,
 .one-item-flex, .two-items-flex, .three-items-flex, .four-items-flex, .five-items-flex, .six-items-flex,
 .container-flex, .container2, .container3, .container4,
-.column2, .column3, .column3m, .column4 {
+.one-colum, .column2, .column3, .column3m, .column4 {
   scroll-snap-align: start; 
 }
 
@@ -1414,6 +1435,13 @@ nav{
     height: 700px;
 }
 
+@media screen and (max-width: 1200px) {
+  .header, 
+  .hero-image, .hero-image-last{ 
+      height: 100vh;
+  }
+}
+
 .hero-image-last{
   box-shadow: inset 0px 60px 100px rgba(0,0,0, 1);
 }
@@ -1518,12 +1546,12 @@ nav{
 
 .hero-overlay {
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 35%;
+    left: 0px;
     color: white;
     text-align: center;
     width:100%;
+    animation: moveDown 1s ease-out;
 }
 
 .overlay-text {
@@ -1662,17 +1690,6 @@ nav{
     font-size: 4em;
 }
 
-/* ANIMATE FADE IN */
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
 /* IMAGE OVERLAY */
 
 .overlayBox {
@@ -1705,5 +1722,7 @@ nav{
 }
 .nav-arrow.left { left: 20px; }
 .nav-arrow.right { right: 20px; }
+
+
 
 
