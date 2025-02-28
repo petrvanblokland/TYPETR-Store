@@ -3,6 +3,7 @@
   <head>
     <title>{{page.name}}</title>
     <meta charset="utf-8" />
+        
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script scr="https://cpwebassets.codepen.io/assets/editor/iframe/iframeRefreshCSS-44fe83e49b63affec96918c9af88c0d80b209a862cf87ac46bc933074b8c557d.js"></script>
 
@@ -164,10 +165,13 @@
   </script>
 </head>
   <body>
+    <!-- PARALLAX -->
     <div class="parallax"></div>
 
+    <!-- FONTDUE -->
     <fontdue-store-modal></fontdue-store-modal>
 
+    <!-- HEADER -->
     <header id="header">
       <div class='logo'>
         <a class="logo" href='index.html'>{{logo}}</a>
@@ -183,19 +187,20 @@
         <a id="menuButton" href="#menu"><span class="material-symbols-outlined">menu</span></a>
         <input type="checkbox" id="menuToggle">
         <label for="menuToggle"><span class="material-symbols-outlined">menu</span></label>
-        <nav>
+        <nav class="side">
           <label for="menuToggle">Close</label>
           <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#styles">Styles & axes</a></li>
+            <li><a href="#glyphs">Glyphs</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#making">Making</a></li>
+            <li><a href="#usage">Usage</a></li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <!-- Nav -->
+    <!-- NAV -->
     <nav id="menu">
       <ul class="links">
         <li><a href="index.html">Index</a></li>
@@ -809,8 +814,8 @@
       </div>
     </div>
   </div>
-  <!-- HERO IMAGE SMALL -->
 
+  <!-- HERO IMAGE SMALL -->
   <div class="block" id="making">  
     <section class="hero-image-small">
       <img src="https://cms.typenetwork.com/media/original_images/UpgradeReleaseLede02_5TdLdy6.svg" class="hero-image-img">
@@ -972,6 +977,7 @@
     </div>
   </div>
 
+  <!-- ARTICLE -->
   <div class="block" id="article">  
     <section class="hero-image-small">
       <img src="./images/2022/Presti_in_use_pure_care_02.jpg" class="hero-image-img">
@@ -1039,11 +1045,15 @@
     </div>
   </div>    
 
+  <!-- HERO IMAGE -->
   <div class="block lastblock">  
     <section class="hero-image">
         <img src="https://cms.typenetwork.com/media/original_images/UpgradeExtremes02.svg" class="hero-image-img">
     </section>
   </div>
+  
+  <!-- SCROLL TO TOP BUTTON -->
+  <div id="scrollTopBtn">UP</div>
 
     {{page.getFooter()}}
 
