@@ -275,19 +275,13 @@ blockquote {
 
 /* ANIMATE */
 
-@keyframes moveDownBounce {
+@keyframes moveDown {
     0% {
         opacity: 0;
-        transform: translateY(-400px);
-    }
-    50% {
-        opacity: 1;
-        transform: translateY(5px);
-    }
-    70% {
-        transform: translateY(-5px);
+        transform: translateY(-200px);
     }
     100% {
+        opacity: 1;
         transform: translateY(0);
     }
 }
@@ -1571,8 +1565,8 @@ nav{
     color: white;
     text-align: center;
     width:100%;
-    animation: moveDownBounce 1s ease-out;
-  }
+    animation: moveDown 1s ease-out;
+}
 
 h1, h2, h3, h4, h5, h6, p, figcaption{
   animation: moveDownBounceSmall 0.5s ease-in-out;
@@ -1750,6 +1744,7 @@ h1, h2, h3, h4, h5, h6, p, figcaption{
 .nav-arrow.right { right: 20px; }
 
 
+<<<<<<< HEAD
 /* SIDEBAR */
 
 #menuToggle {
@@ -1818,5 +1813,7 @@ ul a:active {
   } 
 }
 
+=======
+>>>>>>> parent of 74c65e5 (Add css update)
 
 
