@@ -279,6 +279,7 @@ blockquote {
     0% {
         opacity: 0;
         transform: translateY(-200px);
+<<<<<<< HEAD
     }
     100% {
         opacity: 1;
@@ -290,8 +291,11 @@ blockquote {
     0% {
         opacity: 0;
         transform: translateY(-40px);
+=======
+>>>>>>> parent of 74c65e5 (Add css update)
     }
     100% {
+        opacity: 1;
         transform: translateY(0);
     }
 }
@@ -1567,12 +1571,15 @@ nav{
     width:100%;
     animation: moveDown 1s ease-out;
 }
+<<<<<<< HEAD
 
 h1, h2, h3, h4, h5, h6, p, figcaption{
   animation: moveDownBounceSmall 0.5s ease-in-out;
 }
 }
 
+=======
+>>>>>>> parent of 74c65e5 (Add css update)
 
 .overlay-text {
     position: absolute;
@@ -1745,6 +1752,7 @@ h1, h2, h3, h4, h5, h6, p, figcaption{
 
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 /* SIDEBAR */
 
 #menuToggle {
@@ -1813,6 +1821,8 @@ ul a:active {
   } 
 }
 
+=======
+>>>>>>> parent of 74c65e5 (Add css update)
 =======
 >>>>>>> parent of 74c65e5 (Add css update)
 
