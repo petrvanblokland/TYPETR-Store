@@ -1,0 +1,554 @@
+@charset "UTF-8";
+@import url(fonts.css);
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    letter-spacing: 1pt;
+    font-feature-settings: "kern" 1, "clig" 1;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+body {
+    -webkit-text-size-adjust: none;
+}
+
+/* Menu */
+
+  #menu {
+    -moz-transform: translateX(20em);
+    -webkit-transform: translateX(20em);
+    -ms-transform: translateX(20em);
+    transform: translateX(20em);
+    -moz-transition: -moz-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
+    -webkit-transition: -webkit-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
+    -ms-transition: -ms-transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
+    transition: transform 0.5s ease, box-shadow 0.5s ease, visibility 0.5s;
+    -webkit-overflow-scrolling: touch;
+    background: #f64242;
+    box-shadow: none;
+    color: #ffffff;
+    height: 100%;
+    max-width: 80%;
+    overflow-y: auto;
+    padding: 3em 2em;
+    position: fixed;
+    right: 0;
+    top: 0;
+    visibility: hidden;
+    width: 20em;
+    z-index: 10002;
+  }
+
+
+    #menu > ul {
+      margin: 0 0 1em 0;
+    }
+
+      #menu > ul.links {
+        list-style: none;
+        padding: 0;
+      }
+
+        #menu > ul.links > li {
+          padding: 0;
+        }
+
+          #menu > ul.links > li > a:not(.button) {
+            border: 0;
+            border-top: solid 1px rgba(255, 255, 255, 0.25);
+            color: inherit;
+            display: block;
+            line-height: 3.5em;
+            text-decoration: none;
+          }
+
+          #menu > ul.links > li > .button {
+            display: block;
+            margin: 0.5em 0 0 0;
+          }
+
+          #menu > ul.links > li:first-child > a:not(.button) {
+            border-top: 0 !important;
+          }
+
+    #menu .close {
+      text-decoration: none;
+      -moz-transition: color 0.2s ease-in-out;
+      -webkit-transition: color 0.2s ease-in-out;
+      -ms-transition: color 0.2s ease-in-out;
+      transition: color 0.2s ease-in-out;
+      -webkit-tap-highlight-color: transparent;
+      border: 0;
+      color: #fbb5b5;
+      cursor: pointer;
+      display: block;
+      height: 3.25em;
+      line-height: 3.25em;
+      padding-right: 1.25em;
+      position: absolute;
+      right: 0;
+      text-align: right;
+      top: 0;
+      vertical-align: middle;
+      width: 7em;
+    }
+
+
+      #menu .close::before {
+        content: "";
+        -moz-osx-font-smoothing: grayscale;
+        -webkit-font-smoothing: antialiased;
+        font-family: "{{iconFontFamily}}";
+        font-style: normal;
+        font-weight: normal;
+        text-transform: none !important;
+      }
+
+      #menu .close:before {
+        font-size: 1.25em;
+      }
+
+      #menu .close:hover {
+        color: #ffffff;
+      }
+
+      @media screen and (max-width: 736px) {
+
+        #menu .close {
+          height: 4em;
+          line-height: 4em;
+        }
+
+      }
+
+    #menu.visible {
+      -moz-transform: translateX(0);
+      -webkit-transform: translateX(0);
+      -ms-transform: translateX(0);
+      transform: translateX(0);
+      box-shadow: 0 0 1.5em 0 rgba(0, 0, 0, 0.2);
+      visibility: visible;
+    }
+
+    @media screen and (max-width: 736px) {
+
+      #menu {
+        padding: 2.5em 1.75em;
+      }
+
+
+
+    }
+
+
+/* Layout stuff */
+.logo {
+    height: 60px; /* Stelt de hoogte van de logo in */
+    background-color: black; /* Zwarte achtergrondkleur */
+    display: flex; /* Zorgt ervoor dat de afbeelding goed wordt uitgelijnd */
+    justify-content: flex-start; /* Plaatst de afbeelding aan de linkerkant */
+    align-items: center; /* Centreert de afbeelding verticaal */
+    padding-left: 0; /* Optioneel, voegt wat ruimte toe aan de linkerkant */
+    border-bottom: 1px solid white; /* Witte lijn aan de onderkant */
+}
+.logo img {
+    height: 100%; /* Zorgt ervoor dat de afbeelding de volledige hoogte van de .logo div vult */
+    width: auto; /* Handhaaft de proporties van de afbeelding */
+}
+
+.box{
+  max-width: 100%; /* Max breedte voor grote schermen */
+}
+
+/* BOX */
+.box:nth-child(odd) {
+  background-color: #CCE6F4; /* Geel voor oneven elementen */
+}
+
+.box:nth-child(even) {
+  background-color: #E8F7CC; /* Rood voor even elementen */
+}
+
+/* FONTSAMPLE */
+.box:nth-child(odd) > .fontSample{
+  background-color: #99CEE9; /* Geel voor oneven elementen */
+}
+
+.box:nth-child(even) > .fontSample{
+  background-color: #D1EF99; /* Rood voor even elementen */
+}
+
+/* TEXT */
+.box:nth-child(odd) .text {
+    background-color: Cornflowerblue; /* Geel voor oneven .box */
+}
+
+.box:nth-child(even) .text {
+    background-color: Darkkhaki; /* Blauw voor even .box */
+}
+
+/* H2/H3 */
+.box:nth-child(odd) h2, .box:nth-child(odd) h3, .box:nth-child(odd) p {
+    color: Lavender; /* Geel voor oneven .box */
+}
+
+.box:nth-child(even) h2, .box:nth-child(even) h3, .box:nth-child(even) p {
+    color: Lightgoldenrodyellow; /* Blauw voor even .box */
+}
+
+/* read-more-btn */
+.box:nth-child(odd) .read-more-btn {
+    background-color: Skyblue; /* Geel voor oneven .box */
+}
+
+.box:nth-child(even) .read-more-btn {
+    background-color: Khaki; /* Blauw voor even .box */
+}
+
+.box:nth-child(odd) .read-more-btn:hover {
+    background-color: Darkcyan; /* Geel voor oneven .box */
+}
+
+.box:nth-child(even) .read-more-btn:hover {
+    background-color: Olive; /* Blauw voor even .box */
+}
+
+.box:nth-child(odd) button {
+    color: Darkcyan; /* Geel voor oneven .box */
+}
+
+.box:nth-child(even) button {
+    color: Olive; /* Blauw voor even .box */
+}
+
+.box:nth-child(odd) button:hover {
+    color: Skyblue; /* Geel voor oneven .box */
+}
+
+.box:nth-child(even) button:hover {
+    color: Khaki; /* Blauw voor even .box */
+}
+
+
+.type-tester__slider__handle:hover {
+  color: green;
+}
+
+.fontSample {
+  display: flex;
+  flex-wrap: wrap; /* Laat flex-items wrappen op kleinere schermen */
+  margin: 0 auto;
+  max-width: 1200px; /* Max breedte voor grote schermen */
+}
+
+/* Stijl voor de linkerkolom */
+.fontSample .left {
+  flex: 1; /* Gelijke breedte bij voldoende ruimte */
+  min-width: 300px; /* Minimale breedte van elk blok */
+  max-width: 50%; /* Maximaal de helft van de container */
+  box-sizing: border-box;
+}
+
+/* Stijl voor de rechterkolom */
+.fontSample .right {
+  flex: 1;
+  min-width: 300px;
+  max-width: 50%;
+  box-sizing: border-box;
+}
+
+.fontSample .right img {
+  width: 100%;
+  height: auto;
+  display: block;
+
+}
+
+/* Responsieve media query voor tablets */
+@media screen and (max-width: 768px) {
+  .fontSample {
+    flex-direction: column; /* Schakel naar kolomlay-out */
+  }
+
+  .fontSample .right {
+    order: -1; /* Plaats de afbeelding bovenaan */
+  }
+
+  .fontSample .left {
+    order: 0; /* Tekst blijft onder de afbeelding */
+  }
+
+  .fontSample .left,
+  .fontSample .right {
+    max-width: 100%; /* Volledige breedte */
+    flex: 0 0 100%; /* Blokken onder elkaar */
+  }
+}}
+
+div.example {
+    background-color: white;
+}
+div.image {
+    background-color: #ff0000;    
+}
+
+div.text {
+    padding:20px;
+    margin:20px;
+}
+/* Typography */
+div.header h1 {
+  font-family: "Presti Deck Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  color: black;
+}
+
+/* Styling voor de tekst in de box */
+.text {
+    padding: 20px;
+    background-color: yellow; /* Standaard achtergrondkleur is geel */
+}
+
+ h2 {
+  font-family: "Presti Deck Regular";
+  /*font-family: "Responder P Semibold";*/
+  font-feature-settings: "kern" 1, "clig" 1;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 6rem; /* Grotere lettergrootte */
+  color: black; /* Donkere tekstkleur */
+  margin: 10px;
+  padding:5px;
+  display:inline-block;
+}
+
+h3 {
+  font-family: "Presti Deck Bold";
+  /*font-family: "Responder P Book";*/
+  font-feature-settings: "kern" 1, "clig" 1;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4rem; /* Grotere lettergrootte */
+  font-weight: normal;
+  color: black; /* Donkere tekstkleur */
+  margin: 10px; /* Verwijder marges */
+  padding:5px;
+}
+
+p {
+  font-size: 1.3rem; /* Standaard tekstgrootte */
+  color: black; /* Neutrale kleur */
+  line-height: 1.6; /* Betere leesbaarheid */
+  margin: 10px; /* Verwijder marges */
+  display:inline-block;
+}
+
+.header {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Volledige schermhoogte */
+  overflow: hidden;
+}
+
+/* Slideshow styling */
+/* Slideshow Header */
+.header {
+  position: relative;
+  width: 100%;
+  height: 500px; /* Vaste hoogte ingesteld */
+  overflow: hidden;
+}
+
+.slideshow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; /* Vul de hoogte van de header */
+  display: flex;
+  animation: slideShow 25s infinite;
+}
+
+
+#header nav a {
+  -moz-transition: color 0.2s ease-in-out;
+  -webkit-transition: color 0.2s ease-in-out;
+  -ms-transition: color 0.2s ease-in-out;
+  transition: color 0.2s ease-in-out;
+  display: inline-block;
+  padding: 0 0.75em;
+    padding-right: 0.75em;
+  color: inherit;
+  text-decoration: none;
+}
+
+#menu > ul.links > li > a:not(.button) {
+  border: 0;
+    border-top-width: 0px;
+    border-top-style: none;
+    border-top-color: currentcolor;
+  border-top: solid 1px rgba(255, 255, 255, 0.25);
+  color: inherit;
+  display: block;
+  line-height: 3.5em;
+  text-decoration: none;
+}
+
+#header {
+  text-align: left;
+}
+
+.slide {
+  min-width: 100%;
+  height: 100%; /* Vul de hoogte van de slideshow */
+}
+
+.slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Vul de slide zonder vervorming */
+}
+
+/* Titel en ondertitel */
+.overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+.overlay span {
+  font-size: 2.5rem;
+  margin-top: 10px;
+  background: none;
+  width: 100%;
+  color: black;
+  background-color: white;
+}
+
+.overlay h3 {
+  font-family: "Presti Deck Bold";
+  font-size: 6rem;
+  margin-top: 10px;
+  background: none;
+  width:100%;
+  display: inline-block;
+  color:black;
+  padding:10px;
+  padding-left:5px;
+  padding-right:5px;
+  background-color: white;
+}
+
+/* Animaties */
+@keyframes slideShow {
+  0% { transform: translateX(0); }
+  10% { transform: translateX(0); }
+  20% { transform: translateX(-100%); }
+  30% { transform: translateX(-100%); }
+  40% { transform: translateX(-200%); }
+  50% { transform: translateX(-200%); }
+  60% { transform: translateX(-300%); }
+  70% { transform: translateX(-300%); }
+  80% { transform: translateX(-400%); }
+  90% { transform: translateX(-400%); }
+  100% { transform: translateX(0); }
+}
+
+
+/* Footer Styling */
+.footer {
+  background-color: black; /* Zwarte achtergrond voor de footer */
+  color: white; /* Witte tekst */
+  padding: 20px 0; /* Ruimte boven en onder de footer */
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px; /* Optioneel: stel een maximale breedte in voor de footer */
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-logo img {
+  height: 60px; /* Pas de hoogte van het logo aan */
+}
+
+.footer-links ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links ul li {
+  margin-left: 20px;
+}
+
+.footer-links ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.footer-links ul li a:hover {
+  text-decoration: underline; /* Voeg onderlijning toe bij hover */
+}
+
+
+.read-more-btn {
+  display: inline-block; /* Zorg ervoor dat de knop inline wordt weergegeven */
+  margin-top: 10px; /* Voeg wat ruimte boven de knop toe */
+  padding: 10px 20px; /* Voeg wat padding toe om de knop groter te maken */
+  font-size: 1rem; /* Stel de tekstgrootte in */
+  color: white; /* Witte tekstkleur */
+  border: none; /* Verwijder de rand */
+  border-radius: 20px; /* Maak de hoeken van de knop afgerond */
+  cursor: pointer; /* Verander de cursor naar een pointer bij hover */
+  text-align: center; /* Centreer de tekst */
+  width: auto;
+  font-weight: 600;
+  letter-spacing: 1pt;
+}
+
+.read-more-btn:hover {
+  background-color: #0056b3; /* Maak de achtergrondkleur donkerder bij hover */
+}

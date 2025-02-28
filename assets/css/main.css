@@ -271,13 +271,19 @@ blockquote {
 
 /* ANIMATE */
 
-@keyframes moveDown {
+@keyframes moveDownBounce {
     0% {
         opacity: 0;
-        transform: translateY(-200px);
+        transform: translateY(-400px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(5px);
+    }
+    70% {
+        transform: translateY(-5px);
     }
     100% {
-        opacity: 1;
         transform: translateY(0);
     }
 }
@@ -1551,8 +1557,8 @@ nav{
     color: white;
     text-align: center;
     width:100%;
-    animation: moveDown 1s ease-out;
-}
+    animation: moveDownBounce 1s ease-out;
+  }
 
 .overlay-text {
     position: absolute;
@@ -1724,5 +1730,52 @@ nav{
 .nav-arrow.right { right: 20px; }
 
 
+
+
+
+
+#menuToggle {
+  display: none;
+}
+
+label {
+  cursor: pointer; 
+  color: white;
+}
+
+nav {
+  background-color: var(--primary-bg-color);
+  color: white;
+  height: 100vh;
+  right: -100vw; /* width of the menu */
+  position: absolute;
+  text-align: right;
+  top: 0;
+  width: 400px;
+}
+
+nav label {
+  line-height: 3;
+  margin-right: 1rem
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+ul a:link,
+ul a:visited,
+ul a:hover,
+ul a:active {
+  color: white;
+}
+
+#menuToggle:checked + label + nav {
+  right: 0;
+  transition: 0.6s;
+}
 
 
