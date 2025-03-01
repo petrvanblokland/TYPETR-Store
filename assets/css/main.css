@@ -11,10 +11,27 @@
 /* CONDITIONS */
 
 :root {
-  --primary-text-color: #222;
-  --secondary-text-color: #fff;
-  --primary-bg-color: #222;
-  --secondary-bg-color: brown;
+  /* FONT */
+  --font-family:"Upgrade";
+  --font-weight-ultrablack:Ultra Black;
+  --font-weight-black:Black;
+  --font-weight-bold:Bold;
+  --font-weight-medium:Medium;
+  /* COLOR */
+  --color-black: black;
+  --color-white: white;
+  --color-accent: #f64242;
+  /* COLOR TYPE */
+  --color-type-hero: white;
+  --color-type-header: #212427;
+  --color-type-body: #212427;
+  /* BORDER */
+  --border-white: solid 1px white; ;
+  --border-gray: solid 1px lightgray;
+  --border-gray-small: solid 0.5px lightgray;
+  --border-bottom-white: solid 1px white;
+  --border-bottom-white-small: solid 0.25px white; ;
+  --border-bottom-black: solid 1px black; ;
 }
 
 /* BODY */
@@ -94,18 +111,18 @@ h1, h2, h2.sub, .image-block .overlay-block h2, .image-block .overlay-block p {
 
 h1 {
   font-size: 4.3em; 
-  font-family:"Upgrade";
-  font-weight:Black;
+  font-family:var(--font-family);
+  font-weight:var(--font-weight-bold);
   text-align: center;
-  color:white;
+  color:var(--color-type-hero);
   text-transform: uppercase; 
 }
 
 h2 {
-  font-size: 3em; /* 32px */
+  font-size: 3em;
   line-height: 1em;
-  font-family:"Upgrade";
-  font-weight:Bold;
+  font-family:var(--font-family);
+  font-weight:var(--font-weight-bold);
   margin:0px;
   margin-top: 10px; 
   display: block;
@@ -114,14 +131,14 @@ h2 {
 
 .fontSample h2 {
   text-shadow: none; 
-  color:black;
+  color:var(--color-black);
 }
 
 h2.sub{
-  color:white;
   text-align: center;
-  font-family:"Upgrade";
-  font-weight:Medium;
+  color:var(--color-type-hero);
+  font-family:var(--font-family);
+  font-weight:var(--font-weight-bold);
 }
 
 h2.topic{
@@ -132,9 +149,9 @@ h2.topic{
 h3 {
   font-size: 2.5em;
   line-height: 1em;
-  font-family:"Upgrade";
-  font-weight:Ultra Black;
-  color: black;
+  font-family:var(--font-family);
+  font-weight:var(--font-weight-bold);
+  color:var(--color-type-header);
   text-align: left;
   float: left;
   margin:0px;
@@ -147,15 +164,15 @@ h3 {
 
 h3.sub{
   font-size: 1.8em;
-  font-family:"Upgrade Book";
+  font-family:var(--font-family);
 }
 
 h4 {
   font-size: 1.6em;
   line-height: 1em;
-  font-family:"Upgrade";
-  font-weight:Bold;
-  color: black;
+  font-family:var(--font-family);
+  font-weight:var(--font-weight-bold);
+  color:var(--color-type-header);
   text-align: left;
   float: left;
   margin-top: 10px;
@@ -169,8 +186,8 @@ h4 {
 h5 {
   font-size: 1.2rem;
   line-height: 1.3em;
-  font-family:"Upgrade Medium";
-  color: black;
+  font-family:var(--font-family);
+  color:var(--color-type-header);
   text-align: left;
   margin-top: 10px; 
   letter-spacing: 1px;
@@ -178,28 +195,28 @@ h5 {
 
 h6 {
   font-size: 1.7rem;
-  font-family:"Upgrade";
-  font-weight:Bold;
-  color: #888;
+  font-family:var(--font-family);
+  font-weight:var(--font-weight-bold);
+  color:var(--color-type-header);
   font-style: italic;
   letter-spacing: 0.05em;
   text-align: left;
 }
 
 p, figcaption {
-  font-family:"Upgrade";
+  font-family:var(--font-family);
   font-weight:Regular;
   letter-spacing: 0.02em;
   font-size: 1.1em; 
   line-height: 1.5em;
-  color: #474747;
+  color: var(--color-type-body);
   word-wrap: break-word; 
   display:inline-block;
 }
 
 p.summary {
-  color: black;
-  font-family:"Upgrade";
+  color:var(--color-type-body);
+  font-family:var(--font-family);
   font-weight:Regular;
   text-align: center;
   font-size: 1.8rem;
@@ -215,7 +232,7 @@ figcaption{
 
 blockquote {
   font-size: 1.25rem;
-  color: #444;
+  color: var(--color-accent);
   margin: 1rem 0;
   padding-left: 1.5rem;
   border-left: 4px solid #ddd;
@@ -224,7 +241,7 @@ blockquote {
 .column h2 {
   display: inline-block;
   float: left;
-  font-family:"Upgrade Medium";
+  font-family:var(--font-family);
   text-align: left;
 }
 
@@ -232,10 +249,14 @@ blockquote {
   display: inline-block;
   float: left;
   width:100%;
-  font-family:"Upgrade Regular";
+  font-family:var(--font-family);
   font-size: 30pt;
   line-height: 27pt;
   text-align: left;
+}
+
+h1, h2, h3, h4, h5, h6, p, figcaption{
+  animation: moveDownBounceSmall 0.7s ease-in-out;
 }
 
 /* RESPONSIVE TYPOGRAPHY */
@@ -275,14 +296,19 @@ blockquote {
 
 /* ANIMATE */
 
-@keyframes moveDown {
+@keyframes moveDownBounce {
     0% {
         opacity: 0;
-        transform: translateY(-200px);
-<<<<<<< HEAD
+        transform: translateY(-400px);
+    }
+    50% {
+        opacity: 1;
+        transform: translateY(5px);
+    }
+    70% {
+        transform: translateY(-5px);
     }
     100% {
-        opacity: 1;
         transform: translateY(0);
     }
 }
@@ -291,11 +317,8 @@ blockquote {
     0% {
         opacity: 0;
         transform: translateY(-40px);
-=======
->>>>>>> parent of 74c65e5 (Add css update)
     }
     100% {
-        opacity: 1;
         transform: translateY(0);
     }
 }
@@ -309,16 +332,28 @@ blockquote {
     }
 }
 
+@keyframes breathing {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.04);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 /* SELECTION */
 
 ::-moz-selection { /* Code for Firefox */
-  color: #202124;
-  background-color: yellow;
+  color: var(--color-white);
+  background-color: var(--color-accent);
 }
 
 ::selection {
-  color: #202124;
-  background-color: yellow;
+  color: var(--color-white);
+  background-color: var(--color-accent);
 }
 
 /* MENU */
@@ -333,9 +368,9 @@ blockquote {
   -ms-transition: -ms-transform 0.5s ease, box-shadow 0.5s ease;
   transition: transform 0.5s ease, box-shadow 0.5s ease;
   -webkit-overflow-scrolling: touch;
-  background: #f64242;
+  background: var(--color-accent);
   box-shadow: none;
-  color: #ffffff;
+  color: var(--color-white);
   height: 100%;
   max-width: 40%;
   overflow-y: auto;
@@ -366,16 +401,16 @@ blockquote {
 #menu > ul.links {
   list-style: none;
   padding: 0;
-  font-family:"Upgrade";
+  font-family:var(--font-family);
 }
 
 #menu > ul.links > li {
   padding: 0;
-  font-family:"Upgrade Regular";
+  font-family:var(--font-family);
 }
 
 #menu > ul.links > li:hover {
-  color:#202124;
+  color:var(--color-accent);
 }
 
 #menu > ul.links > li > a:not(.button) {
@@ -393,7 +428,7 @@ blockquote {
 
 #menu > ul.links > li:first-child > a:not(.button), #menu > ul.links > li:last-child > a:not(.button) {
   border-top: 0 !important;
-  font-family:"Upgrade";
+  font-family:var(--font-family);
 }
 
 
@@ -406,17 +441,17 @@ blockquote {
 /* LOGO */
 
 .logo {
-    height: 60px; /* Stelt de hoogte van de logo in */
-    background-color: black; /* Zwarte achtergrondkleur */
-    display: flex; /* Zorgt ervoor dat de afbeelding goed wordt uitgelijnd */
-    justify-content: flex-start; /* Plaatst de afbeelding aan de linkerkant */
-    align-items: center; /* Centreert de afbeelding verticaal */
-    padding-left: 0; /* Optioneel, voegt wat ruimte toe aan de linkerkant */
+    height: 60px; 
+    background-color:var(--color-black);
+    display: flex;
+    justify-content: flex-start; 
+    align-items: center; 
+    padding-left: 0;
     border:none;
 }
 .logo img {
-    height: 100%; /* Zorgt ervoor dat de afbeelding de volledige hoogte van de .logo div vult */
-    width: auto; /* Handhaaft de proporties van de afbeelding */
+    height: 100%;
+    width: auto;
     margin-left: 10px;
 }
 
@@ -442,9 +477,9 @@ blockquote {
 }
 
 .fontdueBox{
-  background-color:white;
+  background-color:var(--color-white);
   border-top: solid 1px white; 
-  border-bottom: solid 1px white; 
+  border-bottom: var(--border-bottom); 
   display: inline-block;
   width:100%;
 }
@@ -480,11 +515,11 @@ blockquote {
 }
 
 .type-tester__toolbar {
-  font-family:"Upgrade Regular";
+  font-family:var(--font-family);
 }
 
 .type-tester__features-button button{
-  color:white;
+  color:var(--color-white);
 }
 
 /* FONTSAMPLE */
@@ -497,7 +532,7 @@ blockquote {
 }
 
 .haeder{
-    border-bottom: solid 1px #202124; 
+  border-bottom: var(--border-bottom-white); 
 }
 
 .fontSample .left {
@@ -522,9 +557,9 @@ blockquote {
 }
 
 .familyInfo {
-  background-color: yellow;
-  color:green!important;
-  border-bottom: solid 5px red;
+  background-color: var(--color-accent);
+  color:var(--color-accent);
+  border-bottom: var(--color-white);
 }
 
 
@@ -552,10 +587,10 @@ blockquote {
 }
 
 div.example {
-    background-color: white;
+    background-color: var(--color-white);
 }
 div.image {
-    background-color: #ff0000;    
+    background-color: var(--color-accent);    
 }
 
 div.text {
@@ -576,12 +611,12 @@ div.text {
   'wght' 400,
   'GRAD' 0,
   'opsz' 32;
-  color:white;
+  color:var(--color-white);
   font-size: 24pt!important;
 }
 
 .material-symbols-outlined:hover {
-  color:yellow;
+  color:var(--color-accent);
 }
 
 
@@ -593,7 +628,7 @@ div.text {
   top:0px;
   z-index: 1000;
   text-align: left;
-  border-bottom: solid 1px white;
+  border-bottom: var(--border-bottom-white);
   box-shadow: 0 -20px 20px rgba(0, 0, 0, 0.3), /* Bovenschaduw */
               0 20px 20px rgba(0, 0, 0, 0.3);  /* Onderschaduw */
 }
@@ -619,8 +654,8 @@ nav{
 }
 
 #header nav a:hover {
-  color: red;
-  background-color: white;
+  color: var(--color-accent);
+  background-color: var(--color-white);
 }
 
 @media screen and (max-width: 1200px) {
@@ -648,7 +683,7 @@ nav{
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  color: white;
+  color: var(--color-white);
 }
 
 .overlay span {
@@ -656,21 +691,21 @@ nav{
   margin-top: 10px;
   background: none;
   width: 100%;
-  color: black;
-  background-color: white;
+  color:var(--color-black);
+  background-color: var(--color-white);
 }
 
 .overlay h3 {
   font-size: 3rem;
   margin-top: 5px;
   display: inline-block;
-  color:#202124;
+  color:var(--color-accent);
   padding:10px;
   padding-left:15px;
   padding-right:15px;
-  background-color: white;
+  background-color:var(--color-white);
   opacity:70%;
-  font-family:"Upgrade";
+  font-family:var(--font-family);
   font-weight:Medium;
   border-radius: 10px;
 }
@@ -688,8 +723,8 @@ nav{
 /* FOOTER */
 
 .footer {
-  background-color: black; 
-  color: white; 
+  background-color:var(--color-black); 
+  color: var(--color-white); 
   position: relative;
   bottom: 0;
   width: 100%;
@@ -716,7 +751,7 @@ nav{
 /* MENU */
 
 .menu{
-  color:white;
+  color:var(--color-white);
 }
 
 .menu ul, .footer-links ul {
@@ -731,16 +766,16 @@ nav{
 }
 
 .menu ul li a, .footer-links ul li a {
-  color: white;
+  color: var(--color-white);
   text-decoration: none;
   font-size: 1.1rem;
-  font-family:"Upgrade";
+  font-family:var(--font-family);
   font-weight:Regular;
 }
 
 .menu ul li a:hover, .footer-links ul li a:hover {
-  text-decoration: underline; /* Voeg onderlijning toe bij hover */
-  color: red;
+  text-decoration: underline; 
+  color: var(--color-accent);
 }
 
 .read-more-btn {
@@ -748,18 +783,18 @@ nav{
   margin-top: 10px; /* Voeg wat ruimte boven de knop toe */
   padding: 10px 20px; /* Voeg wat padding toe om de knop groter te maken */
   font-size: 1rem; /* Stel de tekstgrootte in */
-   lor: white; /* Witte tekstkleur */
+  color: var(--color-white); /* Witte tekstkleur */
   border: none; /* Verwijder de rand */
   border-radius: 20px; /* Maak de hoeken van de knop afgerond */
   cursor: pointer; /* Verander de cursor naar een pointer bij hover */
   text-align: center; /* Centreer de tekst */
   width: auto;
-  font-family:"Upgrade Bold";
+  font-family:var(--font-family);
   letter-spacing: 1pt;
 }
 
 .read-more-btn:hover {
-  background-color: #0056b3; /* Maak de achtergrondkleur donkerder bij hover */
+  background-color: var(--color-accent); /* Maak de achtergrondkleur donkerder bij hover */
 }
 
 /* BUY BUTTON */
@@ -767,32 +802,32 @@ nav{
 .buy-button{
   display: inline-block;
   border-radius: 10px;
-  border: solid 1px white; 
-  background-color:white;
+  border: var(--border-white); 
+  background-color:var(--color-white);
   margin-top: 0px;
   margin-left:20px;
   margin:20px;
-  font-family:"Upgrade Regular";
+  font-family:var(--font-family);
   font-size: 14pt;
   padding-right:20px;
   padding-left:20px;
   padding-top:10px;
   padding-bottom:10px;
-  color:#202124;
+  color:var(--color-accent);
 }
 
 .buy-button:hover{
   border-radius: 10px;
-  border: solid 1px white; 
-  font-family:"Upgrade Bold";
+  border: var(--border-white); 
+  font-family:var(--font-family);
 }
 
 .box:nth-child(2n+1) button{
-  color:#202124;
+  color:var(--color-accent);
 }
 
 .box:nth-child(2n+1) button:hover{
-  color:white;
+  color:var(--color-white);
 }
 
 /* NAVBAR */
@@ -802,7 +837,7 @@ nav{
     top: 0;
     left: 0;
     width: 100%;
-    background-color: #333;
+    background-color:var(--border-white);
     padding: 10px 0;
     z-index: 1000;
     height:55px;
@@ -820,14 +855,14 @@ nav{
 }
 
 .navbar ul li a {
-    color: white;
+    color: var(--color-white);
     text-decoration: none;
     font-size: 1rem;
     padding: 10px;
 }
 
 .navbar ul li a:hover {
-    background-color: #575757;
+    background-color: var(--color-accent);
     border-radius: 5px;
 }
 
@@ -848,8 +883,8 @@ nav{
 
 .cta-btn {
     padding: 10px 20px;
-    background-color: #007bff;
-    color: white;
+    background-color: var(--color-accent);
+    color: var(--border-white);
     text-decoration: none;
     border-radius: 5px;
     margin-top: 20px;
@@ -859,7 +894,7 @@ nav{
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* Drie kolommen */
     gap: 0px;
-    background-color: red; /* Lichtgroene achtergrondkleur */
+    background-color: var(--color-accent); /* Lichtgroene achtergrondkleur */
     height: 400px;
 }
 
@@ -1095,11 +1130,11 @@ nav{
 
 .block, .block-small{
   width: 100vw;
-  background-color: white;
+  background-color: var(--color-white);
   box-shadow: 0 -20px 20px rgba(0, 0, 0, 0.3), /* Bovenschaduw */
               0 20px 20px rgba(0, 0, 0, 0.3);  /* Onderschaduw */
   border-top: solid 0.5px white; 
-  border-bottom: solid 0.5px white; 
+  border-bottom: var(--border-bottom-white); 
   animation: fadeIn 1s ease-out forwards;
 }
 
@@ -1118,7 +1153,7 @@ nav{
 .scroll-section {
     position: relative;
     height: 100vh;
-    background-color: white;
+    background-color: var(--color-white);
     padding: 20px;
 }
 
@@ -1127,9 +1162,9 @@ nav{
     top: 0;
     left: 0;
     width: 100%;
-    background-color: yellow;
+    background-color:var(--color-accent);
     padding: 15px;
-    font-weight: bold;
+    font-weight:var(--font-weight-bold);
     transition: position 0.3s ease;
 }
 
@@ -1145,25 +1180,25 @@ nav{
 /* CODE */
 
 .css-code {
-    background: #eee;
-    border: solid 0.5px #eee;
-    padding: 10px;
-    font-size: 14px;
-    font-family: monospace;
-    border-radius: 5px;
-    text-align: left;
-    white-space: pre;
-    margin-top: 20px;
+  background: #eee;
+  border: var(--border-white);
+  padding: 10px;
+  font-size: 14px;
+  font-family:var(--font-family);
+  border-radius: 5px;
+  text-align: left;
+  white-space: pre;
+  margin-top: 20px;
 }
 
 .css-code:hover {
-  border: solid 0.5px gray;
+  border: var(--border-gray);
 }
 
 /* TILE */
 
 .tile {
-  border: solid 0.5px gray;
+  border: var(--border-gray-small);
   height: 100%;
   padding:10px;
 }
@@ -1308,10 +1343,10 @@ nav{
   display: flex;
   align-items: center; 
   justify-content: center; 
-  color: white;
+  color: var(--color-white);
   text-align: center;
   background: rgba(0, 0, 0, 0.4); 
-  font-family:"Upgrade";
+  font-family:var(--font-family);
   font-weight:Regular;
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
@@ -1320,7 +1355,7 @@ nav{
 
 .image-block .overlay-block h2 {
   font-size: 32px;
-  font-family:"Upgrade";
+  font-family:var(--font-family);
   font-weight:Regular;
   margin: 0 auto;
 }
@@ -1330,7 +1365,7 @@ nav{
 }
 
 .image-block .overlay-block h2, .image-block .overlay-block p{
-  color:white;
+  color:var(--color-white);
 }
 
 @media screen and (max-width: 1000px) {
@@ -1355,7 +1390,7 @@ nav{
 }
 
 .grid .image-block{
-  border: solid 0.25px gray; 
+  border: var(--border-gray-small); 
 }
 
 .image-block img {
@@ -1379,7 +1414,7 @@ nav{
   margin-bottom: 20px;
   padding-bottom:20px;
   border-radius: 10px;
-  border: solid 1px gray; 
+  border: var(--border-gray); 
   height:100%;
 }
 
@@ -1421,17 +1456,17 @@ nav{
 }
 
 .topic-block {
-    background-color: white;
-    paddin-top: 20px;
-    paddin-bottom: 20px;
-    font-family:"Upgrade Bold";
-    color:white;
+  background-color:var(--color-white);
+  paddin-top: 20px;
+  paddin-bottom: 20px;
+  font-family:var(--font-family);
+  color:var(--color-black);
 }   
 
 .topic-item {
     text-align: left;
     width: 25%;
-    border: 1px solid #757575;
+    border: var(--border-gray);
     margin-top: 20px;
     margin-bottom: 20px;
     padding:10px;
@@ -1469,7 +1504,7 @@ nav{
     width: 100%;
     height: 400px;
     box-shadow: inset 0px 60px 100px rgba(0,0,0, 1);
-    border-bottom: solid 1px black;
+    border-bottom: var(--border-bottom-black);
 }
 
 .hero-image-small {
@@ -1499,7 +1534,7 @@ nav{
   position: relative;
   width: 100%;
   overflow: hidden;
-  border-bottom: solid 1px #202124;
+  border-bottom: var(--border-bottom-white);
 }
 
 .slideshow {
@@ -1523,9 +1558,9 @@ nav{
   transform: translateY(-50%);
   width: 50px;
   height: 50px;
-  background-color: #202124;
+  background-color:var(--color-accent);
   opacity:50%;
-  color: white;
+  color: var(--color-white);
   font-size: 24px;
   border: none;
   cursor: pointer;
@@ -1563,31 +1598,24 @@ nav{
 }
 
 .hero-overlay {
-    position: absolute;
-    top: 35%;
-    left: 0px;
-    color: white;
-    text-align: center;
-    width:100%;
-    animation: moveDown 1s ease-out;
-}
-<<<<<<< HEAD
-
-h1, h2, h3, h4, h5, h6, p, figcaption{
-  animation: moveDownBounceSmall 0.5s ease-in-out;
-}
+  position: absolute;
+  top: 35%;
+  left: 0px;
+  color: var(--color-white);
+  text-align: center;
+  width:100%;
+  animation: moveDownBounce 1s ease-in-out forwards, breathing 2s ease-in-out infinite;
+  animation-delay: 0s, 1s; 
 }
 
-=======
->>>>>>> parent of 74c65e5 (Add css update)
 
 .overlay-text {
-    position: absolute;
-    color: white;
-    font-size: 1.2rem;
-    background-color: rgba(0, 0, 0, 0.5); /* Lichte transparantie achtergrond voor de tekst */
-    padding: 10px;
-    text-align: center;
+  position: absolute;
+  color: var(--color-white);
+  font-size: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.5); /* Lichte transparantie achtergrond voor de tekst */
+  padding: 10px;
+  text-align: center;
 }
 
 .image-overlay {
@@ -1663,7 +1691,7 @@ h1, h2, h3, h4, h5, h6, p, figcaption{
 .number-header,
 .number,
 .description {
-  color:white;
+  color:var(--color-white);
 }
 
 .number-header{
@@ -1674,14 +1702,14 @@ h1, h2, h3, h4, h5, h6, p, figcaption{
 }
 
 .counter {
-    font-size: 2rem;
-    margin: 10px 0;
-    color: white;
-    font-family:"Upgrade";
-    font-weight: bold;
-    text-align: center;
-    opacity: 0;
-    transition: opacity 6s linear;
+  font-size: 2rem;
+  margin: 10px 0;
+  color: var(--color-white);
+  font-family:"Upgrade";
+  font-weight:var(--font-weight-bold);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 6s linear;
 }
 
 #stats {
@@ -1695,7 +1723,7 @@ h1, h2, h3, h4, h5, h6, p, figcaption{
   margin-bottom: 0px;
   text-align: center;
   font-weight: Regular;
-  color: white;
+  color: var(--color-white);
   font-family:"Upgrade";
   font-weight:Medium;
 }
@@ -1712,23 +1740,23 @@ h1, h2, h3, h4, h5, h6, p, figcaption{
 }
 
 .heading {
-    font-family:"Upgrade Bold";
-    color:white;
-    font-size: 4em;
+  font-family:"Upgrade Bold";
+  color:var(--color-white);
+  font-size: 4em;
 }
 
 /* IMAGE OVERLAY */
 
 .overlayBox {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    justify-content: center;
-    align-items: center;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
 }
 .overlayBox img {
     max-width: 80%;
@@ -1744,15 +1772,13 @@ h1, h2, h3, h4, h5, h6, p, figcaption{
     top: 50%;
     transform: translateY(-50%);
     font-size: 30px;
-    color: white;
+    color: var(--color-white);
     cursor: pointer;
 }
 .nav-arrow.left { left: 20px; }
 .nav-arrow.right { right: 20px; }
 
 
-<<<<<<< HEAD
-<<<<<<< HEAD
 /* SIDEBAR */
 
 #menuToggle {
@@ -1761,12 +1787,12 @@ h1, h2, h3, h4, h5, h6, p, figcaption{
 
 label {
   cursor: pointer; 
-  color: white;
+  color: var(--color-white);
 }
 
 nav .side {
-  background-color: var(--primary-bg-color);
-  color: white;
+  background-color: var(--color-white);
+  color: var(--color-whitec);
   height: 100vh;
   right: -400px; /* Breedte van het menu */
   position: absolute;
@@ -1792,7 +1818,7 @@ ul a:link,
 ul a:visited,
 ul a:hover,
 ul a:active {
-  color: white;
+  color: var(--color-white);
 }
 
 #menuToggle:checked + label + nav .side {
@@ -1805,14 +1831,20 @@ ul a:active {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: red;
-    color: white;
-    padding: 20px;
+    background-color: var(--color-accent);
+    border: var(--border-white);
+    color: var(--color-white);
+    padding: 13px;
     font-size: 16px;
     border-radius: 20px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
     transition: opacity 0.3s, transform 0.3s, visibility 0.3s;
     z-index: 900000;
+}
+
+#scrollTopBtn:hover {
+  background-color: var(--color-white);
+  color: var(--color-accent);
 }
 
 @media screen and (max-width: 1000px) {
@@ -1821,9 +1853,7 @@ ul a:active {
   } 
 }
 
-=======
->>>>>>> parent of 74c65e5 (Add css update)
-=======
->>>>>>> parent of 74c65e5 (Add css update)
+
+
 
 
