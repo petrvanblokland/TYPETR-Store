@@ -635,7 +635,7 @@ div.text {
 
 #menuButton{
   position: absolute;
-  right: 0px;
+  right:400px;
   z-index: 3000000;
   padding-right: 20px;
 }
@@ -1833,7 +1833,7 @@ label {
   color: var(--color-white);
 }
 
-nav .side {
+nav {
   background-color: var(--color-white);
   color: var(--color-whitec);
   height: 100vh;
@@ -1845,7 +1845,7 @@ nav .side {
   transition: right 4s ease-in-out;
 }
 
-nav .side label {
+nav label {
   line-height: 3;
   margin-right: 1rem;
 }
@@ -1857,7 +1857,7 @@ ul {
   text-align: left;
 }
 
-#menuToggle:checked + label + nav .side {
+#menuToggle:checked + label + nav {
   right: 0;
 }
 
