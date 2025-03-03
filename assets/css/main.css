@@ -636,7 +636,11 @@ div.text {
 #menuButton{
   position: absolute;
 <<<<<<< HEAD
+<<<<<<< HEAD
   right:400px;
+=======
+  right: 0px;
+>>>>>>> parent of d63e33c (Fixed menu)
 =======
   right: 0px;
 >>>>>>> parent of d63e33c (Fixed menu)
@@ -1838,7 +1842,11 @@ label {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 nav {
+=======
+nav .side {
+>>>>>>> parent of d63e33c (Fixed menu)
 =======
 nav .side {
 >>>>>>> parent of d63e33c (Fixed menu)
@@ -1854,7 +1862,11 @@ nav .side {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 nav label {
+=======
+nav .side label {
+>>>>>>> parent of d63e33c (Fixed menu)
 =======
 nav .side label {
 >>>>>>> parent of d63e33c (Fixed menu)
@@ -1870,7 +1882,11 @@ ul {
 }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 #menuToggle:checked + label + nav {
+=======
+#menuToggle:checked + label + nav .side {
+>>>>>>> parent of d63e33c (Fixed menu)
 =======
 #menuToggle:checked + label + nav .side {
 >>>>>>> parent of d63e33c (Fixed menu)

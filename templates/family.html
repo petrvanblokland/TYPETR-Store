@@ -56,6 +56,7 @@
     });
 
 <<<<<<< HEAD
+<<<<<<< HEAD
   <!-- MENU SIDEBAR -->
 
   <script>
@@ -105,6 +106,26 @@
         if (timeElapsed < duration) requestAnimationFrame(animation);
       }
 
+=======
+      function smoothScroll(target) {
+      const headerHeight = document.getElementById('header').offsetHeight;
+      const offset = 60; // Extra ruimte boven de sectie
+      const targetPosition = document.getElementById(target).offsetTop - headerHeight - offset;
+      const startPosition = window.scrollY;
+      const distance = targetPosition - startPosition;
+      const duration = 6; // Animatietijd in ms
+      let startTime = null;
+
+      function animation(currentTime) {
+        if (startTime === null) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const run = ease(timeElapsed, startPosition, distance, duration);
+        window.scrollTo(0, run);
+
+        if (timeElapsed < duration) requestAnimationFrame(animation);
+      }
+
+>>>>>>> parent of d63e33c (Fixed menu)
       function ease(t, b, c, d) {
         t /= d / 2;
         if (t < 1) return (c / 2) * t * t + b;
@@ -205,7 +226,10 @@
 
     <!-- HEADER -->
 <<<<<<< HEAD
+<<<<<<< HEAD
     
+=======
+>>>>>>> parent of d63e33c (Fixed menu)
 =======
 >>>>>>> parent of d63e33c (Fixed menu)
     <header id="header">
@@ -222,7 +246,10 @@
         </nav>
         <a id="menuButton" href="#menu"><span class="material-symbols-outlined">menu</span></a>
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> parent of d63e33c (Fixed menu)
 
         <input type="checkbox" id="menuToggle">
         <label for="menuToggle"><span class="material-symbols-outlined">menu</span></label>
@@ -236,13 +263,19 @@
             <li><a href="#usage">Usage</a></li>
           </ul>
         </nav>
+<<<<<<< HEAD
+>>>>>>> parent of d63e33c (Fixed menu)
+=======
 >>>>>>> parent of d63e33c (Fixed menu)
       </div>
     </header>
 
     <!-- NAV -->
 <<<<<<< HEAD
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of d63e33c (Fixed menu)
 =======
 >>>>>>> parent of d63e33c (Fixed menu)
     <nav id="menu">
@@ -253,6 +286,10 @@
         <li><a href="powerlift.html" style="font-family: 'PowerLift Tight';font-size: 3em;line-height: 1.4em;">Powerlift</a></li>
         <li><a href="responder.html" style="font-family: 'Responder P VF Regular';font-size: 3em;line-height: 1.8em;">Responder P</a></li>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+        
+>>>>>>> parent of d63e33c (Fixed menu)
 =======
         
 >>>>>>> parent of d63e33c (Fixed menu)
