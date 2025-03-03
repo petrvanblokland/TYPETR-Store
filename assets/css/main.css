@@ -735,12 +735,26 @@ nav{
 
 /* GENERAL ATTRIBUTES */
 
+/*
 @keyframes slideShow {
   0%, 20% { transform: translateX(0); }
   25%, 45% { transform: translateX(-100%); }
   50%, 70% { transform: translateX(-200%); }
   75%, 95% { transform: translateX(-300%); }
   100% { transform: translateX(0); }
+}
+*/
+
+@keyframes slideShow {
+  0%, 10% { transform: translateX(0); }
+  10%, 20% { transform: translateX(-100%); }
+  20%, 30% { transform: translateX(-200%); }
+  40%, 50% { transform: translateX(-300%); }
+  50%, 60% { transform: translateX(-400%); }
+  60%, 70% { transform: translateX(-500%); }
+  70%, 80% { transform: translateX(-600%); }
+  80%, 90% { transform: translateX(-700%); }
+  100%,    { transform: translateX(-50%); }
 }
 
 /* FOOTER */
