@@ -54,8 +54,8 @@
           },
       },
     });
-  </script>
 
+<<<<<<< HEAD
   <!-- MENU SIDEBAR -->
 
   <script>
@@ -86,6 +86,43 @@
               }
           });
       });
+=======
+      function smoothScroll(target) {
+      const headerHeight = document.getElementById('header').offsetHeight;
+      const offset = 60; // Extra ruimte boven de sectie
+      const targetPosition = document.getElementById(target).offsetTop - headerHeight - offset;
+      const startPosition = window.scrollY;
+      const distance = targetPosition - startPosition;
+      const duration = 6; // Animatietijd in ms
+      let startTime = null;
+
+      function animation(currentTime) {
+        if (startTime === null) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const run = ease(timeElapsed, startPosition, distance, duration);
+        window.scrollTo(0, run);
+
+        if (timeElapsed < duration) requestAnimationFrame(animation);
+      }
+
+      function ease(t, b, c, d) {
+        t /= d / 2;
+        if (t < 1) return (c / 2) * t * t + b;
+        t--;
+        return (-c / 2) * (t * (t - 2) - 1) + b;
+      }
+
+      requestAnimationFrame(animation);
+    }
+
+    document.querySelectorAll('.menu a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        smoothScroll(targetId);
+      });
+    });
+>>>>>>> parent of d63e33c (Fixed menu)
   </script>
 
   <!-- IMAGE OVERLAY BOX -->
@@ -161,15 +198,16 @@
 </head>
   <body>
     <!-- PARALLAX -->
-
     <div class="parallax"></div>
 
     <!-- FONTDUE -->
-
     <fontdue-store-modal></fontdue-store-modal>
 
     <!-- HEADER -->
+<<<<<<< HEAD
     
+=======
+>>>>>>> parent of d63e33c (Fixed menu)
     <header id="header">
       <div class='logo'>
         <a class="logo" href='index.html'>{{logo}}</a>
@@ -183,11 +221,30 @@
           </ul>
         </nav>
         <a id="menuButton" href="#menu"><span class="material-symbols-outlined">menu</span></a>
+<<<<<<< HEAD
+=======
+
+        <input type="checkbox" id="menuToggle">
+        <label for="menuToggle"><span class="material-symbols-outlined">menu</span></label>
+        <nav class="side">
+          <label for="menuToggle">Close</label>
+          <ul>
+            <li><a href="#styles">Styles & axes</a></li>
+            <li><a href="#glyphs">Glyphs</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#making">Making</a></li>
+            <li><a href="#usage">Usage</a></li>
+          </ul>
+        </nav>
+>>>>>>> parent of d63e33c (Fixed menu)
       </div>
     </header>
 
     <!-- NAV -->
+<<<<<<< HEAD
 
+=======
+>>>>>>> parent of d63e33c (Fixed menu)
     <nav id="menu">
       <ul class="links">
         <li><a href="index.html">Index</a></li>
@@ -195,6 +252,10 @@
         <li><a href="proforma.html" style="font-family: 'Proforma Book';font-size: 3em;line-height: 1.4em;">Proforma</a></li>
         <li><a href="powerlift.html" style="font-family: 'PowerLift Tight';font-size: 3em;line-height: 1.4em;">Powerlift</a></li>
         <li><a href="responder.html" style="font-family: 'Responder P VF Regular';font-size: 3em;line-height: 1.8em;">Responder P</a></li>
+<<<<<<< HEAD
+=======
+        
+>>>>>>> parent of d63e33c (Fixed menu)
         <li><a href="upgrade.html" style="font-family: 'Upgrade Thin';font-size: 5em;line-height: 1.4em;">Upgrade</a></li>
         <li><a href="about-typetr.html">About TYPETR</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -202,7 +263,6 @@
     </nav>
 
     <!-- HERO IMAGE -->
-
     <div class="block firstblock" id="start">  
       <section class="hero-image">
           <img src="./images/2022/Presti_in_use_pure_care_02.jpg" class="hero-image-img">
@@ -214,7 +274,6 @@
     </div>
 
     <!-- SUMMARY-->
-
     <div class="block">  
       <div class="one-colum">  
           <p class="summary">Upgrade marks TYPETR’s first “normal” typeface release in many years. This substantial sans serif family supports a generous set of characters and features, and will thrive in a wide range of publication types and media. The typeface lends itself particularly well to scripted workflows.</p>
