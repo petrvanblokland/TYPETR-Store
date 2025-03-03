@@ -677,7 +677,7 @@ div.text {
 }
 
 nav{
-  margin: 0 auto;
+  margin-left: 20px;
 }
 
 #header nav a {
