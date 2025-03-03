@@ -24,11 +24,11 @@ import os, shutil
 
 from random import shuffle
 
-from content.site import Site
-from content.page import Page
-from content.font import Font
-from content.image import Image
-from content.slugs import *
+from lib.site import Site
+from lib.page import Page
+from lib.font import Font
+from lib.image import Image
+from lib.slugs import *
 
 URL = 'typetr.com'
 
