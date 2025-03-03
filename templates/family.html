@@ -5,7 +5,7 @@
     <meta charset="utf-8" />
         
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+    
     <!--
     <link href="https://fonts.fontdue.com/typetr/css/Rm9udENvbGxlY3Rpb246MTkyMDQ4MzU4Mzc5NDUyMjc3MA%3D%3D.css" rel="stylesheet">    
     <link href="https://fonts.fontdue.com/typetr/css/Rm9udENvbGxlY3Rpb246MTkyMDQ5NDE3NzE2MzU4NjQ4Mw%3D%3D.css" rel="stylesheet">
@@ -54,37 +54,41 @@
           },
       },
     });
-  </script>
 
-  <!-- SIDEBAR -->
+      function smoothScroll(target) {
+      const headerHeight = document.getElementById('header').offsetHeight;
+      const offset = 60; // Extra ruimte boven de sectie
+      const targetPosition = document.getElementById(target).offsetTop - headerHeight - offset;
+      const startPosition = window.scrollY;
+      const distance = targetPosition - startPosition;
+      const duration = 6; // Animatietijd in ms
+      let startTime = null;
 
-  <script>
-    // Menu toggle functie
-    document.getElementById("menuToggle").addEventListener("click", function () {
-        document.getElementById("menu").classList.toggle("active");
-        this.textContent = this.textContent === "☰" ? "✖" : "☰";
-    });
+      function animation(currentTime) {
+        if (startTime === null) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const run = ease(timeElapsed, startPosition, distance, duration);
+        window.scrollTo(0, run);
 
-    // Smooth scroll functie
-    function smoothScroll(target) {
-        const headerHeight = document.getElementById('header').offsetHeight;
-        const offset = 20; 
-        const targetElement = document.getElementById(target);
-        if (!targetElement) return;
+        if (timeElapsed < duration) requestAnimationFrame(animation);
+      }
 
-        const targetPosition = targetElement.offsetTop - headerHeight - offset;
-        window.scrollTo({ top: targetPosition, behavior: "smooth" });
+      function ease(t, b, c, d) {
+        t /= d / 2;
+        if (t < 1) return (c / 2) * t * t + b;
+        t--;
+        return (-c / 2) * (t * (t - 2) - 1) + b;
+      }
+
+      requestAnimationFrame(animation);
     }
 
-    // Voeg smooth scrolling toe aan menu-items
-    document.querySelectorAll('.links a').forEach(anchor => {
-        anchor.addEventListener('click', function (e) {
-            if (this.getAttribute('href').startsWith("#")) {
-                e.preventDefault();
-                const targetId = this.getAttribute('href').substring(1);
-                smoothScroll(targetId);
-            }
-        });
+    document.querySelectorAll('.menu a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        smoothScroll(targetId);
+      });
     });
   </script>
 
@@ -161,15 +165,12 @@
 </head>
   <body>
     <!-- PARALLAX -->
-
     <div class="parallax"></div>
 
     <!-- FONTDUE -->
-
     <fontdue-store-modal></fontdue-store-modal>
 
     <!-- HEADER -->
-
     <header id="header">
       <div class='logo'>
         <a class="logo" href='index.html'>{{logo}}</a>
@@ -182,30 +183,39 @@
             <li><a href="#usage">Usage</a></li>
           </ul>
         </nav>
+        <a id="menuButton" href="#menu"><span class="material-symbols-outlined">menu</span></a>
+
+        <input type="checkbox" id="menuToggle">
+        <label for="menuToggle"><span class="material-symbols-outlined">menu</span></label>
+        <nav class="side">
+          <label for="menuToggle">Close</label>
+          <ul>
+            <li><a href="#styles">Styles & axes</a></li>
+            <li><a href="#glyphs">Glyphs</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#making">Making</a></li>
+            <li><a href="#usage">Usage</a></li>
+          </ul>
+        </nav>
       </div>
     </header>
 
-    <div id="menuButton" >
-      <a href="#menu"><span class="material-symbols-outlined">menu</span></a>
-    </div>
-
-    <!-- SIDEBAR MENU -->
-
+    <!-- NAV -->
     <nav id="menu">
       <ul class="links">
-          <li><a href="index.html">Index</a></li>
-          <li><a href="presti.html" style="font-family: 'Presti VF Regular';font-size: 5em;">Presti</a></li>
-          <li><a href="proforma.html" style="font-family: 'Proforma Book';font-size: 3em;">Proforma</a></li>
-          <li><a href="powerlift.html" style="font-family: 'PowerLift Tight';font-size: 3em;">Powerlift</a></li>
-          <li><a href="responder.html" style="font-family: 'Responder P VF Regular';font-size: 3em;">Responder P</a></li>
-          <li><a href="upgrade.html" style="font-family: 'Upgrade Thin';font-size: 5em;">Upgrade</a></li>
-          <li><a href="about-typetr.html">About TYPETR</a></li>
-          <li><a href="contact.html">Contact</a></li>
+        <li><a href="index.html">Index</a></li>
+        <li><a href="presti.html" style="font-family: 'Presti VF Regular';font-size: 5em;line-height: 1.4em;">Presti</a></li>
+        <li><a href="proforma.html" style="font-family: 'Proforma Book';font-size: 3em;line-height: 1.4em;">Proforma</a></li>
+        <li><a href="powerlift.html" style="font-family: 'PowerLift Tight';font-size: 3em;line-height: 1.4em;">Powerlift</a></li>
+        <li><a href="responder.html" style="font-family: 'Responder P VF Regular';font-size: 3em;line-height: 1.8em;">Responder P</a></li>
+        
+        <li><a href="upgrade.html" style="font-family: 'Upgrade Thin';font-size: 5em;line-height: 1.4em;">Upgrade</a></li>
+        <li><a href="about-typetr.html">About TYPETR</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
 
     <!-- HERO IMAGE -->
-
     <div class="block firstblock" id="start">  
       <section class="hero-image">
           <img src="./images/2022/Presti_in_use_pure_care_02.jpg" class="hero-image-img">
@@ -217,7 +227,6 @@
     </div>
 
     <!-- SUMMARY-->
-
     <div class="block">  
       <div class="one-colum">  
           <p class="summary">Upgrade marks TYPETR’s first “normal” typeface release in many years. This substantial sans serif family supports a generous set of characters and features, and will thrive in a wide range of publication types and media. The typeface lends itself particularly well to scripted workflows.</p>
@@ -239,7 +248,6 @@
     </div>    
 
     <!-- SIX COLUMNS IMAGES -->
-
     <div class="block">  
       <!-- CONTENT -->
       <div class="six-colum-flex">  
