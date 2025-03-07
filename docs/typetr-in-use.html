@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title></title>
+    <title>{{page.name}}</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
@@ -64,7 +64,7 @@
 
     <header id="header">
       <div class='logo'>
-        <a class="logo" href='index.html'><img src="images/logos/type-try-logo.gif" width="50%"/></a>
+        <a class="logo" href='index.html'><img src="images/logos/type-try-logo.gif"></a>
         <a id="menuButton" href="#menu"><span class="material-symbols-outlined">menu</span></a>
       </div>
     </header>
@@ -76,7 +76,7 @@
         <li><a href="presti.html" style="font-family: 'Presti VF Regular';font-size: 5em;line-height: 1.4em;">Presti</a></li>
         <li><a href="proforma.html" style="font-family: 'Proforma Book';font-size: 3em;line-height: 1.4em;">Proforma</a></li>
         <li><a href="powerlift.html" style="font-family: 'PowerLift Tight';font-size: 3em;line-height: 1.4em;">Powerlift</a></li>
-        <li><a href="responder.html" style="font-family: 'Responder P VF Regular';font-size: 3em;line-height: 1.8em;">Responder P</a></li>
+        <li><a href="responder-p.html" style="font-family: 'Responder P VF Regular';font-size: 3em;line-height: 1.8em;">Responder P</a></li>
         
         <li><a href="upgrade.html" style="font-family: 'Upgrade Thin';font-size: 5em;line-height: 1.4em;">Upgrade</a></li>
         <li><a href="about-typetr.html">About TYPETR</a></li>
@@ -87,198 +87,37 @@
     <div class="block firstblock">   
       <div class="header">
         <div class="slideshow">
-          
-        <div class="slideshow-container">
-          <div class="slideshow">
-        <div class="slide"><img src="images/2022/Bitcount_in_use_03_time_is_now3.jpg" alt="Slide images/2022/Bitcount_in_use_03_time_is_now3.jpg"></div>
-<div class="slide"><img src="images/2022/Presti-Typetr_font samples_03_valentine.jpg" alt="Slide images/2022/Presti-Typetr_font samples_03_valentine.jpg"></div>
-<div class="slide"><img src="images/2019/Upgrade-01_Instagram_4.jpg" alt="Slide images/2019/Upgrade-01_Instagram_4.jpg"></div>
-<div class="slide"><img src="images/2022/Presti_in_use_vietnamees_bier_01.jpg" alt="Slide images/2022/Presti_in_use_vietnamees_bier_01.jpg"></div>
-<div class="slide"><img src="images/2022/Powerlift_in_use_Mastodon_moving_service_01.jpg" alt="Slide images/2022/Powerlift_in_use_Mastodon_moving_service_01.jpg"></div>
-<div class="slide"><img src="images/2022/Presti_in_use_songs of love and hate_01.jpg" alt="Slide images/2022/Presti_in_use_songs of love and hate_01.jpg"></div>
-<div class="slide"><img src="images/2019/Upgrade-01_Instagram_FewSpaces_11.jpg" alt="Slide images/2019/Upgrade-01_Instagram_FewSpaces_11.jpg"></div>
-<div class="slide"><img src="images/2020/Bitcount-bitcountFlashes1.jpg" alt="Slide images/2020/Bitcount-bitcountFlashes1.jpg"></div>
-<div class="slide"><img src="images/2022/Powerlift_in_use_05.jpg" alt="Slide images/2022/Powerlift_in_use_05.jpg"></div>
-<div class="slide"><img src="images/2018/Upgrade-ae-animation.gif" alt="Slide images/2018/Upgrade-ae-animation.gif"></div>
-</div></div>
+          {{page.slideShow}}
         </div>
           <button class="slideshow-arrow left">&larr;</button>
           <button class="slideshow-arrow right">&rarr;</button>
         <div class="hero-overlay">
           <h1>TYPE Shop</h1>
-          <h2>Fonts that speak volumes </h2>
+          <h2>Fonts that speak volumes {{page.name}}</h2>
         </div>
       </div>
     </div>
 
     <div class="block-small">   
-      
-        <div class="box">
-          <div class="fontSample promo">
-        
-              <div class="left" style="background-image: url('images/2019/Upgrade-01_Instagram_FewSpaces_12.jpg'); background-size: cover;background-position: center">
-              </div> <!-- side -->
-            
-              <div class="right">
-                <div class="text">
-                  <h2 style="font-family:Upgrade Regular;None">Upgrade</h2>
-                  <h3 style="font-family:Upgrade Regular;None line-height:140%">A quick movement of the enemy will jeopardize six guns.</h3>
-                  <p>@@@@@ aaaaaa<br>aaaaaa<br>aaaaaa<br>aaaaaa<br>aaaaaa<br>aaaaaa<br>aaaaaa<br>aaaaaa<br>aaaaaa<br>aaaaaa<br></p>
-        <fontdue-buy-button collection-slug="tp-upgrade"></fontdue-buy-button>
-                </div>
-              </div> <!-- side1 -->
-        
-                  <div class="fontdueBox" style="font-family:Upgrade Regular">
-                <fontdue-type-testers collection-slug="tp-upgrade"></fontdue-type-testers><fontdue-buy-button collection-slug="tp-upgrade"></fontdue-buy-button>
-                </div> <!-- fontdue -->           
-            
-          </div> <!-- fontSample -->
-        </div> <!-- box -->
-        
+      {{page.fontPromo('tp-upgrade', imageRight=False, typeTester=True, characterViewer=False)}}
     </div>
     <div class="block-small">   
-      
-        <div class="box">
-          <div class="fontSample promo">
-        
-              <div class="left">
-                <div class="text">
-                  <h2 style="font-family:PowerLift Tight;None">PowerLift</h2>
-                  <h3 style="font-family:PowerLift Tight;None line-height:140%">The zebra jumped quickly across the frosty box.</h3>
-                  <p>@@@@@ aaaaaa<br>aaaaaa<br>aaaaaa<br>aaaaaa<br>aaaaaa<br>aaaaaa<br>aaaaaa<br>aaaaaa<br>aaaaaa<br>aaaaaa<br></p>
-        <fontdue-buy-button collection-slug="tp-powerlift"></fontdue-buy-button>
-                </div>
-              </div> <!-- side1 -->
-        
-              <div class="right" style="background-image: url('images/2022/PowerLift-Buttons.jpeg'); background-size: cover;background-position: center">
-              </div> <!-- side -->
-            
-                  <div class="fontdueBox" style="font-family:PowerLift Tight">
-                <fontdue-type-testers collection-slug="tp-powerlift"></fontdue-type-testers><fontdue-buy-button collection-slug="tp-powerlift"></fontdue-buy-button>
-                </div> <!-- fontdue -->           
-            
-          </div> <!-- fontSample -->
-        </div> <!-- box -->
-        
+      {{page.fontPromo('tp-powerlift', typeTester=True, style='Tight')}}
     </div>
     <div class="block-small">   
-      
-        <div class="box">
-          <div class="fontSample promo">
-        
-              <div class="left" style="background-image: url('images/2022/Presti_in_use_07_looking at art.jpg'); background-size: cover;background-position: center">
-              </div> <!-- side -->
-            
-              <div class="right">
-                <div class="text">
-                  <h2 style="font-family:Presti VF Regular;None">Presti</h2>
-                  <h3 style="font-family:Presti VF Regular;None line-height:140%">Waltz, nymph, for quick jigs vex Bud.</h3>
-                  <p>@@@@@ aaaaaa<br>aaaaaa<br>aaaaaa<br>aaaaaa<br>aaaaaa<br>aaaaaa<br>aaaaaa<br>aaaaaa<br>aaaaaa<br>aaaaaa<br></p>
-        <fontdue-buy-button collection-slug="presti-vf"></fontdue-buy-button>
-                </div>
-              </div> <!-- side1 -->
-        
-                  <div class="fontdueBox" style="font-family:Presti Regular">
-                <fontdue-type-testers collection-slug="presti-vf"></fontdue-type-testers><fontdue-buy-button collection-slug="presti-vf"></fontdue-buy-button>
-                </div> <!-- fontdue -->           
-            
-          </div> <!-- fontSample -->
-        </div> <!-- box -->
-        
+      {{page.fontPromo('presti-vf', imageRight=False, typeTester=True)}}
     </div>
     <div class="block-small">   
-      
-        <div class="box">
-          <div class="fontSample promo">
-        
-              <div class="left">
-                <div class="text">
-                  <h2 style="font-family:Proforma Regular;None">Proforma</h2>
-                  <h3 style="font-family:Proforma Regular;None line-height:140%">A mad boxer shot a quick, gloved jab to the jaw of his dizzy opponent.</h3>
-                  <p>@@@@@ aaaaaa<br>aaaaaa<br>aaaaaa<br>aaaaaa<br>aaaaaa<br>aaaaaa<br>aaaaaa<br>aaaaaa<br>aaaaaa<br>aaaaaa<br></p>
-        <fontdue-buy-button collection-slug="tp-proforma"></fontdue-buy-button>
-                </div>
-              </div> <!-- side1 -->
-        
-              <div class="right" style="background-image: url('images/2025/Proforma_in_use_Bluesky_on_the_move_01.png'); background-size: cover;background-position: center">
-              </div> <!-- side -->
-            
-                  <div class="fontdueBox" style="font-family:Proforma Regular">
-                <fontdue-type-testers collection-slug="tp-proforma"></fontdue-type-testers><fontdue-buy-button collection-slug="tp-proforma"></fontdue-buy-button>
-                </div> <!-- fontdue -->           
-            
-          </div> <!-- fontSample -->
-        </div> <!-- box -->
-        
+      {{page.fontPromo('tp-proforma', typeTester=True)}}
     </div>
     <div class="block-small">   
-      
-        <div class="box">
-          <div class="fontSample promo">
-        
-              <div class="left" style="background-image: url('images/2025/Responder-P-Upgrade-20230326 UP Coffee cups colors.jpg'); background-size: cover;background-position: center">
-              </div> <!-- side -->
-            
-              <div class="right">
-                <div class="text">
-                  <h2 style="font-family:Responder P VF Regular;None">Responder P</h2>
-                  <h3 style="font-family:Responder P VF Regular;None line-height:140%">Vexing dwarves quickly jump for a big quiz.</h3>
-                  <p>@@@@@ aaaaaa<br>aaaaaa<br>aaaaaa<br>aaaaaa<br>aaaaaa<br>aaaaaa<br>aaaaaa<br>aaaaaa<br>aaaaaa<br>aaaaaa<br></p>
-        <fontdue-buy-button collection-slug="responder-p-vf"></fontdue-buy-button>
-                </div>
-              </div> <!-- side1 -->
-        
-                  <div class="fontdueBox" style="font-family:Responder P Regular">
-                <fontdue-type-testers collection-slug="responder-p-vf"></fontdue-type-testers><fontdue-buy-button collection-slug="responder-p-vf"></fontdue-buy-button>
-                </div> <!-- fontdue -->           
-            
-          </div> <!-- fontSample -->
-        </div> <!-- box -->
-        
+      {{page.fontPromo('responder-p-vf', imageRight=False, typeTester=True)}}
     </div>
     <div class="block-small">   
-      
-        <div class="box">
-          <div class="fontSample promo">
-        
-              <div class="left">
-                <div class="text">
-                  <h2 style="font-family:Responder P VF Regular;None">Responder P</h2>
-                  <h3 style="font-family:Responder P VF Regular;None line-height:140%">The jay, pig, fox, zebra, and my dogs quack.</h3>
-                  <p>@@@@@ aaaaaa<br>aaaaaa<br>aaaaaa<br>aaaaaa<br>aaaaaa<br>aaaaaa<br>aaaaaa<br>aaaaaa<br>aaaaaa<br>aaaaaa<br></p>
-        <fontdue-buy-button collection-slug="responder-p-vf"></fontdue-buy-button>
-                </div>
-              </div> <!-- side1 -->
-        
-              <div class="right" style="background-image: url('images/2025/Responder-P-Upgrade-202302 - UP in use - Take your bag.jpg'); background-size: cover;background-position: center">
-              </div> <!-- side -->
-            
-                  <div class="fontdueBox" style="font-family:Responder P Regular">
-                <fontdue-type-testers collection-slug="responder-p-vf"></fontdue-type-testers><fontdue-buy-button collection-slug="responder-p-vf"></fontdue-buy-button>
-                </div> <!-- fontdue -->           
-            
-          </div> <!-- fontSample -->
-        </div> <!-- box -->
-        
+      {{page.fontPromo('responder-p-vf', typeTester=True)}}
     </div>
 
-    
-    <footer class="footer">
-        <div class="footer-content">
-            <div class="footer-logo">
-                <a class="logo"> <img src="images/logos/type-try-logo.gif" alt="Logo" width="50%"/></a>
-            </div>
-            <div class="footer-links">
-                <ul>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="licensing.html">Licensing</a></li>
-                    <li><a href="usage.html">Usage</a></li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-    
+    {{page.footer}}
 
 </body>
 

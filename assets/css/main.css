@@ -174,8 +174,7 @@ h3.sub{
 h4 {
   font-size: 1.6em;
   line-height: 1em;
-  font-family:var(--font-family);
-  font-weight:var(--font-weight-bold);
+  font-family:"Upgrade Medium";
   color:var(--color-type-header);
   text-align: left;
   float: left;
@@ -212,7 +211,7 @@ h6 {
 }
 
 p, figcaption {
-  font-family:var(--font-family);
+  font-family:"Upgrade Book";
   font-weight:Regular;
   letter-spacing: 0.02em;
   font-size: 1.1em; 
@@ -224,7 +223,7 @@ p, figcaption {
 
 p.summary {
   color:var(--color-type-body);
-  font-family:var(--font-family);
+  font-family:'Upgrade Book';
   font-weight:Regular;
   text-align: center;
   font-size: 1.8rem;

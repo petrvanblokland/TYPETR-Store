@@ -21,7 +21,11 @@
     <link href="https://fonts.fontdue.com/typetr/css/Rm9udENvbGxlY3Rpb246MTkyMDQ4MDM2NDg2NzUyOTI5OA%3D%3D.css" rel="stylesheet">
     <link href="https://fonts.fontdue.com/typetr/css/Rm9udENvbGxlY3Rpb246MTkyMDQ4MDM2NDg2NzUyOTI5OA%3D%3D.css" rel="stylesheet">
     -->
-    <!-- Upgrade -->
+    <!-- Upgrade 
+      Upgrade Book
+      Upgrade Book Italic
+      etc.
+    -->
     <link href="https://fonts.fontdue.com/typetr/css/Rm9udENvbGxlY3Rpb246MTkyMDQ5NTAxMjU0MzExMzIzNQ%3D%3D.css" rel="stylesheet">
     <!-- Responder VF -->
     <link href="https://fonts.fontdue.com/typetr/css/Rm9udENvbGxlY3Rpb246MTkyMDQ5NDE4MDMzNDQ4MDM0NQ%3D%3D.css" rel="stylesheet">
@@ -58,147 +62,7 @@
     });
   </script>.
 
-  <!-- MENU SIDEBAR -->
 
-  <script>
-      // Menu toggle functie
-      document.getElementById("menuToggle").addEventListener("click", function () {
-          document.getElementById("menu").classList.toggle("active");
-          this.textContent = this.textContent === "☰" ? "✖" : "☰";
-      });
-
-      // Smooth scroll functie
-      function smoothScroll(target) {
-          const headerHeight = document.getElementById('header').offsetHeight;
-          const offset = 20; 
-          const targetElement = document.getElementById(target);
-          if (!targetElement) return;
-
-          const targetPosition = targetElement.offsetTop - headerHeight - offset;
-          window.scrollTo({ top: targetPosition, behavior: "smooth" });
-      }
-
-      // Voeg smooth scrolling toe aan menu-items
-      document.querySelectorAll('.links a').forEach(anchor => {
-          anchor.addEventListener('click', function (e) {
-              if (this.getAttribute('href').startsWith("#")) {
-                  e.preventDefault();
-                  const targetId = this.getAttribute('href').substring(1);
-                  smoothScroll(targetId);
-              }
-          });
-      });
-
-    </script>
-
-    <script >
-      function smoothScroll(target) {
-      const headerHeight = document.getElementById('header').offsetHeight;
-      const offset = 60; // Extra ruimte boven de sectie
-      const targetPosition = document.getElementById(target).offsetTop - headerHeight - offset;
-      const startPosition = window.scrollY;
-      const distance = targetPosition - startPosition;
-      const duration = 6; // Animatietijd in ms
-      let startTime = null;
-
-      function animation(currentTime) {
-        if (startTime === null) startTime = currentTime;
-        const timeElapsed = currentTime - startTime;
-        const run = ease(timeElapsed, startPosition, distance, duration);
-        window.scrollTo(0, run);
-
-        if (timeElapsed < duration) requestAnimationFrame(animation);
-      }
-      
-      function ease(t, b, c, d) {
-        t /= d / 2;
-        if (t < 1) return (c / 2) * t * t + b;
-        t--;
-        return (-c / 2) * (t * (t - 2) - 1) + b;
-      }
-
-      requestAnimationFrame(animation);
-    }
-
-    document.querySelectorAll('.menu a').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href').substring(1);
-        smoothScroll(targetId);
-      });
-    });
-  </script>
-
-  <!-- IMAGE OVERLAY BOX -->
-
-  <script>
-      let images = document.querySelectorAll('.gallery-img');
-      let overlay = document.getElementById('imageOverlay');
-      let overlayImg = document.getElementById('overlayImg');
-      let currentIndex = 0;
-      
-      function openOverlay(index) {
-          currentIndex = index;
-          overlayImg.src = images[currentIndex].src;
-          overlay.style.display = 'flex';
-      }
-      
-      function closeOverlay() {
-          overlay.style.display = 'none';
-      }
-      
-      function changeImage(direction) {
-          currentIndex += direction;
-          if (currentIndex < 0) currentIndex = images.length - 1;
-          if (currentIndex >= images.length) currentIndex = 0;
-          overlayImg.src = images[currentIndex].src;
-      }
-      
-      images.forEach((img, index) => {
-          img.addEventListener('click', () => openOverlay(index));
-      });
-  </script>
-
-  <!-- TIME TICKER -->
-
-  <script>
-    document.addEventListener("DOMContentLoaded", () => {
-        const counters = document.querySelectorAll('.counter');
-        const speed = 3000; // 60 seconden
-
-        const startCounting = (counter) => {
-            let count = 0;
-            const target = +counter.getAttribute('data-target');
-            const increment = target / (speed / 10); // Kleine stapjes
-
-            counter.style.opacity = 1; // Start de fade-in
-
-            const updateCount = () => {
-                if (count < target) {
-                    count += increment;
-                    counter.innerText = Math.ceil(count);
-                    setTimeout(updateCount, 10);
-                } else {
-                    counter.innerText = target;
-                }
-            };
-            updateCount();
-        };
-
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    startCounting(entry.target);
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, { threshold: 1 });
-
-        counters.forEach(counter => {
-            observer.observe(counter);
-        });
-    });
-  </script>
 </head>
   <body>
     <!-- PARALLAX -->
@@ -210,7 +74,7 @@
     <!-- HEADER -->
     <header id="header">
       <div class='logo'>
-        <a class="logo" href='index.html'><img src="./images/type-try-logo.gif"></a>
+        <a class="logo" href='index.html'><img src="{{logoPath}}"></a>
         <nav class="menu">
           <ul>
             <li><a href="#styles">Styles & axes</a></li>
@@ -236,7 +100,7 @@
         <li><a href="presti.html" style="font-family: 'Presti VF Regular';font-size: 5em;line-height: 1.4em;">Presti</a></li>
         <li><a href="proforma.html" style="font-family: 'Proforma Book';font-size: 3em;line-height: 1.4em;">Proforma</a></li>
         <li><a href="powerlift.html" style="font-family: 'PowerLift Tight';font-size: 3em;line-height: 1.4em;">Powerlift</a></li>
-        <li><a href="responder.html" style="font-family: 'Responder P VF Regular';font-size: 3em;line-height: 1.8em;">Responder P</a></li>
+        <li><a href="responder-p.html" style="font-family: 'Responder P VF Regular';font-size: 3em;line-height: 1.8em;">Responder P</a></li>
         <li><a href="upgrade.html" style="font-family: 'Upgrade Thin';font-size: 5em;line-height: 1.4em;">Upgrade</a></li>
         <li><a href="about-typetr.html">About TYPETR</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -248,32 +112,18 @@
       <section class="hero-image">
           <img src="./images/2022/Presti_in_use_pure_care_02.jpg" class="hero-image-img">
           <div class="hero-overlay">
-              <h1>Upgrade typography</h1>
+              <h1>{{familyName}}</h1>
               <h2 class="sub">A workhorse sans, with character</h2>
           </div>
       </section>
     </div>
 
     <!-- SUMMARY-->
-    <div class="block">  
-      <div class="one-colum">  
-          <p class="summary">Upgrade marks TYPETR’s first “normal” typeface release in many years. This substantial sans serif family supports a generous set of characters and features, and will thrive in a wide range of publication types and media. The typeface lends itself particularly well to scripted workflows.</p>
-      </div>
-    </div>    
-    <div class="block">  
-      <!-- ARTICLE  1-->
-      <div class="one-colum">  
-        <div class="article">  
-          <div class="text-block">
-            <h4>Acknowledgements</h4>
-            <p>As always, designing a large family like this—writing a novel—never happens without the support and input from a great team. I’d like to thank (in order of appearance) Claudia Mens, Tilmann Hielscher, Jill Pichotta, CJ Dunn, David Jonathan Ross, Marina Chaccur, Tamye Riggs, Yves Peters, Claire Lindsey, Kirsten Langmuur, Caren Litherland, Chris Lewis, Paley Dreier, and the rest of the Type Network production and marketing teams.</p>
-            <p>I’d also like to thank the suppliers of tools: Frederik Berlaen, Tal Leming, Erik van Blokland, Just van Rossum, Alexandre Saumier Demers, and Michiel Kauw-A-Tjoe.</p>
-            <p>Last but not least, thanks to my partners in Type Network (and more): David Berlow, Sam Berlow, and Roger Black.</p>
-            <p>Thanks to all for the creation of context, valuable input, support, and resources. —Petr van Blokland</p>
-          </div>
-        </div>     
-      </div>
-    </div>    
+    {{familySummary}}
+
+
+    <!-- ARTICLE  1-->
+    {{articleText}}
 
     <!-- SIX COLUMNS IMAGES -->
     <div class="block">  
@@ -1163,6 +1013,7 @@
       </div>
     </div>
     <hr>
+    {{articleTextImage}}
     <div class="two-colum flex"> 
       <div class="container-flex">
         <div class="column-flex">
@@ -1214,8 +1065,152 @@
     </div>
   </a>
 
+    {{page.footer}}
+
 </body>
 
+
+  <!-- MENU SIDEBAR -->
+
+  <script>
+      // Menu toggle functie
+      document.getElementById("menuToggle").addEventListener("click", function () {
+          document.getElementById("menu").classList.toggle("active");
+          this.textContent = this.textContent === "☰" ? "✖" : "☰";
+      });
+
+      // Smooth scroll functie
+      function smoothScroll(target) {
+          const headerHeight = document.getElementById('header').offsetHeight;
+          const offset = 20; 
+          const targetElement = document.getElementById(target);
+          if (!targetElement) return;
+
+          const targetPosition = targetElement.offsetTop - headerHeight - offset;
+          window.scrollTo({ top: targetPosition, behavior: "smooth" });
+      }
+
+      // Voeg smooth scrolling toe aan menu-items
+      document.querySelectorAll('.links a').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+              if (this.getAttribute('href').startsWith("#")) {
+                  e.preventDefault();
+                  const targetId = this.getAttribute('href').substring(1);
+                  smoothScroll(targetId);
+              }
+          });
+      });
+
+    </script>
+
+    <script >
+      function smoothScroll(target) {
+      const headerHeight = document.getElementById('header').offsetHeight;
+      const offset = 60; // Extra ruimte boven de sectie
+      const targetPosition = document.getElementById(target).offsetTop - headerHeight - offset;
+      const startPosition = window.scrollY;
+      const distance = targetPosition - startPosition;
+      const duration = 6; // Animatietijd in ms
+      let startTime = null;
+
+      function animation(currentTime) {
+        if (startTime === null) startTime = currentTime;
+        const timeElapsed = currentTime - startTime;
+        const run = ease(timeElapsed, startPosition, distance, duration);
+        window.scrollTo(0, run);
+
+        if (timeElapsed < duration) requestAnimationFrame(animation);
+      }
+      
+      function ease(t, b, c, d) {
+        t /= d / 2;
+        if (t < 1) return (c / 2) * t * t + b;
+        t--;
+        return (-c / 2) * (t * (t - 2) - 1) + b;
+      }
+
+      requestAnimationFrame(animation);
+    }
+
+    document.querySelectorAll('.menu a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        smoothScroll(targetId);
+      });
+    });
+  </script>
+
+  <!-- IMAGE OVERLAY BOX -->
+
+  <script>
+      let images = document.querySelectorAll('.gallery-img');
+      let overlay = document.getElementById('imageOverlay');
+      let overlayImg = document.getElementById('overlayImg');
+      let currentIndex = 0;
+      
+      function openOverlay(index) {
+          currentIndex = index;
+          overlayImg.src = images[currentIndex].src;
+          overlay.style.display = 'flex';
+      }
+      
+      function closeOverlay() {
+          overlay.style.display = 'none';
+      }
+      
+      function changeImage(direction) {
+          currentIndex += direction;
+          if (currentIndex < 0) currentIndex = images.length - 1;
+          if (currentIndex >= images.length) currentIndex = 0;
+          overlayImg.src = images[currentIndex].src;
+      }
+      
+      images.forEach((img, index) => {
+          img.addEventListener('click', () => openOverlay(index));
+      });
+  </script>
+
+  <!-- TIME TICKER -->
+
+  <script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const counters = document.querySelectorAll('.counter');
+        const speed = 3000; // 60 seconden
+
+        const startCounting = (counter) => {
+            let count = 0;
+            const target = +counter.getAttribute('data-target');
+            const increment = target / (speed / 10); // Kleine stapjes
+
+            counter.style.opacity = 1; // Start de fade-in
+
+            const updateCount = () => {
+                if (count < target) {
+                    count += increment;
+                    counter.innerText = Math.ceil(count);
+                    setTimeout(updateCount, 10);
+                } else {
+                    counter.innerText = target;
+                }
+            };
+            updateCount();
+        };
+
+        const observer = new IntersectionObserver((entries, observer) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    startCounting(entry.target);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 1 });
+
+        counters.forEach(counter => {
+            observer.observe(counter);
+        });
+    });
+  </script>
 
   <script>
     // Function to toggle the menu
