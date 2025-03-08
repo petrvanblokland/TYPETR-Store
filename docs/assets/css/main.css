@@ -12,7 +12,7 @@
 
 :root {
   /* FONT */
-  --font-family:"Upgrade";
+  --font-family:"Upgrade Medium";
   --font-weight-ultrablack:900;
   --font-weight-black:Black;
   --font-weight-bold:Bold;
@@ -114,8 +114,7 @@ h1, h2, h2.sub, .image-block .overlay-block h2, .image-block .overlay-block p {
 
 h1 {
   font-size: 4.3em; 
-  font-family:var(--font-family);
-  font-weight:var(--font-weight-bold);
+  font-family:"Upgrade Medium";
   text-align: center;
   color:var(--color-type-hero);
   text-transform: uppercase; 
@@ -124,8 +123,7 @@ h1 {
 h2 {
   font-size: 3em;
   line-height: 1em;
-  font-family:var(--font-family);
-  font-weight:var(--font-weight-bold);
+  font-family:"Upgrade Medium";
   margin:0px;
   margin-top: 10px; 
   display: block;
@@ -140,8 +138,7 @@ h2 {
 h2.sub{
   text-align: center;
   color:var(--color-type-hero);
-  font-family:var(--font-family);
-  font-weight:var(--font-weight-bold);
+  font-family:"Upgrade Medium";
 }
 
 h2.topic{
@@ -152,8 +149,7 @@ h2.topic{
 h3 {
   font-size: 2.5em;
   line-height: 1em;
-  font-family:var(--font-family);
-  font-weight:var(--font-weight-bold);
+  font-family:"Upgrade Medium";
   color:var(--color-black);
   text-align: left;
   float: left;
@@ -167,8 +163,7 @@ h3 {
 
 h3.sub{
   font-size: 1.8em;
-  font-family:var(--font-family);
-  font-weight:Book;
+  font-family:"Upgrade Medium";
 }
 
 h4 {
@@ -193,7 +188,7 @@ h4 {
 h5 {
   font-size: 1.2rem;
   line-height: 1.3em;
-  font-family:var(--font-family);
+  font-family:"Upgrade Medium";
   color:var(--color-type-header);
   text-align: left;
   margin-top: 10px; 
@@ -202,8 +197,7 @@ h5 {
 
 h6 {
   font-size: 1.7rem;
-  font-family:var(--font-family);
-  font-weight:var(--font-weight-bold);
+  font-family:"Upgrade Medium";
   color:var(--color-type-header);
   font-style: italic;
   letter-spacing: 0.05em;
@@ -212,7 +206,6 @@ h6 {
 
 p, figcaption {
   font-family:"Upgrade Book";
-  font-weight:Regular;
   letter-spacing: 0.02em;
   font-size: 1.1em; 
   line-height: 1.5em;
@@ -224,7 +217,6 @@ p, figcaption {
 p.summary {
   color:var(--color-type-body);
   font-family:'Upgrade Book';
-  font-weight:Regular;
   text-align: center;
   font-size: 1.8rem;
   line-height: 2.8rem;
@@ -248,7 +240,7 @@ blockquote {
 .column h2 {
   display: inline-block;
   float: left;
-  font-family:var(--font-family);
+  font-family:"Upgrade Medium";
   text-align: left;
 }
 
@@ -256,7 +248,7 @@ blockquote {
   display: inline-block;
   float: left;
   width:100%;
-  font-family:var(--font-family);
+  font-family:"Upgrade Medium";
   font-size: 30pt;
   line-height: 27pt;
   text-align: left;
@@ -509,12 +501,12 @@ h1, h2, h3, h4, h5, h6, p, figcaption{
 #menu > ul.links {
   list-style: none;
   padding: 0;
-  font-family:var(--font-family);
+  font-family:"Upgrade Medium";
 }
 
 #menu > ul.links > li {
   padding: 0;
-  font-family:var(--font-family);
+  font-family:"Upgrade Medium";
 }
 
 #menu > ul.links > li:hover {
@@ -523,6 +515,7 @@ h1, h2, h3, h4, h5, h6, p, figcaption{
 }
 
 #menu > ul.links > li > a:not(.button) {
+  font-family:"Upgrade Medium";
   border-top: solid 1px yellow;
   color: var(--color-white);
   display: block;
@@ -537,7 +530,7 @@ h1, h2, h3, h4, h5, h6, p, figcaption{
 
 #menu > ul.links > li:first-child > a:not(.button), #menu > ul.links > li:last-child > a:not(.button) {
   border-top: 0 !important;
-  font-family:var(--font-family);
+  font-family:"Upgrade Medium";
 }
 
 
@@ -620,7 +613,7 @@ h1, h2, h3, h4, h5, h6, p, figcaption{
 }
 
 .type-tester__toolbar {
-  font-family:var(--font-family);
+  font-family:"Upgrade Medium";
 }
 
 .type-tester__features-button button{
@@ -774,6 +767,7 @@ nav{
 }
 
 #header nav a:hover {
+  font-family:"Upgrade Medium";
   color: var(--color-accent);
   background-color: var(--color-white);
   animation: breathing 1s ease-in-out infinite;
@@ -826,8 +820,7 @@ nav{
   padding-right:15px;
   background-color:var(--color-white);
   opacity:70%;
-  font-family:var(--font-family);
-  font-weight:Medium;
+  font-family:"Upgrade Medium";
   border-radius: 10px;
 }
 
@@ -903,11 +896,11 @@ nav{
   color: var(--color-white);
   text-decoration: none;
   font-size: 1.1rem;
-  font-family:var(--font-family);
-  font-weight:Regular;
+  font-family:"Upgrade Medium";
 }
 
 .menu ul li a:hover, .footer-links ul li a:hover {
+  font-family:"Upgrade Medium";
   text-decoration: none; 
   color: var(--color-white);
   animation: breathing 2s ease-in-out;
@@ -924,7 +917,7 @@ nav{
   cursor: pointer;
   text-align: center;
   width: auto;
-  font-family:var(--font-family);
+  font-family:"Upgrade Medium";
   letter-spacing: 1pt;
 }
 
@@ -942,7 +935,7 @@ nav{
   margin-top: 0px;
   margin-left:20px;
   margin:20px;
-  font-family:var(--font-family);
+  font-family:"Upgrade Medium";
   font-size: 14pt;
   padding-right:20px;
   padding-left:20px;
@@ -954,7 +947,7 @@ nav{
 .buy-button:hover{
   border-radius: 10px;
   border:var(--border-white); 
-  font-family:var(--font-family);
+  font-family:"Upgrade Medium";
 }
 
 .box:nth-child(2n+1) button{
@@ -997,6 +990,7 @@ nav{
 }
 
 .navbar ul li a:hover {
+  font-family:"Upgrade Medium";
   background-color: black;
   border-radius: 5px;
 }
@@ -1300,7 +1294,6 @@ nav{
     width: 100%;
     background-color:var(--color-accent);
     padding: 15px;
-    font-weight:var(--font-weight-bold);
     transition: position 0.3s ease;
 }
 
@@ -1320,7 +1313,7 @@ nav{
   border: var(--border-white);
   padding: 10px;
   font-size: 14px;
-  font-family:var(--font-family);
+  font-family:"Upgrade Medium";
   border-radius: 5px;
   text-align: left;
   white-space: pre;
@@ -1487,8 +1480,7 @@ nav{
   justify-content: center; 
   color: var(--color-white);
   text-align: center;
-  font-family:var(--font-family);
-  font-weight:Regular;
+  font-family:"Upgrade Medium";
   opacity: 0;
   transition: opacity 0.4s ease-in-out;
   flex-direction: column;
@@ -1496,8 +1488,7 @@ nav{
 
 .image-block .overlay-block h2 {
   font-size: 32px;
-  font-family:var(--font-family);
-  font-weight:Regular;
+  font-family:"Upgrade Medium";
   margin: 0 auto;
 }
 
@@ -1838,8 +1829,7 @@ nav{
   font-size: 2rem;
   margin: 10px 0;
   color: var(--color-white);
-  font-family:"Upgrade";
-  font-weight:var(--font-weight-bold);
+  font-family:"Upgrade Medium";
   text-align: center;
   opacity: 0;
   transition: opacity 6s linear;
@@ -1856,10 +1846,8 @@ nav{
   font-size: 1.2rem;
   margin-bottom: 0px;
   text-align: center;
-  font-weight: Regular;
   color: var(--color-white);
-  font-family:"Upgrade";
-  font-weight:Medium;
+  font-family:"Upgrade Medium";
 }
 
 .number-item .number {

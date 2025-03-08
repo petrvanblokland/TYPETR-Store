@@ -74,7 +74,7 @@
     <!-- HEADER -->
     <header id="header">
       <div class='logo'>
-        <a class="logo" href='index.html'><img src="{{logoPath}}"></a>
+        <a class="logo" href='index.html'><img src="{{page.logo.path}}"></a>
         <nav class="menu">
           <ul>
             <li><a href="#styles">Styles & axes</a></li>
@@ -112,18 +112,18 @@
       <section class="hero-image">
           <img src="./images/2022/Presti_in_use_pure_care_02.jpg" class="hero-image-img">
           <div class="hero-overlay">
-              <h1>{{familyName}}</h1>
+              <h1>{{page.familyName}}</h1>
               <h2 class="sub">A workhorse sans, with character</h2>
           </div>
       </section>
     </div>
 
     <!-- SUMMARY-->
-    {{familySummary}}
+    {{page.familySummary}}
 
 
     <!-- ARTICLE  1-->
-    {{articleText}}
+    {{page.articleText}}
 
     <!-- SIX COLUMNS IMAGES -->
     <div class="block">  
@@ -1013,7 +1013,7 @@
       </div>
     </div>
     <hr>
-    {{articleTextImage}}
+    {{page.articleTextImage}}
     <div class="two-colum flex"> 
       <div class="container-flex">
         <div class="column-flex">
