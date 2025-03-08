@@ -199,7 +199,6 @@ h6 {
   font-size: 1.7rem;
   font-family:"Upgrade Medium";
   color:var(--color-type-header);
-  font-style: italic;
   letter-spacing: 0.05em;
   text-align: left;
 }
@@ -515,7 +514,7 @@ h1, h2, h3, h4, h5, h6, p, figcaption{
 }
 
 #menu > ul.links > li > a:not(.button) {
-  font-family:"Upgrade Medium";
+  font-family:"Upgrade Book";
   border-top: solid 1px yellow;
   color: var(--color-white);
   display: block;
@@ -767,7 +766,7 @@ nav{
 }
 
 #header nav a:hover {
-  font-family:"Upgrade Medium";
+  font-family:"Upgrade Book";
   color: var(--color-accent);
   background-color: var(--color-white);
   animation: breathing 1s ease-in-out infinite;
@@ -900,7 +899,7 @@ nav{
 }
 
 .menu ul li a:hover, .footer-links ul li a:hover {
-  font-family:"Upgrade Medium";
+  font-family:"Upgrade Book";
   text-decoration: none; 
   color: var(--color-white);
   animation: breathing 2s ease-in-out;
@@ -990,7 +989,7 @@ nav{
 }
 
 .navbar ul li a:hover {
-  font-family:"Upgrade Medium";
+  font-family:"Upgrade Book";
   background-color: black;
   border-radius: 5px;
 }

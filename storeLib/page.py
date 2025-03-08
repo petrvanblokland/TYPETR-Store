@@ -92,7 +92,7 @@ class Page(Element):
     def _get_familySummary(self):
         html = ''
         font = self.site.fonts[self.slug]
-        summary = font.content.get('summary')
+        summary = font.content.get('familySummary')
         if summary is not None:
             html += f"""
             <div class="block">  
@@ -217,10 +217,6 @@ class Page(Element):
     """
     footer = property(_get_footer)
 
-
-    def aaaaaa(self):
-        return 'CCCCCCCCC'
-
     #   P R O M O
 
     def fontPromo(self, slug, imageRight=True, typeTester=False, buyButton=True, characterViewer=False, randomImage=True, style=None,
@@ -257,24 +253,26 @@ class Page(Element):
         <div class="box">
           <div class="fontSample promo">
         """
-
+        
         if not imageRight:
             html += f"""
-              <div class="{side2}" style="background-image: url('{image.path}'); background-size: cover;background-position: center">
+              <div class="{side2}" style="background-image: url('{image.path}'); background-size: cover;background-position: center"
+                onClick="window.location='{font.pageName}';">
               </div> <!-- side -->
-            """
+=            """
         if 0 and not imageRight:
             html += f"""
               <div class="{side2}" width="500px" height="200px" style="overflow: hidden">
                   <img src="{image.path}" width="100%" height="100%" style="object-fit: cover"/>
+                </a>
               </div> <!-- side -->
             """
         html += f"""
               <div class="{side1}">
                 <div class="text">
-                  <h2 style="font-family:{font.cssName} {style};{headSize}">{head}</h2>
-                  <h3 style="font-family:{font.cssName} {style};{subheadSize} line-height:140%">{self.quickBrownFox}</h3>
-                  <p>{deck} {'aaaaaa<br>' * 10}</p>
+                  <h2 style="font-family:{font.cssName};{headSize}">{head}</h2>
+                  <h3 style="font-family:{font.cssName};{subheadSize} line-height:140%">{self.quickBrownFox}</h3>
+                  <p>{deck} {'aaaaaa<br>' * 5}</p>
         """
         if buyButton:
             html += f"""<fontdue-buy-button collection-slug="{font.slug}"></fontdue-buy-button>"""
@@ -284,13 +282,14 @@ class Page(Element):
         """
         if imageRight:
             html += f"""
-              <div class="{side2}" style="background-image: url('{image.path}'); background-size: cover;background-position: center">
+              <div class="{side2}" style="background-image: url('{image.path}'); background-size: cover;background-position: center"
+                onClick="window.location='{font.pageName}';">
               </div> <!-- side -->
             """
 
         if typeTester or characterViewer:
             html += f"""
-                  <div class="fontdueBox" style="font-family:{font.familyName} {style}">
+                  <div class="fontdueBox" style="font-family:{font.familyName}">
                 """
             if typeTester:
                 self.html += f"""<fontdue-type-testers collection-slug="{font.slug}"></fontdue-type-testers>"""

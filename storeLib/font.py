@@ -10,7 +10,7 @@ from storeLib.content.upgrade import CONTENT_UPGRADE
 
 class Font(Element):
     """Hold meta-information on all fonts in the fontdue library, collections and single styles."""
-    def __init__(self, name, familyName, slug, id, collection=None, site=None, style=None, content=None):
+    def __init__(self, name, familyName, slug, id, collection=None, site=None, style=None, content=None, asBody=True):
         self.name = name
         self.familyName = familyName # Filter name to collect relevant images.
         self.style = style or 'Regular'
@@ -29,6 +29,10 @@ class Font(Element):
     def _get_imagePattern(self):
         return self.familyName.lower().replace('_', '-').replace(' ', '-')
     imagePattern = property(_get_imagePattern)
+
+    def _get_pageName(self):
+        return self.familyName.lower().replace(' ', '-') + '.html'
+    pageName = property(_get_pageName)
 
 def getFonts(site):
     """Construct the font elements. Store the weakref to site in the font element.
@@ -51,8 +55,10 @@ def getFonts(site):
         PRESTI_SMALL:           Font(name='Presti Small', site=site, familyName='Presti', slug=PRESTI_SMALL, id='Rm9udENvbGxlY3Rpb246MTkyMDQ4NDc0OTIwNzA1NTEzNQ==',
                                     content=CONTENT_PRESTI),
 
-        TP_POWERLIFT:           Font(name='TP PowerLift', site=site, familyName='PowerLift', slug=TP_POWERLIFT, id='Rm9udENvbGxlY3Rpb246MTkyMDQ4NTAyOTI0Mzk1NjA0Ng=='),
-        POWERLIFT:              Font(name='PowerLift', site=site, familyName='PowerLift', slug=POWERLIFT, id='Rm9udENvbGxlY3Rpb246MTkyMDQ4NTEzMjQ1NzM4ODg4NQ=='),
+        TP_POWERLIFT:           Font(name='TP PowerLift', site=site, familyName='PowerLift', slug=TP_POWERLIFT, id='Rm9udENvbGxlY3Rpb246MTkyMDQ4NTAyOTI0Mzk1NjA0Ng==',
+                                    asBody=False),
+        POWERLIFT:              Font(name='PowerLift', site=site, familyName='PowerLift', slug=POWERLIFT, id='Rm9udENvbGxlY3Rpb246MTkyMDQ4NTEzMjQ1NzM4ODg4NQ==',
+                                    asBody=False),
 
         TP_PRODUCTUS:           Font(name='TP Productus', site=site, familyName='Productus', slug=TP_PRODUCTUS, id='Rm9udENvbGxlY3Rpb246MTkyMDQ4OTA3MzQ1MDU5MzExOQ=='),
         PRODUCTUS:              Font(name='Productus', site=site, familyName='Productus', slug=PRODUCTUS, id='Rm9udENvbGxlY3Rpb246MTkyMDQ4OTE0MDgxMTExNTM4Mg=='),

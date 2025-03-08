@@ -5,7 +5,8 @@
 from storeLib.content import Content as C
 
 CONTENT_PRESTI = {
-    'summary': C("""Presti marks TYPETR’s first “normal” typeface release in many years. 
+    'familySummary': C("""<h3>Presti summary</h3>
+        <p>Presti marks TYPETR’s first “normal” typeface release in many years. 
         This substantial sans serif family supports a generous set of characters and features, and will thrive in a wide range of publication types and media. 
         The typeface lends itself particularly well to scripted workflows."""),
     
@@ -21,7 +22,7 @@ CONTENT_PRESTI = {
         <p>Thanks to all for the creation of context, valuable input, support, and resources. —Petr van Blokland</p>
         """),
 
-    'articleTextImage001': C("""
+    'articleTextImage001': C("""<h3>articleTextImage001</h3>
         <p>Upgrade bears plenty of features that set it apart from other families in the genre. 
         The typeface has its sights firmly set on the future; only a few typical letterforms reference the storied past of the humanist sans model,
         such as the vertex of an M not reaching all the way down to the baseline, or the wide N and O. 
