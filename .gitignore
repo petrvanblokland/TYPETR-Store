@@ -163,7 +163,7 @@ cython_debug/
 
 _local
 _images
-_docs
+_docs*
 .DS_Store
 —prompt*
 —prompt=TYPETR-Store*
