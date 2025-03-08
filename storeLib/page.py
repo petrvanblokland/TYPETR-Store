@@ -253,7 +253,7 @@ class Page(Element):
         <div class="box">
           <div class="fontSample promo">
         """
-        
+
         if not imageRight:
             html += f"""
               <div class="{side2}" style="background-image: url('{image.path}'); background-size: cover;background-position: center"
@@ -289,14 +289,14 @@ class Page(Element):
 
         if typeTester or characterViewer:
             html += f"""
-                  <div class="fontdueBox" style="font-family:{font.familyName}">
+                  <div class="fontdueBox" style="font-family:{font.familyName}">AAAAAAAAAAå
                 """
             if typeTester:
-                self.html += f"""<fontdue-type-testers collection-slug="{font.slug}"></fontdue-type-testers>"""
+                html += f"""<fontdue-type-testers collection-slug="{font.slug}"></fontdue-type-testers>"""
                 if buyButton:
-                    self.html += f"""<fontdue-buy-button collection-slug="{font.slug}"></fontdue-buy-button>"""
+                    html += f"""<fontdue-buy-button collection-slug="{font.slug}"></fontdue-buy-button>"""
             if characterViewer:
-                self.html += f"""<fontdue-character-viewer collection-slug="{font.slug}"></fontdue-character-viewer>"""
+                html += f"""<fontdue-character-viewer collection-slug="{font.slug}"></fontdue-character-viewer>"""
 
             html += """
                 </div> <!-- fontdue -->           
