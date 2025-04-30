@@ -33,17 +33,21 @@ header {
     font-feature-settings: 'ss01' 1; /* Allow flourishes as ~tru4 */
     font-weight: 400;
 }
+
 .proforma {
     font-family: "Proforma Book";
     font-weight: 400;
+    letter-spacing: 0.02em;
 }
 .proforma-book {
     font-family: "Proforma Book";
     font-weight: 400;
+    letter-spacing: 0.02em;
 }
 .proforma-bold {
     font-family: "Proforma Bold";
     font-weight: 400;
+    letter-spacing: 0.02em;
 }
 
 .powerlift {
@@ -54,11 +58,30 @@ header {
     font-family: "PowerLift Tight Outline";    
     font-weight: 400;
 }
+
 .responder-p-regular {
     font-family: "Responder P Regular";
     font-weight: 400;
 }
+.responder-p-bold {
+    font-family: "Responder P Bold";
+    font-weight: 400;
+}
 
+.upgrade {
+    font-family: "Upgrade Regular";    
+    font-weight: 400;
+    letter-spacing: 0.02em;
+}
+.upgrade-bold {
+    font-family: "Upgrade Bold";    
+    font-weight: 400;
+    letter-spacing: 0.02em;
+}
+
+.size24 {
+    font-size: 24px;
+}
 .size36 {
     font-size: 36px;
 }
