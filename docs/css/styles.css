@@ -1,0 +1,224 @@
+/* Reset */
+
+h1, h2, h3, h4, h5, h6 {
+    font-style: normal;
+    font-weight: none; /* or 400 */
+    font-synthesis: none; /* prevent browser from faking bold/italic */
+}
+
+/* General Styles */
+
+body {
+    font-family: "Upgrade Regular", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    display: block;
+    height: 50px;
+    /*justify-content: space-between;*/
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+/* Font stuff */
+.presti {
+    font-family: "Presti Deck Normal";    
+    font-feature-settings: 'ss01' 1; /* Allow flourishes as ~tru4 */
+    font-weight: 400;
+}
+.presti-bold {
+    font-family: "Presti Deck Bold";    
+    font-feature-settings: 'ss01' 1; /* Allow flourishes as ~tru4 */
+    font-weight: 400;
+}
+.proforma {
+    font-family: "Proforma Book";
+    font-weight: 400;
+}
+.proforma-book {
+    font-family: "Proforma Book";
+    font-weight: 400;
+}
+.proforma-bold {
+    font-family: "Proforma Bold";
+    font-weight: 400;
+}
+
+.powerlift {
+    font-family: "PowerLift Tight";    
+    font-weight: 400;
+}
+.powerlift-outline {
+    font-family: "PowerLift Tight Outline";    
+    font-weight: 400;
+}
+.responder-p-regular {
+    font-family: "Responder P Regular";
+    font-weight: 400;
+}
+
+.size36 {
+    font-size: 36px;
+}
+
+/* Header logo */
+
+header .logo { /* Floating left box with logo */
+    display: block;
+    float: left;
+    width: 260px; /* Make distance to familyName */
+}
+header .familyName { /* Floating left box with current family name */
+    display: block;
+    float: left;
+    font-size: 40px;
+    text-align: left;
+}
+header .logo img {
+    height: 50px;
+}
+
+/* Header navigation */
+
+header .navbar {
+    display: block;
+    float: right;
+}
+header .navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+header .navbar li {
+    margin-right: 20px;
+}
+header .navbar a {
+    color: white;
+    text-decoration: none;
+}
+.hamburger {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Slideshow */
+
+.slideshow {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    z-index: 0;
+}
+
+.slide.active {
+    opacity: 1;
+    z-index: 1;
+}
+
+/* Image cells */
+
+div.image {
+    width: 98%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 0;
+    padding: 0;
+}
+
+/* Layout for Rows and Columns */
+.row {
+    display: flex;
+    /*margin: 20px 0;*/
+}
+.column {
+    flex: 1;
+    width: 50%;
+    /*padding: 10px;*/
+    box-sizing: border-box;
+}
+.column p {
+    /*background-color: #f9f9f9;*/
+    /*padding: 20px;*/
+    /*margin: 10px 0;*/
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+/* Type testers */
+
+div.type-tester {
+    padding: 1em;
+}
+fontdue-type-testers {
+    font-size: 8em;
+    font-feature-settings: "kern" 1, "clig" 1, "liga" 1, "ss01" 1;
+    padding: 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    header .navbar {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .navbar.active {
+        display: block;
+        position: absolute;
+        background-color: #333;
+        width: 30%;
+        box-align: 'right';
+        top: 60px;
+    }
+    .navbar ul {
+        flex-direction: column;
+    }
+    .navbar li {
+        margin: 10px 0;
+    }
+
+    div.image {
+        position: float;
+        width: 100%;
+        padding: 0;
+    }
+    /* Type testers */
+
+    div.type-tester {
+        padding: 0.5em;
+    }
+    fontdue-type-testers {
+        font-size: 2em;
+        padding: 0;
+    }
+
+}
+
