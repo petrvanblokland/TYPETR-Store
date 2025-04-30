@@ -1,0 +1,29 @@
+let slideIndex = 0;
+
+function showSlides() {
+    const slides = document.querySelectorAll('.slide');
+
+    slides.forEach((slide, index) => {
+        slide.style.opacity = "0";
+        slide.style.zIndex = "0";
+        slide.classList.remove("active");
+    });
+
+    slideIndex = (slideIndex + 1) % slides.length;
+
+    const currentSlide = slides[slideIndex];
+    currentSlide.style.opacity = "1";
+    currentSlide.style.zIndex = "1";
+    currentSlide.classList.add("active");
+
+    setTimeout(showSlides, 3000);
+}
+
+function toggleMenu() {
+    let menu = document.querySelector('.navbar');
+    menu.classList.toggle('active');
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    showSlides();
+});

@@ -8,27 +8,20 @@ from random import shuffle
 from storeLib.element import Element
 from storeLib.page import Page
 from storeLib.image import Image, IMAGES_EXT, IMAGES_START_YEAR, IMAGES_END_YEAR, IMAGES_DIRS
-from storeLib.font import getFonts
 from storeLib.slugs import *
 
 class Site:
 
-    def __init__(self, name, id, url, imageRootPath, assetsPath, templatesPath, patterns=None):
+    def __init__(self, name, id, url, fonts, imageRootPath, assetsPath, templatesPath, patterns=None):
         self.name = name
         self.id = id
         self.url = url
         self.imageRootPath = imageRootPath # Root
         self.assetsPath = assetsPath
         self.templatesPath = templatesPath
-        self.initializeFonts()
+        self.fonts = fonts
         self.initializeImages()
         self.initializePages()
-
-    def initializeFonts(self):
-        # Copying Fontdue data here, since font id's are not likely to changed easily.
-        # Key is the slug-id of the font in the fontdue database.
-        self.fonts = getFonts(self)
-        #print(self.fonts)
 
     def initializeImageDir(self, imageDirPath):    
         # Find relevant images
