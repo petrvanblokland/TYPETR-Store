@@ -24,14 +24,16 @@ header {
 
 /* Font stuff */
 .presti {
-    font-family: "Presti Deck Normal";    
+    font-family: "Presti Text Normal";    
     font-feature-settings: 'ss01' 1; /* Allow flourishes as ~tru4 */
     font-weight: 400;
+    letter-spacing: 0.02em;
 }
 .presti-bold {
     font-family: "Presti Deck Bold";    
     font-feature-settings: 'ss01' 1; /* Allow flourishes as ~tru4 */
     font-weight: 400;
+    letter-spacing: 0.02em;
 }
 
 .proforma {
@@ -50,6 +52,23 @@ header {
     letter-spacing: 0.02em;
 }
 
+.proforma-pro {
+    font-family: "TP Proforma Pro Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'wght' 400;
+    letter-spacing: 0.03em; /* Needs to be calibrated again, once the final VF is made */
+    line-height: 1.7em; /* Needs to be calibrated again, once the final VF is made */
+}
+.proforma-pro-bold {
+    font-family: "TP Proforma Pro Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'wght' 700;
+    letter-spacing: 0.03em; /* Needs to be calibrated again, once the final VF is made */
+    line-height: 1.7em; /* Needs to be calibrated again, once the final VF is made */
+}
+
 .powerlift {
     font-family: "PowerLift Tight";    
     font-weight: 400;
@@ -60,12 +79,13 @@ header {
 }
 
 .responder-p-regular {
-    font-family: "Responder P Regular";
-    font-weight: 400;
+    font-family: "Responder P VF Regular";
+    /* Slightly lighter, as 400 seems bolder compared to other families. */
+    font-variation-settings: 'ital': 0, 'wght': 250;
 }
 .responder-p-bold {
-    font-family: "Responder P Bold";
-    font-weight: 400;
+    font-family: "Responder P VF Regular";
+    font-variation-settings: 'ital': 0, 'wght': 600;
 }
 
 .upgrade {
@@ -81,6 +101,9 @@ header {
 
 .size24 {
     font-size: 24px;
+}
+.size28 { /* Used for Responder P, optically same size as .size24 for other families */
+    font-size: 28px;
 }
 .size36 {
     font-size: 36px;
@@ -176,6 +199,7 @@ div.image {
     width: 50%;
     /*padding: 10px;*/
     box-sizing: border-box;
+    background-color: #F0F0F0;
 }
 .column p {
     /*background-color: #f9f9f9;*/
