@@ -39,34 +39,43 @@ header {
 .proforma {
     font-family: "Proforma Book";
     font-weight: 400;
+}
+.proforma p {
     letter-spacing: 0.02em;
 }
 .proforma-book {
     font-family: "Proforma Book";
     font-weight: 400;
+}
+.proforma-book p {
     letter-spacing: 0.02em;
 }
 .proforma-bold {
     font-family: "Proforma Bold";
     font-weight: 400;
+}
+.proforma-bold p {
     letter-spacing: 0.02em;
 }
-
 .proforma-pro {
     font-family: "TP Proforma Pro Regular";
     font-style: normal;
     font-weight: 400;
     font-variation-settings: 'wght' 400;
+}
+.proforma-pro p {
     letter-spacing: 0.03em; /* Needs to be calibrated again, once the final VF is made */
-    line-height: 1.7em; /* Needs to be calibrated again, once the final VF is made */
+    line-height: 1.3em; /* Needs to be calibrated again, once the final VF is made */
 }
 .proforma-pro-bold {
     font-family: "TP Proforma Pro Regular";
     font-style: normal;
     font-weight: 400;
     font-variation-settings: 'wght' 700;
+}
+.proforma-pro-bold p {
     letter-spacing: 0.03em; /* Needs to be calibrated again, once the final VF is made */
-    line-height: 1.7em; /* Needs to be calibrated again, once the final VF is made */
+    line-height: 1.3em; /* Needs to be calibrated again, once the final VF is made */
 }
 
 .powerlift {
@@ -108,7 +117,9 @@ header {
 .size36 {
     font-size: 36px;
 }
-
+.smallcaps {
+    font-feature-settings: 'smcp' 1; /* Small caps */
+}
 /* Header logo */
 
 header .logo { /* Floating left box with logo */
@@ -204,7 +215,7 @@ div.image {
 .column p {
     /*background-color: #f9f9f9;*/
     /*padding: 20px;*/
-    /*margin: 10px 0;*/
+    margin: 0 40px 0 0;
 }
 
 /* Footer */
