@@ -36,6 +36,22 @@ header {
     letter-spacing: 0.02em;
 }
 
+
+.productus {
+    font-family: "Productus Book";
+    font-weight: 400;
+}
+.productus p {
+    letter-spacing: 0.04em;
+}
+.productus-bold {
+    font-family: "Productus Bold";
+    font-weight: 400;
+}
+.productus-bold p {
+    letter-spacing: 0.04em;
+}
+
 .proforma {
     font-family: "Proforma Book";
     font-weight: 400;
@@ -87,7 +103,7 @@ header {
     font-weight: 400;
 }
 
-.responder-p-regular {
+.responder-p {
     font-family: "Responder P VF Regular";
     /* Slightly lighter, as 400 seems bolder compared to other families. */
     font-variation-settings: 'ital': 0, 'wght': 250;
@@ -186,6 +202,15 @@ header .navbar a {
 .slide.active {
     opacity: 1;
     z-index: 1;
+}
+
+/* Font selector */
+
+.font-selector {
+    padding: 30px;
+}
+.font-selector a {
+    text-decoration: none;
 }
 
 /* Image cells */
