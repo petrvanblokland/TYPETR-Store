@@ -113,6 +113,12 @@ header {
     font-variation-settings: 'ital': 0, 'wght': 600;
 }
 
+.responder-m {
+    font-family: "Responder M Regular Italic";
+    font-style: normal;
+    font-weight: 400;
+}
+
 .upgrade {
     font-family: "Upgrade Regular";    
     font-weight: 400;
@@ -133,6 +139,16 @@ header {
 .size36 {
     font-size: 36px;
 }
+.size48 {
+    font-size: 48px;
+}
+.size56 {
+    font-size: 56px;
+}
+.size64 {
+    font-size: 64px;
+}
+
 .smallcaps {
     font-feature-settings: 'smcp' 1; /* Small caps */
 }
