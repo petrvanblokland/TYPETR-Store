@@ -152,6 +152,15 @@ header {
 .smallcaps {
     font-feature-settings: 'smcp' 1; /* Small caps */
 }
+.oldstyle-figures {
+    font-feature-settings: 'onum' 1; /* Old style figures */
+}
+.superiors {
+    font-feature-settings: 'sups' 1; /* Superior figures */
+}
+.inferiors {
+    font-feature-settings: 'sinf' 1; /* Inferiors figures */
+}
 /* Header logo */
 
 header .logo { /* Floating left box with logo */
