@@ -156,6 +156,9 @@ header {
     font-size: 64px;
 }
 
+.aalt {
+    font-feature-settings: 'aalt' 1; /* Access All Alternates */
+}
 .liga {
     font-feature-settings: 'liga' 1; /* Ligatures is default on */
 }
@@ -173,10 +176,19 @@ header {
     font-feature-settings: 'onum' 1; /* Old style figures */
 }
 .sups {
-    font-feature-settings: 'sups' 1; /* Superior figures  & lower case*/
+    font-feature-settings: 'sups' 1; /* Superior figures  & lower case */
+}
+.dnom {
+    font-feature-settings: 'dnom' 1; /* Denomerator figures */
 }
 .sinf {
-    font-feature-settings: 'sinf' 1; /* Inferiors figures & lower case*/
+    font-feature-settings: 'sinf' 1; /* Inferiors figures & lower case */
+}
+.numr {
+    font-feature-settings: 'numr' 1; /* Numerator figures */
+}
+.zero {
+    font-feature-settings: 'zero' 1; /* Slashed zero */
 }
 
 .smcp {
@@ -189,6 +201,9 @@ header {
     font-feature-settings: 'smcp' 1, 'c2sc' 1;
 }
 
+.swsh {
+    font-feature-settings: 'swsh' 1; /* Set of selected swashes */
+}
 .ss01 {
     font-feature-settings: 'ss01' 1;
 }
