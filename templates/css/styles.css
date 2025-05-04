@@ -130,6 +130,11 @@ header {
     letter-spacing: 0.02em;
 }
 
+.bitcount {
+    font-family: "Bitcount Mono Double Regular Circle";
+    font-weight: 400;
+}
+
 .size24 {
     font-size: 24px;
 }
