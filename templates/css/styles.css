@@ -216,6 +216,55 @@ header {
 .ss08 {
     font-feature-settings: 'ss08' 1;
 }
+.ss09 {
+    font-feature-settings: 'ss09' 1;
+}
+.ss10 {
+    font-feature-settings: 'ss10' 1;
+}
+.ss11 {
+    font-feature-settings: 'ss12' 1;
+}
+.ss12 {
+    font-feature-settings: 'ss12' 1;
+}
+.ss13 {
+    font-feature-settings: 'ss13' 1;
+}
+.ss14 {
+    font-feature-settings: 'ss14' 1;
+}
+.ss15 {
+    font-feature-settings: 'ss15' 1;
+}
+.ss16 {
+    font-feature-settings: 'ss16' 1;
+}
+.ss17 {
+    font-feature-settings: 'ss17' 1;
+}
+.ss18 {
+    font-feature-settings: 'ss18' 1;
+}
+.ss19 {
+    font-feature-settings: 'ss19' 1;
+}
+.ss20 {
+    font-feature-settings: 'ss20' 1;
+}
+
+.ss12-ss17 {
+    font-feature-settings: 'ss12' 1, 'ss17' 1;
+}
+.ss12-ss18 {
+    font-feature-settings: 'ss12' 1, 'ss18' 1;
+}
+.ss12-ss19 {
+    font-feature-settings: 'ss12' 1, 'ss19' 1;
+}
+.ss12-ss20 {
+    font-feature-settings: 'ss12' 1, 'ss20' 1;
+}
 
 /* Header logo */
 
