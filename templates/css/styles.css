@@ -23,7 +23,7 @@ header {
 }
 
 /* Font stuff */
-.presti {
+.presti { 
     font-family: "Presti Text Normal";    
     font-feature-settings: 'ss01' 1; /* Allow flourishes as ~tru4 */
     font-weight: 400;
