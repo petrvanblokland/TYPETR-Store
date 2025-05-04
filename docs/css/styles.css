@@ -97,10 +97,12 @@ header {
 .powerlift {
     font-family: "PowerLift Tight";    
     font-weight: 400;
+    line-height: 1em; 
 }
 .powerlift-outline {
     font-family: "PowerLift Tight Outline";    
     font-weight: 400;
+    line-height: 1em; 
 }
 
 .responder-p {
