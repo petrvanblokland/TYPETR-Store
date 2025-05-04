@@ -49,12 +49,12 @@ if MAMP_PATH is not None:
     print(f'... Copy {EXPORT_PATH} to {mampPath}')
     shutil.copytree(EXPORT_PATH, mampPath)
 
-    docsPath = 'docs/'
-    if os.path.exists(mampPath):
-        print('... Remove old site at', docsPath)
-        os.system(f"rm  -r  {docsPath}") #/Applications/MAMP/htdocs/typetr")
-    print(f'... Copy {EXPORT_PATH} to {docsPath}')
-    shutil.copytree(EXPORT_PATH, docsPath)
+docsPath = 'docs/'
+if os.path.exists(docsPath):
+    print('... Remove old site at', docsPath)
+    os.system(f"rm  -r  {docsPath}") #/Applications/MAMP/htdocs/typetr")
+print(f'... Copy {EXPORT_PATH} to {docsPath}')
+shutil.copytree(EXPORT_PATH, docsPath)
 
     # Open the local website on docs/, assuming that MAMP is running
     #os.system(u'/usr/bin/open %s/%s' % (site.name, site.id))

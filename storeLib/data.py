@@ -16,8 +16,8 @@ TEMPLATES_PATH = 'templates/'
 IMAGES_PATH = 'images/' # Root path of all images
 
 if os.path.exists('/Users/jaspervanblokland'):
-    EXPORT_PATH = '_docs/' # Jasper computer
-    MAMP_PATH = '/Applications/MAMP/htdocs/typetr'
+    EXPORT_PATH = 'docs/' # Jasper computer
+    MAMP_PATH = None #'/Applications/MAMP/htdocs/typetr'
 elif os.path.exists('/Users/petr'):
     EXPORT_PATH = 'docs/'
     MAMP_PATH = '/Users/petr/Sites/localhost/typetr/' # Petr computer
