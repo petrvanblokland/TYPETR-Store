@@ -27,3 +27,12 @@ function toggleMenu() {
 document.addEventListener('DOMContentLoaded', function() {
     showSlides();
 });
+
+
+const popup = document.getElementById('popup');
+
+window.addEventListener('click', function(event) {
+if (event.target === popup) {
+  popup.style.display = 'none';
+}
+});
