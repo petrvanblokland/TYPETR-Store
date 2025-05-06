@@ -385,11 +385,12 @@ div.image {
 
 .popup-content {
   background-color: #fff;
-  margin: 10% auto;
+  margin-top: 70px;
+  margin-left:30%;
   padding: 20px;
-  width: 80%;
-  max-width: 600px;
-  border-radius: 10px;
+  width: 300px;
+  max-width: 300px;
+  border-radius: 5px;
   position: relative;
 }
 
@@ -476,6 +477,14 @@ fontdue-type-testers {
     }
     .navbar li {
         margin: 10px 0;
+    }
+
+    .popup-content {
+      margin-top:70px;
+      margin-left:0px;
+      width: 100%;
+      max-width: 100%;
+      border-radius: 0px;
     }
 
     div.image {
