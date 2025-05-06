@@ -122,7 +122,7 @@
                 <img src="images/logos/type-try-logo.gif" alt="Logo">
             </a>
         </div>
-        <div class="familyName upgrade">
+        <div class="familyName upgrade" onclick="document.getElementById('popup').style.display='block'">
             Select a family
         </div>
         <nav class="navbar">
@@ -147,6 +147,7 @@
         <div class="slide" style="background-image: url('images/2025/Responder-M-Mercator-Handwriting2.png');"></div>
     </section>
 
+    <!--
     <section class="content">
         <div class="row">
             <div class="column font-selector size36">
@@ -162,6 +163,28 @@
             </div>
         </div>
     </section>
+    -->
+    
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span class="close" onclick="document.getElementById('popup').style.display='none'">&times;</span>
+        <section class="content">
+          <div class="row">
+            <div class="column font-selector size36">
+              <p class="presti"><a href="presti.html">Presti&nbsp;</a></p> 
+              <p class="productus"><a href="productus.html">Productus</a></p> 
+              <p class="powerlift-outline"><a href="powerlift.html">PowerLift</a></p> 
+              <p class="proforma-pro"><a href="proforma-pro.html">Proforma&nbsp;Pro</a></p> 
+              <p class="proforma"><a href="proforma.html">Proforma</a></p> 
+              <p class="responder-p"><a href="responder-p.html">Responder&nbsp;P</a></p> 
+              <p class="responder-m"><a href="responder-m.html">Responder&nbsp;M</a></p> 
+              <p class="upgrade"><a href="upgrade.html">Upgrade</a></p>
+              <p class="bitcount"><a href="bitcount.html">Bitcount</a></p> 
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
 
     <section class="content">
         <div class="row type-tester">
