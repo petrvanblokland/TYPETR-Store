@@ -523,3 +523,9 @@ fontdue-type-testers {
 
 }
 
+
+@media (max-width: 899px) {
+  .type-tester {
+    --type-tester--adjustment: 1;
+  }
+}
