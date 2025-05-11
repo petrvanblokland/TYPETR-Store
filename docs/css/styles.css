@@ -1,3 +1,9 @@
+/* GENERAL ATTRIBUTES */
+
+@view-transition {
+  navigation: auto;
+}
+
 /* Reset */
 
 h1, h2, h3, h4, h5, h6 {
@@ -16,10 +22,15 @@ body {
 header {
     display: block;
     height: 50px;
-    /*justify-content: space-between;*/
+    width:100vw;
     padding: 10px;
     background-color: black;
     color: white;
+    top: 0px;
+    left: 0px;
+    position: fixed;
+    z-index: 100;
+    border-bottom: 1px solid;
 }
 
 /* Font stuff */
@@ -283,6 +294,8 @@ header {
 
 /* Header logo */
 
+header{
+}
 header .logo { /* Floating left box with logo */
     display: block;
     float: left;
@@ -303,6 +316,7 @@ header .logo img {
 header .navbar {
     display: block;
     float: right;
+    padding:15px;
 }
 header .navbar ul {
     list-style-type: none;
@@ -317,6 +331,7 @@ header .navbar a {
     color: white;
     text-decoration: none;
 }
+
 .hamburger {
     display: none;
     font-size: 30px;
@@ -461,9 +476,13 @@ fontdue-type-testers {
     .hamburger {
         display: block;
     }
-    .row {
-        flex-direction: column;
+    .column {
+        flex: 1;
+        width: 100vw;
+        box-sizing: border-box;
+        background-color: #F0F0F0;
     }
+
     .navbar.active {
         display: block;
         position: absolute;
@@ -480,7 +499,7 @@ fontdue-type-testers {
     }
 
     .popup-content {
-      margin-top:70px;
+      margin-top: 70px;
       margin-left:0px;
       width: 100%;
       max-width: 100%;
