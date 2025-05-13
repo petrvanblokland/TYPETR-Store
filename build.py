@@ -25,7 +25,7 @@ import os, shutil
 from random import shuffle
 
 from storeLib.data import FONTS, URL, IMAGES_PATH, ASSETS_PATH, TEMPLATES_PATH, MAMP_PATH, EXPORT_PATH
- 
+
 DO_BUILD = True
 
 
