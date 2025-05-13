@@ -21,9 +21,6 @@ if os.path.exists('/Users/jaspervanblokland'):
 elif os.path.exists('/Users/petr'):
     EXPORT_PATH = 'docs/'
     MAMP_PATH = '/Users/petr/Sites/localhost/typetr/' # Petr computer
-else:
-    EXPORT_PATH = 'docs/'
-    MAMP_PATH = None
 
 FONTS = {
     # P R E S T I
