@@ -492,6 +492,9 @@ fontdue-type-testers {
         width: 100%;
         padding: 0;
     }
+    div.responsiveHide {
+        display: none;
+    }
     /* Type testers */
 
     div.type-tester {
@@ -503,6 +506,7 @@ fontdue-type-testers {
     }
 
 }
+
 @media (max-width: 899px) {
   fontdue-type-testers .type-tester {
     --type-tester--adjustment: 1;
