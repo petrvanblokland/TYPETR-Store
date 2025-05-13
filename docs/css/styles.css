@@ -304,8 +304,8 @@ header .logo { /* Floating left box with logo */
 header .familyName { /* Floating left box with current family name */
     display: block;
     float: left;
-    text-align: center;
-    padding:15px;
+    font-size: 40px;
+    text-align: left;
 }
 header .logo img {
     height: 50px;
@@ -421,17 +421,16 @@ div.image {
 
 /* Layout for Rows and Columns */
 .row {
-  display: flex;
-  flex-wrap: wrap;
+    display: flex;
+    /*margin: 20px 0;*/
 }
 .column {
-    flex: 1 1 50%;
+    flex: 1;
     width: 50%;
-    min-width: 300px; 
+    /*padding: 10px;*/
     box-sizing: border-box;
     background-color: #F0F0F0;
 }
-
 .column p {
     /*background-color: #f9f9f9;*/
     /*padding: 20px;*/
@@ -477,15 +476,13 @@ fontdue-type-testers {
     .hamburger {
         display: block;
     }
-      .row {
-        flex-direction: column;
-      }
     .column {
         flex: 1;
         width: 100vw;
         box-sizing: border-box;
         background-color: #F0F0F0;
     }
+
     .navbar.active {
         display: block;
         position: absolute;
