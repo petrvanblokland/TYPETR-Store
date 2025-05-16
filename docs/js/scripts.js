@@ -36,3 +36,12 @@ if (event.target === popup) {
   popup.style.display = 'none';
 }
 });
+
+const navbar = document.getElementById('navbar');
+
+window.addEventListener('click', function(event) {
+if (event.target === navbar) {
+  navbar.style.display = 'none';
+}
+});
+
