@@ -23,6 +23,7 @@ header {
     position: fixed;
     z-index: 100;
     width: 100%;
+   box-shadow: 0 14px 16px rgba(0, 0, 0, 0.5);
 }
 
 /* Animation */
@@ -446,23 +447,25 @@ div.image {
   cursor: pointer;
 }
 
-/* Layout for Rows and Columns */
+
 .row {
     display: flex;
-    /*margin: 20px 0;*/
+    flex-wrap: wrap;
+    gap: 20px; 
 }
+
 .column {
     flex: 1;
     width: 50%;
-    /*padding: 10px;*/
+    min-width: 300px;
     box-sizing: border-box;
     background-color: #F0F0F0;
 }
+
 .column p {
-    /*background-color: #f9f9f9;*/
-    /*padding: 20px;*/
     margin: 0 40px 0 0;
 }
+
 .column14 {
     /*flex: 1;*/
     width: 25%;
@@ -503,8 +506,13 @@ fontdue-type-testers {
     .hamburger {
         display: block;
     }
+
     .row {
         flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
     }
     .navbar.active {
         display: block;
@@ -536,6 +544,7 @@ fontdue-type-testers {
         width: 100%;
         padding: 0;
     }
+
     div.responsiveHide {
         display: none;
     }
