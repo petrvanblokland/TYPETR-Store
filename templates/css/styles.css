@@ -598,6 +598,13 @@ fontdue-type-testers {
 
 }
 
+@media (min-width: 1500px) {
+    .row{
+        width: 1500px;
+        margin:0 auto;
+    }
+}
+
 @media (max-width: 899px) {
   fontdue-type-testers .type-tester {
     --type-tester--adjustment: 1;
