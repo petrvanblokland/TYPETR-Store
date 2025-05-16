@@ -362,10 +362,21 @@ header .navbar a {
     text-decoration: none;
 }
 .hamburger {
+    position: absolute;
+    top:0px;
+    right:0px;
     display: none;
     font-size: 30px;
     cursor: pointer;
     float: right;
+    padding: 20px;
+    padding-right: 40px;
+}
+
+.fontIcon {
+    display: none;
+    font-size: 30px;
+    cursor: pointer;
     padding: 10px;
     padding-right: 20px;
 }
@@ -521,7 +532,9 @@ fontdue-type-testers {
     .hamburger {
         display: block;
     }
-
+    .fontIcon {
+        display: block;
+    }
     .row {
         flex-direction: column;
     }
@@ -560,7 +573,7 @@ fontdue-type-testers {
         padding: 0;
     }
 
-    div.responsiveHide {
+    div.responsiveHide, div.familyName {
         display: none;
     }
     /* Type testers */
