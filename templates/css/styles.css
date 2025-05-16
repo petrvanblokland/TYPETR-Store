@@ -53,7 +53,7 @@ header {
 @keyframes slideDown {
   0% {
     transform: translateY(-100%);
-    opacity: 1;
+    opacity: 0.5;
   }
   100% {
     transform: translateY(0);
@@ -63,8 +63,8 @@ header {
 
 @keyframes slideLeft {
   0% {
-    transform: translateX(-100%);
-    opacity: 1;
+    transform: translateX(100vw);
+    opacity: 0.5;
   }
   100% {
     transform: translateX(0);
@@ -557,13 +557,15 @@ fontdue-type-testers {
         box-align: 'right';
         top: 70px;
         z-index: 50;
-        margin-left: -10px
+        margin-left: -10px;
+        text-align: right;
     }
     .navbar ul {
         flex-direction: column;
     }
     .navbar li {
         margin: 10px 0;
+        padding-right: 60px;
     }
 
     .popup-content {
