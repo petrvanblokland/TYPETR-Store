@@ -1,3 +1,19 @@
+/* Auto scroll snap */
+
+@view-transition {
+  navigation: auto;
+}
+
+.row, .column {
+  scroll-snap-align: start; 
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 61px;
+  scroll-snap-type: y proximity;
+}
+
 /* Reset */
 
 h1, h2, h3, h4, h5, h6 {
@@ -9,10 +25,18 @@ h1, h2, h3, h4, h5, h6 {
 /* General Styles */
 
 body {
-    font-family: "Upgrade Regular", sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: "Upgrade Regular", sans-serif; 
+  margin: 0;
+  padding: 0;
+  scroll-behavior: auto;
+  background-color: white;
+  width: 100vw;
+  overflow-x: hidden;
+  line-height: 1;
+  -webkit-text-size-adjust: none;
 }
+
+
 header {
     display: block;
     height: 50px;
@@ -23,13 +47,14 @@ header {
     position: fixed;
     z-index: 100;
     width: 100%;
+   box-shadow: 0 14px 16px rgba(0, 0, 0, 0.5);
 }
 
 /* Animation */
 @keyframes slideDown {
   0% {
     transform: translateY(-100%);
-    opacity: 1;
+    opacity: 0.5;
   }
   100% {
     transform: translateY(0);
@@ -39,8 +64,8 @@ header {
 
 @keyframes slideLeft {
   0% {
-    transform: translateX(-100%);
-    opacity: 1;
+    transform: translateX(100vw);
+    opacity: 0.5;
   }
   100% {
     transform: translateX(0);
@@ -347,9 +372,20 @@ header .navbar a {
 }
 .hamburger {
     display: none;
+    position: absolute;
+    top:0px;
+    right:0px;
     font-size: 30px;
     cursor: pointer;
     float: right;
+    padding: 20px;
+    padding-right: 40px;
+}
+
+.fontIcon {
+    display: none;
+    font-size: 37px;
+    cursor: pointer;
     padding: 10px;
     padding-right: 20px;
 }
@@ -442,27 +478,28 @@ div.image {
   right: 15px;
   font-size: 24px;
   font-weight: bold;
-  color: #333;
+  color: white;
   cursor: pointer;
 }
 
-/* Layout for Rows and Columns */
+
 .row {
     display: flex;
-    /*margin: 20px 0;*/
+    flex-wrap: wrap;
 }
+
 .column {
     flex: 1;
     width: 50%;
-    /*padding: 10px;*/
+    min-width: 300px;
     box-sizing: border-box;
     background-color: #F0F0F0;
 }
+
 .column p {
-    /*background-color: #f9f9f9;*/
-    /*padding: 20px;*/
     margin: 0 40px 0 0;
 }
+
 .column14 {
     /*flex: 1;*/
     width: 25%;
@@ -503,8 +540,15 @@ fontdue-type-testers {
     .hamburger {
         display: block;
     }
+    .fontIcon {
+        display: block;
+    }
     .row {
         flex-direction: column;
+    }
+
+    .column {
+        width: 100%;
     }
     .navbar.active {
         display: block;
@@ -514,13 +558,15 @@ fontdue-type-testers {
         box-align: 'right';
         top: 70px;
         z-index: 50;
-        margin-left: -10px
+        margin-left: -10px;
+        text-align: right;
     }
     .navbar ul {
         flex-direction: column;
     }
     .navbar li {
         margin: 10px 0;
+        padding-right: 60px;
     }
 
     .popup-content {
@@ -536,7 +582,8 @@ fontdue-type-testers {
         width: 100%;
         padding: 0;
     }
-    div.responsiveHide {
+
+    div.responsiveHide, div.familyName {
         display: none;
     }
     /* Type testers */
@@ -551,7 +598,20 @@ fontdue-type-testers {
 
 }
 
+@media (min-width: 1500px) {
+    .row{
+        width: 1500px;
+        margin:0 auto;
+    }
+}
+
 @media (max-width: 899px) {
   fontdue-type-testers .type-tester {
     --type-tester--adjustment: 1;
   }
+}
+
+div.type-tester {
+    padding-top: 0px;
+    padding-bottom: 0px;
+}
