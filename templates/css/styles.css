@@ -47,7 +47,8 @@ header {
     position: fixed;
     z-index: 100;
     width: 100%;
-   box-shadow: 0 14px 16px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 14px 16px rgba(0, 0, 0, 0.5);
+    z-index: 20000;
 }
 
 /* Animation */
@@ -454,14 +455,13 @@ div.image {
 .popup-content {
   background-color: #282828;
   margin-top: 70px;
-  margin-left:30%;
+  margin-left:250px;
   padding: 20px;
   width: 300px;
   max-width: 300px;
   border-radius: 5px;
   position: relative;
   animation: slideDown 0.2s ease-out forwards;
-  z-index: 80;
 }
 
 .popup-content .column {
@@ -472,6 +472,10 @@ div.image {
   color: white;    
 }
 
+.familyName:hover, .close:hover, .navbar a:hover,
+.fontIcon:hover, .popup-content:hover .column a:hover{
+    color: yellow;
+}
 
 .close {
   position: absolute;
@@ -564,9 +568,10 @@ fontdue-type-testers {
         width: 100%;
         box-align: 'right';
         top: 70px;
-        z-index: 50;
         margin-left: -10px;
         text-align: right;
+          z-index: 1000;
+
     }
     .navbar ul {
         flex-direction: column;
@@ -582,6 +587,7 @@ fontdue-type-testers {
       width: 100%;
       max-width: 100%;
       border-radius: 0px;
+      z-index: 60;
     }
 
     div.image {
