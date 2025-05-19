@@ -49,6 +49,8 @@ header {
     width: 100%;
     box-shadow: 0 14px 16px rgba(0, 0, 0, 0.5);
     z-index: 20000;
+  animation: slideDown 0.4s ease-out forwards;
+
 }
 
 /* Animation */
