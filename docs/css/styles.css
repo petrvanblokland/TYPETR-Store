@@ -47,7 +47,8 @@ header {
     position: fixed;
     z-index: 100;
     width: 100%;
-   box-shadow: 0 14px 16px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 14px 16px rgba(0, 0, 0, 0.5);
+    z-index: 20000;
 }
 
 /* Animation */
@@ -86,7 +87,9 @@ header {
     font-weight: 400;
     letter-spacing: 0.02em;
 }
-
+.presti p {
+    line-height: 1.3em;
+}
 
 .productus {
     font-family: "Productus Book";
@@ -94,6 +97,7 @@ header {
 }
 .productus p {
     letter-spacing: 0.04em;
+    line-height: 1.3em;
 }
 .productus-bold {
     font-family: "Productus Bold";
@@ -101,6 +105,7 @@ header {
 }
 .productus-bold p {
     letter-spacing: 0.04em;
+    line-height: 1.3em;
 }
 
 .proforma {
@@ -109,20 +114,23 @@ header {
 }
 .proforma p {
     letter-spacing: 0.02em;
+    line-height: 1.3em;
 }
 .proforma-book {
     font-family: "Proforma Book";
     font-weight: 400;
 }
 .proforma-book p {
-    letter-spacing: 0.02em;
+    letter-spacing: 0.015em;
+    line-height: 1.3em;
 }
 .proforma-bold {
     font-family: "Proforma Bold";
     font-weight: 400;
 }
 .proforma-bold p {
-    letter-spacing: 0.02em;
+    letter-spacing: 0.015em;
+    line-height: 1.3em;
 }
 .proforma-pro {
     font-family: "TP Proforma Pro Regular";
@@ -148,11 +156,15 @@ header {
 .powerlift {
     font-family: "PowerLift Tight";    
     font-weight: 400;
+}
+.powerlift p {
     line-height: 1em; 
 }
 .powerlift-outline {
     font-family: "PowerLift Tight Outline";    
     font-weight: 400;
+}
+.powerlift-outline p {
     line-height: 1em; 
 }
 
@@ -165,11 +177,14 @@ header {
     font-family: "Responder P VF Regular";
     font-variation-settings: 'ital': 0, 'wght': 600;
 }
-
+.responder-p p {
+    line-height: 1.3em;
+}
 .responder-m {
     font-family: "Responder M Regular Italic";
     font-style: normal;
     font-weight: 400;
+    line-height: 1.3em;
 }
 
 .upgrade {
@@ -182,10 +197,16 @@ header {
     font-weight: 400;
     letter-spacing: 0.02em;
 }
+.upgrade p {
+    line-height: 1.3em;
+}
 
 .bitcount {
     font-family: "Bitcount Mono Double Regular Circle";
     font-weight: 400;
+}
+.bitcount p {
+    line-height: 1.3em;
 }
 
 .size24 {
@@ -393,6 +414,7 @@ header .navbar a {
 /* Slideshow */
 
 .slideshow {
+    padding-top: 60px;
     width: 100%;
     height: 500px;
     position: relative;
@@ -453,14 +475,13 @@ div.image {
 .popup-content {
   background-color: #282828;
   margin-top: 70px;
-  margin-left:30%;
+  margin-left:250px;
   padding: 20px;
   width: 300px;
   max-width: 300px;
   border-radius: 5px;
   position: relative;
   animation: slideDown 0.2s ease-out forwards;
-  z-index: 80;
 }
 
 .popup-content .column {
@@ -471,6 +492,10 @@ div.image {
   color: white;    
 }
 
+.familyName:hover, .close:hover, .navbar a:hover,
+.fontIcon:hover, .popup-content:hover .column a:hover{
+    color: yellow;
+}
 
 .close {
   position: absolute;
@@ -484,8 +509,8 @@ div.image {
 
 
 .row {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .column {
@@ -550,6 +575,12 @@ fontdue-type-testers {
     .column {
         width: 100%;
     }
+
+    .column p, .column h1{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
     .navbar.active {
         display: block;
         position: absolute;
@@ -557,9 +588,10 @@ fontdue-type-testers {
         width: 100%;
         box-align: 'right';
         top: 70px;
-        z-index: 50;
         margin-left: -10px;
         text-align: right;
+          z-index: 1000;
+
     }
     .navbar ul {
         flex-direction: column;
@@ -575,12 +607,16 @@ fontdue-type-testers {
       width: 100%;
       max-width: 100%;
       border-radius: 0px;
+      z-index: 60;
     }
 
     div.image {
         position: float;
         width: 100%;
         padding: 0;
+      padding-top: 56.25%; 
+      background-size: cover;
+      background-position: center;
     }
 
     div.responsiveHide, div.familyName {
