@@ -555,8 +555,24 @@ div.type-tester {
 }
 fontdue-type-testers {
     font-size: 8em;
-    font-feature-settings: "kern" 1, "clig" 1, "liga" 1, "ss01" 1;
+    font-feature-settings: "kern" 1, "clig" 1, "liga" 1, "ss01" 1, "frac" 1;
     padding: 0;
+
+    width: 100% !important;
+    max-width: 100% !important;
+    display: block;
+}
+
+/* Buy button */
+
+button.buy-button {
+    font-size: 2em;
+    padding: 0.4em;
+    background-color: #AAAAAA;
+    margin-top: 1em;
+
+    border-radius: 8px;       /* small rounded corners */
+    border: none;             /* optional: remove default border */
 }
 
 /* Media Queries */
@@ -616,9 +632,9 @@ fontdue-type-testers {
         position: float;
         width: 100%;
         padding: 0;
-      padding-top: 56.25%; 
-      background-size: cover;
-      background-position: center;
+        padding-top: 56.25%; 
+        background-size: cover;
+        background-position: center;
     }
 
     div.responsiveHide, div.familyName {
@@ -632,6 +648,11 @@ fontdue-type-testers {
     fontdue-type-testers {
         font-size: 6em;
         padding: 0;
+    }
+
+    button.buy-button {
+        display: block;
+        margin: 1em auto 0;
     }
 
 }

@@ -42,6 +42,7 @@ if DO_BUILD:
 if MAMP_PATH is not None:
     # Start MAMP to see this website on localhost, port 80
     # Since we modify the 'docs/', better make a tree copy than exporting again.
+    # Local site is available at http://localhost/typetr/index.html
     mampPath = MAMP_PATH #+ site.id
     if os.path.exists(mampPath):
         print('... Remove old site at', mampPath)
