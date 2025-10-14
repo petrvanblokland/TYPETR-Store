@@ -136,6 +136,7 @@
         <nav id="navbar" class="navbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="index.html" onclick="document.getElementById('popup').style.display='block'">Fonts</a></li>
                 <li><a href="about.html">About</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -145,6 +146,7 @@
         </div>
     </header>
 
+    <!--
     <section class="slideshow">
         <div class="slide active" style="background-image: url('images/2023/Upgrade-20230326 UP Coffee cups colors.jpg');"></div>
         <div class="slide" style="background-image: url('images/2023/Bitcount-202302 - BIT in use - Lets talk_01.jpg');"></div>
@@ -154,6 +156,7 @@
         <div class="slide" style="background-image: url('images/2023/Upgrade-202302 - UP in use - Take your bag.jpg');"></div>
         <div class="slide" style="background-image: url('images/2025/Responder-M-Mercator-Handwriting2.png');"></div>
     </section>
+    -->
 
     <!--
     <section class="content">
@@ -182,10 +185,10 @@
               <p class="presti"><a href="presti.html">Presti&nbsp;</a></p> 
               <p class="productus"><a href="productus.html">Productus</a></p> 
               <p class="powerlift-outline"><a href="powerlift.html">PowerLift</a></p> 
-              <p class="proforma-pro"><a href="proforma-pro.html">Proforma&nbsp;Pro</a></p> 
-              <p class="proforma"><a href="proforma.html">Proforma</a></p> 
+              <!--<p class="proforma-pro"><a href="proforma-pro.html">Proforma&nbsp;Pro</a></p>-->
+              <p class="proforma"><a href="proforma.html">Proforma&nbsp;Classic</a></p> 
               <p class="responder-p"><a href="responder-p.html">Responder&nbsp;P</a></p> 
-              <p class="responder-m"><a href="responder-m.html">Responder&nbsp;M</a></p> 
+              <!--<p class="responder-m"><a href="responder-m.html">Responder&nbsp;M</a></p>-->
               <p class="upgrade"><a href="upgrade.html">Upgrade</a></p>
               <p class="bitcount"><a href="bitcount.html">Bitcount</a></p> 
             </div>
@@ -198,7 +201,7 @@
 
         <div class="row">
             <div class="column" onclick="window.location.href='presti.html'">
-                <div class="image" style="background-image: url('images/2023/Presti_in_use_raw_kale_01.jpg');">
+                <div class="image" style="background-image: url('images/2025/presti/cap_lc-longWords-024-opsz18.png');background-position: top center;">
                 </div>            
             </div>
             <div class="column presti">
@@ -210,7 +213,8 @@
                 <button class="buy-button upgrade" 
                     type="button"
                     fontdue-click="open-store-modal"
-                    fontdue-store-select="Rm9udENvbGxlY3Rpb246MTkyMDQ3OTcwMDEwMzg5OTcyMg=="
+                    fontdue-store-route="product/Rm9udENvbGxlY3Rpb246MTkyMDQ3OTcwMDEwMzg5OTcyMg=="
+                    fontdue-store-select="U2t1OjE5MjA0ODE0NDY2MDM2OTY3NzA="
                     >
                     Add Presti to cart
                 </button>
@@ -223,7 +227,7 @@
 
         <div class="row">
             <div class="column" onclick="window.location.href='responder-p.html'">
-                <div class="image" style="background-image: url('images/2025/Upgrade-NoordzijCube-test-x-1000MMTransp.gif');"></div>
+                <div class="image" style="background-image: url('images/2025/responder/cap_lc-longWords-003-opsz36.png');"></div>
             </div>
             <div class="column responder-p">
                 <h1 class="responder-p-bold size36">Responder&nbsp;P</h1>
@@ -234,7 +238,8 @@
                 <button class="buy-button upgrade" 
                     type="button"
                     fontdue-click="open-store-modal"
-                    fontdue-store-select="Rm9udENvbGxlY3Rpb246MTkyMDQ3OTcwMDEwMzg5OTcyMg=="
+                    fontdue-store-route="product/Rm9udENvbGxlY3Rpb246MTkyMDQ5NDE3NzEzODQyMDY1Nw=="
+                    fontdue-store-select="U2t1OjE5MjA0OTQzNzY3NjIxMjUyNzc="
                     >
                     Add Responder-P to cart
                 </button>
@@ -245,20 +250,22 @@
             <fontdue-type-testers collection-id="Rm9udENvbGxlY3Rpb246MTkyMDQ5NDE3NzEzODQyMDY1Nw=="></fontdue-type-testers>
         </div>
 
+        <!--
         <div class="row">
             <div class="column" onclick="window.location.href='responder-m.html'">
                 <div class="image" style="background-image: url('images/2025/Responder-M-Mercator-Handwriting2.png');"></div>
             </div>
             <div class="column responder-m">
                 <h1 class="responder-m size64">Responder&nbsp;M</h1>
-                <p class="size48" style="line-height: 0.8em"> <!-- Much larger due to small x=height -->
+                <p class="size48" style="line-height: 0.8em"> Much larger due to small x=height
                     TYPETR Responder M — a fresh take on a famous classic. If you’ve ever admired the quirky charm of Mercator’s old handwriting, this one’s going to feel like an old friend with a new outfit. It’s based on the same broad nib pen strokes — like a sketchbook scribble with just the right touch of intention, a little rough around the edges, in the best possible way. Now with all the advantages of digital type, under the hood, there’s some OpenType magic going on.
                 </p>
-                <!-- Upgrade -->
+                
                 <button class="buy-button upgrade" 
                     type="button"
                     fontdue-click="open-store-modal"
-                    fontdue-store-select="Rm9udENvbGxlY3Rpb246MTkyMDQ3OTcwMDEwMzg5OTcyMg=="
+                    fontdue-store-route="product/Rm9udENvbGxlY3Rpb246MjAwNzM3NjcwMTQ3ODg0MTA4OA=="
+                    fontdue-store-select="U2t1OjIwMDczNzcyMTMyMjU4NzIxMzM="
                     >
                     Add Responder-M to cart
                 </button>
@@ -268,10 +275,11 @@
         <div class="row type-tester">
             <fontdue-type-testers collection-id="Rm9udENvbGxlY3Rpb246MjAwNzM3NjcwMTQ3ODg0MTA4OA=="></fontdue-type-testers>        
         </div>
+        -->
 
         <div class="row">
             <div class="column" onclick="window.location.href='powerlift.html'">
-                <div class="image" style="background-image: url('images/2022/PowerLift-Buttons.jpeg');"></div>
+                <div class="image" style="background-image: url('images/2022/PowerLift-Buttons-clipped.jpeg');"></div>
             </div>
             <div class="column upgrade">
                 <h1 class="powerlift size36">PowerLift<span class="powerlift-outline"> for statements</span></h1>
@@ -284,7 +292,8 @@
                 <button class="buy-button upgrade" 
                     type="button"
                     fontdue-click="open-store-modal"
-                    fontdue-store-select="Rm9udENvbGxlY3Rpb246MTkyMDQ3OTcwMDEwMzg5OTcyMg=="
+                    fontdue-store-route="product/Rm9udENvbGxlY3Rpb246MTkyMDQ4NTAyOTI0Mzk1NjA0Ng=="
+                    fontdue-store-select="U2t1OjE5MjA0ODU4NTUxNDQzNTY2OTg="
                     >
                     Add PowerLift to cart
                 </button>
@@ -295,6 +304,7 @@
             <fontdue-type-testers collection-id="Rm9udENvbGxlY3Rpb246MTkyMDQ4NTAyOTI0Mzk1NjA0Ng=="></fontdue-type-testers>        
         </div>
 
+        <!--
         <div class="row">
             <div class="column" onclick="window.location.href='proforma-pro.html'">
                 <div class="image" style="background-image: url('images/2025/Proforma-Pro-w.png');"></div>
@@ -307,20 +317,22 @@
                 <button class="buy-button upgrade" 
                     type="button"
                     fontdue-click="open-store-modal"
-                    fontdue-store-select="Rm9udENvbGxlY3Rpb246MTkyMDQ3OTcwMDEwMzg5OTcyMg=="
+                    fontdue-store-route="product/Rm9udENvbGxlY3Rpb246MjAwNTQyNzc2NDEzNjE1OTkxNw=="
+                    fontdue-store-select="U2t1OjIwMDU0MzQ1ODY1NjU4ODA1MTQ="
                     >
                     Add Proforma Pro to cart
                 </button>
             </div>
         </div>
 
-        <div class="row type-tester"> <!-- Proforma Pro -->            
+        <div class="row type-tester">             
             <fontdue-type-testers collection-id="Rm9udENvbGxlY3Rpb246MjAwNTQyNzc2NDEzNjE1OTkxNw=="></fontdue-type-testers>
         </div>
+        -->
 
         <div class="row">
             <div class="column" onclick="window.location.href='proforma.html'">
-                <div class="image" style="background-image: url('images/2022/Proforma_in_use_04_things_to_forget4.jpg');"></div>
+                <div class="image" style="background-image: url('images/2022/Proforma_in_use_04_things_to_forget4-clipped.jpg');"></div>
             </div>
             <div class="column proforma">
                 <h1 class="proforma-bold size36">Proforma Classic<span class="proforma"> — An original Landmark</span></h1>
@@ -330,7 +342,8 @@
                 <button class="buy-button upgrade" 
                     type="button"
                     fontdue-click="open-store-modal"
-                    fontdue-store-select="Rm9udENvbGxlY3Rpb246MTkyMDQ3OTcwMDEwMzg5OTcyMg=="
+                    fontdue-store-route="product/Rm9udENvbGxlY3Rpb246MTkyMDQ5MzE4MTc4ODEzODM2Mg=="
+                    fontdue-store-select="U2t1OjE5MjA0OTM0MjMzNDY0OTQzODI="
                     >
                     Add Proforma Classic to cart
                 </button>
@@ -343,7 +356,7 @@
 
         <div class="row">
             <div class="column" onclick="window.location.href='upgrade.html'">
-                <div class="image" style="background-image: url('images/2022/Upgrade_in_use_06_book_fruit_colours.jpg');"></div>
+                <div class="image" style="background-image: url('images/2025/upgrade/cap-longWords-023-opsz170.png');"></div>
             </div>
             <div class="column upgrade">
                 <h1 class="upgrade-bold size36">Upgrade<span class="upgrade"> your typography</span></h1>
@@ -353,7 +366,8 @@
                 <button class="buy-button upgrade" 
                     type="button"
                     fontdue-click="open-store-modal"
-                    fontdue-store-select="Rm9udENvbGxlY3Rpb246MTkyMDQ3OTcwMDEwMzg5OTcyMg=="
+                    fontdue-store-route="product/Rm9udENvbGxlY3Rpb246MTkyMDQ5NDg4MjQ2OTM1ODU2MA=="
+                    fontdue-store-select="U2t1OjE5MjA0OTUxMTg1NzUxMTgzNTY="
                     >
                     Add Upgrade to cart
                 </button>
@@ -366,7 +380,7 @@
 
         <div class="row">
             <div class="column" onclick="window.location.href='productus.html'">
-                <div class="image" style="background-image: url('images/2022/Productus_in_use_flying_elephant_02.jpg');"></div>
+                <div class="image" style="background-image: url('images/2025/productus/productus-italic-v003-wghtProductusBlackItalic-opsz1302-lc-singleGlyph-n-000-opsz1302.png');"></div>
             </div>
             <div class="column productus">
                 <h1 class="productus-bold size36">Productus</h1>
@@ -376,7 +390,8 @@
                 <button class="buy-button upgrade" 
                     type="button"
                     fontdue-click="open-store-modal"
-                    fontdue-store-select="Rm9udENvbGxlY3Rpb246MTkyMDQ3OTcwMDEwMzg5OTcyMg=="
+                    fontdue-store-route="product/Rm9udENvbGxlY3Rpb246MTkyMDQ4OTA3MzQ1MDU5MzExOQ=="
+                    fontdue-store-select="U2t1OjE5MjA0ODkyNjY4ODM1MDUwMTU="
                     >
                     Add Productus to cart
                 </button>
@@ -389,7 +404,7 @@
 
         <div class="row">
             <div class="column" onclick="window.location.href='bitcount.html'">
-                <div class="image" style="background-image: url('images/2022/Bitcount_in_use_Summer_of_love_01.jpg');"></div>
+                <div class="image" style="background-image: url('images/2025/bitcount/Bitcount-nnn.gif');"></div>
             </div>
             <div class="column bitcount">
                 <h1 class="bitcount-bold size36">Bitcount Mono</h1>
@@ -400,7 +415,8 @@
                 <button class="buy-button upgrade" 
                     type="button"
                     fontdue-click="open-store-modal"
-                    fontdue-store-select="Rm9udENvbGxlY3Rpb246MTkyMDQ3OTcwMDEwMzg5OTcyMg=="
+                    fontdue-store-route="product/Rm9udENvbGxlY3Rpb246MTkyMDQ5Nzk0NTI1OTE5MDUwNg=="
+                    fontdue-store-select="U2t1OjE5MjA0OTgyMTE3MTQ5MzUyMjQ="
                     >
                     Add Bitcount to cart
                 </button>

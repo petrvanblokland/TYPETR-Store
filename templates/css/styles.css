@@ -569,7 +569,8 @@ button.buy-button {
     font-size: 2em;
     padding: 0.4em;
     background-color: #AAAAAA;
-    margin-top: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 
     border-radius: 8px;       /* small rounded corners */
     border: none;             /* optional: remove default border */
