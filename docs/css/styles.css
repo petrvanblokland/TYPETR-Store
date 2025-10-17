@@ -211,6 +211,9 @@ header {
     line-height: 1.3em;
 }
 
+.leading14 {
+    line-height: 1.4em;
+}
 .size24 {
     font-size: 24px;
 }
@@ -367,6 +370,7 @@ header .familyName { /* Floating left box with current family name */
     float: left;
     font-size: 40px;
     text-align: left;
+    padding-top: 0.10em;
 }
 header .logo img {
     height: 50px;
