@@ -12,7 +12,7 @@
 #   publication class.
 #
 #   https://docs.fontdue.com
-#   https://typetr.fontdue.com/admin/settings/website
+#   https://typetr.fontdue.com/admin/settings/website €
 #
 #   http://localhost/typetr/index.html
 #   https://petrvanblokland.github.io/TYPETR-Store/index.html
@@ -56,6 +56,8 @@ if os.path.exists(docsPath):
     os.system(f"rm  -r  {docsPath}") #/Applications/MAMP/htdocs/typetr")
 print(f'... Copy {EXPORT_PATH} to {docsPath}')
 shutil.copytree(EXPORT_PATH, docsPath)
+
+os.system('echo "type-try.com" >docs/CNAME')
 
     # Open the local website on docs/, assuming that MAMP is running
     #os.system(u'/usr/bin/open %s/%s' % (site.name, site.id))
