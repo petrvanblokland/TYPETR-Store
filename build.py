@@ -20,6 +20,12 @@
 #   Content examples
 #   https://upgrade.typenetwork.com
 #
+#   https://tonka-tests.vercel.app/?rows=10&cols=9&weights=100%2C200%2C300%2C400%2C458%2C524%2C600%2C660%2C726%2C800&widths=1%2C28%2C55%2C85%2C100%2C130%2C190%2C250%2C300
+#
+#   https://store.typetr.com/
+#   petrvanblokland.github.io
+#   https://render.com/docs/static-sites
+#
 import os, shutil
 
 from random import shuffle

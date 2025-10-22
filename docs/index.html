@@ -1,12 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
-    <link rel="icon" type="image/x-icon" href="images/logos/typetr.ico">
 
-    {{googleMetaData}}
+
+  <!-- Basic SEO -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TYPETR | Home</title>
+  <link rel="icon" type="image/x-icon" href="images/logos/typetr.ico">
+  <meta name="description" content="TYPETR offers high-quality font licenses for desktop, web, and app use. Explore modern, professional, and multilingual typefaces.">
+  <link rel="canonical" href="https://typetr.com/">
+
+  <!-- Favicons -->
+  <link rel="icon" href="/images/logos/typetr.ico" type="image/x-icon">
+  <link rel="apple-touch-icon" href="/images/logos/typetr.png">
+
+  <!-- Open Graph (Social Sharing) -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="TYPETR — Buy Professional Fonts & Licenses">
+  <meta property="og:description" content="Explore high-quality font licenses for desktop, web, and apps. Modern, professional typefaces available for instant download.">
+  <meta property="og:url" content="https://typetr.com/">
+  <meta property="og:image" content="https://www.typetr.com/images/typetr-preview.jpg">
+  <meta property="og:site_name" content="TYPETR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="TYPETR — Buy Professional Fonts & Licenses">
+  <meta name="twitter:description" content="Explore high-quality font licenses for desktop, web, and apps. Modern, professional typefaces available for instant download.">
+  <meta name="twitter:image" content="https://www.typetr.com/images/typetr-preview.jpg">
+
+  <!-- Structured Data: Organization -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "TYPETR",
+    "url": "https://typetr.com/",
+    "logo": "https://typetr.com/images/logos/typetr.png",
+    "sameAs": [
+      "https://www.linkedin.com/in/petrvanblokland/"
+      "https://www.instagram.com/petrvanblokland/"
+      "https://bsky.app/profile/typetr.bsky.social"
+    ]
+  }
+  </script>
+
+  <!-- ✅ Structured Data: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://typetr.com/"
+      }
+    ]
+  }
+  </script>
+
+  <!-- ✅ Structured Data: ItemList (Font Categories) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "TYPETR families",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Presti",
+        "url": "https://typetr.com/presti.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Proforma Classic",
+        "url": "https://typetr.com/proforma-classic.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Productus",
+        "url": "https://typetr.com/productus.html"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "PowerLift",
+        "url": "https://typetr.com/powerlift.html"
+      }
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "Responder P",
+        "url": "https://typetr.com/responder-p.html"
+      }
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "name": "Upgrade",
+        "url": "https://typetr.com/upgrade.html"
+      }
+      {
+        "@type": "ListItem",
+        "position": 7,
+        "name": "Bitcount",
+        "url": "https://typetr.com/bitcount.html"
+      }
+    ]
+  }
+  </script>
+
+  <!-- ✅ Robots & Indexing -->
+  <meta name="robots" content="index, follow">
+
+  <!-- ✅ Performance Hints -->
+  <link rel="preconnect" href="https://fonts.fontdue.com/typetr">
+  <link rel="preload" href="/styles.css" as="style">
+  <link rel="stylesheet" href="/styles.css">
+
+
     <!--
     <link href="https://fonts.fontdue.com/typetr/css/Rm9udENvbGxlY3Rpb246MTkyMDQ4MzU4Mzc5NDUyMjc3MA%3D%3D.css" rel="stylesheet">    
     <link href="https://fonts.fontdue.com/typetr/css/Rm9udENvbGxlY3Rpb246MTkyMDQ5NDE3NzE2MzU4NjQ4Mw%3D%3D.css" rel="stylesheet">
@@ -117,7 +233,7 @@
     });
   </script>
 
-    <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/styles.css">
      
 </head>
 <body>
@@ -221,7 +337,7 @@
         </div>
 
         <div class="row type-tester">
-            <fontdue-type-testers collection-id="Rm9udENvbGxlY3Rpb246MTkyMDQ4MDM2NDg2NzUyOTI5OA=="></fontdue-type-testers>
+            <fontdue-type-testers collection-slug="tp-presti"></fontdue-type-testers>
         </div>
 
         <div class="row">
