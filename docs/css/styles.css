@@ -202,7 +202,12 @@ header {
 }
 .upgrade-thin {
     font-family: "Upgrade Thin";    
-    font-weight: 100;
+    font-weight: 200;
+    letter-spacing: 0.02em;
+}
+.upgrade-light {
+    font-family: "Upgrade Light";    
+    font-weight: 300;
     letter-spacing: 0.02em;
 }
 .upgrade p {
