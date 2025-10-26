@@ -12,7 +12,7 @@
 #   publication class.
 #
 #   https://docs.fontdue.com
-#   https://typetr.fontdue.com/admin/settings/website €
+#   https://typetr.fontdue.com/admin/settings/website 
 #
 #   http://localhost/typetr/index.html
 #   https://petrvanblokland.github.io/TYPETR-Store/index.html

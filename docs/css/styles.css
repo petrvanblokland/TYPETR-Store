@@ -110,27 +110,27 @@ header {
     line-height: 1.3em;
 }
 
-.proforma {
-    font-family: "Proforma Book";
+.proforma-classic {
+    font-family: "Proforma Classic Book";
     font-weight: 400;
 }
-.proforma p {
+.proforma-classic p {
     letter-spacing: 0.02em;
     line-height: 1.3em;
 }
-.proforma-book {
-    font-family: "Proforma Book";
+.proforma-classic-book {
+    font-family: "Proforma Classic Book";
     font-weight: 400;
 }
-.proforma-book p {
+.proforma-classic-book p {
     letter-spacing: 0.015em;
     line-height: 1.3em;
 }
-.proforma-bold {
-    font-family: "Proforma Bold";
+.proforma-classic-bold {
+    font-family: "Proforma Classic Bold";
     font-weight: 400;
 }
-.proforma-bold p {
+.proforma-classic-bold p {
     letter-spacing: 0.015em;
     line-height: 1.3em;
 }
