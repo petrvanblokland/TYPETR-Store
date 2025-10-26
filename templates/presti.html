@@ -131,8 +131,8 @@
             Responder&nbsp;P
         </div>
         -->
-        <div class="familyName presti" onclick="document.getElementById('popup').style.display='block'">
-            P~mlu3res~tlu2ti~bru1
+        <div class="familyName presti liga ss01" onclick="document.getElementById('popup').style.display='block'">
+            P~mlu3res~tlu2ti~bru1&nbsp;&nbsp;<span class="upgrade-thin">and more...</span>
         </div>
         <nav class="navbar">
             <ul>
@@ -173,14 +173,14 @@
         <span class="close" onclick="document.getElementById('popup').style.display='none'">&times;</span>
         <section class="content">
           <div class="row">
-            <div class="column font-selector size36">
+            <div class="column font-selector size36 leading14">
               <p class="presti"><a href="presti.html">Presti&nbsp;</a></p> 
               <p class="productus"><a href="productus.html">Productus</a></p> 
               <p class="powerlift-outline"><a href="powerlift.html">PowerLift</a></p> 
-              <p class="proforma-pro"><a href="proforma-pro.html">Proforma&nbsp;Pro</a></p> 
-              <p class="proforma"><a href="proforma.html">Proforma</a></p> 
+              <!--<p class="proforma-pro"><a href="proforma-pro.html">Proforma&nbsp;Pro</a></p>-->
+              <p class="proforma-classic"><a href="proforma-classic.html">Proforma&nbsp;Classic</a></p> 
               <p class="responder-p"><a href="responder-p.html">Responder&nbsp;P</a></p> 
-              <p class="responder-m"><a href="responder-m.html">Responder&nbsp;M</a></p> 
+              <!--<p class="responder-m"><a href="responder-m.html">Responder&nbsp;M</a></p>-->
               <p class="upgrade"><a href="upgrade.html">Upgrade</a></p>
               <p class="bitcount"><a href="bitcount.html">Bitcount</a></p> 
             </div>
@@ -203,14 +203,16 @@
             </div>
             <div class="column34 presti">
                 <h1 class="presti-bold size36">Presti<span class="presti"> OpenType features</span></h1>
-                <p class="size24">
+                <p class="presti size24 liga">
                     TYPETR Presti family implements an extended OpenType feature set.
-
+Presti is built with a rich typographic set of OpenType features: this goes beyond the standaded small caps and includes alternate glyphs, a huge amount of flourishes, figure sets, and other typographic refinements.
+                </p>
                     <h4>Standard ligatures [liga]</h4>
                     <div style="line-height: 1.4em;font-size: 2em;" class="no_liga">file, fjord, flow, loft (off)</div>
-                    <div style="line-height: 1.4em;font-size: 2em;" class="liga">file, fjord, flow, loft (on)</div>
-                    Note that the “ligatures” are repaced by separate glyphs (not a fixed ligature), so tracking still works.
-                    
+                    <div style="line-height: 1.4em;font-size: 2em;" class="liga">file, fjord, flow, loft (default on)</div>
+                    <p>
+                        Note that the “ligatures” are repaced by alternate glyphs (not a fixed ligature), so tracking still works.
+                    </p>
                     <h4>CSS tabular figures [tnum]</h4>
                     <div style="line-height: 1.4em;font-size: 2em;">0123456789 (default off)</div>
                     <div style="line-height: 1.4em;font-size: 2em;" class="tnum">0123456789 (on)</div>
@@ -258,10 +260,15 @@
                     <h4>CSS all alternates [aalt]</h4>
                     <div style="line-height: 1.8em;font-size: 2em;"><span class="size56">$ 0257 JR</span> (default off)</div>
                     <div style="line-height: 1.8em;font-size: 2em;" class="aalt"><span class="size56">$ 0257 JR</span> (on)</div>
-                    
-                    <br/><br/> 
-                    <fontdue-buy-button collection-id="Rm9udENvbGxlY3Rpb246MTkyMDQ5NDg4MjQ2OTM1ODU2MA=="></fontdue-buy-button>                
                 </p>
+                <button class="buy-button upgrade" 
+                    type="button"
+                    fontdue-click="open-store-modal"
+                    fontdue-store-route="product/Rm9udENvbGxlY3Rpb246MTkyMDQ3OTcwMDEwMzg5OTcyMg=="
+                    fontdue-store-select="U2t1OjE5MjA0ODE0NDY2MDM2OTY3NzA="
+                    >
+                    Add Presti to cart
+                </button>                
             </div>
         </div>
 
@@ -308,8 +315,8 @@
                     <div style="line-height: 1.4em;font-size: 2em;" class="ss06">Middle-left swashes</div>
 
                     <h4>[ID] Bottom-right swashes [ss07] Right going #3 type swashes on bottom</h4>
-                    <div style="line-height: 1.4em;font-size: 2em;">Top-right swashes</div>
-                    <div style="line-height: 1.4em;font-size: 2em;" class="ss07">Top-right swashes</div>
+                    <div style="line-height: 1.4em;font-size: 2em;">Bottom-right swashes</div>
+                    <div style="line-height: 1.4em;font-size: 2em;" class="ss07">Bottom-right swashes</div>
                     
                     <h4>[ID] Bottom-left swashes [ss08] Left going #3 type swashes on bottom</h4>
                     <div style="line-height: 1.4em;font-size: 2em;">Bottom-left swashes</div>
@@ -335,11 +342,16 @@
                     <h4>Force a selection of #1 swashes to type #5 super swashes [ss12+ss18]</h4>
                     <div style="line-height: 1.4em;font-size: 2em;" class="ss12">Super swashes type #5</div>
                     <div style="line-height: 1.4em;font-size: 2em;" class="ss12-ss20">Super swashes type #5</div>
-
-                   
-                    <br/><br/> 
-                    <fontdue-buy-button collection-id="Rm9udENvbGxlY3Rpb246MTkyMDQ5NDg4MjQ2OTM1ODU2MA=="></fontdue-buy-button>                
                 </p>
+
+                <button class="buy-button upgrade" 
+                    type="button"
+                    fontdue-click="open-store-modal"
+                    fontdue-store-route="product/Rm9udENvbGxlY3Rpb246MTkyMDQ3OTcwMDEwMzg5OTcyMg=="
+                    fontdue-store-select="U2t1OjE5MjA0ODE0NDY2MDM2OTY3NzA="
+                    >
+                    Add Presti to cart
+                </button>                
             </div>
         </div>
     </section>

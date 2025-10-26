@@ -79,18 +79,19 @@ header {
 /* Font stuff */
 .presti { 
     font-family: "Presti Text Normal";    
-    font-feature-settings: 'ss01' 1; /* Allow flourishes as ~tru4 */
+    font-feature-settings: 'ss01': 1, 'liga': 1; /* Allow flourishes as ~tru4 */
     font-weight: 400;
     letter-spacing: 0.02em;
 }
 .presti-bold {
     font-family: "Presti Deck Bold";    
-    font-feature-settings: 'ss01' 1; /* Allow flourishes as ~tru4 */
+    font-feature-settings: 'ss01': 1, 'liga': 1; /* Allow flourishes as ~tru4 */
     font-weight: 400;
     letter-spacing: 0.02em;
 }
 .presti p {
     line-height: 1.3em;
+    font-feature-settings: 'ss01': 1, 'liga': 1; /* Allow flourishes as ~tru4 */
 }
 
 .productus {
@@ -173,11 +174,11 @@ header {
 .responder-p {
     font-family: "Responder P VF Regular";
     /* Slightly lighter, as 400 seems bolder compared to other families. */
-    font-variation-settings: 'ital': 0, 'wght': 250;
+    font-variation-settings: 'ital': 0, 'wght': 250, 'liga': 1;
 }
 .responder-p-bold {
     font-family: "Responder P VF Regular";
-    font-variation-settings: 'ital': 0, 'wght': 600;
+    font-variation-settings: 'ital': 0, 'wght': 600, 'liga': 1;
 }
 .responder-p p {
     line-height: 1.3em;
@@ -197,6 +198,11 @@ header {
 .upgrade-bold {
     font-family: "Upgrade Bold";    
     font-weight: 400;
+    letter-spacing: 0.02em;
+}
+.upgrade-thin {
+    font-family: "Upgrade Thin";    
+    font-weight: 100;
     letter-spacing: 0.02em;
 }
 .upgrade p {
@@ -581,8 +587,15 @@ button.buy-button {
 
     border-radius: 8px;       /* small rounded corners */
     border: none;             /* optional: remove default border */
+
+    outline: 2px solid transparent;
+    outline-offset: 2px; /* optional: moves the outline away a bit */
+    transition: outline-color 0.2s ease;
 }
 
+button:hover {
+    /*outline-color: #007bff;*/
+}
 /* Media Queries */
 @media (max-width: 768px) {
     header .navbar {
