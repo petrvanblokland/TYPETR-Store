@@ -76,7 +76,24 @@ header {
   }
 }
 
+.top-under-menu {
+    padding-top: 5em;
+}
+.name-title {
+    font-size: 5em;  
+    padding-top: 0.25em; 
+    text-align: center; 
+}
+.name-title a {
+    text-decoration: none;
+    color: black;
+}
+.name-title a:hover {
+    color: #808080;
+}
+
 /* Font stuff */
+
 .presti { 
     font-family: "Presti Text Normal";    
     font-feature-settings: 'ss01': 1, 'liga': 1; /* Allow flourishes as ~tru4 */
@@ -513,8 +530,8 @@ div.image {
 }
 
 .familyName:hover, .close:hover, .navbar a:hover,
-.fontIcon:hover, .popup-content:hover .column a:hover{
-    color: yellow;
+.fontIcon:hover, .popup-content:hover .column a:hover {
+    color: #D0D0D0;
 }
 
 .close {
@@ -560,12 +577,20 @@ div.image {
 
 /* Footer */
 footer {
-    text-align: center;
-    padding: 10px;
+    text-align: left;
+    padding-left: 20px;
+    padding-right: 20px;
     background-color: #333;
     color: white;
-}
 
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+footer div {
+    width: 90%;
+}
 /* Type testers */
 
 div.type-tester {
@@ -693,6 +718,9 @@ button:hover {
 @media (max-width: 899px) {
   fontdue-type-testers .type-tester {
     --type-tester--adjustment: 1;
+  }
+  .name-title {
+    font-size: 4em;  
   }
 }
 
