@@ -1,0 +1,103 @@
+
+@media (max-width: 899px) { /* Phone widths */
+    header {
+        background-color: green; /* Testing responsive */
+    }    
+    header .navbar {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+    .fontIcon {
+        display: block;
+    }
+    fontdue-type-testers .type-tester {
+    --type-tester--adjustment: 1;
+    }
+    .name-title {
+    font-size: 4em;  
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        background-color: orange; /* Testing responsive */
+    }    
+    header .navbar {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+    .fontIcon {
+        display: block;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .column {
+        width: 100%;
+    }
+    .column p, .column h1, .column h2 {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    .navbar.active {
+        display: block;
+        position: absolute;
+        background-color: #333;
+        width: 100%;
+        box-align: 'right';
+        top: 70px;
+        margin-left: -10px;
+        text-align: right;
+          z-index: 1000;
+
+    }
+    .navbar ul {
+        flex-direction: column;
+    }
+    .navbar li {
+        margin: 10px 0;
+        padding-right: 60px;
+    }
+    .popup-content {
+      margin-top:70px;
+      margin-left:0px;
+      width: 100%;
+      max-width: 100%;
+      border-radius: 0px;
+      z-index: 60;
+    }
+    div.image {
+        position: float;
+        width: 100%;
+        padding: 0;
+        padding-top: 56.25%; 
+        background-size: cover;
+        background-position: center;
+    }
+    div.column14, div.column34 {
+        width: 100%;
+        padding: 16px;
+    }
+    div.responsiveHide, div.familyName, img.responsiveHide {
+        display: none;
+    }
+    /* Type testers */
+
+    div.type-tester {
+        padding: 0.5em;
+    }
+    fontdue-type-testers {
+        font-size: 6em;
+        padding: 0;
+    }
+
+    button.buy-button {
+        display: block;
+        margin: 1em auto 0;
+    }
+
+}
