@@ -1,54 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-     <!-- Basic SEO -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="format-detection" content="telephone=no">
-    <title>TYPETR | EULA’s</title>
+    <title>TYPETR Proforma Classic</title>
     <link rel="icon" type="image/x-icon" href="images/logos/typetr.ico">
-    <meta name="description" content="TYPETR offers high-quality font licenses for desktop, web, and app use. Explore modern, professional, and multilingual typefaces.">
-    <link rel="canonical" href="https://typetr.com/">
 
-    <!-- Favicons -->
-    <link rel="icon" href="/images/logos/typetr.ico" type="image/x-icon">
-    <link rel="apple-touch-icon" href="/images/logos/typetr.png">
-
-
-    <!-- ✅ Performance Hints -->
-    <link rel="preconnect" href="https://fonts.fontdue.com/typetr">
-    <link rel="preload" href="css/styles.css" as="style">
-    <link rel="stylesheet" href="css/styles.css">
-
-    <!-- Upgrade -->
+   <!-- Upgrade -->
     <link href="https://fonts.fontdue.com/typetr/css/Rm9udENvbGxlY3Rpb246MTkyMDQ5NTAxMjU0MzExMzIzNQ%3D%3D.css" rel="stylesheet">
- 
-     <link rel="stylesheet" href="https://js.fontdue.com/fontdue.css">
+
+    <!-- Proforma Classic Ultra Light
+         Proforma Classic Ultra Light Italic
+         Proforma Classic Light
+         Proforma Classic Light Italic
+         Proforma Classic Book
+         Proforma Classic Book Italic
+         Proforma Classic Medium
+         Proforma Classic Medium Italic
+         Proforma Classic Semi Bold
+         Proforma Classic Semi Bold Italic
+         Proforma Classic Bold
+         Proforma Classic Bold Italic
+    -->
+    <link href="https://fonts.fontdue.com/typetr/css/Rm9udENvbGxlY3Rpb246MTkyMDQ5MzI5Mjk1Mzk3MTYyOQ%3D%3D.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://js.fontdue.com/fontdue.css">
     <script type="text/javascript" src="https://js.fontdue.com/fontdue.js"></script>
 
     <script>
-        fontdue.initialize({
-            url: "https://store.typetr.com",
-            config: {
-            typeTester: {      
-              min: 6,
-              max: 480,
-              selectable: true,
-              textInput: true,
-              groupEdit: false,
-              initialMode: 'local',
-              truncate: 'true',
-              shy: false,
-              buyButton: false,
-              selectButtonLabel: 'Add to cart',
-              selectButtonStyle: 'solid',
-              },
+     fontdue.initialize({
+        url: "https://store.typetr.com",
+      config: {
+        typeTester: {      
+          min: 6,
+          max: 480,
+          selectable: true,
+          textInput: true,
+          groupEdit: false,
+          initialMode: 'local',
+          truncate: 'true',
+          shy: false,
+          buyButton: false,
+          selectButtonLabel: 'Buy',
+          selectButtonStyle: 'solid',
           },
+      },
     });
   </script>
-
+   
     <link rel="stylesheet" href="css/styles.css">
-
+ 
 </head>
 <body>
     <header>
@@ -57,13 +58,13 @@
                 <img src="images/logos/type-try-logo.gif" alt="Logo">
             </a>
         </div>
-        <div class="smallLogo">
-            <a href="index.html">
-                TYPETR
-            </a>
+        <div class="familyName proforma-classic" onclick="document.getElementById('popup').style.display='block'">
+            Proforma&nbsp;Classic&nbsp;<span class="upgrade-thin">and more...</span>
         </div>
+
         <nav id="navbar" class="navbar">
             <ul>
+                <li><a href="index.html">Home</a></li>
                 <li><a href="index.html">Fonts</a></li>
                 <!--<li><a href="about.html">About</a></li>-->
                 <li><a href="eulas.html">EULA</a></li>
@@ -96,26 +97,29 @@
     </div>
 
     <section class="content">
-        <div class="row">
-            <div class="column">
-                <h1>Contact</h1>
-                <p>This is a paragraph in the first column of the first row.</p>
-            </div>
-            <div class="column">
-                <h1>Contact</h1>
-                <p>This is a paragraph in the second column of the first row.</p>
-            </div>
+
+        <div class="row type-tester"> <!-- Upgrade type tester -->
+            <fontdue-type-testers collection-id="Rm9udENvbGxlY3Rpb246MTkyMDQ5NTAxMjU0MzExMzIzNQ=="></fontdue-type-testers>
         </div>
 
         <div class="row">
             <div class="column">
-                <h1>Contact</h1>
-                <p>This is a paragraph in the first column of the second row.</p>
+                <div class="image" style="background-image: url('images/2022/Upgrade_in_use_06_book_fruit_colours.jpg');"></div>
             </div>
-            <div class="column">
-                <h1>Contact</h1>
-                <p>This is a paragraph in the second column of the second row.</p>
+            <div class="column upgrade">
+                <h1 class="upgrade-bold size36">Upgrade<span class="upgrade"> your typography</span></h1>
+                <p class="size24">
+                    TYPETR Upgrade is a refined sans-serif built on the subtle translation contrast of a broad-nib pencil, bringing warmth and rhythm to a clean, modern structure. Its extended glyph set supports a wide range of Latin-based languages, while advanced OpenType features—such as alternate forms, <span class="smallcaps">small caps</span>, and multiple numeral styles—offer designers precise typographic control. Upgrade clarity with character.
+                    <br/><br/> 
+                    <fontdue-buy-button collection-id="Rm9udENvbGxlY3Rpb246MTkyMDQ5NDg4MjQ2OTM1ODU2MA=="></fontdue-buy-button>                
+                </p>
             </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="row type-tester"> <!-- Proforma character viewer -->
+            <fontdue-character-viewer collection-id="Rm9udENvbGxlY3Rpb246MTkyMDQ5MzI5Mjk1Mzk3MTYyOQ=="></fontdue-character-viewer>
         </div>
     </section>
 

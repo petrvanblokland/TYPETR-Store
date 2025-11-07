@@ -235,6 +235,11 @@ header {
     font-weight: 700;
     letter-spacing: 0.02em;
 }
+.upgrade-semibold {
+    font-family: "Upgrade Semibold";    
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
 .upgrade-medium {
     font-family: "Upgrade Medium";    
     font-weight: 500;
@@ -429,6 +434,20 @@ header .familyName { /* Floating left box with current family name */
 header .logo img {
     height: 50px;
 }
+header .smallLogo { /* Text logo for really small screen sizes, no space for image */
+    transform: translateY(calc(0.4em)); /* shift so baseline hits 50px */
+    display: none;
+}
+header .smallLogo a { /* Text logo for really small screen sizes, no space for image */
+    color: white;
+    font-family: "Upgrade Semibold";
+    font-size: 38px;
+    letter-spacing: 0.25em;
+    text-decoration: none;
+}
+header .smallLogo a:hover { /* Text logo for really small screen sizes, no space for image */
+    color: #E0E0E0;
+}
 
 /* Header navigation */
 
@@ -449,9 +468,14 @@ header .navbar li {
 }
 header .navbar a {
     color: white;
+    font-size: 1.2em;
     text-decoration: none;
 }
-.hamburger {
+header .navbar a:hover {
+    color: #E0E0E0;
+    text-decoration: none;
+}
+header .hamburger {
     display: none;
     position: absolute;
     top:0px;
@@ -461,14 +485,6 @@ header .navbar a {
     float: right;
     padding: 20px;
     padding-right: 40px;
-}
-
-.fontIcon {
-    display: none;
-    font-size: 37px;
-    cursor: pointer;
-    padding: 10px;
-    padding-right: 20px;
 }
 
 /* Slideshow */
@@ -553,7 +569,7 @@ div.image {
 }
 
 .familyName:hover, .close:hover, .navbar a:hover,
-.fontIcon:hover, .popup-content:hover .column a:hover {
+.popup-content:hover .column a:hover {
     color: #D0D0D0;
 }
 
@@ -622,11 +638,12 @@ footer {
     padding-right: 20px;
     background-color: #333;
     color: white;
-
+    width: 100%;
+    /*
     position: fixed;
     bottom: 0;
     left: 0;
-    width: 100%;
+    */
 }
 footer div {
     width: 90%;
@@ -674,44 +691,170 @@ button:hover {
     header {
         background-color: brown; /* Testing responsive */
     }    
+    header .navbar, header .familyName, header .logo {
+        display: none;
+    }
+    header .hamburger, header .smallLogo {
+        display: block;
+    }
+    button.buy-button {
+        display: block;
+        margin: 1em auto 0;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .column {
+        width: 100%;
+    }
+    .column p, .column h1, .column h2 {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    div.column14, div.column34 {
+        width: 100%;
+        padding: 16px;
+    }
+    div.responsiveHide, div.familyName, img.responsiveHide {
+        display: none;
+    }
 }
 /* Small Phones (360–399px) */
 @media (min-width: 360px) and (max-width: 399px) { 
     header {
         background-color: lightgray; /* Testing responsive */
     }    
+    header .navbar, header .familyName {
+        display: none;
+    }
+    header .hamburger {
+        display: block;
+    }
+    button.buy-button {
+        display: block;
+        margin: 1em auto 0;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .column {
+        width: 100%;
+    }
+    .column p, .column h1, .column h2 {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    div.column14, div.column34 {
+        width: 100%;
+        padding: 16px;
+    }
+    div.responsiveHide, div.familyName, img.responsiveHide {
+        display: none;
+    }
 }
 /* Medium Phones (400–479px) */
 @media (min-width: 400px) and (max-width: 479px) { 
     header {
         background-color: orange; /* Testing responsive */
     }    
+    header .navbar, header .familyName {
+        display: none;
+    }
+    header .hamburger {
+        display: block;
+    }
+    button.buy-button {
+        display: block;
+        margin: 1em auto 0;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .column {
+        width: 100%;
+    }
+    .column p, .column h1, .column h2 {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    div.column14, div.column34 {
+        width: 100%;
+        padding: 16px;
+    }
+    div.responsiveHide, div.familyName, img.responsiveHide {
+        display: none;
+    }
 }
 /* Large Phones (480–599px) */
 @media (min-width: 480px) and (max-width: 599px) { 
     header {
         background-color: pink; /* Testing responsive */
     }    
+    header .navbar, header .familyName {
+        display: none;
+    }
+    header .hamburger {
+        display: block;
+    }
+    button.buy-button {
+        display: block;
+        margin: 1em auto 0;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .column {
+        width: 100%;
+    }
+    .column p, .column h1, .column h2 {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    div.column14, div.column34 {
+        width: 100%;
+        padding: 16px;
+    }
+    div.responsiveHide, div.familyName, img.responsiveHide {
+        display: none;
+    }
 }
 /* Small Tablets (600–767px) */
 @media (min-width: 600px) and (max-width: 767px) { 
     header {
         background-color: gray; /* Testing responsive */
     }    
+    header .familyName {
+        display: none;
+    }
+    button.buy-button {
+        display: block;
+        margin: 1em auto 0;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .column {
+        width: 100%;
+    }
+    .column p, .column h1, .column h2 {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    div.column14, div.column34 {
+        width: 100%;
+        padding: 16px;
+    }
+    div.responsiveHide, div.familyName, img.responsiveHide {
+        display: none;
+    }
 }
 /* Medium Tablets (768–991px) */
 @media (min-width: 768px) and (max-width: 991px) { 
     header {
         background-color: purple; /* Testing responsive */
     }    
-    header .navbar {
+    header .familyName {
         display: none;
-    }
-    .hamburger {
-        display: block;
-    }
-    .fontIcon {
-        display: block;
     }
     fontdue-type-testers .type-tester {
     --type-tester--adjustment: 1;
