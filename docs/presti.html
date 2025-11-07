@@ -49,21 +49,15 @@
                 <img src="images/logos/type-try-logo.gif" alt="Logo">
             </a>
         </div>
-        <!--
-        <div class="familyName presti">
-            P~mlu3res~tlu2ti~bru1
-        </div>
-        <div class="familyName responder-p">
-            Responder&nbsp;P
-        </div>
-        -->
         <div class="familyName presti liga ss01" onclick="document.getElementById('popup').style.display='block'">
             <span class="liga ss01">P~mlu3res~tlu2ti~bru1&nbsp;&nbsp;</span><span class="upgrade-light">and more...</span>
         </div>
-        <nav class="navbar">
+
+        <nav id="navbar" class="navbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>-->
+                <li><a href="index.html">Fonts</a></li>
+                <!--<li><a href="about.html">About</a></li>-->
                 <li><a href="eulas.html">EULA</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
@@ -84,8 +78,7 @@
               <p class="upgrade"><a href="upgrade.html">Upgrade</a></p>
               <p class="presti"><a href="presti.html">Presti&nbsp;</a></p> 
               <p class="responder-p"><a href="responder-p.html">Responder&nbsp;P</a></p> 
-              <p class="powerlift-outline"><a href="powerlift.html">PowerLift</a></p> 
-
+              <p class="powerlift-outline"><a href="powerlift.html">PowerLift</a></p>
               <p class="productus"><a href="productus.html">Productus</a></p> 
               <p class="bitcount"><a href="bitcount.html">Bitcount</a></p> 
             </div>
@@ -172,7 +165,7 @@ Presti is built with a rich typographic set of OpenType features: this goes beyo
                     fontdue-store-route="product/Rm9udENvbGxlY3Rpb246MTkyMDQ3OTcwMDEwMzg5OTcyMg=="
                     fontdue-store-select="U2t1OjE5MjA0ODE0NDY2MDM2OTY3NzA="
                     >
-                    Add Presti to cart
+                    Add to cart
                 </button>                
             </div>
         </div>
@@ -268,9 +261,10 @@ Presti is built with a rich typographic set of OpenType features: this goes beyo
     </section>
 
     <footer>
-        <p>Copyright © 2025 TYPETR | Buro Petr van Blokland + Claudia Mens</p>
-        <p>Bitcount, PowerLift, Presti, Productus, Proforma, Responder and Upgrade are registered trademarks by TYPETR | Buro Petr van Blokland + Claudia Mens 
-        </p> 
+        <div>
+        <p class="leading15">Bitcount, PowerLift, Presti, Productus, Proforma, Responder and Upgrade are registered trademarks by TYPETR | Buro Petr van Blokland + Claudia Mens<br/>
+        Copyright © 2025 TYPETR | Buro Petr van Blokland + Claudia Mens</p> 
+        </div>
     </footer>
 
     <fontdue-store-modal></fontdue-store-modal> <!-- Supported the [buy] button -->

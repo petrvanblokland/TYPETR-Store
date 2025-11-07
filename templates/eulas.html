@@ -13,10 +13,12 @@
                 <img src="images/logos/type-try-logo.gif" alt="Logo">
             </a>
         </div>
-        <nav class="navbar">
+        <nav id="navbar" class="navbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
+                <li><a href="index.html">Fonts</a></li>
+                <!--<li><a href="about.html">About</a></li>-->
+                <li><a href="eulas.html">EULA</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
@@ -25,18 +27,25 @@
         </div>
     </header>
 
-    <section class="slideshow">
-        <div class="slide active" style="background-image: url('images/2019/Upgrade-01_Instagram_FewSpaces_18.jpg');"></div>
-        <div class="slide active" style="background-image: url('images/2019/Upgrade-01_Instagram_FewSpaces_19.jpg');"></div>
-        <div class="slide active" style="background-image: url('images/2019/Upgrade-01_Instagram_FewSpaces_20.jpg');"></div>
-        <div class="slide active" style="background-image: url('images/2019/upgrade-editwindow.png');"></div>
-        <div class="slide active" style="background-image: url('images/2019/upgrade-fontwindow1.png');"></div>
-        <div class="slide active" style="background-image: url('images/2019/upgrade-fontwindow2.png');"></div>
-        <div class="slide active" style="background-image: url('images/2019/upgrade-hairline.png');"></div>
-        <div class="slide active" style="background-image: url('images/2019/upgrade-hairlinekerning.png');"></div>
-        <div class="slide active" style="background-image: url('images/2019/upgrade-kerning.png');"></div>
-
-    </section>
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span class="close" onclick="document.getElementById('popup').style.display='none'">&times;</span>
+        <section class="content">
+          <div class="row">
+            <div class="column font-selector size36 leading14">
+              <p class="proforma-pro"><a href="proforma-pro.html">Proforma&nbsp;Pro</a></p>
+              <p class="proforma-classic"><a href="proforma-classic.html">Proforma&nbsp;Classic</a></p> 
+              <p class="upgrade"><a href="upgrade.html">Upgrade</a></p>
+              <p class="presti"><a href="presti.html">Presti&nbsp;</a></p> 
+              <p class="responder-p"><a href="responder-p.html">Responder&nbsp;P</a></p> 
+              <p class="powerlift-outline"><a href="powerlift.html">PowerLift</a></p>
+              <p class="productus"><a href="productus.html">Productus</a></p> 
+              <p class="bitcount"><a href="bitcount.html">Bitcount</a></p> 
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
 
     <section class="content">
         <div class="row">
@@ -63,7 +72,10 @@
     </section>
 
     <footer>
-        <p>Copyright © 2025</p>
+        <div>
+        <p class="leading15">Bitcount, PowerLift, Presti, Productus, Proforma, Responder and Upgrade are registered trademarks by TYPETR | Buro Petr van Blokland + Claudia Mens<br/>
+        Copyright © 2025 TYPETR | Buro Petr van Blokland + Claudia Mens</p> 
+        </div>
     </footer>
 
     <fontdue-store-modal></fontdue-store-modal> <!-- Supported the [buy] button -->
