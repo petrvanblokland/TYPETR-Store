@@ -668,7 +668,42 @@ button:hover {
     /*outline-color: #007bff;*/
 }
 /* Media Queries */
+
+@media (min-width: 1500px) {
+    header {
+        background-color: yellow; /* Testing responsive */
+    }    
+    .row{
+        width: 1500px;
+        margin:0 auto;
+    }
+}
+
+@media (max-width: 899px) { /* Phone widths */
+    header {
+        background-color: green; /* Testing responsive */
+    }    
+    header .navbar {
+        display: none;
+    }
+    .hamburger {
+        display: block;
+    }
+    .fontIcon {
+        display: block;
+    }
+    fontdue-type-testers .type-tester {
+    --type-tester--adjustment: 1;
+    }
+    .name-title {
+    font-size: 4em;  
+    }
+}
+
 @media (max-width: 768px) {
+    header {
+        background-color: orange; /* Testing responsive */
+    }    
     header .navbar {
         display: none;
     }
@@ -723,8 +758,11 @@ button:hover {
         background-size: cover;
         background-position: center;
     }
-
-    div.responsiveHide, div.familyName {
+    div.column14, div.column34 {
+        width: 100%;
+        padding: 16px;
+    }
+    div.responsiveHide, div.familyName, img.responsiveHide {
         display: none;
     }
     /* Type testers */
@@ -744,21 +782,6 @@ button:hover {
 
 }
 
-@media (min-width: 1500px) {
-    .row{
-        width: 1500px;
-        margin:0 auto;
-    }
-}
-
-@media (max-width: 899px) {
-  fontdue-type-testers .type-tester {
-    --type-tester--adjustment: 1;
-  }
-  .name-title {
-    font-size: 4em;  
-  }
-}
 
 div.type-tester {
     padding-top: 0px;
