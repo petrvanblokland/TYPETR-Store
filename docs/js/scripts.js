@@ -24,9 +24,9 @@ function toggleMenu() {
     menu.classList.toggle('active');
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    showSlides();
-});
+//document.addEventListener('DOMContentLoaded', function() {
+//    showSlides();
+//});
 
 
 const popup = document.getElementById('popup');
