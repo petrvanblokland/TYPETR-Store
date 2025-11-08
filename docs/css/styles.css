@@ -133,12 +133,20 @@ header {
     font-family: "Productus Book";
     font-weight: 400;
 }
+.productus-italic {
+    font-family: "Productus Book Italic";
+    font-weight: 400;
+}
 .productus p {
     letter-spacing: 0.04em;
     line-height: 1.3em;
 }
 .productus-bold {
     font-family: "Productus Bold";
+    font-weight: 400;
+}
+.productus-bold-italic {
+    font-family: "Productus Bold Italic";
     font-weight: 400;
 }
 .productus-bold p {
@@ -225,34 +233,74 @@ header {
     line-height: 1.3em;
 }
 
-.upgrade {
-    font-family: "Upgrade Regular";    
+.upgrade-black {
+    font-family: "Upgrade Black";    
+    font-weight: 400;
+    letter-spacing: 0.02em;
+}
+.upgrade-black-italic {
+    font-family: "Upgrade Black Italic";    
     font-weight: 400;
     letter-spacing: 0.02em;
 }
 .upgrade-bold {
     font-family: "Upgrade Bold";    
-    font-weight: 700;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+}
+.upgrade-bold-italic {
+    font-family: "Upgrade Bold Italic";    
+    font-weight: 400;
     letter-spacing: 0.02em;
 }
 .upgrade-semibold {
     font-family: "Upgrade Semibold";    
-    font-weight: 500;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+}
+.upgrade-semibold-italic {
+    font-family: "Upgrade Semibold Italic";    
+    font-weight: 400;
     letter-spacing: 0.02em;
 }
 .upgrade-medium {
     font-family: "Upgrade Medium";    
-    font-weight: 500;
+    font-weight: 400;
     letter-spacing: 0.02em;
 }
-.upgrade-thin {
-    font-family: "Upgrade Thin";    
-    font-weight: 200;
+.upgrade-medium-italic {
+    font-family: "Upgrade Medium Italic";    
+    font-weight: 400;
+    letter-spacing: 0.02em;
+}
+.upgrade {
+    font-family: "Upgrade Regular";    
+    font-weight: 400;
+    letter-spacing: 0.02em;
+}
+.upgrade-italic {
+    font-family: "Upgrade Italic";    
+    font-weight: 400;
     letter-spacing: 0.02em;
 }
 .upgrade-light {
     font-family: "Upgrade Light";    
-    font-weight: 300;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+}
+.upgrade-light-italic {
+    font-family: "Upgrade Light Italic";    
+    font-weight: 400;
+    letter-spacing: 0.02em;
+}
+.upgrade-thin {
+    font-family: "Upgrade Thin";    
+    font-weight: 400;
+    letter-spacing: 0.02em;
+}
+.upgrade-thin-italic {
+    font-family: "Upgrade Thin Italic";    
+    font-weight: 400;
     letter-spacing: 0.02em;
 }
 .upgrade p {
@@ -288,6 +336,9 @@ header {
 }
 .size64 {
     font-size: 64px;
+}
+.size100 {
+    font-size: 100px;
 }
 
 .aalt {
@@ -631,6 +682,10 @@ div.image {
     background-color: #F0F0F0;
 }
 
+div.responsiveShow {
+    display: none;
+}
+
 /* Footer */
 footer {
     text-align: left;
@@ -663,7 +718,18 @@ fontdue-type-testers {
     max-width: 100% !important;
     display: block;
 }
-
+div.smallWeightTester { /* For small screen sizes */
+    font-size: 8em;
+    font-feature-settings: "kern" 1, "clig" 1, "liga" 1, "ss01" 1, "frac" 1;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100% !important;
+    max-width: 100% !important;
+    display: none;   
+}
+div.smallWeightTester {
+    width: 100%;
+}
 /* Buy button */
 
 button.buy-button {
@@ -672,6 +738,8 @@ button.buy-button {
     background-color: #AAAAAA;
     margin-top: 0.4em;
     margin-bottom: 0.4em;
+    text-align: center;
+    width: 80%;
 
     border-radius: 6px;       /* small rounded corners */
     border: none;             /* optional: remove default border */
@@ -718,6 +786,9 @@ button:hover {
     div.responsiveHide, div.familyName, img.responsiveHide {
         display: none;
     }
+    div.responsiveShow, div.smallWeightTester {
+        display: block;
+    }
 }
 /* Small Phones (360–399px) */
 @media (min-width: 360px) and (max-width: 399px) { 
@@ -750,6 +821,9 @@ button:hover {
     }
     div.responsiveHide, div.familyName, img.responsiveHide {
         display: none;
+    }
+    div.responsiveShow, div.smallWeightTester  {
+        display: block;
     }
 }
 /* Medium Phones (400–479px) */
@@ -784,6 +858,9 @@ button:hover {
     div.responsiveHide, div.familyName, img.responsiveHide {
         display: none;
     }
+    div.responsiveShow, div.smallWeightTester  {
+        display: block;
+    }
 }
 /* Large Phones (480–599px) */
 @media (min-width: 480px) and (max-width: 599px) { 
@@ -817,6 +894,9 @@ button:hover {
     div.responsiveHide, div.familyName, img.responsiveHide {
         display: none;
     }
+    div.responsiveShow, div.smallWeightTester {
+        display: block;
+    }
 }
 /* Small Tablets (600–767px) */
 @media (min-width: 600px) and (max-width: 767px) { 
@@ -847,6 +927,9 @@ button:hover {
     div.responsiveHide, div.familyName, img.responsiveHide {
         display: none;
     }
+    div.responsiveShow, div.smallWeightTester  {
+        display: block;
+    }
 }
 /* Medium Tablets (768–991px) */
 @media (min-width: 768px) and (max-width: 991px) { 
@@ -868,6 +951,10 @@ button:hover {
     header {
         background-color: blue; /* Testing responsive */
     }    
+    .row{
+        width: 1200px;
+        margin:0 auto;
+    }
 }
 /* Desktop (1200–1599px) */
 @media (min-width: 1200px) and (max-width: 1599px) { 
@@ -875,7 +962,7 @@ button:hover {
         background-color: pink; /* Testing responsive */
     }    
     .row{
-        width: 1500px;
+        width: 1200px;
         margin:0 auto;
     }
 }
@@ -885,7 +972,7 @@ button:hover {
         background-color: yellow; /* Testing responsive */
     }    
     .row{
-        width: 1500px;
+        width: 1200px;
         margin:0 auto;
     }
 }
