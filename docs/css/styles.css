@@ -789,6 +789,9 @@ button:hover {
     div.responsiveShow, div.smallWeightTester {
         display: block;
     }
+    .name-title {
+        font-size: 2em;  
+    }
 }
 /* Small Phones (360–399px) */
 @media (min-width: 360px) and (max-width: 399px) { 
@@ -824,6 +827,9 @@ button:hover {
     }
     div.responsiveShow, div.smallWeightTester  {
         display: block;
+    }
+    .name-title {
+        font-size: 2.5em;  
     }
 }
 /* Medium Phones (400–479px) */
@@ -861,6 +867,9 @@ button:hover {
     div.responsiveShow, div.smallWeightTester  {
         display: block;
     }
+    .name-title {
+        font-size: 3em;  
+    }
 }
 /* Large Phones (480–599px) */
 @media (min-width: 480px) and (max-width: 599px) { 
@@ -897,6 +906,9 @@ button:hover {
     div.responsiveShow, div.smallWeightTester {
         display: block;
     }
+    .name-title {
+        font-size: 3.5em;  
+    }
 }
 /* Small Tablets (600–767px) */
 @media (min-width: 600px) and (max-width: 767px) { 
@@ -929,6 +941,9 @@ button:hover {
     }
     div.responsiveShow, div.smallWeightTester  {
         display: block;
+    }
+    .name-title {
+    font-size: 4em;  
     }
 }
 /* Medium Tablets (768–991px) */

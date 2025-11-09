@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TYPETR Proforma Classic</title>
+    <link rel="icon" type="image/x-icon" href="images/logos/typetr.ico">
+
+   <!-- Upgrade -->
+    <link href="https://fonts.fontdue.com/typetr/css/Rm9udENvbGxlY3Rpb246MTkyMDQ5NTAxMjU0MzExMzIzNQ%3D%3D.css" rel="stylesheet">
+
+    <!-- Proforma Classic Ultra Light
+         Proforma Classic Ultra Light Italic
+         Proforma Classic Light
+         Proforma Classic Light Italic
+         Proforma Classic Book
+         Proforma Classic Book Italic
+         Proforma Classic Medium
+         Proforma Classic Medium Italic
+         Proforma Classic Semi Bold
+         Proforma Classic Semi Bold Italic
+         Proforma Classic Bold
+         Proforma Classic Bold Italic
+    -->
+    <link href="https://fonts.fontdue.com/typetr/css/Rm9udENvbGxlY3Rpb246MTkyMDQ5MzI5Mjk1Mzk3MTYyOQ%3D%3D.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://js.fontdue.com/fontdue.css">
+    <script type="text/javascript" src="https://js.fontdue.com/fontdue.js"></script>
+
+    <script>
+     fontdue.initialize({
+        url: "https://store.typetr.com",
+      config: {
+        typeTester: {      
+          min: 6,
+          max: 480,
+          selectable: true,
+          textInput: true,
+          groupEdit: false,
+          initialMode: 'local',
+          truncate: 'true',
+          shy: false,
+          buyButton: false,
+          selectButtonLabel: 'Buy',
+          selectButtonStyle: 'solid',
+          },
+      },
+    });
+  </script>
+   
+    <link rel="stylesheet" href="css/styles.css">
+ 
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logos/type-try-logo.gif" alt="Logo">
+            </a>
+        </div>
+        <div class="smallLogo">
+            <a href="index.html">
+                TYPETR
+            </a>
+        </div>
+        <div class="familyName proforma-classic" onclick="document.getElementById('popup').style.display='block'">
+            Proforma&nbsp;Classic&nbsp;<span class="upgrade-thin">and more...</span>
+        </div>
+
+        <nav id="navbar" class="navbar">
+            <ul>
+                <li><a href="index.html">Fonts</a></li>
+                <!--<li><a href="about.html">About</a></li>-->
+                <li><a href="eulas.html">EULA</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hamburger" onclick="toggleMenu()">
+            ☰
+        </div>
+    </header>
+
+    <div id="popup" class="popup">
+      <div class="popup-content">
+        <span class="close" onclick="document.getElementById('popup').style.display='none'">&times;</span>
+        <section class="content">
+          <div class="row">
+            <div class="column font-selector size36 leading14">
+              <p class="proforma-pro"><a href="proforma-pro.html">Proforma&nbsp;Pro</a></p>
+              <p class="proforma-classic"><a href="proforma-classic.html">Proforma&nbsp;Classic</a></p> 
+              <p class="upgrade"><a href="upgrade.html">Upgrade</a></p>
+              <p class="presti"><a href="presti.html">Presti&nbsp;</a></p> 
+              <p class="responder-p"><a href="responder-p.html">Responder&nbsp;P</a></p> 
+              <p class="powerlift-outline"><a href="powerlift.html">PowerLift</a></p>
+              <p class="productus"><a href="productus.html">Productus</a></p> 
+              <p class="bitcount"><a href="bitcount.html">Bitcount</a></p> 
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <section class="content">
+
+        <div class="row type-tester"> <!-- Upgrade type tester -->
+            <fontdue-type-testers collection-id="Rm9udENvbGxlY3Rpb246MTkyMDQ5NTAxMjU0MzExMzIzNQ=="></fontdue-type-testers>
+        </div>
+
+        <div class="row">
+            <div class="column">
+                <div class="image" style="background-image: url('images/2022/Upgrade_in_use_06_book_fruit_colours.jpg');"></div>
+            </div>
+            <div class="column upgrade">
+                <h1 class="upgrade-bold size36">Upgrade<span class="upgrade"> your typography</span></h1>
+                <p class="size24">
+                    TYPETR Upgrade is a refined sans-serif built on the subtle translation contrast of a broad-nib pencil, bringing warmth and rhythm to a clean, modern structure. Its extended glyph set supports a wide range of Latin-based languages, while advanced OpenType features—such as alternate forms, <span class="smallcaps">small caps</span>, and multiple numeral styles—offer designers precise typographic control. Upgrade clarity with character.
+                    <br/><br/> 
+                    <fontdue-buy-button collection-id="Rm9udENvbGxlY3Rpb246MTkyMDQ5NDg4MjQ2OTM1ODU2MA=="></fontdue-buy-button>                
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="row type-tester"> <!-- Proforma character viewer -->
+            <fontdue-character-viewer collection-id="Rm9udENvbGxlY3Rpb246MTkyMDQ5MzI5Mjk1Mzk3MTYyOQ=="></fontdue-character-viewer>
+        </div>
+    </section>
+
+    <footer>
+        <div>
+        <p class="leading15">Bitcount, PowerLift, Presti, Productus, Proforma, Responder and Upgrade are registered trademarks by TYPETR | Buro Petr van Blokland + Claudia Mens<br/>
+        Copyright © 2025 TYPETR | Buro Petr van Blokland + Claudia Mens</p> 
+        </div>
+    </footer>
+
+    <fontdue-store-modal></fontdue-store-modal> <!-- Supported the [buy] button -->
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
