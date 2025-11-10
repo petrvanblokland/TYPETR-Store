@@ -129,6 +129,698 @@ header {
     font-feature-settings: 'ss01': 1, 'liga': 1; /* Allow flourishes as ~tru4 */
 }
 
+/* Presti VF Display */
+
+.presti-thin {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 36, 'wght' 100;
+}
+.presti-light {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 36, 'wght' 200;
+}
+.presti-book {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 36, 'wght' 300;
+}
+.presti-normal {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 36, 'wght' 350;
+}
+.presti-regular {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 36, 'wght' 400;
+}
+.presti-standard {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 36, 'wght' 450;
+}
+.presti-medium {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 36, 'wght' 500;
+}
+.presti-semibold {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 36, 'wght' 600;
+}
+.presti-bold {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 36, 'wght' 700;
+}
+.presti-extrabold {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 36, 'wght' 800;
+}
+.presti-black {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 36, 'wght' 900;
+}
+
+/* Presti VF Head */
+
+.presti-thin {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 24, 'wght' 100;
+}
+.presti-light {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 24, 'wght' 200;
+}
+.presti-book {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 24, 'wght' 300;
+}
+.presti-normal {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 24, 'wght' 350;
+}
+.presti-regular {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 24, 'wght' 400;
+}
+.presti-standard {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 24, 'wght' 450;
+}
+.presti-medium {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 24, 'wght' 500;
+}
+.presti-semibold {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 24, 'wght' 600;
+}
+.presti-bold {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 24, 'wght' 700;
+}
+.presti-extrabold {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 24, 'wght' 800;
+}
+.presti-black {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 24, 'wght' 900;
+}
+
+/* Presti VF Deck */
+
+.presti-deck-thin {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 18, 'wght' 100;
+}
+.presti-deck-light {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 18, 'wght' 200;
+}
+.presti-deck-book {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 18, 'wght' 300;
+}
+.presti-deck-normal {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 18, 'wght' 350;
+}
+.presti-deck-regular {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 18, 'wght' 400;
+}
+.presti-deck-standard {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 18, 'wght' 450;
+}
+.presti-deck-medium {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 18, 'wght' 500;
+}
+.presti-deck-semibold {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 18, 'wght' 600;
+}
+.presti-deck-bold {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 18, 'wght' 700;
+}
+.presti-deck-extrabold {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 18, 'wght' 800;
+}
+.presti-deck-black {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 18, 'wght' 900;
+}
+
+/* Presti VF Text */
+
+.presti-text-thin {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 11, 'wght' 100;
+}
+.presti-text-light {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 11, 'wght' 200;
+}
+.presti-text-book {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 11, 'wght' 300;
+}
+.presti-text-normal {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 11, 'wght' 350;
+}
+.presti-text-regular {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 11, 'wght' 400;
+}
+.presti-text-standard {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 11, 'wght' 450;
+}
+.presti-text-medium {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 11, 'wght' 500;
+}
+.presti-text-semibold {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 11, 'wght' 600;
+}
+.presti-text-bold {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 11, 'wght' 700;
+}
+.presti-text-extrabold {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 11, 'wght' 800;
+}
+.presti-text-black {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 11, 'wght' 900;
+}
+
+/* Presti VF Small */
+
+.presti-small-thin {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 8, 'wght' 100;
+}
+.presti-small-light {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 8, 'wght' 200;
+}
+.presti-small-book {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 8, 'wght' 300;
+}
+.presti-small-normal {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 8, 'wght' 350;
+}
+.presti-small-regular {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 8, 'wght' 400;
+}
+.presti-small-standard {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 8, 'wght' 450;
+}
+.presti-small-medium {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 8, 'wght' 500;
+}
+.presti-small-semibold {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 8, 'wght' 600;
+}
+.presti-small-bold {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 8, 'wght' 700;
+}
+.presti-small-extrabold {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 8, 'wght' 800;
+}
+.presti-small-black {
+    font-family: "Presti VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 8, 'wght' 900;
+}
+
+/* Presti VF Display Italic */
+
+.presti-thin-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 36, 'wght' 100;
+}
+.presti-light-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 36, 'wght' 200;
+}
+.presti-book-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 36, 'wght' 300;
+}
+.presti-normal-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 36, 'wght' 350;
+}
+.presti-regular-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 36, 'wght' 400;
+}
+.presti-standard-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 36, 'wght' 450;
+}
+.presti-medium-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 36, 'wght' 500;
+}
+.presti-semibold-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 36, 'wght' 600;
+}
+.presti-bold-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 36, 'wght' 700;
+}
+.presti-extrabold-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 36, 'wght' 800;
+}
+.presti-black-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 36, 'wght' 900;
+}
+
+/* Presti VF Head */
+
+.presti-thin-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 24, 'wght' 100;
+}
+.presti-light-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 24, 'wght' 200;
+}
+.presti-book-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 24, 'wght' 300;
+}
+.presti-normal-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 24, 'wght' 350;
+}
+.presti-regular-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 24, 'wght' 400;
+}
+.presti-standard-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 24, 'wght' 450;
+}
+.presti-medium-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 24, 'wght' 500;
+}
+.presti-semibold-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 24, 'wght' 600;
+}
+.presti-bold-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 24, 'wght' 700;
+}
+.presti-extrabold-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 24, 'wght' 800;
+}
+.presti-black-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 24, 'wght' 900;
+}
+
+/* Presti VF Deck */
+
+.presti-deck-thin-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 18, 'wght' 100;
+}
+.presti-deck-light-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 18, 'wght' 200;
+}
+.presti-deck-book-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 18, 'wght' 300;
+}
+.presti-deck-normal-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 18, 'wght' 350;
+}
+.presti-deck-regular-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 18, 'wght' 400;
+}
+.presti-deck-standard-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 18, 'wght' 450;
+}
+.presti-deck-medium-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 18, 'wght' 500;
+}
+.presti-deck-semibold-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 18, 'wght' 600;
+}
+.presti-deck-bold-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 18, 'wght' 700;
+}
+.presti-deck-extrabold-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 18, 'wght' 800;
+}
+.presti-deck-black-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 18, 'wght' 900;
+}
+
+/* Presti VF Text */
+
+.presti-text-thin-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 11, 'wght' 100;
+}
+.presti-text-light-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 11, 'wght' 200;
+}
+.presti-text-book-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 11, 'wght' 300;
+}
+.presti-text-normal {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 11, 'wght' 350;
+}
+.presti-text-regular-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 11, 'wght' 400;
+}
+.presti-text-standard-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 11, 'wght' 450;
+}
+.presti-text-medium-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 11, 'wght' 500;
+}
+.presti-text-semibold-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 11, 'wght' 600;
+}
+.presti-text-bold-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 11, 'wght' 700;
+}
+.presti-text-extrabold-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 11, 'wght' 800;
+}
+.presti-text-black-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 11, 'wght' 900;
+}
+
+/* Presti VF Small */
+
+.presti-small-thin-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 8, 'wght' 100;
+}
+.presti-small-light-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 8, 'wght' 200;
+}
+.presti-small-book-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 8, 'wght' 300;
+}
+.presti-small-normal-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 8, 'wght' 350;
+}
+.presti-small-regular-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 8, 'wght' 400;
+}
+.presti-small-standard-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 8, 'wght' 450;
+}
+.presti-small-medium-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 8, 'wght' 500;
+}
+.presti-small-semibold-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 8, 'wght' 600;
+}
+.presti-small-bold-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 8, 'wght' 700;
+}
+.presti-small-extrabold-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 8, 'wght' 800;
+}
+.presti-small-black-italic {
+    font-family: "Presti VF Italic";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'opsz' 8, 'wght' 900;
+}
+
+/* Productus */
+
 .productus {
     font-family: "Productus Book";
     font-weight: 400;
@@ -214,14 +906,16 @@ header {
     line-height: 1em; 
 }
 
+/* Responder VF */
+
 .responder-p {
     font-family: "Responder P VF Regular";
     /* Slightly lighter, as 400 seems bolder compared to other families. */
-    font-variation-settings: 'ital': 0, 'wght': 250, 'liga': 1;
+    font-variation-settings: 'ital': 0, 'wght': 250;
 }
 .responder-p-bold {
     font-family: "Responder P VF Regular";
-    font-variation-settings: 'ital': 0, 'wght': 600, 'liga': 1;
+    font-variation-settings: 'ital': 0, 'wght': 600;
 }
 .responder-p p {
     line-height: 1.3em;
@@ -232,6 +926,117 @@ header {
     font-weight: 400;
     line-height: 1.3em;
 }
+
+.responder-p-thin {
+    font-family: "Responder P VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'ital' 0, 'wght' 100;
+}
+.responder-p-light {
+    font-family: "Responder P VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'ital' 0, 'wght' 200;
+}
+.responder-p-book {
+    font-family: "Responder P VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'ital' 0, 'wght' 300;
+}
+.responder-p-regular {
+    font-family: "Responder P VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'ital' 0, 'wght' 400;
+}
+.responder-p-medium {
+    font-family: "Responder P VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'ital' 0, 'wght' 500;
+}
+.responder-p-semibold {
+    font-family: "Responder P VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'ital' 0, 'wght' 600;
+}
+.responder-p-bold {
+    font-family: "Responder P VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'ital' 0, 'wght' 700;
+}
+.responder-p-extrabold {
+    font-family: "Responder P VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'ital' 0, 'wght' 800;
+}
+.responder-p-black {
+    font-family: "Responder P VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'ital' 0, 'wght' 900;
+}
+.responder-p-thin-italic {
+    font-family: "Responder P VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'ital' 1, 'wght' 100;
+}
+.responder-p-light-italic {
+    font-family: "Responder P VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'ital' 1, 'wght' 200;
+}
+.responder-p-book-italic {
+    font-family: "Responder P VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'ital' 1, 'wght' 300;
+}
+.responder-p-regular-italic {
+    font-family: "Responder P VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'ital' 1, 'wght' 400;
+}
+.responder-p-medium-italic {
+    font-family: "Responder P VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'ital' 1, 'wght' 500;
+}
+.responder-p-semibold-italic {
+    font-family: "Responder P VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'ital' 1, 'wght' 600;
+}
+.responder-p-bold-italic {
+    font-family: "Responder P VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'ital' 1, 'wght' 700;
+}
+.responder-p-extrabold {
+    font-family: "Responder P VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'ital' 1, 'wght' 800;
+}
+.responder-p-black-italic {
+    font-family: "Responder P VF Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'ital' 1, 'wght' 900;
+}
+
+/* Upgrade */
 
 .upgrade-black {
     font-family: "Upgrade Black";    
@@ -336,6 +1141,9 @@ header {
 }
 .size64 {
     font-size: 64px;
+}
+.size80 {
+    font-size: 80px;
 }
 .size100 {
     font-size: 100px;
@@ -648,6 +1456,9 @@ div.image {
     background-color: #F0F0F0;
 }
 
+.topline {
+    border-top: 1px solid #202020;
+}
 .column p {
     margin: 0 40px 0 0;
 }
@@ -688,11 +1499,11 @@ div.responsiveShow {
 
 /* Footer */
 footer {
-    text-align: left;
+    text-align: center;
     padding-left: 20px;
     padding-right: 20px;
-    background-color: #333;
-    color: white;
+    background-color: white;
+    color: #333;
     width: 100%;
     /*
     position: fixed;
@@ -700,8 +1511,12 @@ footer {
     left: 0;
     */
 }
+footer p {
+    font-size: 1em;
+}
 footer div {
     width: 90%;
+    margin-bottom: 1em;
 }
 /* Type testers */
 
@@ -757,7 +1572,7 @@ button:hover {
 /* Extra Small Phones (320–359px) */
 @media (max-width: 359px) { 
     header {
-        background-color: brown; /* Testing responsive */
+        background-color: blackl /*brown; /* Testing responsive */
     }    
     header .navbar, header .familyName, header .logo {
         display: none;
@@ -792,11 +1607,19 @@ button:hover {
     .name-title {
         font-size: 2em;  
     }
+    footer {
+        text-align: center;
+        background-color: white;
+        color: #333;
+    }
+    footer p {
+        font-size: 1.3em;
+    }
 }
 /* Small Phones (360–399px) */
 @media (min-width: 360px) and (max-width: 399px) { 
     header {
-        background-color: lightgray; /* Testing responsive */
+        background-color: black /*lightgray; /* Testing responsive */
     }    
     header .navbar, header .familyName {
         display: none;
@@ -831,11 +1654,19 @@ button:hover {
     .name-title {
         font-size: 2.5em;  
     }
+    footer {
+        text-align: center;
+        background-color: white;
+        color: #333;
+    }
+    footer p {
+        font-size: 1.3em;
+    }
 }
 /* Medium Phones (400–479px) */
 @media (min-width: 400px) and (max-width: 479px) { 
     header {
-        background-color: orange; /* Testing responsive */
+        background-color: black; /*orange; /* Testing responsive */
     }    
     header .navbar, header .familyName {
         display: none;
@@ -870,11 +1701,19 @@ button:hover {
     .name-title {
         font-size: 3em;  
     }
+    footer {
+        text-align: center;
+        background-color: white;
+        color: #333;
+    }
+    footer p {
+        font-size: 1.3em;
+    }
 }
 /* Large Phones (480–599px) */
 @media (min-width: 480px) and (max-width: 599px) { 
     header {
-        background-color: pink; /* Testing responsive */
+        background-color: black; /*pink; /* Testing responsive */
     }    
     header .navbar, header .familyName {
         display: none;
@@ -909,11 +1748,20 @@ button:hover {
     .name-title {
         font-size: 3.5em;  
     }
+    footer {
+        text-align: center;
+        background-color: white;
+        color: #333;
+    }
+    footer p {
+        font-size: 1.3em;
+    }
 }
+/* -------------------------------------------------------------- */
 /* Small Tablets (600–767px) */
 @media (min-width: 600px) and (max-width: 767px) { 
     header {
-        background-color: gray; /* Testing responsive */
+        background-color: black; /*gray; /* Testing responsive */
     }    
     header .familyName {
         display: none;
@@ -949,7 +1797,7 @@ button:hover {
 /* Medium Tablets (768–991px) */
 @media (min-width: 768px) and (max-width: 991px) { 
     header {
-        background-color: purple; /* Testing responsive */
+        background-color: black; /*purple; /* Testing responsive */
     }    
     header .familyName {
         display: none;
@@ -964,7 +1812,7 @@ button:hover {
 /* Large Tablets / Small Desktop (992–1199px) */
 @media (min-width: 992px) and (max-width: 1199px) { 
     header {
-        background-color: blue; /* Testing responsive */
+        background-color: black; /*blue; /* Testing responsive */
     }    
     .row{
         width: 1200px;
@@ -974,7 +1822,7 @@ button:hover {
 /* Desktop (1200–1599px) */
 @media (min-width: 1200px) and (max-width: 1599px) { 
     header {
-        background-color: pink; /* Testing responsive */
+        background-color: black; /*pink; /* Testing responsive */
     }    
     .row{
         width: 1200px;
@@ -984,7 +1832,7 @@ button:hover {
 /* Large Desktop (1600px+) */
 @media (min-width: 1600px) { 
     header {
-        background-color: yellow; /* Testing responsive */
+        background-color: black; /*yellow; /* Testing responsive */
     }    
     .row{
         width: 1200px;
