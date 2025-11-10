@@ -31,6 +31,24 @@ h2 a:link, h2 a:visited, h2 a:active {
 h2 a:hover {
     color: #808080;
 }
+
+p a:link, p a:visited, p a:active, li a:link, li a:visited, li a:active {
+    font-family: "Upgrade Medium";    
+    text-decoration: none;
+    color: #202020;
+}
+p a:hover, li a:hover {
+    color: #808080;
+}
+
+ol li {
+    line-height: 1.4em;
+    padding-top: 0.7em;
+}
+
+.leading12 {
+    line-height: 1.2em;
+}
 .leading13 {
     line-height: 1.3em;
 }
@@ -125,7 +143,7 @@ header {
     letter-spacing: 0.02em;
 }
 .presti p {
-    line-height: 1.3em;
+    line-height: 1.4em;
     font-feature-settings: 'ss01': 1, 'liga': 1; /* Allow flourishes as ~tru4 */
 }
 
@@ -831,7 +849,7 @@ header {
 }
 .productus p {
     letter-spacing: 0.04em;
-    line-height: 1.3em;
+    line-height: 1.4em;
 }
 .productus-bold {
     font-family: "Productus Bold";
@@ -843,7 +861,7 @@ header {
 }
 .productus-bold p {
     letter-spacing: 0.04em;
-    line-height: 1.3em;
+    line-height: 1.4em;
 }
 
 .proforma-classic {
@@ -852,7 +870,7 @@ header {
 }
 .proforma-classic p {
     letter-spacing: 0.02em;
-    line-height: 1.3em;
+    line-height: 1.4em;
 }
 .proforma-classic-book {
     font-family: "Proforma Classic Book";
@@ -860,7 +878,7 @@ header {
 }
 .proforma-classic-book p {
     letter-spacing: 0.015em;
-    line-height: 1.3em;
+    line-height: 1.4em;
 }
 .proforma-classic-bold {
     font-family: "Proforma Classic Bold";
@@ -868,7 +886,7 @@ header {
 }
 .proforma-classic-bold p {
     letter-spacing: 0.015em;
-    line-height: 1.3em;
+    line-height: 1.4em;
 }
 .proforma-pro {
     font-family: "TP Proforma Pro Regular";
@@ -878,7 +896,7 @@ header {
 }
 .proforma-pro p {
     letter-spacing: 0.03em; /* Needs to be calibrated again, once the final VF is made */
-    line-height: 1.3em; /* Needs to be calibrated again, once the final VF is made */
+    line-height: 1.4em; /* Needs to be calibrated again, once the final VF is made */
 }
 .proforma-pro-bold {
     font-family: "TP Proforma Pro Regular";
@@ -888,7 +906,7 @@ header {
 }
 .proforma-pro-bold p {
     letter-spacing: 0.03em; /* Needs to be calibrated again, once the final VF is made */
-    line-height: 1.3em; /* Needs to be calibrated again, once the final VF is made */
+    line-height: 1.4em; /* Needs to be calibrated again, once the final VF is made */
 }
 
 .powerlift {
@@ -918,13 +936,13 @@ header {
     font-variation-settings: 'ital': 0, 'wght': 600;
 }
 .responder-p p {
-    line-height: 1.3em;
+    line-height: 1.4em;
 }
 .responder-m {
     font-family: "Responder M Regular Italic";
     font-style: normal;
     font-weight: 400;
-    line-height: 1.3em;
+    line-height: 1.4em;
 }
 
 .responder-p-thin {
@@ -1109,7 +1127,7 @@ header {
     letter-spacing: 0.02em;
 }
 .upgrade p {
-    line-height: 1.3em;
+    line-height: 1.4em;
 }
 
 .bitcount {
@@ -1117,10 +1135,6 @@ header {
     font-weight: 400;
 }
 .bitcount p {
-    line-height: 1.3em;
-}
-
-.leading14 {
     line-height: 1.4em;
 }
 
@@ -1500,8 +1514,10 @@ div.responsiveShow {
 /* Footer */
 footer {
     text-align: center;
+    padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
+    padding-bottom: 1em;
     background-color: white;
     color: #333;
     width: 100%;
@@ -1513,11 +1529,9 @@ footer {
 }
 footer p {
     font-size: 1em;
+    margin: 0;
 }
-footer div {
-    width: 90%;
-    margin-bottom: 1em;
-}
+
 /* Type testers */
 
 div.type-tester {
