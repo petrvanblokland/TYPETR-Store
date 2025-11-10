@@ -888,6 +888,9 @@ header {
     letter-spacing: 0.015em;
     line-height: 1.4em;
 }
+
+/* Proforma Pro */
+
 .proforma-pro {
     font-family: "TP Proforma Pro Regular";
     font-style: normal;
@@ -909,18 +912,141 @@ header {
     line-height: 1.4em; /* Needs to be calibrated again, once the final VF is made */
 }
 
+.proforma-pro-thin {
+    font-family: "TP Proforma Pro Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'wght' 100;
+}
+.proforma-pro-extralight {
+    font-family: "TP Proforma Pro Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'wght' 200;
+}
+.proforma-pro-light {
+    font-family: "TP Proforma Pro Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'wght' 310;
+}
+.proforma-pro-book {
+    font-family: "TP Proforma Pro Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'wght' 350;
+}
+.proforma-pro-regular {
+    font-family: "TP Proforma Pro Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'wght' 400;
+}
+.proforma-pro-medium {
+    font-family: "TP Proforma Pro Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'wght' 500;
+}
+.proforma-pro-semibold {
+    font-family: "TP Proforma Pro Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'wght' 600;    
+}
+.proforma-pro-bold {
+    font-family: "TP Proforma Pro Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'wght' 700;    
+}
+.proforma-pro-extrabold {
+    font-family: "TP Proforma Pro Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'wght' 800;
+}
+.proforma-pro-black {
+    font-family: "TP Proforma Pro Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'wght' 900;
+}
+.proforma-pro-thin-italic {
+    font-family: "TP Proforma Pro Regular ";
+    font-style: normal;Italic
+    font-weight: 400;
+    font-variation-settings: 'wght' 100;
+}
+.proforma-pro-extralight-italic {
+    font-family: "TP Proforma Pro Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'wght' 200;
+}
+.proforma-pro-light-italic {
+    font-family: "TP Proforma Pro Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'wght' 310;
+}
+.proforma-pro-book-italic {
+    font-family: "TP Proforma Pro Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'wght' 350;
+}
+.proforma-pro-regular-italic {
+    font-family: "TP Proforma Pro Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'wght' 400;
+}
+.proforma-pro-medium-italic {
+    font-family: "TP Proforma Pro Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'wght' 500;
+}
+.proforma-pro-semibold-italic {
+    font-family: "TP Proforma Pro Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'wght' 600;    
+}
+.proforma-pro-bold-italic {
+    font-family: "TP Proforma Pro Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'wght' 700;    
+}
+.proforma-pro-extrabold-italic {
+    font-family: "TP Proforma Pro Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'wght' 800;
+}
+.proforma-pro-black-italic {
+    font-family: "TP Proforma Pro Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-variation-settings: 'wght' 900;
+}
+
+/* PowerLift */
+
 .powerlift {
     font-family: "PowerLift Tight";    
     font-weight: 400;
 }
-.powerlift p {
+.powerlift p, p.powerlift {
     line-height: 1em; 
 }
 .powerlift-outline {
     font-family: "PowerLift Tight Outline";    
     font-weight: 400;
 }
-.powerlift-outline p {
+.powerlift-outline p, p.powerlift-outline {
     line-height: 1em; 
 }
 
