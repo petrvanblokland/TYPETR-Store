@@ -32,12 +32,11 @@ h2 a:hover {
     color: #808080;
 }
 
-p a:link, p a:visited, p a:active, li a:link, li a:visited, li a:active {
-    font-family: "Upgrade Medium";    
+p a:link, p a:visited, p a:active {
     text-decoration: none;
     color: #202020;
 }
-p a:hover, li a:hover {
+p a:hover {
     color: #808080;
 }
 
@@ -45,6 +44,18 @@ ol li {
     line-height: 1.4em;
     padding-top: 0.7em;
 }
+
+li a:link, li a:visited, li a:active {
+    font-family: "Upgrade Medium";    
+    font-weight: 400;
+    letter-spacing: 0.04em;
+    text-decoration: none;
+    color: #202020;
+}
+li a:hover {
+    color: #808080;
+}
+
 
 .leading12 {
     line-height: 1.2em;
@@ -134,17 +145,20 @@ header {
     font-family: "Presti Text Normal";    
     font-feature-settings: 'ss01': 1, 'liga': 1; /* Allow flourishes as ~tru4 */
     font-weight: 400;
+    color: #FF0000;
     letter-spacing: 0.02em;
 }
 .presti-bold {
     font-family: "Presti Deck Bold";    
     font-feature-settings: 'ss01': 1, 'liga': 1; /* Allow flourishes as ~tru4 */
     font-weight: 400;
+    color: #FF0000;
     letter-spacing: 0.02em;
 }
 .presti p {
     line-height: 1.4em;
     font-feature-settings: 'ss01': 1, 'liga': 1; /* Allow flourishes as ~tru4 */
+    color: #FF0000;
 }
 
 /* Presti VF Display */
@@ -1428,7 +1442,9 @@ header .familyName { /* Floating left box with current family name */
     text-align: left;
     /* padding-top: 0.12em; */
     transform: translateY(calc(0.105em)); /* shift so baseline hits 50px */
-
+}
+header .familyName .andMore {
+    /* Responsive to hide the “and more...” */
 }
 header .logo img {
     height: 50px;
@@ -1567,6 +1583,14 @@ div.image {
   color: white;    
 }
 
+.popup-contentp a:link, .popup-contentp a:visited, .popup-contentp a:active {
+    text-decoration: none;
+    color: #202020;
+}
+.popup-contentp p a:hover {
+    color: #808080;
+}
+
 .familyName:hover, .close:hover, .navbar a:hover,
 .popup-content:hover .column a:hover {
     color: #D0D0D0;
@@ -1602,18 +1626,17 @@ div.image {
 .column p {
     margin: 0 40px 0 0;
 }
-
 .column14 {
     /*flex: 1;*/
     width: 25%;
-    padding-right: 12px;
+    padding-right: 16px;
     box-sizing: border-box;
     background-color: #F0F0F0;
 }
 .column34 {
     /*flex: 1;*/
     width: 75%;
-    padding-right: 12px;
+    padding-right: 16px;
     box-sizing: border-box;
     background-color: #F0F0F0;
 }
@@ -1641,17 +1664,10 @@ div.responsiveShow {
 footer {
     text-align: center;
     padding-top: 20px;
-    padding-left: 20px;
-    padding-right: 20px;
     padding-bottom: 1em;
     background-color: white;
     color: #333;
     width: 100%;
-    /*
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    */
 }
 footer p {
     font-size: 1em;
@@ -1662,7 +1678,8 @@ footer p {
 
 div.type-tester {
     padding: 1em;
-    width: 98%;
+    width: 100%;
+    box-sizing: border-box;
 }
 fontdue-type-testers {
     font-size: 8em;
@@ -1759,7 +1776,7 @@ button:hover {
 /* Small Phones (360–399px) */
 @media (min-width: 360px) and (max-width: 399px) { 
     header {
-        background-color: black /*lightgray; /* Testing responsive */
+        background-color: lightgray; /* Testing responsive */
     }    
     header .navbar, header .familyName {
         display: none;
@@ -1774,7 +1791,7 @@ button:hover {
     .row {
         flex-direction: column;
     }
-    .column {
+    .column, .type-tester {
         width: 100%;
     }
     .column p, .column h1, .column h2 {
@@ -1806,7 +1823,7 @@ button:hover {
 /* Medium Phones (400–479px) */
 @media (min-width: 400px) and (max-width: 479px) { 
     header {
-        background-color: black; /*orange; /* Testing responsive */
+        background-color: orange; /* Testing responsive */
     }    
     header .navbar, header .familyName {
         display: none;
@@ -1821,7 +1838,7 @@ button:hover {
     .row {
         flex-direction: column;
     }
-    .column {
+    .column, .type-tester {
         width: 100%;
     }
     .column p, .column h1, .column h2 {
@@ -1853,7 +1870,7 @@ button:hover {
 /* Large Phones (480–599px) */
 @media (min-width: 480px) and (max-width: 599px) { 
     header {
-        background-color: black; /*pink; /* Testing responsive */
+        background-color: pink; /* Testing responsive */
     }    
     header .navbar, header .familyName {
         display: none;
@@ -1868,7 +1885,7 @@ button:hover {
     .row {
         flex-direction: column;
     }
-    .column {
+    .column, .type-tester {
         width: 100%;
     }
     .column p, .column h1, .column h2 {
@@ -1901,7 +1918,7 @@ button:hover {
 /* Small Tablets (600–767px) */
 @media (min-width: 600px) and (max-width: 767px) { 
     header {
-        background-color: black; /*gray; /* Testing responsive */
+        background-color: gray; /* Testing responsive */
     }    
     header .familyName {
         display: none;
@@ -1913,7 +1930,7 @@ button:hover {
     .row {
         flex-direction: column;
     }
-    .column {
+    .column, .type-tester {
         width: 100%;
     }
     .column p, .column h1, .column h2 {
@@ -1937,9 +1954,9 @@ button:hover {
 /* Medium Tablets (768–991px) */
 @media (min-width: 768px) and (max-width: 991px) { 
     header {
-        background-color: black; /*purple; /* Testing responsive */
+        background-color: purple; /* Testing responsive */
     }    
-    header .familyName {
+    header .familyName .andMore{
         display: none;
     }
     fontdue-type-testers .type-tester {
@@ -1952,19 +1969,21 @@ button:hover {
 /* Large Tablets / Small Desktop (992–1199px) */
 @media (min-width: 992px) and (max-width: 1199px) { 
     header {
-        background-color: black; /*blue; /* Testing responsive */
+        background-color: lightgreen; /* Testing responsive */
     }    
-    .row{
-        width: 1200px;
-        margin:0 auto;
+    fontdue-type-testers .type-tester {
+    --type-tester--adjustment: 1;
+    }
+    .name-title {
+    font-size: 4em;  
     }
 }
 /* Desktop (1200–1599px) */
 @media (min-width: 1200px) and (max-width: 1599px) { 
     header {
-        background-color: black; /*pink; /* Testing responsive */
+        background-color: pink; /* Testing responsive */
     }    
-    .row{
+    .row {
         width: 1200px;
         margin:0 auto;
     }
@@ -1972,9 +1991,9 @@ button:hover {
 /* Large Desktop (1600px+) */
 @media (min-width: 1600px) { 
     header {
-        background-color: black; /*yellow; /* Testing responsive */
+        background-color: yellow; /* Testing responsive */
     }    
-    .row{
+    .row {
         width: 1200px;
         margin:0 auto;
     }

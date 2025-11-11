@@ -128,7 +128,7 @@
             </a>
         </div>
         <div class="familyName upgrade" onclick="document.getElementById('popup').style.display='block'">
-            Upgrade&nbsp;<span class="upgrade-thin">and more...</span>
+            Upgrade&nbsp;<span class="andMore upgrade-thin">and more...</span>
         </div>
 
         <nav id="navbar" class="navbar">
@@ -147,24 +147,20 @@
     <div id="popup" class="popup">
       <div class="popup-content">
         <span class="close" onclick="document.getElementById('popup').style.display='none'">&times;</span>
-        <section class="content">
-          <div class="row">
-            <div class="column font-selector size36 leading14">
-              <p class="proforma-pro"><a href="proforma-pro.html">Proforma&nbsp;Pro</a></p>
-              <p class="proforma-classic"><a href="proforma-classic.html">Proforma&nbsp;Classic</a></p> 
-              <p class="upgrade"><a href="upgrade.html">Upgrade</a></p>
-              <p class="presti"><a href="presti.html">Presti&nbsp;</a></p> 
-              <p class="responder-p"><a href="responder-p.html">Responder&nbsp;P</a></p> 
-              <p class="powerlift-outline"><a href="powerlift.html">PowerLift</a></p>
-              <p class="productus"><a href="productus.html">Productus</a></p> 
-              <p class="bitcount"><a href="bitcount.html">Bitcount</a></p> 
-            </div>
-          </div>
-        </section>
+        <div class="column font-selector size36 leading14">
+          <p class="proforma-pro"><a href="proforma-pro.html">Proforma&nbsp;Pro</a></p>
+          <p class="proforma-classic"><a href="proforma-classic.html">Proforma&nbsp;Classic</a></p> 
+          <p class="upgrade"><a href="upgrade.html">Upgrade</a></p>
+          <p class="presti"><a href="presti.html">Presti</a></p> 
+          <p class="responder-p"><a href="responder-p.html">Responder&nbsp;P</a></p> 
+          <p class="powerlift-outline"><a href="powerlift.html">PowerLift</a></p>
+          <p class="productus"><a href="productus.html">Productus</a></p> 
+          <p class="bitcount"><a href="bitcount.html">Bitcount</a></p> 
+        </div>
       </div>
     </div>
 
-    <section class="content">
+    <section class="content"> <!-- Page navigation, main intro -->
 
         <div class="row">
             <div class="image" style="width: 100%; height:400px;background-image: url('images/2022/Upgrade_in_use_05_meeting_room.jpg');">
@@ -181,13 +177,13 @@
                     Add to cart
                 </button>
                 <div class="responsiveHide">
+                    <h2><a href="#weightsStyles">Weights & styles</a></h2>
                     <h2><a href="#openTypeFeatures">OpenType features</a></h2>
                     <h2><a href="#glyphSet">Glyph set</a></h2>
-                    <h2><a href="#weightsStyles">Weights & styles</a></h2>
                 </div>
                 <div class="responsiveShow">
-                    <h2><a href="#openTypeFeatures">OpenType features</a></h2>
                     <h2><a href="#weightsStyles">Weights & styles</a></h2>
+                    <h2><a href="#openTypeFeatures">OpenType features</a></h2>
                 </div>
             </div>
             <div class="column34 upgrade">
@@ -199,19 +195,18 @@
         </div>
     </section>
 
-    <section>
-        <div class="row type-tester"> <!-- Upgrade type tester -->
-            <div style="width: 95%">
+    <section class="content"> <!-- Type tester with family name on full width -->
+        <div class="row"> 
+            <div class="type-tester">
                 <fontdue-type-testers collection-id="Rm9udENvbGxlY3Rpb246MTkyMDQ5NDg4MjQ2OTM1ODU2MA=="></fontdue-type-testers>
             </div>
         </div>
     </section>
 
-    <section>
+    <section class="content" id="weightsStyles"> <!-- Weights & styles -->
         <div class="row">
             <div class="column14">
-                <div style="margin: 0px auto 0px auto">
-                    <img class="responsiveHide" width="100%" src="images/2018/Upgrade-otfeaturesmenu.png">
+                <div style="margin: 20px">
                     <button class="buy-button upgrade" 
                         type="button"
                         fontdue-click="open-store-modal"
@@ -222,8 +217,59 @@
                     </button>
                 </div>
             </div>
-            <div class="column34 upgrade" id="openTypeFeatures">
+            <div class="column34 upgrade">
+                <h1 class="upgrade-bold size36">Upgrade<span class="upgrade"> weights & styles</span></h1>
+            </div>
+        </div>
+
+        <div class="row responsiveHide"> <!-- Upgrade type tester -->
+            <div class="type-tester">
+                <fontdue-type-testers collection-id="Rm9udENvbGxlY3Rpb246MTkyMDQ5NTAxMjU0MzExMzIzNQ=="></fontdue-type-testers>
+            </div>
+        </div>
+        <div class="row smallWeightTester">
+            <div class="upgrade-thin size80">Upgrade
+            <span class="upgrade-thin-italic size80">Italic</span></div>
+            <div class="upgrade-light size80">Upgrade
+            <span class="upgrade-light-italic size80">Italic</span></div>
+            <div class="upgrade size80">Upgrade
+            <span class="upgrade-italic size80">Italic</span></div>
+            <div class="upgrade-medium size80">Upgrade
+            <span class="upgrade-medium-italic size80">Italic</span></div>
+            <div class="upgrade-semibold size80">Upgrade
+            <span class="upgrade-semibold-italic size80">Italic</span></div>
+            <div class="upgrade-bold size80">Upgrade
+            <span class="upgrade-bold-italic size80">Italic</span></div>
+            <div class="upgrade-black size80">Upgrade
+            <span class="upgrade-black-italic size80">Italic</span></div>
+        </div>
+    </section>
+
+    <section class="content" id="openTypeFeatures"> <!-- OpenType features -->
+        <div class="row">
+            <div class="column14">
+                <div style="margin: 20px">
+                    <button class="buy-button upgrade" 
+                        type="button"
+                        fontdue-click="open-store-modal"
+                        fontdue-store-route="product/Rm9udENvbGxlY3Rpb246MTkyMDQ5NTAxMjU0MzExMzIzNQ=="
+                        fontdue-store-select="U2t1OjE5MjA0OTUyMjgzOTg3NzQyOTM="
+                        >
+                        Add to cart
+                    </button>
+                </div>
+            </div>
+            <div class="column34 upgrade">
                 <h1 class="upgrade-bold size36">Upgrade<span class="upgrade"> OpenType features</span></h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column14">
+                <div style="margin: 0px auto 0px auto">
+                    <img class="responsiveHide" width="100%" src="images/2018/Upgrade-otfeaturesmenu.png">
+                </div>
+            </div>
+            <div class="column34 upgrade">
                 <p class="size24">
                     TYPETR Upgrade family implements an extended OpenType feature set.
 
@@ -284,50 +330,7 @@
         </div>
     </section>
 
-    <section>
-        <div class="row">
-            <div class="column14">
-                <div style="margin: 20px">
-                    <button class="buy-button upgrade" 
-                        type="button"
-                        fontdue-click="open-store-modal"
-                        fontdue-store-route="product/Rm9udENvbGxlY3Rpb246MTkyMDQ5NTAxMjU0MzExMzIzNQ=="
-                        fontdue-store-select="U2t1OjE5MjA0OTUyMjgzOTg3NzQyOTM="
-                        >
-                        Add to cart
-                    </button>
-                </div>
-            </div>
-            <div class="column34 upgrade" id="weightsStyles">
-                <h1 class="upgrade-bold size36">Upgrade<span class="upgrade"> weights & styles</span></h1>
-            </div>
-        </div>
-
-        <div class="row type-tester responsiveHide"> <!-- Upgrade type tester -->
-            <div style="width: 95%">
-                <fontdue-type-testers collection-id="Rm9udENvbGxlY3Rpb246MTkyMDQ5NTAxMjU0MzExMzIzNQ=="></fontdue-type-testers>
-            </div>
-        </div>
-        <div class="row smallWeightTester">
-            <div class="upgrade-thin size80">Upgrade
-            <span class="upgrade-thin-italic size80">Italic</span></div>
-            <div class="upgrade-light size80">Upgrade
-            <span class="upgrade-light-italic size80">Italic</span></div>
-            <div class="upgrade size80">Upgrade
-            <span class="upgrade-italic size80">Italic</span></div>
-            <div class="upgrade-medium size80">Upgrade
-            <span class="upgrade-medium-italic size80">Italic</span></div>
-            <div class="upgrade-semibold size80">Upgrade
-            <span class="upgrade-semibold-italic size80">Italic</span></div>
-            <div class="upgrade-bold size80">Upgrade
-            <span class="upgrade-bold-italic size80">Italic</span></div>
-            <div class="upgrade-black size80">Upgrade
-            <span class="upgrade-black-italic size80">Italic</span></div>
-        </div>
-
-    </section>
-
-    <section>
+    <section class="content" id="glyphSet"> <!-- Glyph set -->
         <div class="row responsiveHide">
             <div class="column14">
                 <div style="margin: 20px">
@@ -341,7 +344,7 @@
                     </button>
                 </div>
             </div>
-            <div class="column34 upgrade" id="glyphSet">
+            <div class="column34 upgrade">
                 <h1 class="upgrade-bold size36">Upgrade<span class="upgrade"> glyph set</span></h1>
             </div>
         </div>
@@ -353,10 +356,10 @@
         </div>
     </section>
 
-    <section>
+    <section class="content"> <!-- Page navigation, main intro -->
         <div class="row">
-            <div class="column14" style="margin-bottom: 5em;">
-                <button style="margin: auto 20px auto 10px" class="buy-button upgrade" 
+            <div class="column14" style="padding-left: 2em; padding-top:1em;">
+                <button class="buy-button upgrade" 
                     type="button"
                     fontdue-click="open-store-modal"
                     fontdue-store-route="product/Rm9udENvbGxlY3Rpb246MTkyMDQ5NTAxMjU0MzExMzIzNQ=="
@@ -365,16 +368,16 @@
                     Add to cart
                 </button>
             </div>
-            <div class="column34 responsiveHide">
+            <div class="column34 upgrade">
             </div>
         </div>
     </section>
 
     <footer>
-        <div class="row">
+        <!--<div class="row">-->
         <p class="leading15">Bitcount, PowerLift, Presti, Productus, Proforma, Responder and Upgrade are registered trademarks by TYPETR | Buro Petr van Blokland + Claudia Mens<br/>
         Copyright © 2025 TYPETR | Buro Petr van Blokland + Claudia Mens</p> 
-        </div>
+        <!--</div>-->
     </footer>
 
     <fontdue-store-modal></fontdue-store-modal> <!-- Supported the [buy] button -->
