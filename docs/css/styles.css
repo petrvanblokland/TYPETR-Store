@@ -878,6 +878,59 @@ header {
     line-height: 1.4em;
 }
 
+.productus-book {
+    font-family: "Productus Book";
+    font-style: normal;
+    font-weight: 400;
+}
+.productus-book-italic {
+    font-family: "Productus Book Italic";
+    font-style: normal;
+    font-weight: 400;
+}
+.productus-medium {
+    font-family: "Productus Medium";
+    font-style: normal;
+    font-weight: 400;
+}
+.productus-medium-italic {
+    font-family: "Productus Medium Italic";
+    font-style: normal;
+    font-weight: 400;
+}
+.productus-semibold {
+    font-family: "Productus Semi Bold";
+    font-style: normal;
+    font-weight: 400;
+}
+.productus-semibold-italic {
+    font-family: "Productus Semi Bold Italic";
+    font-style: normal;
+    font-weight: 400;
+}
+.productus-bold {
+    font-family: "Productus Bold";
+    font-style: normal;
+    font-weight: 400;
+}
+.productus-bold-italic {
+    font-family: "Productus Bold Italic";
+    font-style: normal;
+    font-weight: 400;
+}
+.productus-black {
+    font-family: "Productus Bold";
+    font-style: normal;
+    font-weight: 400;
+}
+.productus-black-italic {
+    font-family: "Productus Bold Italic";
+    font-style: normal;
+    font-weight: 400;
+}
+
+/* Proforma Classic */
+
 .proforma-classic {
     font-family: "Proforma Classic Book";
     font-weight: 400;
