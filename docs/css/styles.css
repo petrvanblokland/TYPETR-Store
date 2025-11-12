@@ -1124,19 +1124,23 @@ header {
     font-family: "Responder P VF Regular";
     /* Slightly lighter, as 400 seems bolder compared to other families. */
     font-variation-settings: 'ital': 0, 'wght': 250;
+    font-feature-settings: 'clig' 1; 
 }
 .responder-p-bold {
     font-family: "Responder P VF Regular";
     font-variation-settings: 'ital': 0, 'wght': 600;
+    font-feature-settings: 'clig' 1; 
 }
 .responder-p p {
     line-height: 1.4em;
+    font-feature-settings: 'clig' 1; 
 }
 .responder-m {
     font-family: "Responder M Regular Italic";
     font-style: normal;
     font-weight: 400;
     line-height: 1.4em;
+    font-feature-settings: 'clig' 1; 
 }
 
 .responder-p-thin {
@@ -1144,108 +1148,126 @@ header {
     font-style: normal;
     font-weight: 400;
     font-variation-settings: 'ital' 0, 'wght' 100;
+    font-feature-settings: 'clig' 1; 
 }
 .responder-p-light {
     font-family: "Responder P VF Regular";
     font-style: normal;
     font-weight: 400;
     font-variation-settings: 'ital' 0, 'wght' 200;
+    font-feature-settings: 'clig' 1; 
 }
 .responder-p-book {
     font-family: "Responder P VF Regular";
     font-style: normal;
     font-weight: 400;
     font-variation-settings: 'ital' 0, 'wght' 300;
+    font-feature-settings: 'clig' 1; 
 }
 .responder-p-regular {
     font-family: "Responder P VF Regular";
     font-style: normal;
     font-weight: 400;
     font-variation-settings: 'ital' 0, 'wght' 400;
+    font-feature-settings: 'clig' 1; 
 }
 .responder-p-medium {
     font-family: "Responder P VF Regular";
     font-style: normal;
     font-weight: 400;
     font-variation-settings: 'ital' 0, 'wght' 500;
+    font-feature-settings: 'clig' 1; 
 }
 .responder-p-semibold {
     font-family: "Responder P VF Regular";
     font-style: normal;
     font-weight: 400;
     font-variation-settings: 'ital' 0, 'wght' 600;
+    font-feature-settings: 'clig' 1; 
 }
 .responder-p-bold {
     font-family: "Responder P VF Regular";
     font-style: normal;
     font-weight: 400;
     font-variation-settings: 'ital' 0, 'wght' 700;
+    font-feature-settings: 'clig' 1; 
 }
 .responder-p-extrabold {
     font-family: "Responder P VF Regular";
     font-style: normal;
     font-weight: 400;
     font-variation-settings: 'ital' 0, 'wght' 800;
+    font-feature-settings: 'clig' 1; 
 }
 .responder-p-black {
     font-family: "Responder P VF Regular";
     font-style: normal;
     font-weight: 400;
     font-variation-settings: 'ital' 0, 'wght' 900;
+    font-feature-settings: 'clig' 1; 
 }
 .responder-p-thin-italic {
     font-family: "Responder P VF Regular";
     font-style: normal;
     font-weight: 400;
     font-variation-settings: 'ital' 1, 'wght' 100;
+    font-feature-settings: 'clig' 1; 
 }
 .responder-p-light-italic {
     font-family: "Responder P VF Regular";
     font-style: normal;
     font-weight: 400;
     font-variation-settings: 'ital' 1, 'wght' 200;
+    font-feature-settings: 'clig' 1; 
 }
 .responder-p-book-italic {
     font-family: "Responder P VF Regular";
     font-style: normal;
     font-weight: 400;
     font-variation-settings: 'ital' 1, 'wght' 300;
+    font-feature-settings: 'clig' 1; 
 }
 .responder-p-regular-italic {
     font-family: "Responder P VF Regular";
     font-style: normal;
     font-weight: 400;
     font-variation-settings: 'ital' 1, 'wght' 400;
+    font-feature-settings: 'clig' 1; 
 }
 .responder-p-medium-italic {
     font-family: "Responder P VF Regular";
     font-style: normal;
     font-weight: 400;
     font-variation-settings: 'ital' 1, 'wght' 500;
+    font-feature-settings: 'clig' 1; 
 }
 .responder-p-semibold-italic {
     font-family: "Responder P VF Regular";
     font-style: normal;
     font-weight: 400;
     font-variation-settings: 'ital' 1, 'wght' 600;
+    font-feature-settings: 'clig' 1; 
 }
 .responder-p-bold-italic {
     font-family: "Responder P VF Regular";
     font-style: normal;
     font-weight: 400;
     font-variation-settings: 'ital' 1, 'wght' 700;
+    font-feature-settings: 'clig' 1; 
 }
 .responder-p-extrabold {
     font-family: "Responder P VF Regular";
     font-style: normal;
     font-weight: 400;
     font-variation-settings: 'ital' 1, 'wght' 800;
+    font-feature-settings: 'clig' 1; 
 }
 .responder-p-black-italic {
     font-family: "Responder P VF Regular";
     font-style: normal;
     font-weight: 400;
     font-variation-settings: 'ital' 1, 'wght' 900;
+    font-feature-settings: 'clig' 1; 
 }
 
 /* Upgrade */
@@ -1373,6 +1395,12 @@ header {
 .no-liga {
     font-feature-settings: 'liga' 0; 
 }
+.clig {
+    font-feature-settings: 'clig' 1; 
+}
+.case {
+    font-feature-settings: 'case' 1; 
+}
 
 .frac {
     font-feature-settings: 'frac' 1; /* Fractions */    
@@ -1427,20 +1455,38 @@ header {
 .ss04 {
     font-feature-settings: 'ss04' 1;
 }
+.ss04-clig {
+    font-feature-settings: 'ss04' 1, 'clig' 1;
+}
 .ss05 {
     font-feature-settings: 'ss05' 1;
+}
+.ss05-clig {
+    font-feature-settings: 'ss05' 1, 'clig' 1;
 }
 .ss06 {
     font-feature-settings: 'ss06' 1;
 }
+.ss06-clig {
+    font-feature-settings: 'ss06' 1, 'clig' 1;
+}
 .ss07 {
     font-feature-settings: 'ss07' 1;
+}
+.ss07-clig {
+    font-feature-settings: 'ss07' 1, 'clig' 1;
 }
 .ss08 {
     font-feature-settings: 'ss08' 1;
 }
+.ss08-clig {
+    font-feature-settings: 'ss08' 1, 'clig' 1;
+}
 .ss09 {
     font-feature-settings: 'ss09' 1;
+}
+.ss09-clig {
+    font-feature-settings: 'ss09' 1, 'clig' 1;
 }
 .ss10 {
     font-feature-settings: 'ss10' 1;
