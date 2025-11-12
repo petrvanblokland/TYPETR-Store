@@ -1105,16 +1105,20 @@ header {
 .powerlift {
     font-family: "PowerLift Tight";    
     font-weight: 400;
+    letter-spacing: 0;
 }
 .powerlift p, p.powerlift {
     line-height: 1em; 
+    letter-spacing: 0;
 }
 .powerlift-outline {
     font-family: "PowerLift Tight Outline";    
     font-weight: 400;
+    letter-spacing: 0;
 }
 .powerlift-outline p, p.powerlift-outline {
     line-height: 1em; 
+    letter-spacing: 0;
 }
 
 /* Responder VF */
@@ -1328,6 +1332,13 @@ header {
     font-weight: 400;
 }
 .bitcount p {
+    line-height: 1.4em;
+}
+.bitcount-bold {
+    font-family: "Bitcount Mono Double Bold Circle";
+    font-weight: 400;
+}
+.bitcount-bold p {
     line-height: 1.4em;
 }
 
