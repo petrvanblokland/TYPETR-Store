@@ -145,20 +145,17 @@ header {
     font-family: "Presti Text Normal";    
     font-feature-settings: 'ss01': 1, 'liga': 1; /* Allow flourishes as ~tru4 */
     font-weight: 400;
-    color: #FF0000;
     letter-spacing: 0.02em;
 }
 .presti-bold {
     font-family: "Presti Deck Bold";    
     font-feature-settings: 'ss01': 1, 'liga': 1; /* Allow flourishes as ~tru4 */
     font-weight: 400;
-    color: #FF0000;
     letter-spacing: 0.02em;
 }
 .presti p {
     line-height: 1.4em;
     font-feature-settings: 'ss01': 1, 'liga': 1; /* Allow flourishes as ~tru4 */
-    color: #FF0000;
 }
 
 /* Presti VF Display */
