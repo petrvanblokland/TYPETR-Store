@@ -936,21 +936,75 @@ header {
     letter-spacing: 0.02em;
     line-height: 1.4em;
 }
+
+
+.proforma-classic-ultralight {
+    font-family: "Proforma Classic Ultra Light";
+    font-style: normal;
+    font-weight: 400;
+}
+.proforma-classic-ultralight-italic {
+    font-family: "Proforma Classic Ultra Light Italic";
+    font-style: normal;
+    font-weight: 400;
+}
+.proforma-classic-light {
+    font-family: "Proforma Classic Light";
+    font-style: normal;
+    font-weight: 400;
+}
+.proforma-classic-light-italic {
+    font-family: "Proforma Classic Light Italic";
+    font-style: normal;
+    font-weight: 400;
+}
 .proforma-classic-book {
     font-family: "Proforma Classic Book";
+    font-style: normal;
     font-weight: 400;
 }
 .proforma-classic-book p {
     letter-spacing: 0.015em;
     line-height: 1.4em;
 }
+.proforma-classic-book-italic {
+    font-family: "Proforma Classic Book Italic";
+    font-style: normal;
+    font-weight: 400;
+}
+.proforma-classic-medium {
+    font-family: "Proforma Classic Medium";
+    font-style: normal;
+    font-weight: 400;
+}
+.proforma-classic-medium-italic {
+    font-family: "Proforma Classic Medium Italic";
+    font-style: normal;
+    font-weight: 400;
+}
+.proforma-classic-semibold {
+    font-family: "Proforma Classic Semi Bold";
+    font-style: normal;
+    font-weight: 400;
+}
+.proforma-classic-semibold-italic {
+    font-family: "Proforma Classic Semi Bold Italic";
+    font-style: normal;
+    font-weight: 400;
+}
 .proforma-classic-bold {
     font-family: "Proforma Classic Bold";
+    font-style: normal;
     font-weight: 400;
 }
 .proforma-classic-bold p {
     letter-spacing: 0.015em;
     line-height: 1.4em;
+}
+.proforma-classic-bold-italic {
+    font-family: "Proforma Classic Bold Italic";
+    font-style: normal;
+    font-weight: 400;
 }
 
 /* Proforma Pro */
