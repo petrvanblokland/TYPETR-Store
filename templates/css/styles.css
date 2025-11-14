@@ -2354,7 +2354,7 @@ button.buy-button:hover {
 /* Desktop (1200–1599px) */
 @media (min-width: 1200px) and (max-width: 1599px) { 
     header {
-        background-color: pink; /* Testing responsive */
+        background-color: black; /* pink; /* Testing responsive */
     }    
     .row {
         width: 1200px;
