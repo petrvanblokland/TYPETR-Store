@@ -2080,7 +2080,7 @@ button.buy-button:hover {
 /* Extra Small Phones (320–359px) */
 @media (max-width: 359px) { 
     header {
-        background-color: brown; /* Testing responsive */
+        background-color: black; /*brown; /* Testing responsive */
     }    
     header .navbar, header .familyName, header .logo {
         display: none;
@@ -2130,7 +2130,7 @@ button.buy-button:hover {
 /* Small Phones (360–399px) */
 @media (min-width: 360px) and (max-width: 399px) { 
     header {
-        background-color: lightgray; /* Testing responsive */
+        background-color: black; /*lightgray; /* Testing responsive */
     }    
     header .navbar, header .familyName {
         display: none;
@@ -2180,7 +2180,7 @@ button.buy-button:hover {
 /* Medium Phones (400–479px) */
 @media (min-width: 400px) and (max-width: 479px) { 
     header {
-        background-color: orange; /* Testing responsive */
+        background-color: black; /*orange; /* Testing responsive */
     }    
     header .navbar, header .familyName {
         display: none;
@@ -2230,7 +2230,7 @@ button.buy-button:hover {
 /* Large Phones (480–599px) */
 @media (min-width: 480px) and (max-width: 599px) { 
     header {
-        background-color: pink; /* Testing responsive */
+        background-color: black; /*pink; /* Testing responsive */
     }    
     header .navbar, header .familyName {
         display: none;
@@ -2282,7 +2282,7 @@ button.buy-button:hover {
 
 @media (min-width: 600px) and (max-width: 767px) { 
     header {
-        background-color: gray; /* Testing responsive */
+        background-color: black; /*gray; /* Testing responsive */
     }    
     header .familyName {
         display: none;
@@ -2321,7 +2321,7 @@ button.buy-button:hover {
 /* Medium Tablets (768–991px) */
 @media (min-width: 768px) and (max-width: 991px) { 
     header {
-        background-color: purple; /* Testing responsive */
+        background-color: black; /*purple; /* Testing responsive */
     }    
     header .andMore{
         display: none;
@@ -2339,7 +2339,7 @@ button.buy-button:hover {
 /* Large Tablets / Small Desktop (992–1199px) */
 @media (min-width: 992px) and (max-width: 1199px) { 
     header {
-        background-color: lightgreen; /* Testing responsive */
+        background-color: black; /*lightgreen; /* Testing responsive */
     }    
     fontdue-type-testers .type-tester {
     --type-tester--adjustment: 1;
