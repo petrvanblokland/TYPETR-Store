@@ -22,6 +22,7 @@ function showSlides() {
 function toggleMenu() {
     let menu = document.querySelector('.navbar');
     menu.classList.toggle('active');
+    print('AAAAA')
 }
 
 //document.addEventListener('DOMContentLoaded', function() {
