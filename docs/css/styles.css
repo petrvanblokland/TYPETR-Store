@@ -94,7 +94,7 @@ header {
     position: fixed;
     z-index: 100;
     width: 100%;
-    box-shadow: 0 14px 16px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 14px 16px rgba(0, 0, 0, 0.2);
     z-index: 899; /* Position z-layer under Fontdue cart boxes */ 
   animation: slideDown 0.4s ease-out forwards;
 
