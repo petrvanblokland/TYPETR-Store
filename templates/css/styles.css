@@ -14,6 +14,24 @@ html {
   scroll-snap-type: y proximity;
 }
 
+/* TYPETR base colors */
+
+.gray-dark {
+    color: #202020;
+}
+.gray-light {
+    color: #E6E6E6;
+}
+.red {
+    color: #CC0256;
+}
+.yellow {
+    color: #A5B306;
+}
+.blue {
+    color: #3360B9;
+}
+
 /* Reset */
 
 h1, h2, h3, h4, h5, h6 {
@@ -1565,6 +1583,8 @@ header {
     line-height: 1.4em;
 }
 
+/*  Bitcount */
+
 .bitcount {
     font-family: "Bitcount Mono Double Regular Circle";
     font-weight: 400;
@@ -1578,6 +1598,32 @@ header {
 }
 .bitcount-bold p {
     line-height: 1.4em;
+}
+
+.bitcount-grid {
+    font-family: "Bitcount Grid Double Regular Circle";
+    font-weight: 400;
+}
+.bitcount-mono {
+    font-family: "Bitcount Mono Double Regular Circle";
+    font-weight: 400;
+}
+.bitcount-prop {
+    font-family: "Bitcount Prop Double Regular Circle";
+    font-weight: 400;
+}
+
+.bitcount-grid-book {
+    font-family: "Bitcount Grid Double Book Circle";
+    font-weight: 400;
+}
+.bitcount-mono-book {
+    font-family: "Bitcount Mono Double Book Circle";
+    font-weight: 400;
+}
+.bitcount-prop-book {
+    font-family: "Bitcount Prop Double Book Circle";
+    font-weight: 400;
 }
 
 .size24 {
@@ -2042,7 +2088,7 @@ div.smallWeightTester {
 button.buy-button {
     font-size: 1.5em;
     padding: 0.4em;
-    background-color: #808080;
+    background-color: #3360B9; /* TYPETR Blue */
     color: #F0F0F0;
     margin-top: 0.4em;
     margin-bottom: 0.4em;
@@ -2060,8 +2106,8 @@ button.buy-button {
 button.buy-button:hover {
     font-size: 1.5em;
     padding: 0.4em;
-    background-color: #505050;
-    color: #E0E0E0;
+    background-color: #5380D9;
+    color: #FFFFFF;
     margin-top: 0.4em;
     margin-bottom: 0.4em;
     text-align: center;
