@@ -1819,7 +1819,8 @@ header .familyName .andMore {
     /* Responsive to hide the “and more...” */
 }
 header .logo img {
-    height: 50px;
+    padding-top: 4px;
+    height: 42px;
 }
 header .smallLogo { /* Text logo for really small screen sizes, no space for image */
     transform: translateY(calc(0.4em)); /* shift so baseline hits 50px */
@@ -2083,6 +2084,11 @@ div.smallWeightTester { /* For small screen sizes */
 div.smallWeightTester {
     width: 100%;
 }
+
+:root {
+  --character_viewer_sticky_top: 100px;
+}
+
 /* Buy button */
 
 button.buy-button {
