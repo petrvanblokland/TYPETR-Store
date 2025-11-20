@@ -336,7 +336,10 @@
                 <p class="presti leading14 size24">
                     The TYPETR Presti family implements an extended OpenType feature set for swashes and flourishes that are marked with [ID], work in standard InDesign.
                     <br/>
-                    All features in range [ss02] - [ss08] are exclusive, the don’t work together, since they are defined as separate glyphs. For floating swashes use [ss01] or the range [ss09] - [ss16]
+                    All features in stylistic set range [ss02] - [ss08] are exclusive, the don’t work together, since they are defined as separate glyphs. For floating swashes use [ss01] or the range [ss09] - [ss16]
+
+                    <hr/>
+                    <h3 class="presti-semibold size24">Fixed swashes for legacy InDesign version.</h3>
 
                     <h4 class="upgrade">[ID] Swash [swsh] A set of selected swashes for most letters</h4>
                     <div style="line-height: 1.4em;font-size: 2em;" class="presti">Set of selected swashes</div>
@@ -369,28 +372,72 @@
                     <h4 class="upgrade">[ID] Bottom-left swashes [ss08] Left going #3 type swashes on bottom</h4>
                     <div style="line-height: 1.4em;font-size: 2em;" class="presti">Bottom-left swashes</div>
                     <div style="line-height: 1.4em;font-size: 2em;" class="presti ss08">Bottom-left swashes</div>
-                    
-                    <h4 class="upgrade">Swashes by code [ss01] (See more coding examples <a>here</a>)</h4>
-                    This feature needs alteration of <a>InDesign.<br/>
-                    <div style="line-height: 1.4em;font-size: 2em;" class="presti no-ss01">Swa~tru5shes o~brd4n any l~mlu3etter~mru4</div>
-                    <div style="line-height: 1.4em;font-size: 2em;" class="presti ss01">Swa~tru5shes o~brd4n any l~mlu3etter~mru4</div>
 
-                    <h4 class="upgrade">Force a selection of #1 swashes to type #2 round swashes [ss12+ss17]</h4>
+                    <hr/>
+                    <h3 class="presti-semibold size24">Multiple swashes on one character</h3>
+                    
+                    <h4 class="upgrade">The [ss01] feature needs InDesign 19.0, later than October 2023</h4>
+
+                    <p class="presti leading14">The feature [ss01] is using a code sequence to connect swashes to characters.</p>
+                    <ul>
+                        <li class="presti size16 leading14">Start with the character itself</li>
+                        <li class="presti size16 leading14">Directly followed  by a “tilde” ~</li>
+                        <li class="presti size16 leading14">Followed by the code for vertical position: “t”: top, “m”: middle, “b”: bottom</li>
+                        <li class="presti size16 leading14">Followed by the code for the horizontal position: “l”: left, “r”: right</li>
+                        <li class="presti size16 leading14">Followed by the code for the vertical direction: “u”: up, “d”: down</li>
+                        <li class="presti size16 leading14">finally a single digit that defines the size of the swash: “1”: small, “2”: larger, “3”: moderate, “4”: large, “5”: super sized</li>
+                    </ul>
+                    <ul class="no-bullet">
+                        <li class="presti size56 no-tracking leading14">A~tru3 – <span class="ss01">A~tru3</span></li>
+                        <li class="presti size56 no-tracking leading14">B~mrd2 – <span class="ss01">B~mrd2</span></li>
+                        <li class="presti size56 no-tracking leading14">C~bld5 – <span class="ss01">C~bld5</span></li>
+                        <li class="presti size56 no-tracking leading14">D~mru5 – <span class="ss01">D~mru5</span></li>
+                        <li class="presti size56 no-tracking leading14">E~mlu1 – <span class="ss01">E~mlu1</span></li>
+                    </ul>
+
+                    <p class="presti leading14">Several code sequences can be combined to attach multiple swashes to the same character.</p>
+
+                    <ul class="no-bullet">
+                        <li class="presti size56 no-tracking leading14">A~tru3~bru5 – <span class="ss01">A~tru3~brd3</span></li>
+                        <li class="presti size56 no-tracking leading14">B~mrd2 – <span class="ss01">B~mrd2</span></li>
+                        <li class="presti size56 no-tracking leading14">C~bld5~tru3 – <span class="ss01">C~bld5~tru3</span></li>
+                        <li class="presti size56 no-tracking leading14">D~mru5 – <span class="ss01">D~mru5</span></li>
+                        <li class="presti size56 no-tracking leading14">E~mlu1 – <span class="ss01">E~mlu1</span></li>
+                    </ul>
+
+                    <div class="leading14 size36 presti no-ss01">Swa~tru5shes o~brd4n any l~mlu3etter~mru4</div>
+                    <div class="leading14 size36 presti ss01">Swa~tru5shes o~brd4n any l~mlu3etter~mru4</div>
+
+                    <hr/>
+                    <h3 class="presti-semibold size24">Changing the size of swashes</h3>
+
+                    <h4 class="upgrade">Force a selection of small #1 swashes to larger #2 round swashes [ss12+ss17]</h4>
                     <div style="line-height: 1.4em;font-size: 2em;" class="presti ss12">Round swashes type #2</div>
                     <div style="line-height: 1.4em;font-size: 2em;" class="presti ss12-ss17">Round swashes type #2</div>
 
-                    <h4 class="upgrade">Force a selection of #1 swashes to type #3 moderate swashes [ss12+ss18]</h4>
+                    <h4 class="upgrade">Force a selection of small #1 swashes to #3 moderate sized swashes [ss12+ss18]</h4>
                     <div style="line-height: 1.4em;font-size: 2em;" class="presti ss12">Moderate swashes type #3</div>
                     <div style="line-height: 1.4em;font-size: 2em;" class="presti ss12-ss18">Moderate swashes type #3</div>
 
-                    <h4 class="upgrade">Force a selection of #1 swashes to type #4 large swashes [ss12+ss18]</h4>
+                    <h4 class="upgrade">Force a selection of small #1 swashes to #4 large swashes [ss12+ss18]</h4>
                     <div style="line-height: 1.4em;font-size: 2em;" class="presti ss12">Large swashes type #4</div>
                     <div style="line-height: 1.4em;font-size: 2em;" class="presti ss12-ss19">Large swashes type #4</div>
 
-                    <h4 class="upgrade">Force a selection of #1 swashes to type #5 super swashes [ss12+ss18]</h4>
+                    <h4 class="upgrade">Force a selection of small #1 swashes to #5 super swashes [ss12+ss18]</h4>
                     <div style="line-height: 1.4em;font-size: 2em;" class="presti ss12">Super swashes type #5</div>
                     <div style="line-height: 1.4em;font-size: 2em;" class="presti ss12-ss20">Super swashes type #5</div>
                 </p>
+                    <hr/>
+                    <h3 class="presti-semibold size24">Inline flourishes in 5 sizes</h3>
+                    
+                    <ul class="no-bullet">
+                        <li class="presti size56 no-tracking leading14">1}}A{{1 – <span class="ss01">1}}A{{1</span></li>
+                        <li class="presti size56 no-tracking leading14">2}}B{{2 – <span class="ss01">2}}B{{2</span></li>
+                        <li class="presti size56 no-tracking leading14">3}}C{{3 – <span class="ss01">3}}C{{3</span></li>
+                        <li class="presti size56 no-tracking leading14">4}}D{{4 – <span class="ss01">4}}D{{4</span></li>
+                        <li class="presti size56 no-tracking leading14">5}}E{{5 – <span class="ss01">5}}E{{5</span></li>
+                    </ul>
+
             </div>
         </div>
 

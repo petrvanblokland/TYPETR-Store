@@ -74,7 +74,12 @@ li a:hover {
     color: #808080;
 }
 
-
+.leading09 {
+    line-height: 0.9em;
+}
+.leading1 {
+    line-height: 1em;
+}
 .leading12 {
     line-height: 1.2em;
 }
@@ -86,6 +91,9 @@ li a:hover {
 }
 .leading15 {
     line-height: 1.5em;
+}
+.leading18 {
+    line-height: 1.8em;
 }
 
 /* General Styles */
@@ -1626,6 +1634,22 @@ header {
     font-weight: 400;
 }
 
+.no-tracking {
+    letter-spacing: 0;
+}
+.no-bullet {
+     list-style-type: none;
+}
+
+.size16 {
+    font-size: 16px;
+}
+.size18 {
+    font-size: 18px;
+}
+.size20 {
+    font-size: 20px;
+}
 .size24 {
     font-size: 24px;
 }
