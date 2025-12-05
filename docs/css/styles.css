@@ -2158,10 +2158,12 @@ button.buy-button:hover {
     header {
         background-color: brown; /* Testing responsive */
     }    
-    header .navbar, header .familyName, header .logo {
+    /*header .navbar, */
+    header .familyName, header .logo {
         display: none;
     }
-    header .hamburger, header .smallLogo {
+    /*header .hamburger,*/ 
+    header .smallLogo {
         display: block;
     }
     button.buy-button {
@@ -2210,12 +2212,15 @@ button.buy-button:hover {
     header {
         background-color: lightgray; /* Testing responsive */
     }    
-    header .navbar, header .familyName {
+    /*header .navbar, */
+    header .familyName {
         display: none;
     }
+    /*
     header .hamburger {
         display: block;
     }
+    */
     button.buy-button {
         display: block;
         margin: 1em auto 0;
@@ -2262,12 +2267,15 @@ button.buy-button:hover {
     header {
         background-color: orange; /* Testing responsive */
     }    
-    header .navbar, header .familyName {
+    /*header .navbar, */
+    header .familyName {
         display: none;
     }
+    /*
     header .hamburger {
         display: block;
     }
+    */
     button.buy-button {
         display: block;
         margin: 1em auto 0;
@@ -2314,12 +2322,15 @@ button.buy-button:hover {
     header {
         background-color: pink; /* Testing responsive */
     }    
-    header .navbar, header .familyName {
+    /*header .navbar, */
+    header .familyName {
         display: none;
     }
+    /*
     header .hamburger {
         display: block;
     }
+    */
     button.buy-button {
         display: block;
         margin: 1em auto 0;
@@ -2435,9 +2446,6 @@ button.buy-button:hover {
     }    
     fontdue-type-testers .type-tester {
     --type-tester--adjustment: 1;
-    }
-    .name-title {
-    font-size: 4em;  
     }
     .titleImage {
         height: 350px;

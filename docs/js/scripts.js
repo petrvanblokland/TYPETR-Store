@@ -20,9 +20,8 @@ function showSlides() {
 }
 
 function toggleMenu() {
-    let menu = document.querySelector('.navbar');
-    menu.classList.display = 'block';
-    /*menu.classList.toggle('active');*/
+  const menu = document.getElementById("navbar");
+  menu.style.display = (menu.style.display === "none") ? "block" : "none";
 }
 
 //document.addEventListener('DOMContentLoaded', function() {
