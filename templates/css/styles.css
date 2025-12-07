@@ -2134,21 +2134,11 @@ button.buy-button {
 }
 
 button.buy-button:hover {
-    font-size: 1.5em;
-    padding: 0.4em;
     background-color: #5380D9;
     color: #FFFFFF;
-    margin-top: 0.4em;
-    margin-bottom: 0.4em;
-    text-align: center;
-    width: 80%;
 
     border-radius: 6px;       /* small rounded corners */
     border: none;             /* optional: remove default border */
-
-    outline: 1px solid transparent;
-    outline-offset: 1px; /* optional: moves the outline away a bit */
-    transition: outline-color 0.2s ease;
 }
 
 /* Media Queries */
