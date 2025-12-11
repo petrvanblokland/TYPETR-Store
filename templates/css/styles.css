@@ -160,6 +160,7 @@ header {
 .name-title a {
     text-decoration: none;
     color: black;
+    letter-spacing: 0;
 }
 .name-title a:hover {
     color: #808080;
@@ -1939,8 +1940,18 @@ header .hamburger {
 
 .titleImage {
     margin-top: 20px; 
+    padding-top: 30px;
     width: 100%; 
     height: 400px; 
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+}
+.titleImageSmall {
+    margin-top: 20px; 
+    padding-top: 30px;
+    width: 100%; 
+    height: 350px; /* Fitting Bitcount animations */
     background-size: contain;
     background-position: center;
     background-repeat: repeat;
@@ -2113,6 +2124,12 @@ div.smallWeightTester {
   --character_viewer_sticky_top: 100px;
 }
 
+/* Cart button */
+
+fontdue-cart-button {
+    font-family: "Upgrade Medium";
+    font-size: 1.2em;
+}
 /* Buy button */
 
 button.buy-button {
@@ -2146,7 +2163,7 @@ button.buy-button:hover {
 /* Extra Small Phones (320–359px) */
 @media (max-width: 359px) { 
     header {
-        background-color: black; /*brown; /* Testing responsive */
+        background-color: brown; /* Testing responsive */
     }    
     /*header .navbar, */
     header .familyName, header .logo {
@@ -2183,7 +2200,7 @@ button.buy-button:hover {
     .name-title {
         font-size: 2em;  
     }
-    .titleImage {
+    .titleImage, .titleImageSmall {
         height: 200px;
     }
     footer {
@@ -2200,7 +2217,7 @@ button.buy-button:hover {
 /* Small Phones (360–399px) */
 @media (min-width: 360px) and (max-width: 399px) { 
     header {
-        background-color: black; /*lightgray; /* Testing responsive */
+        background-color: lightgray; /* Testing responsive */
     }    
     /*header .navbar, */
     header .familyName {
@@ -2237,6 +2254,9 @@ button.buy-button:hover {
     }
     .titleImage {
         height: 200px;
+    }
+    .titleImageSmall {
+        height: 150px;
     }
     .name-title {
         font-size: 2.5em;  
@@ -2255,7 +2275,7 @@ button.buy-button:hover {
 /* Medium Phones (400–479px) */
 @media (min-width: 400px) and (max-width: 479px) { 
     header {
-        background-color: black; /*orange; /* Testing responsive */
+        background-color: orange; /* Testing responsive */
     }    
     /*header .navbar, */
     header .familyName {
@@ -2293,6 +2313,9 @@ button.buy-button:hover {
     .titleImage {
         height: 200px;
     }
+    .titleImageSmall {
+        height: 150px;
+    }
     .name-title {
         font-size: 3em;  
     }
@@ -2310,7 +2333,7 @@ button.buy-button:hover {
 /* Large Phones (480–599px) */
 @media (min-width: 480px) and (max-width: 599px) { 
     header {
-        background-color: black; /*pink; /* Testing responsive */
+        background-color: pink; /* Testing responsive */
     }    
     /*header .navbar, */
     header .familyName {
@@ -2348,6 +2371,9 @@ button.buy-button:hover {
     .titleImage {
         height: 200px;
     }
+    .titleImageSmall {
+        height: 150px;
+    }
     .name-title {
         font-size: 3.5em;  
     }
@@ -2367,7 +2393,7 @@ button.buy-button:hover {
 
 @media (min-width: 600px) and (max-width: 767px) { 
     header {
-        background-color: black; /*gray; /* Testing responsive */
+        background-color: gray; /* Testing responsive */
     }    
     header .familyName {
         display: none;
@@ -2402,6 +2428,9 @@ button.buy-button:hover {
     .titleImage {
         height: 250px;
     }
+    .titleImageSmall {
+        height: 200px;
+    }
     footer p {
         margin-left: 2em;
         margin-right: 2em;
@@ -2410,7 +2439,7 @@ button.buy-button:hover {
 /* Medium Tablets (768–991px) */
 @media (min-width: 768px) and (max-width: 991px) { 
     header {
-        background-color: black; /*purple; /* Testing responsive */
+        background-color: purple; /* Testing responsive */
     }    
     header .andMore{
         display: none;
@@ -2424,6 +2453,9 @@ button.buy-button:hover {
     .titleImage {
         height: 280px;
     }
+    .titleImageSmall {
+        height: 210px;
+    }
     footer p {
         margin-left: 2em;
         margin-right: 2em;
@@ -2432,13 +2464,16 @@ button.buy-button:hover {
 /* Large Tablets / Small Desktop (992–1199px) */
 @media (min-width: 992px) and (max-width: 1199px) { 
     header {
-        background-color: black; /*lightgreen; /* Testing responsive */
+        background-color: lightgreen; /* Testing responsive */
     }    
     fontdue-type-testers .type-tester {
     --type-tester--adjustment: 1;
     }
     .titleImage {
         height: 350px;
+    }
+    .titleImageSmall {
+        height: 300px;
     }
     footer p {
         margin-left: 2em;
@@ -2448,7 +2483,7 @@ button.buy-button:hover {
 /* Desktop (1200–1599px) */
 @media (min-width: 1200px) and (max-width: 1599px) { 
     header {
-        background-color: black; /*pink; /* Testing responsive */
+        background-color: pink; /* Testing responsive */
     }    
     .row {
         width: 1200px;
@@ -2462,7 +2497,7 @@ button.buy-button:hover {
 /* Large Desktop (1600px+) */
 @media (min-width: 1600px) { 
     header {
-        background-color: black; /*yellow; /* Testing responsive */
+        background-color: yellow; /* Testing responsive */
     }    
     .row {
         width: 1200px;
