@@ -2078,7 +2078,10 @@ div.image {
 .sticky {
   position: sticky;
   top: 70px;
+  min-height:200px;
+  max-height:430px;
 }
+
 
 div.responsiveShow {
     display: none;
@@ -2220,6 +2223,12 @@ button.buy-button:hover {
         margin-left: 1em;
         margin-right: 1em;
     }
+    .sticky{
+        border-bottom: 1px solid #202020;
+    }
+    .quit{
+        display: none;
+    }
 }
 /* Small Phones (360–399px) */
 @media (min-width: 360px) and (max-width: 399px) { 
@@ -2277,6 +2286,12 @@ button.buy-button:hover {
         font-size: 1.3em;
         margin-left: 1em;
         margin-right: 1em;
+    }
+    .sticky{
+        border-bottom: 1px solid #202020;
+    }
+    .quit{
+        display: none;
     }
 }
 /* Medium Phones (400–479px) */
@@ -2336,6 +2351,12 @@ button.buy-button:hover {
         margin-left: 1em;
         margin-right: 1em;
     }
+    .sticky{
+        border-bottom: 1px solid #202020;
+    }
+    .quit{
+        display: none;
+    }
 }
 /* Large Phones (480–599px) */
 @media (min-width: 480px) and (max-width: 599px) { 
@@ -2394,6 +2415,12 @@ button.buy-button:hover {
         margin-left: 1em;
         margin-right: 1em;
     }
+    .sticky{
+        border-bottom: 1px solid #202020;
+    }
+    .quit{
+        display: none;
+    }
 }
 /* -------------------------------------------------------------- */
 /* Small Tablets (600–767px) */
@@ -2441,6 +2468,12 @@ button.buy-button:hover {
     footer p {
         margin-left: 2em;
         margin-right: 2em;
+    }
+    .sticky{
+        border-bottom: 1px solid #202020;
+    }
+    .quit{
+        display: none;
     }
 }
 /* Medium Tablets (768–991px) */
