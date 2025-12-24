@@ -2075,11 +2075,15 @@ div.image {
     background-color: #F0F0F0;
 }
 
+.ab{
+    background-color: #F0F0F0;
+}
+
 .sticky {
   position: sticky;
-  top: 70px;
-  min-height:200px;
-  max-height:430px;
+  top: 90px;
+  height: auto;
+
 }
 
 
