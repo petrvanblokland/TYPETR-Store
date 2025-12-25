@@ -47,7 +47,7 @@ h2 a:link, h2 a:visited, h2 a:active {
     color: #202020;
 }
 h2 a:hover {
-    color: #808080;
+    color: #E31C79;  
 }
 
 p a:link, p a:visited, p a:active {
@@ -55,7 +55,7 @@ p a:link, p a:visited, p a:active {
     color: #202020;
 }
 p a:hover {
-    color: red;
+    color: #E31C79;
 }
 
 ul li, ol li {
@@ -163,7 +163,7 @@ header {
     letter-spacing: 0;
 }
 .name-title a:hover {
-    color: #808080;
+    color: #E31C79;  
 }
 
 /* Font stuff */
@@ -1840,6 +1840,11 @@ header .familyName { /* Floating left box with current family name */
     /* padding-top: 0.12em; */
     transform: translateY(calc(0.105em)); /* shift so baseline hits 50px */
 }
+
+header .familyName:hover {
+    color: #E31C79;
+}
+
 header .familyName .andMore {
     /* Responsive to hide the “and more...” */
 }
@@ -1886,7 +1891,7 @@ header .navbar a {
     text-decoration: none;
 }
 header .navbar a:hover {
-    color: red;
+    color: #E31C79;
     text-decoration: none;
 }
 header .hamburger {
@@ -1993,6 +1998,7 @@ div.image {
   animation: slideDown 0.2s ease-out forwards;
 }
 
+
 .popup-content .column {
   background-color: #282828;    
 }
@@ -2003,15 +2009,15 @@ div.image {
 
 .popup-contentp a:link, .popup-contentp a:visited, .popup-contentp a:active {
     text-decoration: none;
-    color: #202020;
+    color: #E31C79;  
 }
 .popup-contentp p a:hover {
-    color: #808080;
+    color: #E31C79;  
 }
 
 .familyName:hover, .close:hover, .navbar a:hover,
 .popup-content:hover .column a:hover {
-    color: #D0D0D0;
+    color: #E31C79;  
 }
 
 .close {
@@ -2146,6 +2152,10 @@ fontdue-cart-button {
     font-family: "Upgrade Medium";
     font-size: 1.2em;
 }
+fontdue-cart-button:hover {
+    color: #E31C79;
+}
+
 /* Buy button */
 
 button.buy-button {
@@ -2543,7 +2553,7 @@ button.buy-button:hover {
 /* Large Desktop (1600px+) */
 @media (min-width: 1600px) { 
     header {
-        background-color: yellow; /* Testing responsive */
+        background-color: orange; /* Testing responsive */
     }    
     .row {
         width: 1200px;
