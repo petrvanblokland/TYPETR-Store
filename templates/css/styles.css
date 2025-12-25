@@ -1983,6 +1983,7 @@ div.image {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6); 
+  animation: fadeIn .4s forwards;
   z-index: 1000;
 }
 
@@ -1993,9 +1994,12 @@ div.image {
   padding: 20px;
   width: 300px;
   max-width: 300px;
-  border-radius: 5px;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
   position: relative;
-  animation: slideDown 0.2s ease-out forwards;
+  animation: slideDown .3s forwards;
 }
 
 
