@@ -2077,6 +2077,7 @@ div.image {
 
 .ab{
     background-color: #F0F0F0;
+    padding-bottom: 20px;
 }
 
 .sticky {
@@ -2527,7 +2528,7 @@ button.buy-button:hover {
 /* Desktop (1200–1599px) */
 @media (min-width: 1200px) and (max-width: 1599px) { 
     header {
-        background-color: red; /* Testing responsive */
+        background-color: blue; /* Testing responsive */
     }    
     .row {
         width: 1200px;
