@@ -55,7 +55,7 @@ p a:link, p a:visited, p a:active {
     color: #202020;
 }
 p a:hover {
-    color: #808080;
+    color: red;
 }
 
 ul li, ol li {
@@ -2528,7 +2528,7 @@ button.buy-button:hover {
 /* Desktop (1200–1599px) */
 @media (min-width: 1200px) and (max-width: 1599px) { 
     header {
-        background-color: blue; /* Testing responsive */
+        background-color: orange; /* Testing responsive */
     }    
     .row {
         width: 1200px;
