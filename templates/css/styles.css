@@ -1867,7 +1867,8 @@ header .smallLogo a:hover { /* Text logo for really small screen sizes, no space
 header .navbar {
     display: block;
     float: right;
-    padding: 17px;
+    padding: 4px;
+    padding-right: 30px;
     animation: slideLeft 0.2s ease-out forwards;
 }
 header .navbar ul {
@@ -1885,7 +1886,7 @@ header .navbar a {
     text-decoration: none;
 }
 header .navbar a:hover {
-    color: #E0E0E0;
+    color: red;
     text-decoration: none;
 }
 header .hamburger {
@@ -2528,7 +2529,7 @@ button.buy-button:hover {
 /* Desktop (1200–1599px) */
 @media (min-width: 1200px) and (max-width: 1599px) { 
     header {
-        background-color: orange; /* Testing responsive */
+        background-color: black; /* Testing responsive */
     }    
     .row {
         width: 1200px;
