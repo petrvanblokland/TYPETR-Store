@@ -2177,19 +2177,26 @@ button.buy-button {
 }
 
 button.buy-button:hover {
-    background-color: #5380D9;
+    background-color: #E31C79;
     color: #FFFFFF;
 
     border-radius: 6px;       /* small rounded corners */
     border: none;             /* optional: remove default border */
 }
 
+#weightsStyles h1, #openTypeFeatures h1, div.responsiveHide h1{
+    padding-top: 10px;
+}
+
+.type-tester__text__container{
+    padding-left: 5px;
+}
 /* Media Queries */
 
 /* Extra Small Phones (320–359px) */
 @media (max-width: 359px) { 
     header {
-        background-color: brown; /* Testing responsive */
+        background-color: black; /* Testing responsive */
     }    
     /*header .navbar, */
     header .familyName, header .logo {
@@ -2249,7 +2256,7 @@ button.buy-button:hover {
 /* Small Phones (360–399px) */
 @media (min-width: 360px) and (max-width: 399px) { 
     header {
-        background-color: lightgray; /* Testing responsive */
+        background-color: black; /* Testing responsive */
     }    
     /*header .navbar, */
     header .familyName {
@@ -2313,7 +2320,7 @@ button.buy-button:hover {
 /* Medium Phones (400–479px) */
 @media (min-width: 400px) and (max-width: 479px) { 
     header {
-        background-color: orange; /* Testing responsive */
+        background-color: black; /* Testing responsive */
     }    
     /*header .navbar, */
     header .familyName {
@@ -2377,7 +2384,7 @@ button.buy-button:hover {
 /* Large Phones (480–599px) */
 @media (min-width: 480px) and (max-width: 599px) { 
     header {
-        background-color: pink; /* Testing responsive */
+        background-color: black; /* Testing responsive */
     }    
     /*header .navbar, */
     header .familyName {
@@ -2443,7 +2450,7 @@ button.buy-button:hover {
 
 @media (min-width: 600px) and (max-width: 767px) { 
     header {
-        background-color: gray; /* Testing responsive */
+        background-color: black; /* Testing responsive */
     }    
     header .familyName {
         display: none;
@@ -2495,7 +2502,7 @@ button.buy-button:hover {
 /* Medium Tablets (768–991px) */
 @media (min-width: 768px) and (max-width: 991px) { 
     header {
-        background-color: purple; /* Testing responsive */
+        background-color: black; /* Testing responsive */
     }    
     header .andMore{
         display: none;
@@ -2520,7 +2527,7 @@ button.buy-button:hover {
 /* Large Tablets / Small Desktop (992–1199px) */
 @media (min-width: 992px) and (max-width: 1199px) { 
     header {
-        background-color: lightgreen; /* Testing responsive */
+        background-color: black; /* Testing responsive */
     }    
     fontdue-type-testers .type-tester {
     --type-tester--adjustment: 1;
@@ -2553,7 +2560,7 @@ button.buy-button:hover {
 /* Large Desktop (1600px+) */
 @media (min-width: 1600px) { 
     header {
-        background-color: orange; /* Testing responsive */
+        background-color: black; /* Testing responsive */
     }    
     .row {
         width: 1200px;
