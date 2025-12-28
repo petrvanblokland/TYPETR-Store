@@ -2118,12 +2118,15 @@ div.image {
     pointer-events: none; /* voorkomt klikbare links als verborgen */
     transition: opacity 0.3s ease;
     box-shadow: 0 14px 16px rgba(0, 0, 0, 0.2);
+  animation: slideDown .3s forwards;
+
 }
 
 .sectionNavList.is-visible {
     opacity: 1;
     pointer-events: auto;
     box-shadow: 0 14px 16px rgba(0, 0, 0, 0.2);
+  animation: slideDown .3s forwards;
 }
 
 @media (min-width: 768px) {
