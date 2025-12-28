@@ -10,7 +10,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 61px;
+  scroll-padding-top: 120px;
   scroll-snap-type: y proximity;
 }
 
@@ -34,19 +34,21 @@ html {
 
 /* Reset */
 
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h5, h6,
+.sectionNavList a:link, .sectionNavList a:visited, .sectionNavList a:active {
     font-style: normal;
     font-weight: none; /* or 400 */
     font-synthesis: none; /* prevent browser from faking bold/italic */
 }
-h2 a:link, h2 a:visited, h2 a:active {
+h2 a:link, h2 a:visited, h2 a:active,
+.sectionNavList a:link, .sectionNavList a:visited, .sectionNavList a:active  {
     font-family: "Upgrade Medium";    
     text-decoration: none;
     font-size: 1.1em;
     font-weight: 600;
     color: #202020;
 }
-h2 a:hover {
+h2 a:hover, .sectionNavList a:hover {
     color: #E31C79;  
 }
 
@@ -2002,7 +2004,6 @@ div.image {
   animation: slideDown .3s forwards;
 }
 
-
 .popup-content .column {
   background-color: #282828;    
 }
@@ -2098,6 +2099,34 @@ div.image {
 
 }
 
+.sectionNavList {
+    background-color: #F0F0F0;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    max-width: 1159px;
+    margin: 0 auto;
+    list-style: none;
+    font-size: 17pt;
+    display: none; /* eerst uit */
+    flex-direction: column;
+    padding-bottom: 10px;
+    z-index: 10000000000000;
+    border-bottom: 1px solid #202020;
+}
+
+.sectionNavList.is-visible {
+    display: flex;
+}
+
+@media (min-width: 768px) {
+    .sectionNavList {
+        flex-direction: row;   /* breed: naast elkaar */
+        gap: 1.5em;
+    }
+}
 
 div.responsiveShow {
     display: none;
@@ -2531,7 +2560,7 @@ button.buy-button:hover {
 /* Large Tablets / Small Desktop (992–1199px) */
 @media (min-width: 992px) and (max-width: 1199px) { 
     header {
-        background-color: black; /* Testing responsive */
+        background-color: red; /* Testing responsive */
     }    
     fontdue-type-testers .type-tester {
     --type-tester--adjustment: 1;
@@ -2550,7 +2579,7 @@ button.buy-button:hover {
 /* Desktop (1200–1599px) */
 @media (min-width: 1200px) and (max-width: 1599px) { 
     header {
-        background-color: black; /* Testing responsive */
+        background-color: red; /* Testing responsive */
     }    
     .row {
         width: 1200px;

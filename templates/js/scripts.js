@@ -45,3 +45,14 @@ if (event.target === navbar) {
 }
 });
 
+//sticky 
+
+const el = document.querySelector('.stickyElement');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY >= 140) {
+    el.classList.add('is-visible');
+  } else {
+    el.classList.remove('is-visible');
+  }
+});

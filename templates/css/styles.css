@@ -2560,7 +2560,7 @@ button.buy-button:hover {
 /* Large Tablets / Small Desktop (992–1199px) */
 @media (min-width: 992px) and (max-width: 1199px) { 
     header {
-        background-color: black; /* Testing responsive */
+        background-color: red; /* Testing responsive */
     }    
     fontdue-type-testers .type-tester {
     --type-tester--adjustment: 1;
@@ -2579,7 +2579,7 @@ button.buy-button:hover {
 /* Desktop (1200–1599px) */
 @media (min-width: 1200px) and (max-width: 1599px) { 
     header {
-        background-color: black; /* Testing responsive */
+        background-color: red; /* Testing responsive */
     }    
     .row {
         width: 1200px;
