@@ -2102,46 +2102,36 @@ div.image {
   position: sticky;
   top: 85px;
   height: auto;
-
 }
 
 .sectionNav {
-    background-color: #F0F0F0;
     position: fixed;
-        z-index: 10000000;
+    z-index: 10000000;
     top: 70px;
     left: 0;
     right: 0;
     width: 100vw;
-    box-shadow: 0 14px 16px rgba(0, 0, 0, 0.2);
 
 }
 
 .sectionNavList {
     background-color: #F0F0F0;
-    position: fixed;
-    top: 70px;
-    left: 0;
-    right: 0;
     width: 100%;
-    max-width: 1159px;
     margin: 0 auto;
     list-style: none;
     font-size: 17pt;
     display: flex;
     flex-direction: column;
     padding-bottom: 10px;
-    border-bottom: 1px solid #202020;
     opacity: 0;
-    pointer-events: none; /* voorkomt klikbare links als verborgen */
     transition: opacity 0.3s ease;
+    border-bottom: 1px solid #202020;
     box-shadow: 0 14px 16px rgba(0, 0, 0, 0.2);
 }
 
 .sectionNavList.is-visible {
     opacity: 1;
     pointer-events: auto;
-    box-shadow: 0 14px 16px rgba(0, 0, 0, 0.2);
 }
 
 @media (min-width: 768px) {
@@ -2302,9 +2292,6 @@ button.buy-button:hover {
         margin-left: 1em;
         margin-right: 1em;
     }
-    .sticky{
-        border-bottom: 1px solid #202020;
-    }
     .quit{
         display: none;
     }
@@ -2365,9 +2352,6 @@ button.buy-button:hover {
         font-size: 1.3em;
         margin-left: 1em;
         margin-right: 1em;
-    }
-    .sticky{
-        border-bottom: 1px solid #202020;
     }
     .quit{
         display: none;
@@ -2430,9 +2414,6 @@ button.buy-button:hover {
         margin-left: 1em;
         margin-right: 1em;
     }
-    .sticky{
-        border-bottom: 1px solid #202020;
-    }
     .quit{
         display: none;
     }
@@ -2494,9 +2475,6 @@ button.buy-button:hover {
         margin-left: 1em;
         margin-right: 1em;
     }
-    .sticky{
-        border-bottom: 1px solid #202020;
-    }
     .quit{
         display: none;
     }
@@ -2547,9 +2525,6 @@ button.buy-button:hover {
     footer p {
         margin-left: 2em;
         margin-right: 2em;
-    }
-    .sticky{
-        border-bottom: 1px solid #202020;
     }
     .quit{
         display: none;
