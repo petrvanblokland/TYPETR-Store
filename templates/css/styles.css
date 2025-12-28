@@ -2114,15 +2114,16 @@ div.image {
     padding-bottom: 10px;
     z-index: 1000;
     border-bottom: 1px solid #202020;
-
     opacity: 0;
     pointer-events: none; /* voorkomt klikbare links als verborgen */
     transition: opacity 0.3s ease;
+    box-shadow: 0 14px 16px rgba(0, 0, 0, 0.2);
 }
 
 .sectionNavList.is-visible {
     opacity: 1;
     pointer-events: auto;
+    box-shadow: 0 14px 16px rgba(0, 0, 0, 0.2);
 }
 
 @media (min-width: 768px) {
