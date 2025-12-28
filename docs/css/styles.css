@@ -10,7 +10,7 @@
 
 html {
   scroll-behavior: smooth;
-  scroll-padding-top: 120px;
+  scroll-padding-top: 100px;
   scroll-snap-type: y proximity;
 }
 
@@ -186,6 +186,7 @@ header {
     line-height: 1.4em;
     font-feature-settings: 'ss01': 1, 'liga': 1; /* Allow flourishes as ~tru4 */
 }
+
 
 /* Presti VF Display */
 
@@ -2598,7 +2599,7 @@ button.buy-button:hover {
     }    
     .row {
         width: 1200px;
-        margin:0 auto;
+        margin:0 auto; 
     }
     footer p {
         margin-left: 1em;
@@ -2608,7 +2609,7 @@ button.buy-button:hover {
 /* Large Desktop (1600px+) */
 @media (min-width: 1600px) { 
     header {
-        background-color: black; /* Testing responsive */
+        background-color: red; /* Testing responsive */
     }    
     .row {
         width: 1200px;
@@ -2621,6 +2622,6 @@ button.buy-button:hover {
 }
 
 div.type-tester {
-    padding-top: 0px;
+    padding-top: 120px;
     padding-bottom: 0px;
 }
