@@ -2131,11 +2131,11 @@ div.image {
     max-width: 1200px;     
     margin: 0;      
     padding-top: 0px;     
-    padding-bottom: 10px; 
+    padding-bottom: 15px; 
     list-style: none;
     display: flex;
     flex-direction: column;
-    font-size: 1.4em;
+    font-size: 1.5em;
 }
 
 @media (min-width: 768px) {
@@ -2250,7 +2250,7 @@ button.buy-button:hover {
 /* Extra Small Phones (320–359px) */
 @media (max-width: 359px) { 
     header {
-        background-color: black; /* Testing responsive */
+        background-color: pink; /* Testing responsive */
     }    
     /*header .navbar, */
     header .familyName, header .logo {
@@ -2303,11 +2303,14 @@ button.buy-button:hover {
     .quit{
         display: none;
     }
+    .responsiveShow {
+        display: none;
+    }
 }
 /* Small Phones (360–399px) */
 @media (min-width: 360px) and (max-width: 399px) { 
     header {
-        background-color: black; /* Testing responsive */
+        background-color: pink; /* Testing responsive */
     }    
     /*header .navbar, */
     header .familyName {
@@ -2362,6 +2365,9 @@ button.buy-button:hover {
         margin-right: 1em;
     }
     .quit{
+        display: none;
+    }
+    .responsiveShow {
         display: none;
     }
 }
@@ -2530,11 +2536,17 @@ button.buy-button:hover {
     .titleImageSmall {
         height: 200px;
     }
+    .responsiveShow {
+        display: none;
+    }
     footer p {
         margin-left: 2em;
         margin-right: 2em;
     }
     .quit{
+        display: none;
+    }
+    .responsiveShow {
         display: none;
     }
 }
@@ -2562,6 +2574,9 @@ button.buy-button:hover {
         margin-left: 2em;
         margin-right: 2em;
     }
+    .responsiveShow {
+        display: none;
+    }
 }
 /* Large Tablets / Small Desktop (992–1199px) */
 @media (min-width: 992px) and (max-width: 1199px) { 
@@ -2581,6 +2596,9 @@ button.buy-button:hover {
         margin-left: 2em;
         margin-right: 2em;
     }
+    .responsiveShow {
+        display: none;
+    }
 }
 /* Desktop (1200–1599px) */
 @media (min-width: 1200px) and (max-width: 1599px) { 
@@ -2595,6 +2613,9 @@ button.buy-button:hover {
         margin-left: 1em;
         margin-right: 1em;
     }
+    .responsiveShow {
+        display: none;
+    }
 }
 /* Large Desktop (1600px+) */
 @media (min-width: 1600px) { 
@@ -2608,6 +2629,9 @@ button.buy-button:hover {
     footer p {
         margin-left: 1em;
         margin-right: 1em;
+    }
+    .responsiveShow {
+        display: none;
     }
 }
 
