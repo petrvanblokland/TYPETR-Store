@@ -50,7 +50,7 @@ if (event.target === navbar) {
 const el = document.querySelector('.stickyElement');
 
 window.addEventListener('scroll', () => {
-  if (window.scrollY >= 340) {
+  if (window.scrollY >= 600) {
     el.classList.add('is-visible');
   } else {
     el.classList.remove('is-visible');
