@@ -47,13 +47,13 @@ if (event.target === navbar) {
 
 //sticky 
 
-const el = document.querySelector('.stickyElement');
+const nav = document.querySelector('.sectionNav');
 
 window.addEventListener('scroll', () => {
   if (window.scrollY >= 600) {
-    el.classList.add('is-visible');
+    nav.classList.add('is-visible');
   } else {
-    el.classList.remove('is-visible');
+    nav.classList.remove('is-visible');
   }
 });
 
