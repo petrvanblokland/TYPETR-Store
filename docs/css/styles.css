@@ -2108,7 +2108,7 @@ div.image {
 .sectionNav {
     background-color: #F0F0F0;
     position: fixed;
-    z-index: 10000000;
+        z-index: 10000000;
     top: 70px;
     left: 0;
     right: 0;
@@ -2629,6 +2629,10 @@ button.buy-button:hover {
 }
 
 div.type-tester {
-    padding-top: 120px;
+    padding-top: 0px;
     padding-bottom: 0px;
+}
+
+div.character-viewer{
+    padding-top: 40px;    
 }
