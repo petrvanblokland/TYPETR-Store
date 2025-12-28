@@ -2098,7 +2098,6 @@ div.image {
   height: auto;
 
 }
-
 .sectionNavList {
     background-color: #F0F0F0;
     position: fixed;
@@ -2110,20 +2109,25 @@ div.image {
     margin: 0 auto;
     list-style: none;
     font-size: 17pt;
-    display: none; /* eerst uit */
+    display: flex;
     flex-direction: column;
     padding-bottom: 10px;
-    z-index: 10000000000000;
+    z-index: 1000;
     border-bottom: 1px solid #202020;
+
+    opacity: 0;
+    pointer-events: none; /* voorkomt klikbare links als verborgen */
+    transition: opacity 0.3s ease;
 }
 
 .sectionNavList.is-visible {
-    display: flex;
+    opacity: 1;
+    pointer-events: auto;
 }
 
 @media (min-width: 768px) {
     .sectionNavList {
-        flex-direction: row;   /* breed: naast elkaar */
+        flex-direction: row;  
         gap: 1.5em;
     }
 }
