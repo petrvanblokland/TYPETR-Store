@@ -56,3 +56,4 @@ window.addEventListener('scroll', () => {
     el.classList.remove('is-visible');
   }
 });
+
