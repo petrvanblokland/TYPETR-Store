@@ -1868,7 +1868,6 @@ header .familyName { /* Floating left box with current family name */
     padding-top: 5px; 
     transform: translateY(calc(0.105em)); /* shift so baseline hits 50px */
     animation: fadeIn 0.2s ease-out forwards;
-    transition: opacity 0.3s ease;
 }
 
 header .familyName:hover {
@@ -1934,6 +1933,10 @@ header .hamburger {
     padding: 20px;
     padding-right: 40px;
     animation: fadeIn 0.7s ease-out forwards;
+}
+
+header .hamburger:hover{
+    color: #E31C79;  
 }
 
 /* Slideshow */
@@ -2015,6 +2018,10 @@ div.image {
   background-color: rgba(0, 0, 0, 0.6); 
   animation: fadeIn .4s forwards;
   z-index: 1000;
+}
+
+.store-modal__container__background {
+    animation: fadeIn .5s forwards;
 }
 
 .popup-content {
@@ -2268,6 +2275,29 @@ button.buy-button:hover {
 }
 /* Media Queries */
 
+@media (min-width: 359px) and (max-width: 767px) { 
+    #navbar{
+        display: none;
+        position: absolute;
+        background-color: #F0F0F0;    
+        color:black;  
+        top: 0px;
+        right:0px;
+        width: 50%;
+        height:100vw;
+        margin-right: 10px;
+        display: block;
+        float: left;
+        margin: 0px;
+        padding: 4px;
+        padding-right: 15px;
+        padding-bottom: 10px;
+        animation: slideIn 0.5s ease-out forwards;
+        border-left: 1px solid #202020;
+        flex-direction: row;
+    }
+}
+
 /* Extra Small Phones (320–359px) */
 @media (max-width: 359px) { 
     header {
@@ -2321,9 +2351,6 @@ button.buy-button:hover {
         display: none;
     }
     .responsiveShow {
-        display: none;
-    }
-    #navbar{
         display: none;
     }
 }
@@ -2385,9 +2412,6 @@ button.buy-button:hover {
     .responsiveShow {
         display: none;
     }
-    #navbar{
-        display: none;
-    }
 }
 /* Medium Phones (400–479px) */
 @media (min-width: 400px) and (max-width: 479px) { 
@@ -2442,9 +2466,6 @@ button.buy-button:hover {
         margin-right: 1em;
     }
     .quit{
-        display: none;
-    }
-    #navbar{
         display: none;
     }
 }
@@ -2503,9 +2524,6 @@ button.buy-button:hover {
     .quit{
         display: none;
     }
-    #navbar{
-        display: none;
-    }
 }
 /* -------------------------------------------------------------- */
 /* Small Tablets (600–767px) */
@@ -2561,9 +2579,6 @@ button.buy-button:hover {
         display: none;
     }
     .responsiveShow {
-        display: none;
-    }
-    header .hamburger {
         display: none;
     }
 }
