@@ -105,6 +105,49 @@ li a:hover {
 
 /* General Styles */
 
+/* Animation */
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(100vw);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
 body {
   font-family: "Upgrade Regular", sans-serif; 
   margin: 0;
@@ -129,32 +172,9 @@ header {
     width: 100%;
     box-shadow: 0 14px 16px rgba(0, 0, 0, 0.2);
     z-index: 899; /* Position z-layer under Fontdue cart boxes */ 
-  animation: slideDown 0.4s ease-out forwards;
-
+    animation: slideDown 0.4s ease-out forwards;
 }
 
-/* Animation */
-@keyframes slideDown {
-  0% {
-    transform: translateY(-100%);
-    opacity: 0.5;
-  }
-  100% {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-
-@keyframes slideLeft {
-  0% {
-    transform: translateX(100vw);
-    opacity: 0.5;
-  }
-  100% {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
 
 .top-under-menu {
     padding-top: 5em;
@@ -1845,8 +1865,9 @@ header .familyName { /* Floating left box with current family name */
     float: left;
     font-size: 40px;
     text-align: left;
-    /* padding-top: 0.12em; */
+    padding-top: 5px; 
     transform: translateY(calc(0.105em)); /* shift so baseline hits 50px */
+    animation: fadeIn 0.2s ease-out forwards;
 }
 
 header .familyName:hover {
@@ -1854,7 +1875,7 @@ header .familyName:hover {
 }
 
 header .familyName .andMore {
-    /* Responsive to hide the “and more...” */
+    animation: fadeIn 0.2s ease-out forwards;
 }
 header .logo img {
     padding-top: 4px;
@@ -1881,8 +1902,8 @@ header .navbar {
     display: block;
     float: right;
     padding: 4px;
-    padding-right: 30px;
-    animation: slideLeft 0.2s ease-out forwards;
+    padding-right: 15px;
+    animation: slideLeft 0.5s ease-out forwards;
 }
 header .navbar ul {
     list-style-type: none;
@@ -1903,7 +1924,6 @@ header .navbar a:hover {
     text-decoration: none;
 }
 header .hamburger {
-    display: none;
     position: absolute;
     top:0px;
     right:0px;
@@ -1912,6 +1932,7 @@ header .hamburger {
     float: right;
     padding: 20px;
     padding-right: 40px;
+    animation: fadeIn 0.7s ease-out forwards;
 }
 
 /* Slideshow */
@@ -2255,10 +2276,6 @@ button.buy-button:hover {
     header .familyName, header .logo {
         display: none;
     }
-    /*header .hamburger,*/ 
-    header .smallLogo {
-        display: block;
-    }
     button.buy-button {
         display: block;
         margin: 1em auto 0;
@@ -2318,11 +2335,6 @@ button.buy-button:hover {
     header .familyName {
         display: none;
     }
-    /*
-    header .hamburger {
-        display: block;
-    }
-    */
     button.buy-button {
         display: block;
         margin: 1em auto 0;
@@ -2385,11 +2397,6 @@ button.buy-button:hover {
     header .familyName {
         display: none;
     }
-    /*
-    header .hamburger {
-        display: block;
-    }
-    */
     button.buy-button {
         display: block;
         margin: 1em auto 0;
@@ -2449,11 +2456,6 @@ button.buy-button:hover {
     header .familyName {
         display: none;
     }
-    /*
-    header .hamburger {
-        display: block;
-    }
-    */
     button.buy-button {
         display: block;
         margin: 1em auto 0;
@@ -2560,6 +2562,9 @@ button.buy-button:hover {
     .responsiveShow {
         display: none;
     }
+    header .hamburger {
+        display: none;
+    }
 }
 /* Medium Tablets (768–991px) */
 @media (min-width: 768px) and (max-width: 991px) { 
@@ -2588,6 +2593,9 @@ button.buy-button:hover {
     .responsiveShow {
         display: none;
     }
+    header .hamburger {
+        display: none;
+    }
 }
 /* Large Tablets / Small Desktop (992–1199px) */
 @media (min-width: 992px) and (max-width: 1199px) { 
@@ -2610,7 +2618,11 @@ button.buy-button:hover {
     .responsiveShow {
         display: none;
     }
+    header .hamburger {
+        display: none;
+    }
 }
+
 /* Desktop (1200–1599px) */
 @media (min-width: 1200px) and (max-width: 1599px) { 
     header {
@@ -2625,6 +2637,9 @@ button.buy-button:hover {
         margin-right: 1em;
     }
     .responsiveShow {
+        display: none;
+    }
+    header .hamburger {
         display: none;
     }
 }
@@ -2642,6 +2657,9 @@ button.buy-button:hover {
         margin-right: 1em;
     }
     .responsiveShow {
+        display: none;
+    }
+    header .hamburger {
         display: none;
     }
 }

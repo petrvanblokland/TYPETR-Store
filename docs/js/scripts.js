@@ -24,10 +24,6 @@ function toggleMenu() {
   menu.style.display = (menu.style.display === "none") ? "block" : "none";
 }
 
-//document.addEventListener('DOMContentLoaded', function() {
-//    showSlides();
-//});
-
 
 const popup = document.getElementById('popup');
 
