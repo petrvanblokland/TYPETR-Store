@@ -171,7 +171,7 @@ header {
     z-index: 100;
     width: 100%;
     box-shadow: 0 14px 16px rgba(0, 0, 0, 0.2);
-    z-index: 899; /* Position z-layer under Fontdue cart boxes */ 
+    z-index: 999; /* Position z-layer under Fontdue cart boxes */ 
     animation: slideDown 0.4s ease-out forwards;
 }
 
@@ -1903,7 +1903,7 @@ header .navbar {
     float: right;
     padding: 4px;
     padding-right: 15px;
-    animation: slideLeft 0.5s ease-out forwards;
+    animation: slideLeft 0.4s ease-out forwards;
 }
 header .navbar ul {
     list-style-type: none;
@@ -2017,7 +2017,7 @@ div.image {
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6); 
   animation: fadeIn .4s forwards;
-  z-index: 1000;
+  z-index: 10000;
 }
 
 .store-modal__container__background {
@@ -2138,7 +2138,7 @@ div.image {
     left: 0;
     right: 0;
     width: 100%;
-    z-index: 10000000;
+    z-index: 1000;
 
     background-color: #F0F0F0;      
     border-bottom: 1px solid #202020;
