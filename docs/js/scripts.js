@@ -39,12 +39,12 @@ if (event.target === popup) {
 
 //menuBox 
 
-const menuBox = document.getElementById('menuBox');
+const box = document.getElementById('box');
 const BREAKPOINT = 767; // pas aan naar wens
 
 function updateMenuVisibility() {
   if (window.innerWidth >= BREAKPOINT) {
-    menuBox.style.display = 'none';
+    box.style.display = 'none';
   }
 }
 
@@ -52,8 +52,8 @@ window.addEventListener('resize', updateMenuVisibility);
 window.addEventListener('load', updateMenuVisibility);
 
 window.addEventListener('click', function (event) {
-  if (event.target === menuBox) {
-    menuBox.style.display = 'none';
+  if (event.target === box) {
+    box.style.display = 'none';
   }
 });
 
