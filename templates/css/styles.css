@@ -2031,7 +2031,9 @@ div.image {
   background-color: #282828;
   margin-top: 70px;
   margin-left:250px;
-  padding: 20px;
+  padding: 10px;
+  padding-right:30px;
+  padding-bottom:0px;
   width: 300px;
   max-width: 300px;
   border-top-left-radius: 0px;
@@ -2058,7 +2060,7 @@ div.image {
     color: #E31C79;  
 }
 
-.familyName:hover, .close:hover, .navbar a:hover,
+.familyName:hover, .close:hover, .menuBox .close:hover, .navbar a:hover,
 .popup-content:hover .column a:hover {
     color: #E31C79;  
 }
@@ -2066,13 +2068,19 @@ div.image {
 .close {
   position: absolute;
   top: 10px;
-  right: 15px;
-  font-size: 24px;
+  right: 20px;
+  font-size: 30pt;
   font-weight: bold;
   color: white;
   cursor: pointer;
 }
 
+.menuBox .close{
+  font-size: 30pt;
+  color: gray;   
+  font-weight: regular;
+  animation: fadeIn 2.7s ease-out forwards;
+}
 
 .row {
   display: flex;
@@ -2364,6 +2372,21 @@ button.buy-button:hover {
     #navbar{
         display: none;
     }
+
+    .popup-content {
+      margin-top: 70px;
+      margin-left:0px;
+      padding: 0px;
+      padding-left: 0px;
+      width: 100%;
+      max-width: 100%;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      position: relative;
+      animation: slideDown .3s forwards;
+    }
 }
 /* Small Phones (360–399px) */
 @media (min-width: 360px) and (max-width: 399px) { 
@@ -2426,6 +2449,20 @@ button.buy-button:hover {
     #navbar{
         display: none;
     }
+    .popup-content {
+      margin-top: 70px;
+      margin-left:0px;
+      padding: 0px;
+      padding-left: 0px;
+      width: 100%;
+      max-width: 100%;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      position: relative;
+      animation: slideDown .3s forwards;
+    }
 }
 /* Medium Phones (400–479px) */
 @media (min-width: 400px) and (max-width: 479px) { 
@@ -2485,6 +2522,20 @@ button.buy-button:hover {
     #navbar{
         display: none;
     }
+    .popup-content {
+      margin-top: 70px;
+      margin-left:0px;
+      padding: 0px;
+      padding-left: 0px;
+      width: 100%;
+      max-width: 100%;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      position: relative;
+      animation: slideDown .3s forwards;
+    }
 }
 /* Large Phones (480–599px) */
 @media (min-width: 480px) and (max-width: 599px) { 
@@ -2543,6 +2594,20 @@ button.buy-button:hover {
     }
     #navbar{
         display: none;
+    }
+    .popup-content {
+      margin-top: 70px;
+      margin-left:0px;
+      padding: 0px;
+      padding-left: 0px;
+      width: 100%;
+      max-width: 100%;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      position: relative;
+      animation: slideDown .3s forwards;
     }
 }
 /* -------------------------------------------------------------- */
@@ -2604,6 +2669,23 @@ button.buy-button:hover {
     #navbar{
         display: none;
     }
+    .popup-content {
+      margin-top: 70px;
+      margin: 0 auto;
+      margin-top: 70px;
+      position: absolute;
+      padding: 0px;
+      padding-left: 0px;
+      width: 400px;
+      max-width: 100%;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      position: relative;
+      animation: slideDown .3s forwards;
+    }
+
 }
 /* Medium Tablets (768–991px) */
 @media (min-width: 768px) and (max-width: 991px) { 

@@ -25,6 +25,9 @@ function toggleMenu() {
 }
 
 
+//Popup 
+
+
 const popup = document.getElementById('popup');
 
 window.addEventListener('click', function(event) {
@@ -33,12 +36,25 @@ if (event.target === popup) {
 }
 });
 
-const menuBox = document.getElementById('menuBox');
 
-window.addEventListener('click', function(event) {
-if (event.target === menuBox) {
-  menuBox.style.display = 'none';
+//menuBox 
+
+const menuBox = document.getElementById('menuBox');
+const BREAKPOINT = 767; // pas aan naar wens
+
+function updateMenuVisibility() {
+  if (window.innerWidth >= BREAKPOINT) {
+    menuBox.style.display = 'none';
+  }
 }
+
+window.addEventListener('resize', updateMenuVisibility);
+window.addEventListener('load', updateMenuVisibility);
+
+window.addEventListener('click', function (event) {
+  if (event.target === menuBox) {
+    menuBox.style.display = 'none';
+  }
 });
 
 //sticky 
