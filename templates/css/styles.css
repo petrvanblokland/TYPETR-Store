@@ -2278,27 +2278,31 @@ button.buy-button:hover {
 }
 /* Media Queries */
 
+#menuBox{
+    display: none;
+    position: fixed;
+    background-color: #F0F0F0;      
+    color:black;  
+    top: 0px;
+    right:0px;
+    text-decoration: none;
+    width: 50%;
+    height:100vh;
+    margin-right: 10px;
+    display: block;
+    float: left;
+    margin: 0px;
+    padding: 4px;
+    padding-right: 15px;
+    animation: slideIn 0.5s ease-out forwards;
+    border-left: 1px solid #202020;
+    flex-direction: row;
+    z-index: 1000000;
+}
+
 @media (min-width: 359px) and (max-width: 767px) { 
     #menuBox{
         display: none;
-        position: fixed;
-        background-color: #F0F0F0;      
-        color:black;  
-        top: 0px;
-        right:0px;
-        text-decoration: none;
-        width: 50%;
-        height:100vh;
-        margin-right: 10px;
-        display: block;
-        float: left;
-        margin: 0px;
-        padding: 4px;
-        padding-right: 15px;
-        animation: slideIn 0.5s ease-out forwards;
-        border-left: 1px solid #202020;
-        flex-direction: row;
-        z-index: 1000000;
     }
 }
 
