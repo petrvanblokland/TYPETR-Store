@@ -20,7 +20,7 @@ function showSlides() {
 }
 
 function toggleMenu() {
-  const menu = document.getElementById("navbar");
+  const menu = document.getElementById("menuBox");
   menu.style.display = (menu.style.display === "none") ? "block" : "none";
 }
 
@@ -33,11 +33,11 @@ if (event.target === popup) {
 }
 });
 
-const navbar = document.getElementById('navbar');
+const menuBox = document.getElementById('menuBox');
 
 window.addEventListener('click', function(event) {
-if (event.target === navbar) {
-  navbar.style.display = 'none';
+if (event.target === menuBox) {
+  menuBox.style.display = 'none';
 }
 });
 

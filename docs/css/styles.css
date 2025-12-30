@@ -35,13 +35,15 @@ html {
 /* Reset */
 
 h1, h2, h3, h4, h5, h6,
-.sectionNavList a:link, .sectionNavList a:visited, .sectionNavList a:active {
+.sectionNavList a:link, .sectionNavList a:visited, .sectionNavList a:active,
+#menuBox:link, #menuBox:visited, #menuBox:active  {
     font-style: normal;
     font-weight: none; /* or 400 */
     font-synthesis: none; /* prevent browser from faking bold/italic */
 }
 h2 a:link, h2 a:visited, h2 a:active,
-.sectionNavList a:link, .sectionNavList a:visited, .sectionNavList a:active  {
+.sectionNavList a:link, .sectionNavList a:visited, .sectionNavList a:active,
+#menuBox:link, #menuBox:visited, #menuBox:active  {
     font-family: "Upgrade Medium";    
     text-decoration: none;
     font-size: 1.1em;
@@ -49,11 +51,11 @@ h2 a:link, h2 a:visited, h2 a:active,
     color: #202020;
 }
 
-h2 a:hover, .sectionNavList a:hover {
+h2 a:hover, .sectionNavList a:hover, .menuBox:hover {
     color: #E31C79;  
 }
 
-h2 a:active, .sectionNavList a:active {
+h2 a:active, .sectionNavList a:active, #menuBox:hover {
     color: #E31C79;  
 }
 
@@ -1933,6 +1935,7 @@ header .hamburger {
     padding: 20px;
     padding-right: 40px;
     animation: fadeIn 0.7s ease-out forwards;
+    z-index: 100000000;
 }
 
 header .hamburger:hover{
@@ -2276,25 +2279,26 @@ button.buy-button:hover {
 /* Media Queries */
 
 @media (min-width: 359px) and (max-width: 767px) { 
-    #navbar{
+    #menuBox{
         display: none;
-        position: absolute;
-        background-color: #F0F0F0;    
+        position: fixed;
+        background-color: #F0F0F0;      
         color:black;  
         top: 0px;
         right:0px;
+        text-decoration: none;
         width: 50%;
-        height:100vw;
+        height:100vh;
         margin-right: 10px;
         display: block;
         float: left;
         margin: 0px;
         padding: 4px;
         padding-right: 15px;
-        padding-bottom: 10px;
         animation: slideIn 0.5s ease-out forwards;
         border-left: 1px solid #202020;
         flex-direction: row;
+        z-index: 1000000;
     }
 }
 
@@ -2351,6 +2355,9 @@ button.buy-button:hover {
         display: none;
     }
     .responsiveShow {
+        display: none;
+    }
+    #navbar{
         display: none;
     }
 }
@@ -2412,6 +2419,9 @@ button.buy-button:hover {
     .responsiveShow {
         display: none;
     }
+    #navbar{
+        display: none;
+    }
 }
 /* Medium Phones (400–479px) */
 @media (min-width: 400px) and (max-width: 479px) { 
@@ -2468,6 +2478,9 @@ button.buy-button:hover {
     .quit{
         display: none;
     }
+    #navbar{
+        display: none;
+    }
 }
 /* Large Phones (480–599px) */
 @media (min-width: 480px) and (max-width: 599px) { 
@@ -2522,6 +2535,9 @@ button.buy-button:hover {
         margin-right: 1em;
     }
     .quit{
+        display: none;
+    }
+    #navbar{
         display: none;
     }
 }
@@ -2581,6 +2597,9 @@ button.buy-button:hover {
     .responsiveShow {
         display: none;
     }
+    #navbar{
+        display: none;
+    }
 }
 /* Medium Tablets (768–991px) */
 @media (min-width: 768px) and (max-width: 991px) { 
@@ -2612,6 +2631,9 @@ button.buy-button:hover {
     header .hamburger {
         display: none;
     }
+    #menuBox{
+        display: none;
+    }
 }
 /* Large Tablets / Small Desktop (992–1199px) */
 @media (min-width: 992px) and (max-width: 1199px) { 
@@ -2637,6 +2659,9 @@ button.buy-button:hover {
     header .hamburger {
         display: none;
     }
+    #menuBox{
+        display: none;
+    }
 }
 
 /* Desktop (1200–1599px) */
@@ -2658,6 +2683,9 @@ button.buy-button:hover {
     header .hamburger {
         display: none;
     }
+    #menuBox{
+        display: none;
+    }
 }
 /* Large Desktop (1600px+) */
 @media (min-width: 1600px) { 
@@ -2676,6 +2704,9 @@ button.buy-button:hover {
         display: none;
     }
     header .hamburger {
+        display: none;
+    }
+    #menuBox{
         display: none;
     }
 }
