@@ -32,41 +32,6 @@ html {
     color: #3360B9;
 }
 
-/* Reset */
-
-h1, h2, h3, h4, h5, h6,
-.sectionNavList a:link, .sectionNavList a:visited, .sectionNavList a:active,
-#menuBox:link, #menuBox:visited, #menuBox:active  {
-    font-style: normal;
-    font-weight: none; /* or 400 */
-    font-synthesis: none; /* prevent browser from faking bold/italic */
-}
-h2 a:link, h2 a:visited, h2 a:active,
-.sectionNavList a:link, .sectionNavList a:visited, .sectionNavList a:active,
-#menuBox:link, #menuBox:visited, #menuBox:active  {
-    font-family: "Upgrade Medium";    
-    text-decoration: none;
-    font-size: 1.1em;
-    font-weight: 600;
-    color: #202020;
-}
-
-h2 a:hover, .sectionNavList a:hover, .menuBox:hover {
-    color: #E31C79;  
-}
-
-h2 a:active, .sectionNavList a:active, #menuBox:hover {
-    color: #E31C79;  
-}
-
-p a:link, p a:visited, p a:active {
-    text-decoration: none;
-    color: #202020;
-}
-p a:hover {
-    color: #E31C79;
-}
-
 ul li, ol li {
     line-height: 1.4em;
     padding-top: 0.7em;
@@ -81,6 +46,41 @@ li a:link, li a:visited, li a:active, {
 }
 li a:hover {
     color: #808080;
+}
+
+/* Reset */
+
+h1, h2, h3, h4, h5, h6,
+.sectionNavList a:link, .sectionNavList a:visited, .sectionNavList a:active,
+.menuBox ul li:link, .menuBox ul li:visited, .menuBox ul li:active  {
+    font-style: normal;
+    font-weight: none; /* or 400 */
+    font-synthesis: none; /* prevent browser from faking bold/italic */
+}
+h2 a:link, h2 a:visited, h2 a:active,
+.sectionNavList a:link, .sectionNavList a:visited, .sectionNavList a:active,
+.menuBox ul li:link, .menuBox ul li:visited, .menuBox ul li:active  {
+    font-family: "Upgrade Medium";    
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #202020;
+}
+
+h2 a:hover, .sectionNavList a:hover, .menuBox ul li:hover {
+    color: #E31C79;  
+}
+
+h2 a:active, .sectionNavList a:active, .menuBox ul li:hover {
+    color: #E31C79;  
+}
+
+p a:link, p a:visited, p a:active {
+    text-decoration: none;
+    color: #202020;
+}
+p a:hover {
+    color: #E31C79;
 }
 
 .leading09 {
@@ -2077,7 +2077,7 @@ div.image {
 
 .menuBox .close{
   font-size: 30pt;
-  color: gray;   
+  color: black;   
   font-weight: regular;
   animation: fadeIn 2.7s ease-out forwards;
 }
