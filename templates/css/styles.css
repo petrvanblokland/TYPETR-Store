@@ -2009,7 +2009,6 @@ div.image {
     padding: 0;
 }
 
-
 /* Pop-up */
 .popup {
   display: none; 
@@ -2143,6 +2142,16 @@ div.image {
   height: auto;
 }
 
+.sticky img {
+    width:100%;
+}
+
+@media (max-width: 768px) {
+    .sticky img {
+        width:200px;
+    }
+}
+
 .sectionNav {
     position: fixed;
     top: 70px;
@@ -2188,6 +2197,7 @@ div.image {
         gap: 1.5em;
     }
 }}
+
 
 div.responsiveShow {
     display: none;
@@ -2319,6 +2329,21 @@ button.buy-button:hover {
     border-left: 1px solid #202020;
     flex-direction: row;
     z-index: 1000000;
+}
+
+.contact {
+  display: grid;
+  grid-template-columns: 1.4em auto;
+  column-gap: 0.6em;
+}
+
+.contact br {
+  display: contents;
+}
+
+.label {
+  text-align: center;
+  display: block;
 }
 
 /* Extra Small Phones (320–359px) */
