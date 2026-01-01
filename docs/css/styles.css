@@ -2201,7 +2201,8 @@ div.image {
     }
 
     .sticky img {
-        width:200px;
+        width:40%;
+        max-width: 40%; /* pas aan naar wens */
         height: auto;
     }
 
