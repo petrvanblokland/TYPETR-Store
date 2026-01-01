@@ -67,6 +67,7 @@ h2 a:link, h2 a:visited, h2 a:active,
     color: #202020;
 }
 
+
 h2 a:hover, .sectionNavList a:hover, .menuBox ul li:hover {
     color: #E31C79;  
 }
@@ -1925,6 +1926,11 @@ header .navbar a:hover {
     color: #E31C79;
     text-decoration: none;
 }
+
+header .navbar .current{
+    color: #E31C79;  
+}
+
 header .hamburger {
     position: absolute;
     top:0px;
