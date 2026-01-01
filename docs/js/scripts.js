@@ -20,9 +20,12 @@ function showSlides() {
 }
 
 function toggleMenu() {
-  const menu = document.getElementById("navbar");
+  const menu = document.getElementById("menuBox");
   menu.style.display = (menu.style.display === "none") ? "block" : "none";
 }
+
+
+//Popup 
 
 
 const popup = document.getElementById('popup');
@@ -33,12 +36,25 @@ if (event.target === popup) {
 }
 });
 
-const navbar = document.getElementById('navbar');
 
-window.addEventListener('click', function(event) {
-if (event.target === navbar) {
-  navbar.style.display = 'none';
+//menuBox 
+
+const box = document.getElementById('box');
+const BREAKPOINT = 767; // pas aan naar wens
+
+function updateMenuVisibility() {
+  if (window.innerWidth >= BREAKPOINT) {
+    box.style.display = 'none';
+  }
 }
+
+window.addEventListener('resize', updateMenuVisibility);
+window.addEventListener('load', updateMenuVisibility);
+
+window.addEventListener('click', function (event) {
+  if (event.target === box) {
+    box.style.display = 'none';
+  }
 });
 
 //sticky 

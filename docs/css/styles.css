@@ -32,39 +32,6 @@ html {
     color: #3360B9;
 }
 
-/* Reset */
-
-h1, h2, h3, h4, h5, h6,
-.sectionNavList a:link, .sectionNavList a:visited, .sectionNavList a:active {
-    font-style: normal;
-    font-weight: none; /* or 400 */
-    font-synthesis: none; /* prevent browser from faking bold/italic */
-}
-h2 a:link, h2 a:visited, h2 a:active,
-.sectionNavList a:link, .sectionNavList a:visited, .sectionNavList a:active  {
-    font-family: "Upgrade Medium";    
-    text-decoration: none;
-    font-size: 1.1em;
-    font-weight: 600;
-    color: #202020;
-}
-
-h2 a:hover, .sectionNavList a:hover {
-    color: #E31C79;  
-}
-
-h2 a:active, .sectionNavList a:active {
-    color: #E31C79;  
-}
-
-p a:link, p a:visited, p a:active {
-    text-decoration: none;
-    color: #202020;
-}
-p a:hover {
-    color: #E31C79;
-}
-
 ul li, ol li {
     line-height: 1.4em;
     padding-top: 0.7em;
@@ -79,6 +46,41 @@ li a:link, li a:visited, li a:active, {
 }
 li a:hover {
     color: #808080;
+}
+
+/* Reset */
+
+h1, h2, h3, h4, h5, h6,
+.sectionNavList a:link, .sectionNavList a:visited, .sectionNavList a:active,
+.menuBox ul li:link, .menuBox ul li:visited, .menuBox ul li:active  {
+    font-style: normal;
+    font-weight: none; /* or 400 */
+    font-synthesis: none; /* prevent browser from faking bold/italic */
+}
+h2 a:link, h2 a:visited, h2 a:active,
+.sectionNavList a:link, .sectionNavList a:visited, .sectionNavList a:active,
+.menuBox ul li:link, .menuBox ul li:visited, .menuBox ul li:active  {
+    font-family: "Upgrade Medium";    
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    color: #202020;
+}
+
+h2 a:hover, .sectionNavList a:hover, .menuBox ul li:hover {
+    color: #E31C79;  
+}
+
+h2 a:active, .sectionNavList a:active, .menuBox ul li:hover {
+    color: #E31C79;  
+}
+
+p a:link, p a:visited, p a:active {
+    text-decoration: none;
+    color: #202020;
+}
+p a:hover {
+    color: #E31C79;
 }
 
 .leading09 {
@@ -1933,6 +1935,7 @@ header .hamburger {
     padding: 20px;
     padding-right: 40px;
     animation: fadeIn 0.7s ease-out forwards;
+    z-index: 100000000;
 }
 
 header .hamburger:hover{
@@ -2028,7 +2031,9 @@ div.image {
   background-color: #282828;
   margin-top: 70px;
   margin-left:250px;
-  padding: 20px;
+  padding: 10px;
+  padding-right:30px;
+  padding-bottom:0px;
   width: 300px;
   max-width: 300px;
   border-top-left-radius: 0px;
@@ -2055,7 +2060,7 @@ div.image {
     color: #E31C79;  
 }
 
-.familyName:hover, .close:hover, .navbar a:hover,
+.familyName:hover, .close:hover, .menuBox .close:hover, .navbar a:hover,
 .popup-content:hover .column a:hover {
     color: #E31C79;  
 }
@@ -2063,13 +2068,19 @@ div.image {
 .close {
   position: absolute;
   top: 10px;
-  right: 15px;
-  font-size: 24px;
+  right: 20px;
+  font-size: 30pt;
   font-weight: bold;
   color: white;
   cursor: pointer;
 }
 
+.menuBox .close{
+  font-size: 30pt;
+  color: black;   
+  font-weight: regular;
+  animation: fadeIn 2.7s ease-out forwards;
+}
 
 .row {
   display: flex;
@@ -2275,27 +2286,38 @@ button.buy-button:hover {
 }
 /* Media Queries */
 
-@media (min-width: 359px) and (max-width: 767px) { 
-    #navbar{
-        display: none;
-        position: absolute;
-        background-color: #F0F0F0;    
-        color:black;  
-        top: 0px;
-        right:0px;
-        width: 50%;
-        height:100vw;
-        margin-right: 10px;
-        display: block;
-        float: left;
-        margin: 0px;
-        padding: 4px;
-        padding-right: 15px;
-        padding-bottom: 10px;
-        animation: slideIn 0.5s ease-out forwards;
-        border-left: 1px solid #202020;
-        flex-direction: row;
-    }
+.box {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6); 
+  animation: fadeIn .4s forwards;
+  z-index: 10000000000;
+}
+
+#menuBox{
+    position: fixed;
+    background-color: #F0F0F0;      
+    color:black;  
+    top: 0px;
+    right:0px;
+    text-decoration: none;
+    width: 200px;
+    height:100vh;
+    margin-right: 10px;
+    display: block;
+    float: left;
+    margin: 0px;
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-right: 15px;
+    animation: slideIn 0.5s ease-out forwards;
+    border-left: 1px solid #202020;
+    flex-direction: row;
+    z-index: 1000000;
 }
 
 /* Extra Small Phones (320–359px) */
@@ -2352,6 +2374,24 @@ button.buy-button:hover {
     }
     .responsiveShow {
         display: none;
+    }
+    #navbar{
+        display: none;
+    }
+
+    .popup-content {
+      margin-top: 70px;
+      margin-left:0px;
+      padding: 0px;
+      padding-left: 0px;
+      width: 100%;
+      max-width: 100%;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      position: relative;
+      animation: slideDown .3s forwards;
     }
 }
 /* Small Phones (360–399px) */
@@ -2412,6 +2452,23 @@ button.buy-button:hover {
     .responsiveShow {
         display: none;
     }
+    #navbar{
+        display: none;
+    }
+    .popup-content {
+      margin-top: 70px;
+      margin-left:0px;
+      padding: 0px;
+      padding-left: 0px;
+      width: 100%;
+      max-width: 100%;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      position: relative;
+      animation: slideDown .3s forwards;
+    }
 }
 /* Medium Phones (400–479px) */
 @media (min-width: 400px) and (max-width: 479px) { 
@@ -2468,6 +2525,23 @@ button.buy-button:hover {
     .quit{
         display: none;
     }
+    #navbar{
+        display: none;
+    }
+    .popup-content {
+      margin-top: 70px;
+      margin-left:0px;
+      padding: 0px;
+      padding-left: 0px;
+      width: 100%;
+      max-width: 100%;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      position: relative;
+      animation: slideDown .3s forwards;
+    }
 }
 /* Large Phones (480–599px) */
 @media (min-width: 480px) and (max-width: 599px) { 
@@ -2523,6 +2597,23 @@ button.buy-button:hover {
     }
     .quit{
         display: none;
+    }
+    #navbar{
+        display: none;
+    }
+    .popup-content {
+      margin-top: 70px;
+      margin-left:0px;
+      padding: 0px;
+      padding-left: 0px;
+      width: 100%;
+      max-width: 100%;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      position: relative;
+      animation: slideDown .3s forwards;
     }
 }
 /* -------------------------------------------------------------- */
@@ -2581,6 +2672,26 @@ button.buy-button:hover {
     .responsiveShow {
         display: none;
     }
+    #navbar{
+        display: none;
+    }
+    .popup-content {
+      margin-top: 70px;
+      margin: 0 auto;
+      margin-top: 70px;
+      position: absolute;
+      padding: 0px;
+      padding-left: 0px;
+      width: 400px;
+      max-width: 100%;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      position: relative;
+      animation: slideDown .3s forwards;
+    }
+
 }
 /* Medium Tablets (768–991px) */
 @media (min-width: 768px) and (max-width: 991px) { 
@@ -2612,6 +2723,9 @@ button.buy-button:hover {
     header .hamburger {
         display: none;
     }
+    #menuBox{
+        display: none;
+    }
 }
 /* Large Tablets / Small Desktop (992–1199px) */
 @media (min-width: 992px) and (max-width: 1199px) { 
@@ -2637,6 +2751,9 @@ button.buy-button:hover {
     header .hamburger {
         display: none;
     }
+    #menuBox{
+        display: none;
+    }
 }
 
 /* Desktop (1200–1599px) */
@@ -2658,6 +2775,9 @@ button.buy-button:hover {
     header .hamburger {
         display: none;
     }
+    #menuBox{
+        display: none;
+    }
 }
 /* Large Desktop (1600px+) */
 @media (min-width: 1600px) { 
@@ -2676,6 +2796,9 @@ button.buy-button:hover {
         display: none;
     }
     header .hamburger {
+        display: none;
+    }
+    #menuBox{
         display: none;
     }
 }
