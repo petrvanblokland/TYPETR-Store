@@ -1948,6 +1948,11 @@ header .hamburger:hover{
     color: #E31C79;  
 }
 
+h2 a.active {
+  color: red; /* actieve linkkleur */
+  font-weight: bold; /* optioneel */
+}
+
 /* Slideshow */
 
 .slideshow {
