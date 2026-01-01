@@ -2170,6 +2170,7 @@ div.image {
     max-width: 1200px;     
     margin: 0;      
     padding-top: 0px;     
+    padding-left: 20px;     
     padding-bottom: 15px; 
     list-style: none;
     display: flex;
