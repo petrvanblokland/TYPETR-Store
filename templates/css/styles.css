@@ -2146,12 +2146,6 @@ div.image {
     width:100%;
 }
 
-@media (max-width: 768px) {
-    .sticky img {
-        width:200px;
-    }
-}
-
 .sectionNav {
     position: fixed;
     top: 70px;
@@ -2196,8 +2190,31 @@ div.image {
         justify-content: flex-start; /* eerder: justify-content: center; */
         gap: 1.5em;
     }
-}}
+}
 
+@media (max-width: 768px) {
+    .sticky {
+        display: flex;
+        align-items: center; /* verticaal uitlijnen */
+        justify-content: flex-start; /* optioneel: start van de container */
+        gap: 0.5em; /* ruimte tussen afbeelding en tekst */
+    }
+
+    .sticky img {
+        width:200px;
+        height: auto;
+    }
+
+    .sticky > div {
+        flex: 1; /* neemt resterende ruimte in */
+        margin: 0; /* margin auto weghalen voor flex layout */
+        padding: 0.5em 0; /* evt padding iets kleiner maken */
+    }
+
+    .sticky p.contact {
+        margin: 0; /* eventueel */
+    }
+}
 
 div.responsiveShow {
     display: none;
@@ -2333,8 +2350,8 @@ button.buy-button:hover {
 
 .contact {
   display: grid;
-  grid-template-columns: 1.4em auto;
-  column-gap: 0.6em;
+  grid-template-columns: 1.6em auto;
+  column-gap: 0.9em;
 }
 
 .contact br {
@@ -2342,8 +2359,9 @@ button.buy-button:hover {
 }
 
 .label {
-  text-align: center;
+  text-align: left;
   display: block;
+  font-weight: bold;
 }
 
 /* Extra Small Phones (320–359px) */
