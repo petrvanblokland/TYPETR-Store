@@ -2242,7 +2242,7 @@ div.image {
     .sticky > div {
         flex: 1; /* neemt resterende ruimte in */
         margin: 0; /* margin auto weghalen voor flex layout */
-        padding: 0.5em 0; /* evt padding iets kleiner maken */
+        padding: 0px;
     }
 
     .sticky p.contact {
@@ -2259,6 +2259,7 @@ div.image {
         padding-top: 0px;     
         padding-left: 0px;     
         padding-bottom: 0px; 
+        font-size: 1em;       
     }
 }
 
