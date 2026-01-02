@@ -9,9 +9,15 @@
 }
 
 html {
-  scroll-behavior: smooth;
-  scroll-padding-top: 100px;
-  scroll-snap-type: y proximity;
+    scroll-behavior: smooth;
+    scroll-padding-top: 135px;
+    scroll-snap-type: y proximity;
+    overscroll-behavior: contain;
+}
+
+::selection {
+  background: #E31C79;
+  color: white;
 }
 
 /* TYPETR base colors */
@@ -2176,6 +2182,7 @@ div.image {
     pointer-events: none;
     transition: opacity 0.3s ease;
 }
+
 
 .sectionNav.is-visible {
     opacity: 1;
