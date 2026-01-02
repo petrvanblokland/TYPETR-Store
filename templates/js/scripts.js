@@ -62,12 +62,15 @@ window.addEventListener('click', function (event) {
 const nav = document.querySelector('.sectionNav');
 
 window.addEventListener('scroll', () => {
-  if (window.scrollY >= 600) {
+  if (window.scrollY >= 300) {
     nav.classList.add('is-visible');
   } else {
     nav.classList.remove('is-visible');
   }
 });
+
+
+//scroll in-page link 
 
 
 const sections = document.querySelectorAll('section.content[id]');
