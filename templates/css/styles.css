@@ -2183,6 +2183,15 @@ div.image {
     transition: opacity 0.3s ease;
 }
 
+.sectionNavList a {
+  color: #555;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.sectionNavList a.active {
+    color: #E31C79;
+}
 
 .sectionNav.is-visible {
     opacity: 1;
@@ -2384,6 +2393,7 @@ button.buy-button:hover {
   text-align: left;
   display: block;
   font-weight: bold;
+  color:#E31C79;
 }
 
 /* Extra Small Phones (320–359px) */

@@ -70,5 +70,33 @@ window.addEventListener('scroll', () => {
 });
 
 
+const sections = document.querySelectorAll('section.content[id]');
+const navLinks = document.querySelectorAll('.sectionNavList a');
 
+const observerOptions = {
+  root: null, // viewport
+  rootMargin: '0px',
+  threshold: 0.5 // 50% van de sectie zichtbaar
+};
+
+// Callback functie voor observer
+const observerCallback = (entries) => {
+  entries.forEach(entry => {
+    const id = entry.target.getAttribute('id');
+    const link = document.querySelector(`.sectionNavList a[href="#${id}"]`);
+
+    if (entry.isIntersecting) {
+      // Verwijder active van alle links
+      navLinks.forEach(l => l.classList.remove('active'));
+      // Voeg toe aan de link die zichtbaar is
+      if (link) link.classList.add('active');
+    }
+  });
+};
+
+// Maak observer
+const observer = new IntersectionObserver(observerCallback, observerOptions);
+
+// Observeer elke sectie
+sections.forEach(section => observer.observe(section));
 
