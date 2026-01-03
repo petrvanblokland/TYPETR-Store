@@ -97,9 +97,6 @@ const observerCallback = (entries) => {
   });
 };
 
-// Maak observer
 const observer = new IntersectionObserver(observerCallback, observerOptions);
-
-// Observeer elke sectie
 sections.forEach(section => observer.observe(section));
 
