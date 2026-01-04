@@ -2125,6 +2125,7 @@ div.image {
 
 .column14{
     width: 25%;
+    min-width: 250px;     
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 15px;
