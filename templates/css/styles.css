@@ -2123,7 +2123,7 @@ div.image {
     margin: 0 40px 0 0;
 }
 
-.column14 {
+.column14{
     width: 25%;
     min-width: 260px;     
     padding-left: 20px;
@@ -2131,8 +2131,8 @@ div.image {
     padding-top: 15px;
     box-sizing: border-box;
     background-color: #F0F0F0;
-
 }
+
 .column34 {
     flex: 1;
     padding-right: 16px;
@@ -2185,6 +2185,7 @@ div.image {
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3s ease;
+    line-height: 0px;
 }
 
 .sectionNavList a {
@@ -2213,6 +2214,12 @@ div.image {
     display: flex;
     flex-direction: column;
     font-size: 1.5em;
+}
+
+.sectionNavList H2 {
+    padding:2px;
+    padding-bottom:5px;
+    padding-left:15px;
 }
 
 @media (min-width: 768px) {
