@@ -2136,7 +2136,7 @@ div.image {
 .column34 {
     flex: 1;
     padding-right: 20px;
-    padding-left: 20px;
+    padding-left: 10px;
     box-sizing: border-box;
     background-color: #F0F0F0;
 }
@@ -2235,6 +2235,9 @@ div.image {
     div.column14.topline.ab h2{
         padding-top:0px;
         padding-left:0px;
+    }
+    div.sticky img{
+        border-radius: 5px;
     }
 }
 
