@@ -2126,11 +2126,12 @@ div.image {
 .column14 {
     width: 25%;
     min-width: 260px;     
-    padding-left: 15px;
+    padding-left: 20px;
     padding-right: 20px;
     padding-top: 15px;
     box-sizing: border-box;
     background-color: #F0F0F0;
+
 }
 .column34 {
     flex: 1;
@@ -2211,6 +2212,7 @@ div.image {
     list-style: none;
     display: flex;
     flex-direction: column;
+    font-size: 1.5em;
 }
 
 @media (min-width: 768px) {
