@@ -2125,7 +2125,6 @@ div.image {
 
 .column14{
     width: 25%;
-    min-width: 260px;     
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 15px;
@@ -2135,7 +2134,8 @@ div.image {
 
 .column34 {
     flex: 1;
-    padding-right: 16px;
+    padding-right: 20px;
+    padding-left: 20px;
     box-sizing: border-box;
     background-color: #F0F0F0;
 }
