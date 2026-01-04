@@ -2126,7 +2126,9 @@ div.image {
 .column14 {
     width: 25%;
     min-width: 260px;     
-    padding-right: 16px;
+    padding-left: 15px;
+    padding-right: 20px;
+    padding-top: 15px;
     box-sizing: border-box;
     background-color: #F0F0F0;
 }
@@ -2209,7 +2211,6 @@ div.image {
     list-style: none;
     display: flex;
     flex-direction: column;
-    font-size: 1.5em;
 }
 
 @media (min-width: 768px) {
@@ -2221,8 +2222,9 @@ div.image {
         justify-content: flex-start; /* eerder: justify-content: center; */
         gap: 1.5em;
     }
-    div.column14.topline.ab{
-        padding-top:15px;
+    div.column14.topline.ab h2{
+        padding-top:0px;
+        padding-left:0px;
     }
 }
 
@@ -2232,6 +2234,10 @@ div.image {
         align-items: center; /* verticaal uitlijnen */
         justify-content: flex-start; /* optioneel: start van de container */
         gap: 0.5em; /* ruimte tussen afbeelding en tekst */
+    }
+
+    .sticky h2{
+        padding-left: 10px;
     }
 
     .sticky img {
