@@ -2048,6 +2048,10 @@ div.image {
     animation: fadeIn .5s forwards;
 }
 
+.store-modal__container__overlay {
+    z-index: 1000;
+}
+
 .popup-content {
   background-color: #282828;
   margin-top: 70px;
@@ -2128,7 +2132,6 @@ div.image {
     min-width: 250px;     
     padding-left: 20px;
     padding-right: 20px;
-    padding-top: 15px;
     box-sizing: border-box;
     background-color: #F0F0F0;
 }
@@ -2238,6 +2241,9 @@ div.image {
     }
     div.sticky img{
         border-radius: 5px;
+    }
+    div.sticky {
+        margin-top: 20px;
     }
 }
 
