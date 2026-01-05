@@ -2049,7 +2049,7 @@ div.image {
 }
 
 .store-modal__container__overlay {
-    z-index: 1000;
+    z-index: 1000000000;
 }
 
 .popup-content {
@@ -2224,6 +2224,11 @@ div.image {
     padding:2px;
     padding-bottom:5px;
     padding-left:15px;
+}
+
+.features{
+    border-top: 1px solid var(--horizontal_rule_color);
+    padding-bottom: 15px;
 }
 
 @media (min-width: 768px) {
