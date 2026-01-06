@@ -72,31 +72,34 @@ window.addEventListener('scroll', () => {
 
 //scroll in-page link 
 
+document.addEventListener("DOMContentLoaded", function() {
+    // Selecteer alle secties met een id
+    const sections = document.querySelectorAll('section.content[id]');
+    // Selecteer alle navigatie-links
+    const navLinks = document.querySelectorAll('.sectionNavList a');
 
-const sections = document.querySelectorAll('section.content[id]');
-const navLinks = document.querySelectorAll('.sectionNavList a');
+    const observerOptions = {
+        root: null, // viewport
+        rootMargin: '0px',
+        threshold: 0.5 // 50% van sectie zichtbaar
+    };
 
-const observerOptions = {
-  root: null, // viewport
-  rootMargin: '0px',
-  threshold: 0.5 // 50% van de sectie zichtbaar
-};
+    const observerCallback = (entries) => {
+        entries.forEach(entry => {
+            const id = entry.target.getAttribute('id');
+            // Zoek alle links met deze href
+            const links = document.querySelectorAll(`.sectionNavList a[href="#${id}"]`);
 
-// Callback functie voor observer
-const observerCallback = (entries) => {
-  entries.forEach(entry => {
-    const id = entry.target.getAttribute('id');
-    const link = document.querySelector(`.sectionNavList a[href="#${id}"]`);
+            if (entry.isIntersecting) {
+                // Verwijder active van alle links
+                navLinks.forEach(link => link.classList.remove('active'));
+                // Voeg active toe aan links die bij deze sectie horen
+                links.forEach(link => link.classList.add('active'));
+            }
+        });
+    };
 
-    if (entry.isIntersecting) {
-      // Verwijder active van alle links
-      navLinks.forEach(l => l.classList.remove('active'));
-      // Voeg toe aan de link die zichtbaar is
-      if (link) link.classList.add('active');
-    }
-  });
-};
-
-const observer = new IntersectionObserver(observerCallback, observerOptions);
-sections.forEach(section => observer.observe(section));
+    const observer = new IntersectionObserver(observerCallback, observerOptions);
+    sections.forEach(section => observer.observe(section));
+});
 
