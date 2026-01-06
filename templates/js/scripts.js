@@ -70,36 +70,33 @@ window.addEventListener('scroll', () => {
 });
 
 
-//scroll in-page link 
+//scroll in-page link - change color
 
-document.addEventListener("DOMContentLoaded", function() {
-    // Selecteer alle secties met een id
-    const sections = document.querySelectorAll('section.content[id]');
-    // Selecteer alle navigatie-links
-    const navLinks = document.querySelectorAll('.sectionNavList a');
+document.addEventListener("DOMContentLoaded", () => {
+    const sections = document.querySelectorAll("section.content[id]");
+    const navLinks = document.querySelectorAll(".sectionNavList a");
 
-    const observerOptions = {
-        root: null, // viewport
-        rootMargin: '0px',
-        threshold: 0.5
-    };
+    const observer = new IntersectionObserver(
+        entries => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
 
-    const observerCallback = (entries) => {
-        entries.forEach(entry => {
-            const id = entry.target.getAttribute('id');
-            // Zoek alle links met deze href
-            const links = document.querySelectorAll(`.sectionNavList a[href="#${id}"]`);
+                const id = entry.target.id;
 
-            if (entry.isIntersecting) {
-                // Verwijder active van alle links
-                navLinks.forEach(link => link.classList.remove('active'));
-                // Voeg active toe aan links die bij deze sectie horen
-                links.forEach(link => link.classList.add('active'));
-            }
-        });
-    };
+                navLinks.forEach(link => link.classList.remove("active"));
 
-    const observer = new IntersectionObserver(observerCallback, observerOptions);
+                document
+                    .querySelectorAll(`.sectionNavList a[href="#${id}"]`)
+                    .forEach(link => link.classList.add("active"));
+            });
+        },
+        {
+            root: null,
+            threshold: 0,
+            rootMargin: "0px 0px -60% 0px"
+        }
+    );
+
     sections.forEach(section => observer.observe(section));
 });
 
