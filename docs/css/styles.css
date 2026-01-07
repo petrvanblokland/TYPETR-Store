@@ -2295,12 +2295,19 @@ div.image {
         padding-top:0px;
         padding-bottom:0px;
     }
+
     .sectionNavList {
-        padding-top: 0px;     
-        padding-left: 0px;     
-        padding-bottom: 0px; 
-        font-size: 1em;       
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1200px;
     }
+
+    .sectionNavList h2{
+        padding: 0.6em;
+        padding-left: 1em;
+        padding-bottom: 0em;
+    }
+
 }
 
 div.responsiveShow {
