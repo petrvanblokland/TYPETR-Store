@@ -15,6 +15,11 @@ html {
     overscroll-behavior: contain;
 }
 
+:root {
+  --character_viewer_sticky_top: 100px;
+  --nav-scroll-trigger: 600;
+}
+
 ::selection {
   background: #E31C79;
   color: white;
@@ -2341,11 +2346,6 @@ div.smallWeightTester {
     width: 100%;
 }
 
-:root {
-  --character_viewer_sticky_top: 100px;
-  --nav-scroll-trigger: 600;
-}
-
 /* Cart button */
 
 fontdue-cart-button {
@@ -2903,6 +2903,9 @@ button.buy-button:hover {
 
 /* Desktop (1200–1599px) */
 @media (min-width: 1200px) and (max-width: 1599px) { 
+    :root {
+      --nav-scroll-trigger: 250;
+    }
     header {
         background-color: black; /* Testing responsive */
     }    
@@ -2951,6 +2954,7 @@ button.buy-button:hover {
 div.type-tester {
     padding-top: 0px;
     padding-bottom: 0px;
+    margin-bottom: 20px;
 }
 
 div.character-viewer{
