@@ -2343,6 +2343,7 @@ div.smallWeightTester {
 
 :root {
   --character_viewer_sticky_top: 100px;
+  --nav-scroll-trigger: 600;
 }
 
 /* Cart button */
@@ -2445,6 +2446,9 @@ button.buy-button:hover {
 
 /* Extra Small Phones (320–359px) */
 @media (max-width: 359px) { 
+    :root {
+      --nav-scroll-trigger: 250;
+    }
     header {
         background-color: black; /* Testing responsive */
     }    
@@ -2519,6 +2523,9 @@ button.buy-button:hover {
 }
 /* Small Phones (360–399px) */
 @media (min-width: 360px) and (max-width: 399px) { 
+    :root {
+      --nav-scroll-trigger: 250;
+    }
     header {
         background-color: black; /* Testing responsive */
     }    
@@ -2595,6 +2602,9 @@ button.buy-button:hover {
 }
 /* Medium Phones (400–479px) */
 @media (min-width: 400px) and (max-width: 479px) { 
+    :root {
+      --nav-scroll-trigger: 250;
+    }
     header {
         background-color: black; /* Testing responsive */
     }    
@@ -2668,6 +2678,9 @@ button.buy-button:hover {
 }
 /* Large Phones (480–599px) */
 @media (min-width: 480px) and (max-width: 599px) { 
+    :root {
+      --nav-scroll-trigger: 250;
+    }
     header {
         background-color: black; /* Testing responsive */
     }    
@@ -2743,6 +2756,9 @@ button.buy-button:hover {
 /* Small Tablets (600–767px) */
 
 @media (min-width: 600px) and (max-width: 767px) { 
+    :root {
+      --nav-scroll-trigger: 300;
+    }
     header {
         background-color: black; /* Testing responsive */
     }    
@@ -2818,6 +2834,9 @@ button.buy-button:hover {
 }
 /* Medium Tablets (768–991px) */
 @media (min-width: 768px) and (max-width: 991px) { 
+    :root {
+      --nav-scroll-trigger: 330;
+    }
     header {
         background-color: black; /* Testing responsive */
     }    
@@ -2852,6 +2871,9 @@ button.buy-button:hover {
 }
 /* Large Tablets / Small Desktop (992–1199px) */
 @media (min-width: 992px) and (max-width: 1199px) { 
+    :root {
+      --nav-scroll-trigger: 400;
+    }
     header {
         background-color: black; /* Testing responsive */
     }    

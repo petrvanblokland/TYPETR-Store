@@ -61,12 +61,15 @@ window.addEventListener('click', function (event) {
 
 const nav = document.querySelector('.sectionNav');
 
+function getThreshold() {
+  return parseInt(
+    getComputedStyle(document.documentElement)
+      .getPropertyValue('--nav-scroll-trigger')
+  );
+}
+
 window.addEventListener('scroll', () => {
-  if (window.scrollY >= 300) {
-    nav.classList.add('is-visible');
-  } else {
-    nav.classList.remove('is-visible');
-  }
+  nav.classList.toggle('is-visible', window.scrollY >= getThreshold());
 });
 
 
