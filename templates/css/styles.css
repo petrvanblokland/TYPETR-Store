@@ -65,6 +65,7 @@ a {
 
 /* Reset */
 
+
 h1, h2, h3, h4, h5, h6,
 .sectionNavList a:link, .sectionNavList a:visited, .sectionNavList a:active,
 .menuBox ul li:link, .menuBox ul li:visited, .menuBox ul li:active  {
@@ -82,6 +83,9 @@ h2 a:link, h2 a:visited, h2 a:active,
     color: #202020;
 }
 
+h1, h2, h3, h4, h5, h6, a, ol li, ul li, p {
+ font-feature-settings: 'liga' 1; 
+}
 
 h2 a:hover, .sectionNavList a:hover, .menuBox ul li:hover {
     color: #E31C79;  
