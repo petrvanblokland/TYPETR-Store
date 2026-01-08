@@ -6,7 +6,7 @@
   navigation: auto;
 }
 
-.row, .column, .type-tester, .character-viewer_blocks  {
+.row, .column, .type-tester, .character-viewer_blocks, .features  {
   scroll-snap-align: start; 
 }
 
