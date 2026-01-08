@@ -2312,6 +2312,9 @@ fontdue-cart-button:active {
     background-color: #E31C79;
 }
 
+.character-viewer__monitor__container {
+    top: 170px;
+}
 /* Buy button */
 
 button.buy-button {
@@ -2998,6 +3001,10 @@ button.buy-button:hover {
     .column14:has(.buy-button):not(:has(h2, ul, ol)),
     .column14:has(img):not(:has(h2, ul, ol)) {
         display: none;
+    }
+
+    .column14:has(img .contact):not(:has(h2, ul, ol)) {
+        display: block;
     }
 
     /* 2. Alleen de buy-button verbergen als er WEL inhoud is */
