@@ -11,10 +11,19 @@
 }
 
 html {
-    scroll-behavior: smooth;
-    scroll-padding-top: 135px;
-    scroll-snap-type: y proximity;
-    overscroll-behavior: contain;
+  --scroll-offset: 135px;
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--scroll-offset);
+  scroll-snap-type: y proximity;
+  overscroll-behavior: contain;
+}
+
+html.page-home {
+  --scroll-offset: 80px;
+}
+
+html.page-admin {
+  --scroll-offset: 70px;
 }
 
 :root {
@@ -1952,7 +1961,7 @@ header .navbar a {
     text-decoration: none;
 }
 header .navbar a:hover {
-    color: #E31C79;
+    color: #4E76C0;
     text-decoration: none;
 }
 
