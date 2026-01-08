@@ -2996,8 +2996,14 @@ button.buy-button:hover {
         padding-left: 1em;
         padding-bottom: 0em;
     }
-    .column14:has(.buy-button),
-    .column14:has(img) {
+    
+    .column14:has(.buy-button):not(:has(h2, ul, ol)),
+    .column14:has(img):not(:has(h2, ul, ol)) {
+        display: none;
+    }
+
+    /* 2. Alleen de buy-button verbergen als er WEL inhoud is */
+    .column14:has(h2, ul, ol) .buy-button {
         display: none;
     }
 
