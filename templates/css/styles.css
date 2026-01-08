@@ -2253,81 +2253,6 @@ div.image {
     padding-bottom: 15px;
 }
 
-@media (min-width: 768px) {
-    .sectionNavList {
-        margin: 0 auto;
-        width: 100%;
-        max-width: 1200px;
-        flex-direction: row;
-        justify-content: flex-start; /* eerder: justify-content: center; */
-        gap: 1.5em;
-    }
-    div.column14.topline.ab h2{
-        padding-top:0px;
-        padding-left:0px;
-    }
-    div.sticky img{
-        border-radius: 5px;
-    }
-    div.sticky {
-        margin-top: 20px;
-    }
-    .cta-cart {
-    display: none;
-    }
-}
-
-@media (max-width: 768px) {
-    .sticky {
-        display: flex;
-        align-items: center; /* verticaal uitlijnen */
-        justify-content: flex-start; /* optioneel: start van de container */
-        gap: 0.5em; /* ruimte tussen afbeelding en tekst */
-    }
-
-    .sticky h2{
-        padding-left: 10px;
-    }
-
-    .sticky img {
-        width:40%;
-        max-width: 150px; /* pas aan naar wens */
-        height: auto;
-    }
-
-    .sticky > div {
-        flex: 1; /* neemt resterende ruimte in */
-        margin: 0; /* margin auto weghalen voor flex layout */
-        padding: 0px;
-    }
-
-    .sticky p.contact {
-        margin: 0; /* eventueel */
-    }
-
-    div.column14.topline.ab{
-        padding-left:0px;
-        padding-right:0px;
-        padding-top:0px;
-        padding-bottom:0px;
-    }
-
-    .sectionNavList {
-        margin: 0 auto;
-        width: 100%;
-        max-width: 1200px;
-    }
-
-    .sectionNavList h2{
-        padding: 0.6em;
-        padding-left: 1em;
-        padding-bottom: 0em;
-    }
-    .column14:has(.buy-button) {
-        display: none;
-    }
-}
-
 div.responsiveShow {
     display: none;
 }
@@ -2998,6 +2923,100 @@ button.buy-button:hover {
     #menuBox{
         display: none;
     }
+}
+
+
+@media (min-width: 768px) {
+    .sectionNavList {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1200px;
+        flex-direction: row;
+        justify-content: flex-start; /* eerder: justify-content: center; */
+        gap: 1.5em;
+    }
+    div.column14.topline.ab h2{
+        padding-top:0px;
+        padding-left:0px;
+    }
+    div.sticky img{
+        border-radius: 5px;
+    }
+    div.sticky {
+        margin-top: 20px;
+    }
+    .cta-cart {
+    display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .sticky {
+        display: flex;
+        align-items: center; /* verticaal uitlijnen */
+        justify-content: flex-start; /* optioneel: start van de container */
+        gap: 0.5em; /* ruimte tussen afbeelding en tekst */
+    }
+
+    .sticky h2{
+        padding-left: 10px;
+    }
+
+    .sticky img {
+        width:40%;
+        max-width: 150px; /* pas aan naar wens */
+        height: auto;
+    }
+
+    .sticky > div {
+        flex: 1; /* neemt resterende ruimte in */
+        margin: 0; /* margin auto weghalen voor flex layout */
+        padding: 0px;
+    }
+
+    .sticky p.contact {
+        margin: 0; /* eventueel */
+    }
+
+    div.column14.topline.ab,{
+        padding-left:0px;
+        padding-right:0px;
+        padding-top:0px;
+        padding-bottom:0px;
+    }
+
+    .sectionNavList {
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1200px;
+    }
+
+    .sectionNavList h2{
+        padding: 0.6em;
+        padding-left: 1em;
+        padding-bottom: 0em;
+    }
+    .column14:has(.buy-button),
+    .column14:has(img) {
+        display: none;
+    }
+
+    div.column14, div.column34, div.column13, div.column23 {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    div.column34 {
+        padding-top: 0px;
+        padding-bottom: 30px;
+    }
+    h1{
+        margin: 0px;
+        margin-top: 20px;
+      }
+     p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+     } 
 }
 
 div.type-tester {
