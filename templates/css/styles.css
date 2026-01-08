@@ -127,6 +127,12 @@ p a:hover {
 
 /* General Styles */
 
+/* Image ebanners in body text */
+img.img-banner {
+    margin-top: 0.5em;
+    width: 100%;
+}
+
 /* Animation */
 @keyframes slideDown {
   0% {
