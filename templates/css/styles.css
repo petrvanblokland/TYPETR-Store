@@ -2323,7 +2323,7 @@ div.image {
         padding-left: 1em;
         padding-bottom: 0em;
     }
-    button.buy-button {
+    .column14:has(.buy-button) {
         display: none;
     }
 }
