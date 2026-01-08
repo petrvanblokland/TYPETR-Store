@@ -87,6 +87,11 @@ h2 a:link, h2 a:visited, h2 a:active,
 
 
 .character-viewer__block__character-list>div:hover{
+    background-color: #4E76C0;
+}
+
+.character-viewer__block__character-list>div:active,
+.character-viewer__block__character-list > div[data-selected="true"]{
     background-color: #E31C79;
 }
 
@@ -2499,6 +2504,7 @@ button.buy-button:hover {
     box-shadow 0.2s ease;
   font-size: 32px;
 
+  border: none; /* zorgt dat er geen border is */
 }
 
 /* Hover */
