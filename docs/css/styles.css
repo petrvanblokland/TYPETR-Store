@@ -2478,7 +2478,7 @@ button.buy-button:hover {
   bottom: calc(1rem + env(safe-area-inset-bottom));
   z-index: 1000;
 
-  min-width: 56px;
+  width: 56px;
   height: 56px;
 
   display: flex;
