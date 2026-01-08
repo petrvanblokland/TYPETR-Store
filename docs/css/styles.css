@@ -2996,6 +2996,7 @@ button.buy-button:hover {
         padding-left: 1em;
         padding-bottom: 0em;
     }
+    
     .column14:has(.buy-button):not(:has(h2, ul, ol)),
     .column14:has(img):not(:has(h2, ul, ol)) {
         display: none;
