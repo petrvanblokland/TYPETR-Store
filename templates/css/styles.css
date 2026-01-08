@@ -2202,6 +2202,12 @@ div.image {
     width:100%;
 }
 
+.img-banner {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .sectionNav {
     position: fixed;
     top: 70px;
