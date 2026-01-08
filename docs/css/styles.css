@@ -1898,7 +1898,6 @@ header .familyName { /* Floating left box with current family name */
     float: left;
     font-size: 40px;
     text-align: left;
-    padding-top: 5px; 
     transform: translateY(calc(0.105em)); /* shift so baseline hits 50px */
     animation: fadeIn 0.2s ease-out forwards;
 }
