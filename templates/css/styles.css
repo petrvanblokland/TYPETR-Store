@@ -2652,6 +2652,10 @@ button.buy-button:hover {
       position: relative;
       animation: slideDown .3s forwards;
     }
+    .specimen{
+        line-height: 1.4em;
+        font-size: 4.5vw;
+    }
 }
 /* Small Phones (360–399px) */
 @media (min-width: 360px) and (max-width: 399px) { 
@@ -2730,6 +2734,10 @@ button.buy-button:hover {
       position: relative;
       animation: slideDown .3s forwards;
     }
+    .specimen{
+        line-height: 1.4em;
+        font-size: 4.5vw;
+    }
 }
 /* Medium Phones (400–479px) */
 @media (min-width: 400px) and (max-width: 479px) { 
@@ -2802,6 +2810,10 @@ button.buy-button:hover {
       position: relative;
       animation: slideDown .3s forwards;
     }
+    .specimen{
+        line-height: 1.4em;
+        font-size: 4.5vw;
+    }
 }
 /* Large Phones (480–599px) */
 @media (min-width: 480px) and (max-width: 599px) { 
@@ -2809,7 +2821,7 @@ button.buy-button:hover {
       --nav-scroll-trigger: 250;
     }
     header {
-        background-color: black; /* Testing responsive */
+        background-color: orange; /* Testing responsive */
     }    
     /*header .navbar, */
     header .familyName {
@@ -2873,6 +2885,10 @@ button.buy-button:hover {
       border-bottom-right-radius: 0px;
       position: relative;
       animation: slideDown .3s forwards;
+    }
+    .specimen{
+        line-height: 1.4em;
+        font-size: 4.5vw;
     }
 }
 /* -------------------------------------------------------------- */
@@ -2949,6 +2965,10 @@ button.buy-button:hover {
       position: relative;
       animation: slideDown .3s forwards;
     }
+    .specimen{
+        line-height: 1.4em;
+        font-size: 4.5vw;
+    }
 }
 /* Medium Tablets (768–991px) */
 @media (min-width: 768px) and (max-width: 991px) { 
@@ -2992,6 +3012,10 @@ button.buy-button:hover {
     .feature-switch-desktop{
         display:inline;
     }
+    .specimen{
+        line-height: 1.4em;
+        font-size: 3vw;
+    }
 }
 /* Large Tablets / Small Desktop (992–1199px) */
 @media (min-width: 992px) and (max-width: 1199px) { 
@@ -3029,6 +3053,10 @@ button.buy-button:hover {
     .feature-switch-desktop{
         display:inline;
     }
+    .specimen{
+        line-height: 1.4em;
+        font-size: 3.4vw;
+    }
 }
 
 /* Desktop (1200–1599px) */
@@ -3056,6 +3084,10 @@ button.buy-button:hover {
     #menuBox{
         display: none;
     }
+    .specimen{
+        line-height: 1.4em;
+        font-size: 24pt;
+    }
 }
 /* Large Desktop (1600px+) */
 @media (min-width: 1600px) { 
@@ -3078,6 +3110,10 @@ button.buy-button:hover {
     }
     #menuBox{
         display: none;
+    }
+    .specimen{
+        line-height: 1.4em;
+        font-size: 24pt;
     }
 }
 
