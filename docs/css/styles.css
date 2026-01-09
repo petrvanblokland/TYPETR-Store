@@ -2455,7 +2455,6 @@ button.buy-button:hover {
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25);
 }
 
-
 @media (min-width: 768px) {
     .sectionNavList {
         margin: 0 auto;
@@ -2586,7 +2585,7 @@ button.buy-button:hover {
       --nav-scroll-trigger: 250;
     }
     header {
-        background-color: orange; /* Testing responsive */
+        background-color: black; /* Testing responsive */
     }    
     /*header .navbar, */
     header .familyName, header .logo {
@@ -2660,7 +2659,7 @@ button.buy-button:hover {
       --nav-scroll-trigger: 250;
     }
     header {
-        background-color: blue; /* Testing responsive */
+        background-color: black; /* Testing responsive */
     }    
     /*header .navbar, */
     header .familyName {
@@ -2738,7 +2737,7 @@ button.buy-button:hover {
       --nav-scroll-trigger: 250;
     }
     header {
-        background-color: pink; /* Testing responsive */
+        background-color: black; /* Testing responsive */
     }    
     /*header .navbar, */
     header .familyName {
@@ -2810,7 +2809,7 @@ button.buy-button:hover {
       --nav-scroll-trigger: 250;
     }
     header {
-        background-color: orange; /* Testing responsive */
+        background-color: black; /* Testing responsive */
     }    
     /*header .navbar, */
     header .familyName {
@@ -2884,7 +2883,7 @@ button.buy-button:hover {
       --nav-scroll-trigger: 300;
     }
     header {
-        background-color: purple; /* Testing responsive */
+        background-color: black; /* Testing responsive */
     }    
     header .familyName {
         display: none;
@@ -2957,7 +2956,7 @@ button.buy-button:hover {
       --nav-scroll-trigger: 330;
     }
     header {
-        background-color: green; /* Testing responsive */
+        background-color:  black; /* Testing responsive */
     }    
     header .andMore{
         display: none;
@@ -2987,6 +2986,12 @@ button.buy-button:hover {
     #menuBox{
         display: none;
     }
+    .feature-switch-mobile{
+        display:none;
+    }
+    .feature-switch-desktop{
+        display:inline;
+    }
 }
 /* Large Tablets / Small Desktop (992–1199px) */
 @media (min-width: 992px) and (max-width: 1199px) { 
@@ -2994,7 +2999,7 @@ button.buy-button:hover {
       --nav-scroll-trigger: 400;
     }
     header {
-        background-color: blue; /* Testing responsive */
+        background-color: black; /* Testing responsive */
     }    
     fontdue-type-testers .type-tester {
     --type-tester--adjustment: 1;
@@ -3018,6 +3023,12 @@ button.buy-button:hover {
     #menuBox{
         display: none;
     }
+    .feature-switch-mobile{
+        display:none;
+    }
+    .feature-switch-desktop{
+        display:inline;
+    }
 }
 
 /* Desktop (1200–1599px) */
@@ -3026,7 +3037,7 @@ button.buy-button:hover {
       --nav-scroll-trigger: 250;
     }
     header {
-        background-color: orange; /* Testing responsive */
+        background-color: black; /* Testing responsive */
     }    
     .row {
         width: 1200px;
@@ -3049,7 +3060,7 @@ button.buy-button:hover {
 /* Large Desktop (1600px+) */
 @media (min-width: 1600px) { 
     header {
-        background-color: pink; /* Testing responsive */
+        background-color: black; /* Testing responsive */
     }    
     .row {
         width: 1200px;
