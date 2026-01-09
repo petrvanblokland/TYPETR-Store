@@ -2478,6 +2478,13 @@ button.buy-button:hover {
     .cta-cart {
     display: none;
     }
+
+    .feature-switch-mobile{
+        display:inline;
+    }
+    .feature-switch-desktop{
+        display:none;
+    }
 }
 
 @media (max-width: 768px) {
@@ -2559,6 +2566,17 @@ button.buy-button:hover {
      } 
     .size80 {
           font-size: 13vw;
+    }
+    .smallWeightTester{
+        padding:10px;
+        padding-bottom:20px;
+        padding-top:20px;
+    }
+    .feature-switch-mobile{
+        display:none;
+    }
+    .feature-switch-desktop{
+        display:inline;
     }
 }
 
