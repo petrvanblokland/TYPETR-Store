@@ -2455,492 +2455,6 @@ button.buy-button:hover {
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25);
 }
 
-/* Extra Small Phones (320–359px) */
-@media (max-width: 359px) { 
-    :root {
-      --nav-scroll-trigger: 250;
-    }
-    header {
-        background-color: black; /* Testing responsive */
-    }    
-    /*header .navbar, */
-    header .familyName, header .logo {
-        display: none;
-    }
-    .row {
-        flex-direction: column;
-    }
-    .column {
-        width: 100%;
-    }
-    .column p, .column h1, .column h2 {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-    div.column14, div.column34, div.column13, div.column23 {
-        width: 100%;
-        padding: 16px;
-    }
-    div.responsiveHide, div.familyName, img.responsiveHide {
-        display: none;
-    }
-    div.responsiveShow, div.smallWeightTester {
-        display: block;
-    }
-    .name-title {
-        font-size: 2em;  
-    }
-    .titleImage, .titleImageSmall {
-        height: 200px;
-    }
-    footer {
-        text-align: center;
-        background-color: white;
-        color: #333;
-    }
-    footer p {
-        font-size: 1.3em;
-        margin-left: 1em;
-        margin-right: 1em;
-    }
-    .quit{
-        display: none;
-    }
-    .responsiveShow {
-        display: none;
-    }
-    #navbar{
-        display: none;
-    }
-
-    .popup-content {
-      margin-top: 70px;
-      margin-left:0px;
-      padding: 0px;
-      padding-left: 0px;
-      width: 100%;
-      max-width: 100%;
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-      position: relative;
-      animation: slideDown .3s forwards;
-    }
-}
-/* Small Phones (360–399px) */
-@media (min-width: 360px) and (max-width: 399px) { 
-    :root {
-      --nav-scroll-trigger: 250;
-    }
-    header {
-        background-color: black; /* Testing responsive */
-    }    
-    /*header .navbar, */
-    header .familyName {
-        display: none;
-    }
-    .row {
-        flex-direction: column;
-    }
-    .column, .type-tester {
-        width: 100%;
-    }
-    .column p, .column h1, .column h2 {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-    div.column14, div.column34, div.column13, div.column23 {
-        width: 100%;
-        padding: 16px;
-    }
-    div.responsiveHide, div.familyName, img.responsiveHide {
-        display: none;
-    }
-    div.responsiveShow, div.smallWeightTester  {
-        display: block;
-    }
-    .titleImage {
-        height: 200px;
-    }
-    .titleImageSmall {
-        height: 150px;
-    }
-    .name-title {
-        font-size: 2.5em;  
-    }
-    footer {
-        text-align: center;
-        background-color: white;
-        color: #333;
-    }
-    footer p {
-        font-size: 1.3em;
-        margin-left: 1em;
-        margin-right: 1em;
-    }
-    .quit{
-        display: none;
-    }
-    .responsiveShow {
-        display: none;
-    }
-    #navbar{
-        display: none;
-    }
-    .popup-content {
-      margin-top: 70px;
-      margin-left:0px;
-      padding: 0px;
-      padding-left: 0px;
-      width: 100%;
-      max-width: 100%;
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-      position: relative;
-      animation: slideDown .3s forwards;
-    }
-}
-/* Medium Phones (400–479px) */
-@media (min-width: 400px) and (max-width: 479px) { 
-    :root {
-      --nav-scroll-trigger: 250;
-    }
-    header {
-        background-color: black; /* Testing responsive */
-    }    
-    /*header .navbar, */
-    header .familyName {
-        display: none;
-    }
-    .row {
-        flex-direction: column;
-    }
-    .column, .type-tester {
-        width: 100%;
-    }
-    .column p, .column h1, .column h2 {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-    div.column14, div.column34, div.column13, div.column23 {
-        width: 100%;
-        padding: 16px;
-    }
-    div.responsiveHide, div.familyName, img.responsiveHide {
-        display: none;
-    }
-    div.responsiveShow, div.smallWeightTester  {
-        display: block;
-    }
-    .titleImage {
-        height: 200px;
-    }
-    .titleImageSmall {
-        height: 150px;
-    }
-    .name-title {
-        font-size: 3em;  
-    }
-    footer {
-        text-align: center;
-        background-color: white;
-        color: #333;
-    }
-    footer p {
-        font-size: 1.3em;
-        margin-left: 1em;
-        margin-right: 1em;
-    }
-    .quit{
-        display: none;
-    }
-    #navbar{
-        display: none;
-    }
-    .popup-content {
-      margin-top: 70px;
-      margin-left:0px;
-      padding: 0px;
-      padding-left: 0px;
-      width: 100%;
-      max-width: 100%;
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-      position: relative;
-      animation: slideDown .3s forwards;
-    }
-}
-/* Large Phones (480–599px) */
-@media (min-width: 480px) and (max-width: 599px) { 
-    :root {
-      --nav-scroll-trigger: 250;
-    }
-    header {
-        background-color: black; /* Testing responsive */
-    }    
-    /*header .navbar, */
-    header .familyName {
-        display: none;
-    }
-    .row {
-        flex-direction: column;
-    }
-    .column, .type-tester {
-        width: 100%;
-    }
-    .column p, .column h1, .column h2 {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-    div.column14, div.column34, div.column13, div.column23 {
-        width: 100%;
-        padding: 16px;
-    }
-    div.responsiveHide, div.familyName, img.responsiveHide {
-        display: none;
-    }
-    div.responsiveShow, div.smallWeightTester {
-        display: block;
-    }
-    .titleImage {
-        height: 200px;
-    }
-    .titleImageSmall {
-        height: 150px;
-    }
-    .name-title {
-        font-size: 3.5em;  
-    }
-    footer {
-        text-align: center;
-        background-color: white;
-        color: #333;
-    }
-    footer p {
-        font-size: 1.3em;
-        margin-left: 1em;
-        margin-right: 1em;
-    }
-    .quit{
-        display: none;
-    }
-    #navbar{
-        display: none;
-    }
-    .popup-content {
-      margin-top: 70px;
-      margin-left:0px;
-      padding: 0px;
-      padding-left: 0px;
-      width: 100%;
-      max-width: 100%;
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 0px;
-      border-bottom-right-radius: 0px;
-      position: relative;
-      animation: slideDown .3s forwards;
-    }
-}
-/* -------------------------------------------------------------- */
-/* Small Tablets (600–767px) */
-
-@media (min-width: 600px) and (max-width: 767px) { 
-    :root {
-      --nav-scroll-trigger: 300;
-    }
-    header {
-        background-color: black; /* Testing responsive */
-    }    
-    header .familyName {
-        display: none;
-    }
-    .row {
-        flex-direction: column;
-    }
-    .column, .type-tester {
-        width: 100%;
-    }
-    .column p, .column h1, .column h2 {
-        padding-left: 16px;
-        padding-right: 16px;
-    }
-    div.column14, div.column34, div.column13, div.column23 {
-        width: 100%;
-        padding: 16px;
-    }
-    div.responsiveHide, div.familyName, img.responsiveHide {
-        display: none;
-    }
-    div.responsiveShow, div.smallWeightTester  {
-        display: block;
-    }
-    .name-title {
-    font-size: 4em;  
-    }
-    .titleImage {
-        height: 250px;
-    }
-    .titleImageSmall {
-        height: 200px;
-    }
-    .responsiveShow {
-        display: none;
-    }
-    footer p {
-        margin-left: 2em;
-        margin-right: 2em;
-    }
-    .quit{
-        display: none;
-    }
-    .responsiveShow {
-        display: none;
-    }
-    #navbar{
-        display: none;
-    }
-    .popup-content {
-      margin-top: 70px;
-      margin: 0 auto;
-      margin-top: 70px;
-      position: absolute;
-      padding: 0px;
-      padding-left: 0px;
-      width: 400px;
-      max-width: 100%;
-      border-top-left-radius: 0px;
-      border-top-right-radius: 0px;
-      border-bottom-left-radius: 5px;
-      border-bottom-right-radius: 5px;
-      position: relative;
-      animation: slideDown .3s forwards;
-    }
-}
-/* Medium Tablets (768–991px) */
-@media (min-width: 768px) and (max-width: 991px) { 
-    :root {
-      --nav-scroll-trigger: 330;
-    }
-    header {
-        background-color: black; /* Testing responsive */
-    }    
-    header .andMore{
-        display: none;
-    }
-    fontdue-type-testers .type-tester {
-    --type-tester--adjustment: 1;
-    }
-    .name-title {
-    font-size: 4em;  
-    }
-    .titleImage {
-        height: 280px;
-    }
-    .titleImageSmall {
-        height: 210px;
-    }
-    footer p {
-        margin-left: 2em;
-        margin-right: 2em;
-    }
-    .responsiveShow {
-        display: none;
-    }
-    header .hamburger {
-        display: none;
-    }
-    #menuBox{
-        display: none;
-    }
-}
-/* Large Tablets / Small Desktop (992–1199px) */
-@media (min-width: 992px) and (max-width: 1199px) { 
-    :root {
-      --nav-scroll-trigger: 400;
-    }
-    header {
-        background-color: black; /* Testing responsive */
-    }    
-    fontdue-type-testers .type-tester {
-    --type-tester--adjustment: 1;
-    }
-    .titleImage {
-        height: 350px;
-    }
-    .titleImageSmall {
-        height: 300px;
-    }
-    footer p {
-        margin-left: 2em;
-        margin-right: 2em;
-    }
-    .responsiveShow {
-        display: none;
-    }
-    header .hamburger {
-        display: none;
-    }
-    #menuBox{
-        display: none;
-    }
-}
-
-/* Desktop (1200–1599px) */
-@media (min-width: 1200px) and (max-width: 1599px) { 
-    :root {
-      --nav-scroll-trigger: 250;
-    }
-    header {
-        background-color: black; /* Testing responsive */
-    }    
-    .row {
-        width: 1200px;
-        margin:0 auto; 
-    }
-    footer p {
-        margin-left: 1em;
-        margin-right: 1em;
-    }
-    .responsiveShow {
-        display: none;
-    }
-    header .hamburger {
-        display: none;
-    }
-    #menuBox{
-        display: none;
-    }
-}
-/* Large Desktop (1600px+) */
-@media (min-width: 1600px) { 
-    header {
-        background-color: black; /* Testing responsive */
-    }    
-    .row {
-        width: 1200px;
-        margin:0 auto;
-    }
-    footer p {
-        margin-left: 1em;
-        margin-right: 1em;
-    }
-    .responsiveShow {
-        display: none;
-    }
-    header .hamburger {
-        display: none;
-    }
-    #menuBox{
-        display: none;
-    }
-}
-
 
 @media (min-width: 768px) {
     .sectionNavList {
@@ -3043,7 +2557,501 @@ button.buy-button:hover {
         margin-top: 20px;
         margin-bottom: 20px;
      } 
+    .size80 {
+          font-size: 13vw;
+    }
 }
+
+/* Extra Small Phones (320–359px) */
+@media (max-width: 359px) { 
+    :root {
+      --nav-scroll-trigger: 250;
+    }
+    header {
+        background-color: orange; /* Testing responsive */
+    }    
+    /*header .navbar, */
+    header .familyName, header .logo {
+        display: none;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .column {
+        width: 100%;
+    }
+    .column p, .column h1, .column h2 {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+    div.column14, div.column34, div.column13, div.column23 {
+        width: 100%;
+        padding: 10px;
+    }
+    div.responsiveHide, div.familyName, img.responsiveHide {
+        display: none;
+    }
+    div.responsiveShow, div.smallWeightTester {
+        display: block;
+    }
+    .name-title {
+        font-size: 2em;  
+    }
+    .titleImage, .titleImageSmall {
+        height: 200px;
+    }
+    footer {
+        text-align: center;
+        background-color: white;
+        color: #333;
+    }
+    footer p {
+        font-size: 1.3em;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    .quit{
+        display: none;
+    }
+    .responsiveShow {
+        display: none;
+    }
+    #navbar{
+        display: none;
+    }
+
+    .popup-content {
+      margin-top: 70px;
+      margin-left:0px;
+      padding: 0px;
+      padding-left: 0px;
+      width: 100%;
+      max-width: 100%;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      position: relative;
+      animation: slideDown .3s forwards;
+    }
+}
+/* Small Phones (360–399px) */
+@media (min-width: 360px) and (max-width: 399px) { 
+    :root {
+      --nav-scroll-trigger: 250;
+    }
+    header {
+        background-color: blue; /* Testing responsive */
+    }    
+    /*header .navbar, */
+    header .familyName {
+        display: none;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .column, .type-tester {
+        width: 100%;
+    }
+    .column p, .column h1, .column h2 {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    div.column14, div.column34, div.column13, div.column23 {
+        width: 100%;
+        padding: 5px;
+    }
+    .column14 {
+        padding: 5px;        
+    }
+    div.responsiveHide, div.familyName, img.responsiveHide {
+        display: none;
+    }
+    div.responsiveShow, div.smallWeightTester  {
+        display: block;
+    }
+    .titleImage {
+        height: 200px;
+    }
+    .titleImageSmall {
+        height: 150px;
+    }
+    .name-title {
+        font-size: 2.5em;  
+    }
+    footer {
+        text-align: center;
+        background-color: white;
+        color: #333;
+    }
+    footer p {
+        font-size: 1.3em;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    .quit{
+        display: none;
+    }
+    .responsiveShow {
+        display: none;
+    }
+    #navbar{
+        display: none;
+    }
+    .popup-content {
+      margin-top: 70px;
+      margin-left:0px;
+      padding: 0px;
+      padding-left: 0px;
+      width: 100%;
+      max-width: 100%;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      position: relative;
+      animation: slideDown .3s forwards;
+    }
+}
+/* Medium Phones (400–479px) */
+@media (min-width: 400px) and (max-width: 479px) { 
+    :root {
+      --nav-scroll-trigger: 250;
+    }
+    header {
+        background-color: pink; /* Testing responsive */
+    }    
+    /*header .navbar, */
+    header .familyName {
+        display: none;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .column, .type-tester {
+        width: 100%;
+    }
+    .column p, .column h1, .column h2 {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    div.column14, div.column34, div.column13, div.column23 {
+        width: 100%;
+        padding: 16px;
+    }
+    div.responsiveHide, div.familyName, img.responsiveHide {
+        display: none;
+    }
+    div.responsiveShow, div.smallWeightTester  {
+        display: block;
+    }
+    .titleImage {
+        height: 200px;
+    }
+    .titleImageSmall {
+        height: 150px;
+    }
+    .name-title {
+        font-size: 3em;  
+    }
+    footer {
+        text-align: center;
+        background-color: white;
+        color: #333;
+    }
+    footer p {
+        font-size: 1.3em;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    .quit{
+        display: none;
+    }
+    #navbar{
+        display: none;
+    }
+    .popup-content {
+      margin-top: 70px;
+      margin-left:0px;
+      padding: 0px;
+      padding-left: 0px;
+      width: 100%;
+      max-width: 100%;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      position: relative;
+      animation: slideDown .3s forwards;
+    }
+}
+/* Large Phones (480–599px) */
+@media (min-width: 480px) and (max-width: 599px) { 
+    :root {
+      --nav-scroll-trigger: 250;
+    }
+    header {
+        background-color: orange; /* Testing responsive */
+    }    
+    /*header .navbar, */
+    header .familyName {
+        display: none;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .column, .type-tester {
+        width: 100%;
+    }
+    .column p, .column h1, .column h2 {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    div.column14, div.column34, div.column13, div.column23 {
+        width: 100%;
+        padding: 16px;
+    }
+    div.responsiveHide, div.familyName, img.responsiveHide {
+        display: none;
+    }
+    div.responsiveShow, div.smallWeightTester {
+        display: block;
+    }
+    .titleImage {
+        height: 200px;
+    }
+    .titleImageSmall {
+        height: 150px;
+    }
+    .name-title {
+        font-size: 3.5em;  
+    }
+    footer {
+        text-align: center;
+        background-color: white;
+        color: #333;
+    }
+    footer p {
+        font-size: 1.3em;
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    .quit{
+        display: none;
+    }
+    #navbar{
+        display: none;
+    }
+    .popup-content {
+      margin-top: 70px;
+      margin-left:0px;
+      padding: 0px;
+      padding-left: 0px;
+      width: 100%;
+      max-width: 100%;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+      position: relative;
+      animation: slideDown .3s forwards;
+    }
+}
+/* -------------------------------------------------------------- */
+/* Small Tablets (600–767px) */
+
+@media (min-width: 600px) and (max-width: 767px) { 
+    :root {
+      --nav-scroll-trigger: 300;
+    }
+    header {
+        background-color: purple; /* Testing responsive */
+    }    
+    header .familyName {
+        display: none;
+    }
+    .row {
+        flex-direction: column;
+    }
+    .column, .type-tester {
+        width: 100%;
+    }
+    .column p, .column h1, .column h2 {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+    div.column14, div.column34, div.column13, div.column23 {
+        width: 100%;
+        padding: 16px;
+    }
+    div.responsiveHide, div.familyName, img.responsiveHide {
+        display: none;
+    }
+    div.responsiveShow, div.smallWeightTester  {
+        display: block;
+    }
+    .name-title {
+    font-size: 4em;  
+    }
+    .titleImage {
+        height: 250px;
+    }
+    .titleImageSmall {
+        height: 200px;
+    }
+    .responsiveShow {
+        display: none;
+    }
+    footer p {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+    .quit{
+        display: none;
+    }
+    .responsiveShow {
+        display: none;
+    }
+    #navbar{
+        display: none;
+    }
+    .popup-content {
+      margin-top: 70px;
+      margin: 0 auto;
+      margin-top: 70px;
+      position: absolute;
+      padding: 0px;
+      padding-left: 0px;
+      width: 400px;
+      max-width: 100%;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      position: relative;
+      animation: slideDown .3s forwards;
+    }
+}
+/* Medium Tablets (768–991px) */
+@media (min-width: 768px) and (max-width: 991px) { 
+    :root {
+      --nav-scroll-trigger: 330;
+    }
+    header {
+        background-color: green; /* Testing responsive */
+    }    
+    header .andMore{
+        display: none;
+    }
+    fontdue-type-testers .type-tester {
+    --type-tester--adjustment: 1;
+    }
+    .name-title {
+    font-size: 4em;  
+    }
+    .titleImage {
+        height: 280px;
+    }
+    .titleImageSmall {
+        height: 210px;
+    }
+    footer p {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+    .responsiveShow {
+        display: none;
+    }
+    header .hamburger {
+        display: none;
+    }
+    #menuBox{
+        display: none;
+    }
+}
+/* Large Tablets / Small Desktop (992–1199px) */
+@media (min-width: 992px) and (max-width: 1199px) { 
+    :root {
+      --nav-scroll-trigger: 400;
+    }
+    header {
+        background-color: blue; /* Testing responsive */
+    }    
+    fontdue-type-testers .type-tester {
+    --type-tester--adjustment: 1;
+    }
+    .titleImage {
+        height: 350px;
+    }
+    .titleImageSmall {
+        height: 300px;
+    }
+    footer p {
+        margin-left: 2em;
+        margin-right: 2em;
+    }
+    .responsiveShow {
+        display: none;
+    }
+    header .hamburger {
+        display: none;
+    }
+    #menuBox{
+        display: none;
+    }
+}
+
+/* Desktop (1200–1599px) */
+@media (min-width: 1200px) and (max-width: 1599px) { 
+    :root {
+      --nav-scroll-trigger: 250;
+    }
+    header {
+        background-color: orange; /* Testing responsive */
+    }    
+    .row {
+        width: 1200px;
+        margin:0 auto; 
+    }
+    footer p {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    .responsiveShow {
+        display: none;
+    }
+    header .hamburger {
+        display: none;
+    }
+    #menuBox{
+        display: none;
+    }
+}
+/* Large Desktop (1600px+) */
+@media (min-width: 1600px) { 
+    header {
+        background-color: pink; /* Testing responsive */
+    }    
+    .row {
+        width: 1200px;
+        margin:0 auto;
+    }
+    footer p {
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    .responsiveShow {
+        display: none;
+    }
+    header .hamburger {
+        display: none;
+    }
+    #menuBox{
+        display: none;
+    }
+}
+
 
 div.type-tester {
     padding-top: 0px;
