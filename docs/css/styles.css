@@ -2654,7 +2654,7 @@ button.buy-button:hover {
     }
     .specimen{
         line-height: 1.4em;
-        font-size: 4.5vw;
+        font-size: 2.5vw;
     }
 }
 /* Small Phones (360–399px) */
@@ -2821,7 +2821,7 @@ button.buy-button:hover {
       --nav-scroll-trigger: 250;
     }
     header {
-        background-color: orange; /* Testing responsive */
+        background-color: black; /* Testing responsive */
     }    
     /*header .navbar, */
     header .familyName {
