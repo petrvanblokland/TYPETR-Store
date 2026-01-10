@@ -3027,7 +3027,7 @@ button.buy-button:hover {
       --nav-scroll-trigger: 400;
     }
     header {
-        background-color: orange; /* Testing responsive */
+        background-color: black; /* Testing responsive */
     }    
     fontdue-type-testers .type-tester {
     --type-tester--adjustment: 1;
