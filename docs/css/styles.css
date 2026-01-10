@@ -2455,6 +2455,10 @@ button.buy-button:hover {
   box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25);
 }
 
+.specimen div {
+  color: gray;
+}
+
 @media (min-width: 768px) {
     .sectionNavList {
         margin: 0 auto;
@@ -3014,7 +3018,7 @@ button.buy-button:hover {
     }
     .specimen{
         line-height: 1.4em;
-        font-size: 3vw;
+        font-size: 3.1vw;
     }
 }
 /* Large Tablets / Small Desktop (992–1199px) */
@@ -3023,7 +3027,7 @@ button.buy-button:hover {
       --nav-scroll-trigger: 400;
     }
     header {
-        background-color: black; /* Testing responsive */
+        background-color: orange; /* Testing responsive */
     }    
     fontdue-type-testers .type-tester {
     --type-tester--adjustment: 1;
@@ -3055,7 +3059,7 @@ button.buy-button:hover {
     }
     .specimen{
         line-height: 1.4em;
-        font-size: 3.4vw;
+        font-size: 27pt;
     }
 }
 
@@ -3086,7 +3090,7 @@ button.buy-button:hover {
     }
     .specimen{
         line-height: 1.4em;
-        font-size: 24pt;
+        font-size: 25pt;
     }
 }
 /* Large Desktop (1600px+) */
@@ -3124,6 +3128,6 @@ div.type-tester {
     margin-bottom: 20px;
 }
 
-div.character-viewer{
+div.characte r-viewer{
     padding-top: 40px;    
 }
