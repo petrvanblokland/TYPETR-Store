@@ -2584,6 +2584,10 @@ button.buy-button:hover {
     .feature-switch-desktop{
         display:inline;
     }
+    div.type-tester {
+        margin-bottom: 5px;
+        padding-left: 5px;
+    }
 }
 
 /* Extra Small Phones (320–359px) */
