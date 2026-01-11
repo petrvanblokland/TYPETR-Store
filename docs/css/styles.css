@@ -223,7 +223,7 @@ header {
     padding-top: 5em;
 }
 .name-title {
-    font-size: 6em;  
+    font-size: 8vw;  
     padding-top: 0.25em; 
     text-align: center; 
 }
@@ -2567,6 +2567,9 @@ button.buy-button:hover {
         margin-top: 20px;
         margin-bottom: 20px;
      } 
+    .name-title {
+        font-size: 10vw;  
+    }
     .size80 {
           font-size: 13vw;
     }
@@ -2615,9 +2618,6 @@ button.buy-button:hover {
     }
     div.responsiveShow, div.smallWeightTester {
         display: block;
-    }
-    .name-title {
-        font-size: 10vw;  
     }
     .titleImage, .titleImageSmall {
         height: 200px;
@@ -2701,9 +2701,6 @@ button.buy-button:hover {
     .titleImageSmall {
         height: 150px;
     }
-    .name-title {
-        font-size: 10vw;  
-    }
     footer {
         text-align: center;
         background-color: white;
@@ -2780,9 +2777,6 @@ button.buy-button:hover {
     .titleImageSmall {
         height: 150px;
     }
-    .name-title {
-        font-size: 10vw;  
-    }
     footer {
         text-align: center;
         background-color: white;
@@ -2856,9 +2850,6 @@ button.buy-button:hover {
     .titleImageSmall {
         height: 150px;
     }
-    .name-title {
-        font-size: 10vw;  
-    }
     footer {
         text-align: center;
         background-color: white;
@@ -2927,9 +2918,6 @@ button.buy-button:hover {
     div.responsiveShow, div.smallWeightTester  {
         display: block;
     }
-    .name-title {
-        font-size: 10vw;  
-    }
     .titleImage {
         height: 250px;
     }
@@ -2987,9 +2975,6 @@ button.buy-button:hover {
     fontdue-type-testers .type-tester {
     --type-tester--adjustment: 1;
     }
-    .name-title {
-        font-size: 10vw;  
-    }
     .titleImage {
         height: 280px;
     }
@@ -3018,6 +3003,9 @@ button.buy-button:hover {
     .specimen{
         line-height: 1.4em;
         font-size: 3.1vw;
+    }
+    .name-title {
+        font-size: 5em;  
     }
 }
 /* Large Tablets / Small Desktop (992–1199px) */
@@ -3060,6 +3048,9 @@ button.buy-button:hover {
         line-height: 1.4em;
         font-size: 27pt;
     }
+    .name-title {
+        font-size: 5em;  
+    }
 }
 
 /* Desktop (1200–1599px) */
@@ -3091,6 +3082,9 @@ button.buy-button:hover {
         line-height: 1.4em;
         font-size: 25pt;
     }
+    .name-title {
+        font-size: 5em;  
+    }
 }
 /* Large Desktop (1600px+) */
 @media (min-width: 1600px) { 
@@ -3117,6 +3111,9 @@ button.buy-button:hover {
     .specimen{
         line-height: 1.4em;
         font-size: 24pt;
+    }
+    .name-title {
+        font-size: 5em;  
     }
 }
 
