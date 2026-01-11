@@ -3195,12 +3195,12 @@ button.buy-button:hover {
 
 
 div.type-tester {
-    padding-top: 30px;
+    padding-top: 0px;
     padding-bottom: 0px;
     margin-bottom: 10px;
 
 }
 
-div.characte r-viewer{
-    padding-top: 40px;    
+div.character-viewer{
+    padding-top: 30px;    
 }
