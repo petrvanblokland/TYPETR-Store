@@ -2324,6 +2324,7 @@ div.responsiveShow {
 
 /* Footer */
 footer {
+    border-top: 1px solid lightgray;
     text-align: center;
     padding-top: 20px;
     padding-bottom: 1em;
@@ -3082,6 +3083,17 @@ button.buy-button:hover {
     }
     .name-title {
         font-size: 5em;  
+    }
+    .image-row {
+        grid-template-columns: 1fr;
+    }
+
+    .section-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .interview--grid {
+        grid-template-columns: 1fr;
     }
 }
 /* Large Tablets / Small Desktop (992–1199px) */
