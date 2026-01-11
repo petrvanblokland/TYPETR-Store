@@ -2561,8 +2561,11 @@ button.buy-button:hover {
     }
     h1{
         margin: 0px;
-        margin-top: 20px;
+        margin-top: 10px;
       }
+    #weightsStyles h1, #openTypeFeatures h1, div.responsiveHide h1{
+        padding-top: 0px;
+    }
      p {
         margin-top: 20px;
         margin-bottom: 20px;
@@ -3125,7 +3128,7 @@ button.buy-button:hover {
 div.type-tester {
     padding-top: 0px;
     padding-bottom: 0px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 div.characte r-viewer{
