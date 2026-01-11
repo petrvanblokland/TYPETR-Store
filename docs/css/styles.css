@@ -223,7 +223,7 @@ header {
     padding-top: 5em;
 }
 .name-title {
-    font-size: 5em;  
+    font-size: 6em;  
     padding-top: 0.25em; 
     text-align: center; 
 }
@@ -2589,7 +2589,7 @@ button.buy-button:hover {
       --nav-scroll-trigger: 250;
     }
     header {
-        background-color: black; /* Testing responsive */
+        background-color: black /* Testing responsive */
     }    
     /*header .navbar, */
     header .familyName, header .logo {
@@ -2617,7 +2617,7 @@ button.buy-button:hover {
         display: block;
     }
     .name-title {
-        font-size: 2em;  
+        font-size: 10vw;  
     }
     .titleImage, .titleImageSmall {
         height: 200px;
@@ -2641,7 +2641,6 @@ button.buy-button:hover {
     #navbar{
         display: none;
     }
-
     .popup-content {
       margin-top: 70px;
       margin-left:0px;
@@ -2667,7 +2666,7 @@ button.buy-button:hover {
       --nav-scroll-trigger: 250;
     }
     header {
-        background-color: black; /* Testing responsive */
+        background-color: black /* Testing responsive */
     }    
     /*header .navbar, */
     header .familyName {
@@ -2703,7 +2702,7 @@ button.buy-button:hover {
         height: 150px;
     }
     .name-title {
-        font-size: 2.5em;  
+        font-size: 10vw;  
     }
     footer {
         text-align: center;
@@ -2782,7 +2781,7 @@ button.buy-button:hover {
         height: 150px;
     }
     .name-title {
-        font-size: 3em;  
+        font-size: 10vw;  
     }
     footer {
         text-align: center;
@@ -2858,7 +2857,7 @@ button.buy-button:hover {
         height: 150px;
     }
     .name-title {
-        font-size: 3.5em;  
+        font-size: 10vw;  
     }
     footer {
         text-align: center;
@@ -2929,7 +2928,7 @@ button.buy-button:hover {
         display: block;
     }
     .name-title {
-    font-size: 4em;  
+        font-size: 10vw;  
     }
     .titleImage {
         height: 250px;
@@ -2989,7 +2988,7 @@ button.buy-button:hover {
     --type-tester--adjustment: 1;
     }
     .name-title {
-    font-size: 4em;  
+        font-size: 10vw;  
     }
     .titleImage {
         height: 280px;
