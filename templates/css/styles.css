@@ -2499,7 +2499,7 @@ button.buy-button:hover {
     }
 
     .sticky h2{
-        padding-left: 10px;
+        padding-left: 5px;
     }
 
     .sticky img {
@@ -2599,7 +2599,7 @@ button.buy-button:hover {
       --nav-scroll-trigger: 250;
     }
     header {
-        background-color: black /* Testing responsive */
+        background-color: black; /* Testing responsive */
     }    
     /*header .navbar, */
     header .familyName, header .logo {
@@ -2666,6 +2666,9 @@ button.buy-button:hover {
         line-height: 1.4em;
         font-size: 2.5vw;
     }
+    #menuBox{
+        width: 50%;
+    }
 }
 /* Small Phones (360–399px) */
 @media (min-width: 360px) and (max-width: 399px) { 
@@ -2673,7 +2676,7 @@ button.buy-button:hover {
       --nav-scroll-trigger: 250;
     }
     header {
-        background-color: black /* Testing responsive */
+        background-color: black; /* Testing responsive */
     }    
     /*header .navbar, */
     header .familyName {
@@ -2691,10 +2694,10 @@ button.buy-button:hover {
     }
     div.column14, div.column34, div.column13, div.column23 {
         width: 100%;
-        padding: 5px;
+        padding: 15px;
     }
     .column14 {
-        padding: 5px;        
+        padding: 15px;        
     }
     div.responsiveHide, div.familyName, img.responsiveHide {
         display: none;
@@ -2745,6 +2748,9 @@ button.buy-button:hover {
         line-height: 1.4em;
         font-size: 4.5vw;
     }
+    #menuBox{
+        width: 50%;
+    }
 }
 /* Medium Phones (400–479px) */
 @media (min-width: 400px) and (max-width: 479px) { 
@@ -2752,7 +2758,7 @@ button.buy-button:hover {
       --nav-scroll-trigger: 250;
     }
     header {
-        background-color: black; /* Testing responsive */
+        background-color: black /* Testing responsive */
     }    
     /*header .navbar, */
     header .familyName {
@@ -2770,7 +2776,7 @@ button.buy-button:hover {
     }
     div.column14, div.column34, div.column13, div.column23 {
         width: 100%;
-        padding: 16px;
+        padding: 15px;
     }
     div.responsiveHide, div.familyName, img.responsiveHide {
         display: none;
@@ -3129,6 +3135,7 @@ div.type-tester {
     padding-top: 0px;
     padding-bottom: 0px;
     margin-bottom: 10px;
+
 }
 
 div.characte r-viewer{
