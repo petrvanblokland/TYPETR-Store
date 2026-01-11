@@ -2203,10 +2203,62 @@ div.image {
     width:100%;
 }
 
+/* Basis sectie */
+
+.section-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+}
+
+.interview {
+    border-top: 1px solid gray;
+    display: grid;
+    gap: 0px;
+    margin-bottom: 10px;
+}
+
+/* Afbeeldingen */
 .img-banner {
-  width: 100%;
-  height: auto;
-  display: block;
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+}
+
+/* Variant: 2 images onder tekst */
+.image-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+/* Variant: 50% content blocks */
+.interview--grid {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.content-block {
+    display: grid;
+    gap: 1rem;
+    text-decoration: none;
+    color: inherit;
+}
+
+.img-mask {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 16 / 9; /* pas aan indien nodig */
+    overflow: hidden;
+}
+
+/* Afbeelding vult het masker */
+.img-mask img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .sectionNav {
@@ -2535,6 +2587,17 @@ button.buy-button:hover {
         padding: 0.6em;
         padding-left: 1em;
         padding-bottom: 0em;
+    }
+    .image-row {
+        grid-template-columns: 1fr;
+    }
+
+    .section-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .interview--grid {
+        grid-template-columns: 1fr;
     }
 
     .column14:has(.buy-button):not(:has(h2, ul, ol)),
