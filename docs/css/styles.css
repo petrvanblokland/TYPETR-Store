@@ -94,7 +94,7 @@ h2 a:link, h2 a:visited, h2 a:active,
 
 
 .character-viewer__block__character-list>div:hover{
-    background-color: #4E76C0;
+    background-color: #3360B9;
 }
 
 .character-viewer__block__character-list>div:active,
@@ -2494,7 +2494,7 @@ button.buy-button:hover {
   justify-content: center;
 
   border-radius: 10px; /* rounded rectangle */
-  background-color: #4E76C0;
+  background-color: #3360B9;
   color: #fff;
 
   cursor: pointer;
