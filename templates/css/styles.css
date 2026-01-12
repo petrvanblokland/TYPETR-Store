@@ -1983,6 +1983,10 @@ header .hamburger {
     z-index: 100000000;
 }
 
+.cta-cart {
+    animation: fadeIn 0.3s ease-out forwards;
+}
+
 header .hamburger:hover{
     color: #E31C79;  
 }
