@@ -2373,11 +2373,11 @@ fontdue-cart-button {
     font-size: 1.2em;
 }
 fontdue-cart-button:hover {
-    background-color: #4E76C0;
+    color: #4E76C0;
 }
 
 fontdue-cart-button:active {
-    background-color: #E31C79;
+    color: #E31C79;
 }
 
 .character-viewer__monitor__container {
