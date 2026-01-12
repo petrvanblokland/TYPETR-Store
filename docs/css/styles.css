@@ -2078,7 +2078,7 @@ div.image {
 }
 
 .store-modal__container__overlay {
-    z-index: 1000000000;
+    z-index: 10000000000;
 }
 
 .popup-content {
