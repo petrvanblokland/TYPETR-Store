@@ -2644,6 +2644,7 @@ button.buy-button:hover {
       }
     #weightsStyles h1, #openTypeFeatures h1, div.responsiveHide h1{
         padding-top: 0px;
+        padding-bottom: 10px;
     }
      p {
         margin-top: 20px;
