@@ -2553,6 +2553,9 @@ button.buy-button:hover {
     .feature-switch-desktop{
         display:none;
     }
+    .column14.ab {
+      padding-bottom: 20px;
+    }
 }
 
 @media (max-width: 768px) {
