@@ -2169,6 +2169,11 @@ div.image {
     background-color: #F0F0F0;
 }
 
+.column14.ab {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
 .column34 {
     flex: 1;
     padding-right: 20px;
