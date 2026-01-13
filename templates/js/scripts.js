@@ -103,3 +103,21 @@ document.addEventListener("DOMContentLoaded", () => {
     sections.forEach(section => observer.observe(section));
 });
 
+//scroll offset 
+
+
+const root = document.documentElement;
+
+function updateScrollOffset() {
+  const value = window.scrollY > 400
+    ? getComputedStyle(root).getPropertyValue('--scroll-offset-large')
+    : getComputedStyle(root).getPropertyValue('--scroll-offset-small');
+
+  root.style.setProperty('--scroll-offset', value.trim());
+}
+
+window.addEventListener('scroll', updateScrollOffset);
+window.addEventListener('resize', updateScrollOffset);
+
+updateScrollOffset(); // init
+
