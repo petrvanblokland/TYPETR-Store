@@ -94,7 +94,7 @@ h2 a:link, h2 a:visited, h2 a:active,
 
 
 .character-viewer__block__character-list>div:hover{
-    background-color: #4E76C0;
+    background-color: #3360B9;
 }
 
 .character-viewer__block__character-list>div:active,
@@ -226,6 +226,7 @@ header {
     font-size: 8vw;  
     padding-top: 0.25em; 
     text-align: center; 
+    animation: fadeIn 1s ease-out forwards;
 }
 .name-title a {
     text-decoration: none;
@@ -1944,8 +1945,8 @@ header .navbar {
     display: block;
     float: right;
     padding: 4px;
-    padding-right: 15px;
-    animation: slideLeft 0.4s ease-out forwards;
+    padding-right: 30px;
+    animation: fadeIn 0.4s ease-out forwards;
 }
 header .navbar ul {
     list-style-type: none;
@@ -1981,6 +1982,10 @@ header .hamburger {
     padding-right: 40px;
     animation: fadeIn 0.7s ease-out forwards;
     z-index: 100000000;
+}
+
+.cta-cart {
+    animation: fadeIn 0.3s ease-out forwards;
 }
 
 header .hamburger:hover{
@@ -2078,7 +2083,7 @@ div.image {
 }
 
 .store-modal__container__overlay {
-    z-index: 1000000000;
+    z-index: 10000000000;
 }
 
 .popup-content {
@@ -2163,6 +2168,11 @@ div.image {
     padding-right: 20px;
     box-sizing: border-box;
     background-color: #F0F0F0;
+}
+
+.column14.ab {
+  padding-top: 0px;
+  padding-bottom: 0px;
 }
 
 .column34 {
@@ -2331,6 +2341,7 @@ footer {
     background-color: white;
     color: #333;
     width: 100%;
+    animation: fadeIn 1s ease-out forwards;
 }
 footer p {
     font-size: 1em;
@@ -2373,11 +2384,11 @@ fontdue-cart-button {
     font-size: 1.2em;
 }
 fontdue-cart-button:hover {
-    background-color: #4E76C0;
+    color: #4E76C0;
 }
 
 fontdue-cart-button:active {
-    background-color: #E31C79;
+    color: #E31C79;
 }
 
 .character-viewer__monitor__container {
@@ -2428,7 +2439,7 @@ button.buy-button:hover {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.6); 
-  animation: fadeIn .4s forwards;
+  animation: fadeIn 4s ease-out forwards;
   z-index: 10000000000;
 }
 
@@ -2485,7 +2496,7 @@ button.buy-button:hover {
   justify-content: center;
 
   border-radius: 10px; /* rounded rectangle */
-  background-color: #4E76C0;
+  background-color: #3360B9;
   color: #fff;
 
   cursor: pointer;
@@ -2499,13 +2510,16 @@ button.buy-button:hover {
   font-size: 32px;
 
   border: none; /* zorgt dat er geen border is */
+  box-shadow: 14px 14px 16px rgba(0, 0, 0, 0.2);
+
 }
 
 /* Hover */
 .cta-cart:hover {
   background-color: #E31C79;
-  transform: translateY(-1px);
-  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.25);
+  transform: translateY(-5px);
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
+
 }
 
 .specimen div {
@@ -2540,6 +2554,9 @@ button.buy-button:hover {
     }
     .feature-switch-desktop{
         display:none;
+    }
+    .column14.ab {
+      padding-bottom: 20px;
     }
 }
 
@@ -2629,6 +2646,7 @@ button.buy-button:hover {
       }
     #weightsStyles h1, #openTypeFeatures h1, div.responsiveHide h1{
         padding-top: 0px;
+        padding-bottom: 10px;
     }
      p {
         margin-top: 20px;
