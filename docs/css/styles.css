@@ -12,7 +12,7 @@
 }
 
 html {
-  --scroll-offset: 135px;
+  --scroll-offset: 125px;
   scroll-behavior: smooth;
   scroll-padding-top: var(--scroll-offset);
   scroll-snap-type: y proximity;
@@ -2138,7 +2138,7 @@ div.image {
   font-size: 30pt;
   color: black;   
   font-weight: regular;
-  animation: fadeIn 2.7s ease-out forwards;
+  animation: fadeIn 0.7s ease-out forwards;
 }
 
 .row {
@@ -2314,7 +2314,11 @@ div.image {
     list-style: none;
     display: flex;
     flex-direction: column;
-    font-size: 1.5em;
+    font-size: 1.3em;
+}
+
+.sticky h2 {
+    font-size: 1.3em;    
 }
 
 .sectionNavList H2 {
