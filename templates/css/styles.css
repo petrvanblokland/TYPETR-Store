@@ -1729,6 +1729,9 @@ header {
 .size28 { /* Used for Responder P, optically same size as .size24 for other families */
     font-size: 28px;
 }
+.size30 {
+    font-size: 30px;
+}
 .size36 {
     font-size: 36px;
 }
