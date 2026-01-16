@@ -40,7 +40,7 @@ if (event.target === popup) {
 //menuBox 
 
 const box = document.getElementById('box');
-const BREAKPOINT = 767; // pas aan naar wens
+const BREAKPOINT = 890; // pas aan naar wens
 
 function updateMenuVisibility() {
   if (window.innerWidth >= BREAKPOINT) {

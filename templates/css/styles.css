@@ -2142,6 +2142,7 @@ div.image {
   color: black;   
   font-weight: regular;
   animation: fadeIn 0.7s ease-out forwards;
+  padding-top: 5px;
 }
 
 .row {
@@ -3020,7 +3021,7 @@ button.buy-button:hover {
     }
     div.column14, div.column34, div.column13, div.column23 {
         width: 100%;
-        padding: 16px;
+        padding: 16px;z
     }
     div.responsiveHide, div.familyName, img.responsiveHide {
         display: none;
@@ -3071,6 +3072,25 @@ button.buy-button:hover {
         font-size: 4.5vw;
     }
 }
+
+@media (min-width: 768px) and (max-width: 890px) { 
+    header .hamburger {
+        display: inline;
+    }
+    #navbar{
+        display: none;
+    }
+}
+
+@media (min-width: 890px) and (max-width: 991px) { 
+    header .hamburger {
+        display: none;
+    }
+    #menuBox{
+        display: none;
+    }
+}
+
 /* Medium Tablets (768–991px) */
 @media (min-width: 768px) and (max-width: 991px) { 
     :root {
@@ -3096,12 +3116,6 @@ button.buy-button:hover {
         margin-right: 2em;
     }
     .responsiveShow {
-        display: none;
-    }
-    header .hamburger {
-        display: none;
-    }
-    #menuBox{
         display: none;
     }
     .feature-switch-mobile{
