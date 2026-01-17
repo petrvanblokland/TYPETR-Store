@@ -2217,6 +2217,12 @@ div.image {
   height: auto;
 }
 
+.sticky-OT {
+  position: sticky;
+  top: 135px;
+  height: auto;
+}
+
 .sticky img {
     width:100%;
 }
