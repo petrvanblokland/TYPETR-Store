@@ -105,18 +105,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //scroll offset 
 
-  const root = document.documentElement;
 
-  function updateScrollState() {
-    const trigger = Number(
-      getComputedStyle(root).getPropertyValue('--scroll-trigger')
-    );
+const root = document.documentElement;
 
-    root.classList.toggle('scrolled', window.scrollY > trigger);
-  }
+function updateScrollOffset() {
+  const value = window.scrollY > 400
+    ? getComputedStyle(root).getPropertyValue('--scroll-offset-large')
+    : getComputedStyle(root).getPropertyValue('--scroll-offset-small');
 
-  window.addEventListener('scroll', updateScrollState);
-  window.addEventListener('resize', updateScrollState);
+  root.style.setProperty('--scroll-offset', value.trim());
+}
 
-  updateScrollState();
+window.addEventListener('scroll', updateScrollOffset);
+window.addEventListener('resize', updateScrollOffset);
+
+updateScrollOffset(); // init
 

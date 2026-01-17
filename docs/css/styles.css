@@ -2233,10 +2233,10 @@ div.image {
 }
 
 .interview h2{
-    font-size: 32pt;
+    font-size: 36pt;
     padding-top: 10px;
-    padding-bottom: 10px;
-    margin-block-start: 20px;
+    padding-bottom: 0px;
+    margin-block-start: 0px;
     margin-block-end: 0em;
 }
 
@@ -3118,6 +3118,9 @@ button.buy-button:hover {
     .responsiveShow {
         display: none;
     }
+    .interview h2{
+        font-size: 6vw;
+    }
     .feature-switch-mobile{
         display:none;
     }
@@ -3166,6 +3169,9 @@ button.buy-button:hover {
     }
     .responsiveShow {
         display: none;
+    }
+    .interview h2{
+        font-size: 4vw;
     }
     header .hamburger {
         display: none;
