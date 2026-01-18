@@ -107,11 +107,11 @@ h1, h2, h3, h4, h5, h6, a, ol li, ul li, ol li, p, a {
  text-decoration: none;
 }
 
-h2 a:hover, .sectionNavList a:hover, .menuBox ul li:hover, ol li a {
+h2 a:hover, .sectionNavList a:hover, .menuBox ul li:hover, ol li a, ul li a {
     color: #4E76C0;  
 }
 
-h2 a:active, .sectionNavList a:active, .menuBox ul li:hover, ol li a:hover {
+h2 a:active, .sectionNavList a:active, .menuBox ul li:hover, ol li a:hover, ul li a:hover {
     color: #E31C79;  
 }
 
@@ -202,6 +202,7 @@ body {
   -webkit-text-size-adjust: none;
 }
 
+fontdue-cart-button,
 .cart-button__label{
   font-family: "Upgrade Regular", sans-serif; 
 }
