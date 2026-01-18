@@ -116,8 +116,22 @@ function updateScrollOffset() {
   root.style.setProperty('--scroll-offset', value.trim());
 }
 
+//stick contact information
+
+
 window.addEventListener('scroll', updateScrollOffset);
 window.addEventListener('resize', updateScrollOffset);
 
 updateScrollOffset(); // init
 
+
+const contact = document.getElementById('contact');
+const offsetTop = contact.offsetTop;
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY >= offsetTop) {
+        contact.classList.add('sticky');
+    } else {
+        contact.classList.remove('sticky');
+    }
+});

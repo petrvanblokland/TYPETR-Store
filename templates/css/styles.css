@@ -223,6 +223,41 @@ header {
 }
 
 
+/* ===== contact ===== */
+.contact-block {
+    display: flex;
+    align-items: center;
+    background: white;
+    border-bottom: 1px solid #202020;
+    transition: all 0.2s ease;
+}
+
+.contact-block img.contact {
+  max-width: 130px; 
+  height: auto;
+  object-fit: cover;
+}
+
+.contact-block > div {
+  display: flex;
+  align-items: center; /* Verticaal uitlijnen */
+  gap: 20px; /* Ruimte tussen image en div */
+  padding: 0px;
+}
+
+/* ===== sticky ===== */
+
+.contact-block.sticky {
+    position: sticky;
+    top: 70px;
+    z-index: 10;
+}
+
+.column34 img.contact {
+  max-width: 150px; /* of wat passend is */
+  height: auto;
+}
+
 .top-under-menu {
     padding-top: 5em;
 }
@@ -2053,6 +2088,7 @@ h2 a.active {
     background-position: center;
     background-repeat: repeat;
     box-shadow: inset 0 -30px 35px -15px rgba(0, 0, 0, 0.25);
+    border-bottom: 1px solid gray;
 }
 .titleImageSmall {
     margin-top: 20px; 
@@ -3139,6 +3175,9 @@ button.buy-button:hover {
     .feature-switch-desktop{
         display:inline;
     }
+    .contact-block {
+        display: none;
+    }
     .specimen{
         line-height: 1.4em;
         font-size: 3.1vw;
@@ -3149,7 +3188,6 @@ button.buy-button:hover {
     .image-row {
         grid-template-columns: 1fr;
     }
-
     .section-grid {
         grid-template-columns: 1fr;
     }
@@ -3197,6 +3235,9 @@ button.buy-button:hover {
     .feature-switch-desktop{
         display:inline;
     }
+    .contact-block {
+        display: none;
+    }
     .specimen{
         line-height: 1.4em;
         font-size: 27pt;
@@ -3231,6 +3272,9 @@ button.buy-button:hover {
     #menuBox{
         display: none;
     }
+    .contact-block {
+        display: none;
+    }
     .specimen{
         line-height: 1.4em;
         font-size: 25pt;
@@ -3259,6 +3303,9 @@ button.buy-button:hover {
         display: none;
     }
     #menuBox{
+        display: none;
+    }
+    .contact-block {
         display: none;
     }
     .specimen{
