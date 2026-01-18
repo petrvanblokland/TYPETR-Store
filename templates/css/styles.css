@@ -230,6 +230,7 @@ header {
     background: white;
     border-bottom: 1px solid #202020;
     transition: all 0.2s ease;
+    box-shadow: 0 14px 16px rgba(0, 0, 0, 0.2);
 }
 
 .contact-block img.contact {
