@@ -2084,7 +2084,7 @@ h2 a.active {
     padding-top: 30px;
     width: 100%; 
     height: 400px; 
-    background-size: contain;
+    background-size: cover;
     background-position: center center;
     background-repeat: repeat;
     box-shadow: inset 0 -30px 35px -15px rgba(0, 0, 0, 0.25);
@@ -2092,10 +2092,9 @@ h2 a.active {
 }
 .titleImageSmall {
     margin-top: 20px; 
-    padding-top: 30px;
     width: 100%; 
     height: 350px; /* Fitting Bitcount animations */
-    background-size: contain;
+    background-size: cover;
     background-position: center center;
     background-repeat: repeat;
 }
