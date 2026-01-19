@@ -2091,6 +2091,8 @@ h2 a.active {
     border-bottom: 1px solid gray;
 }
 .titleImageSmall {
+    margin-top: 20px; 
+    padding-top: 30px;
     width: 100%; 
     height: 350px; /* Fitting Bitcount animations */
     background-size: contain;
