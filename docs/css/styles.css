@@ -2084,7 +2084,7 @@ h2 a.active {
     padding-top: 30px;
     width: 100%; 
     height: 400px; 
-    background-size: cover;
+    background-size: contain;
     background-position: center center;
     background-repeat: repeat;
     box-shadow: inset 0 -30px 35px -15px rgba(0, 0, 0, 0.25);
@@ -2094,7 +2094,7 @@ h2 a.active {
     margin-top: 20px; 
     width: 100%; 
     height: 350px; /* Fitting Bitcount animations */
-    background-size: cover;
+    background-size: contain;
     background-position: center center;
     background-repeat: repeat;
 }
