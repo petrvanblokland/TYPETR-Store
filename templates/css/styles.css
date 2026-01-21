@@ -92,7 +92,10 @@ h2 a:link, h2 a:visited, h2 a:active,
     color: #202020;
 }
 
-
+h4{
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
 .character-viewer__block__character-list>div:hover{
     background-color: #3360B9;
 }
@@ -2358,6 +2361,7 @@ div.image {
   transition: color 0.2s ease;
 }
 
+.sticky a.active ,
 .sectionNavList a.active {
     color: #E31C79;
 }
@@ -2398,6 +2402,14 @@ div.image {
 div.responsiveShow {
     display: none;
 }
+
+code {
+    background: rgba(0,0,0,0.05);
+    padding: 10px;
+    border-radius: 4px;
+    line-height: 4em;
+}
+
 
 /* Footer */
 footer {
