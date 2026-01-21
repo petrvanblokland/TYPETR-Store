@@ -7,7 +7,7 @@
 }
 
 .row, .column, .type-tester, .character-viewer_blocks, .features,
-.character-viewer__block__character-list > div  {
+.character-viewer__block__character-list > div, img  {
   scroll-snap-align: start; 
 }
 
