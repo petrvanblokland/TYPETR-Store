@@ -2640,6 +2640,9 @@ button.buy-button:hover {
 }
 
 @media (max-width: 768px) {
+    html.page-admin {
+      --scroll-offset: 195px;
+    }
     .sticky {
         display: flex;
         align-items: center; /* verticaal uitlijnen */
