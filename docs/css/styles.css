@@ -2603,15 +2603,26 @@ box-shadow:
 
 }
 
-h2 a, .sectionNavList li a{
+ h2 a, .sectionNavList li a{
     display: inline-block;
     transition:
-        background-color 0.1s ease,
+        background-color 0.2s ease,
         transform 0.2s cubic-bezier(.4, 0, .2, 1);
+}
+
+.contact a{
+    display: inline-block;
+    transition:
+        background-color 0.2s ease,
+        transform 0.3s cubic-bezier(.4, 0, .2, 1);    
 }
 
 .sectionNavList li a:hover{
     transform: translateY(-3px);
+}
+
+.contact a:hover{
+    transform: translateX(7px);
 }
 
 h2 a:hover{
