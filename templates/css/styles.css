@@ -2585,9 +2585,9 @@ box-shadow:
   0 0 8px rgba(0, 0, 0, 0.12),
   0 8px 24px rgba(0, 0, 0, 0.12);
   transition:
-    background-color 0.2s ease,
+    background-color 0.1s ease,
     transform 0.15s ease,
-    box-shadow 0.2s ease;
+    box-shadow 0.1s ease;
   font-size: 32px;
 
   border: none; /* zorgt dat er geen border is */
@@ -2601,6 +2601,21 @@ box-shadow:
   transform: translateY(-5px);
   box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
 
+}
+
+h2 a, .sectionNavList li a{
+    display: inline-block;
+    transition:
+        background-color 0.1s ease,
+        transform 0.2s cubic-bezier(.4, 0, .2, 1);
+}
+
+.sectionNavList li a:hover{
+    transform: translateY(-3px);
+}
+
+h2 a:hover{
+    transform: translateX(10px);
 }
 
 .specimen div {
