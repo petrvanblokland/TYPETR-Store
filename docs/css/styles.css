@@ -2610,7 +2610,7 @@ h2 a, .sectionNavList li a{
         transform 0.2s cubic-bezier(.4, 0, .2, 1);
 }
 
-.navbar li a:hover, .sectionNavList li a:hover{
+.sectionNavList li a:hover{
     transform: translateY(-3px);
 }
 
@@ -2686,7 +2686,9 @@ h2 a:hover{
     .sticky p.contact {
         margin: 0; /* eventueel */
     }
-
+    .sectionNavList li a:hover{
+        transform: translateX(10px);
+    }
     div.column14.topline.ab,{
         padding-left:0px;
         padding-right:0px;

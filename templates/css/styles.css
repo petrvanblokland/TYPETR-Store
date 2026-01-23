@@ -2686,7 +2686,9 @@ h2 a:hover{
     .sticky p.contact {
         margin: 0; /* eventueel */
     }
-
+    .sectionNavList li a:hover{
+        transform: translateX(10px);
+    }
     div.column14.topline.ab,{
         padding-left:0px;
         padding-right:0px;
