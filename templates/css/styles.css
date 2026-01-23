@@ -1152,471 +1152,309 @@ header {
 /* Proforma Pro VF */
 
 .proforma-pro {
-    font-family: "Proforma Pro VF Regular";
+    font-family: "TP Proforma Pro Regular";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 16, 'wght' 400;
-    line-height: 1.3em;
-    letter-spacing: 0;
+    font-variation-settings: 'wght' 400;
 }
 .proforma-pro p {
-    font-variation-settings: 'opsz' 10, 'wght' 400;
-    line-height: 1.4em; 
-    letter-spacing: 0;
+    letter-spacing: 0.03em; /* Needs to be calibrated again, once the final VF is made */
+    line-height: 1.4em; /* Needs to be calibrated again, once the final VF is made */
 }
 .proforma-pro-bold {
-    font-family: "Proforma Pro VF Regular";
+    font-family: "TP Proforma Pro Regular";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 16, 'wght' 700;
-    line-height: 1.3em;
-    letter-spacing: 0;
+    font-variation-settings: 'wght' 700;
 }
 .proforma-pro-bold p {
-    font-variation-settings: 'opsz' 10, 'wght' 700;
-    line-height: 1.4em; 
-    letter-spacing: 0;
+    letter-spacing: 0.03em; /* Needs to be calibrated again, once the final VF is made */
+    line-height: 1.4em; /* Needs to be calibrated again, once the final VF is made */
 }
 
 /* Proforma Pro */
 
 .proforma-pro-thin {
-    font-family: "Proforma Pro VF Regular";
+    font-family: "Proforma Pro Thin";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 24, 'wght' 100;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 .proforma-pro-text-thin {
-    font-family: "Proforma Pro VF Regular";
+    font-family: "Proforma Pro Tx Thin";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 10, 'wght' 100;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 .proforma-pro-thin-italic {
-    font-family: "Proforma Pro VF Regular Italic";
+    font-family: "Proforma Pro Thin Italic";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 24, 'wght' 100;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 .proforma-pro-text-thin-italic {
-    font-family: "Proforma Pro VF Regular Italic";
+    font-family: "Proforma Pro Tx Thin Italic";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 10, 'wght' 100;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
-
 
 .proforma-pro-extralight {
-    font-family: "Proforma Pro VF Regular";
+    font-family: "Proforma Pro ExtraLight";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 24, 'wght' 200;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 .proforma-pro-text-extralight {
-    font-family: "Proforma Pro VF Regular";
+    font-family: "Proforma Pro Tx ExtraLight";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 10, 'wght' 200;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 .proforma-pro-extralight-italic {
-    font-family: "Proforma Pro VF Regular Italic";
+    font-family: "Proforma Pro ExtraLight Italic";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 24, 'wght' 200;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 .proforma-pro-text-extralight-italic {
-    font-family: "Proforma Pro VF Regular Italic";
+    font-family: "Proforma Pro Tx ExtraLight Italic";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 10, 'wght' 200;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 
 
 .proforma-pro-light {
-    font-family: "Proforma Pro VF Regular";
+    font-family: "Proforma Pro Light";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 24, 'wght' 300;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 .proforma-pro-text-light {
-    font-family: "Proforma Pro VF Regular";
+    font-family: "Proforma Pro Tx Light";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 10, 'wght' 300;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 .proforma-pro-light-italic {
-    font-family: "Proforma Pro VF Regular Italic";
+    font-family: "Proforma Pro Light Italic";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 24, 'wght' 300;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 .proforma-pro-text-light-italic {
-    font-family: "Proforma Pro VF Regular Italic";
+    font-family: "Proforma Pro Tx Light Italic";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 10, 'wght' 300;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 
 
 .proforma-pro-semilight {
-    font-family: "Proforma Pro VF Regular";
+    font-family: "Proforma Pro SemiLight";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 24, 'wght' 350;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 .proforma-pro-text-semilight {
-    font-family: "Proforma Pro VF Regular";
+    font-family: "Proforma Pro Tx SemiLight";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 10, 'wght' 350;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 .proforma-pro-semilight-italic {
-    font-family: "Proforma Pro VF Regular Italic";
+    font-family: "Proforma Pro SemiLight Italic";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 24, 'wght' 350;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 .proforma-pro-text-semilight-italic {
-    font-family: "Proforma Pro VF Regular Italic";
+    font-family: "Proforma Pro Tx SemiLight Italic";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 10, 'wght' 350;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 
 
 .proforma-pro-book {
-    font-family: "Proforma Pro VF Regular";
+    font-family: "Proforma Pro Book";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 24, 'wght' 365;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 .proforma-pro-text-book {
-    font-family: "Proforma Pro VF Regular";
+    font-family: "Proforma Pro Tx Book";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 10, 'wght' 365;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 .proforma-pro-book-italic {
-    font-family: "Proforma Pro VF Regular Italic";
+    font-family: "Proforma Pro Book Italic";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 24, 'wght' 365;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 .proforma-pro-text-book-italic {
-    font-family: "Proforma Pro VF Regular Italic";
+    font-family: "Proforma Pro Tx Book Italic";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 10, 'wght' 365;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 
 
 .proforma-pro-normal {
-    font-family: "Proforma Pro VF Regular";
+    font-family: "Proforma Pro Normal";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 24, 'wght' 380;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 .proforma-pro-text-normal {
-    font-family: "Proforma Pro VF Regular";
+    font-family: "Proforma Pro Tx Normal";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 10, 'wght' 380;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 .proforma-pro-normal-italic {
-    font-family: "Proforma Pro VF Regular Italic";
+    font-family: "Proforma Pro Normal Italic";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 24, 'wght' 380;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 .proforma-pro-text-normal-italic {
-    font-family: "Proforma Pro VF Regular Italic";
+    font-family: "Proforma Pro Tx Normal Italic";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 10, 'wght' 380;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 
 
 .proforma-pro-regular {
-    font-family: "Proforma Pro VF Regular";
+    font-family: "Proforma Pro Regular";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 24, 'wght' 400;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 .proforma-pro-text-regular {
-    font-family: "Proforma Pro VF Regular";
+    font-family: "Proforma Pro Tx Regular";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 10, 'wght' 400;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 .proforma-pro-regular-italic {
-    font-family: "Proforma Pro VF Regular Italic";
+    font-family: "Proforma Pro Regular Italic";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 24, 'wght' 400;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 .proforma-pro-text-regular-italic {
-    font-family: "Proforma Pro VF Regular Italic";
+    font-family: "Proforma Pro Tx Regular Italic";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 10, 'wght' 400;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
-
 
 .proforma-pro-standard {
-    font-family: "Proforma Pro VF Regular";
+    font-family: "Proforma Pro Standard";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 24, 'wght' 450;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 .proforma-pro-text-standard {
-    font-family: "Proforma Pro VF Regular";
+    font-family: "Proforma Pro Tx Standard";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 10, 'wght' 450;
-    line-height: 1.4em; 
 }
 .proforma-pro-standard-italic {
-    font-family: "Proforma Pro VF Regular Italic";
+    font-family: "Proforma Pro Standard Italic";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 24, 'wght' 450;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 .proforma-pro-text-standard-italic {
-    font-family: "Proforma Pro VF Regular Italic";
+    font-family: "Proforma Pro Tx Standard Italic";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 10, 'wght' 450;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 
 
 .proforma-pro-medium {
-    font-family: "Proforma Pro VF Regular";
+    font-family: "Proforma Pro Medium";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 24, 'wght' 500;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 .proforma-pro-text-medium {
-    font-family: "Proforma Pro VF Regular";
+    font-family: "Proforma Pro Tx Medium";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 10, 'wght' 500;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 .proforma-pro-medium-italic {
-    font-family: "Proforma Pro VF Regular Italic";
+    font-family: "Proforma Pro Medium Italic";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 24, 'wght' 500;
-    letter-spacing: 0;
 }
 .proforma-pro-text-medium-italic {
-    font-family: "Proforma Pro VF Regular Italic";
+    font-family: "Proforma Pro Tx Medium Italic";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 10, 'wght' 500;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 
 
 .proforma-pro-semibold {
-    font-family: "Proforma Pro VF Regular";
+    font-family: "Proforma Pro SemiBold";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 24, 'wght' 600;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 .proforma-pro-text-semibold {
-    font-family: "Proforma Pro VF Regular";
+    font-family: "Proforma Pro Tx SemiBold";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 10, 'wght' 600;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 .proforma-pro-semibold-italic {
-    font-family: "Proforma Pro VF Regular Italic";
+    font-family: "Proforma Pro SemiBold Italic";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 24, 'wght' 600;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 .proforma-pro-text-semibold-italic {
-    font-family: "Proforma Pro VF Regular Italic";
+    font-family: "Proforma Pro Tx SemiBold Italic";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 10, 'wght' 600;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 
 
 .proforma-pro-bold {
-    font-family: "Proforma Pro VF Regular";
+    font-family: "Proforma Pro Bold";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 24, 'wght' 700;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 .proforma-pro-text-bold {
-    font-family: "Proforma Pro VF Regular";
+    font-family: "Proforma Pro Tx Bold";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 10, 'wght' 700;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 .proforma-pro-bold-italic {
-    font-family: "Proforma Pro VF Regular Italic";
+    font-family: "Proforma Pro Bold Italic";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 24, 'wght' 700;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 .proforma-pro-text-bold-italic {
-    font-family: "Proforma Pro VF Regular Italic";
+    font-family: "Proforma Pro Tx Bold Italic";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 10, 'wght' 700;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 
 
 .proforma-pro-extrabold {
-    font-family: "Proforma Pro VF Regular";
+    font-family: "Proforma Pro ExtraBold";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 24, 'wght' 800;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 .proforma-pro-text-extrabold {
-    font-family: "Proforma Pro VF Regular";
+    font-family: "Proforma Pro Tx ExtraBold";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 10, 'wght' 800;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 .proforma-pro-extrabold-italic {
-    font-family: "Proforma Pro VF Regular Italic";
+    font-family: "Proforma Pro ExtraBold Italic";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 24, 'wght' 800;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 .proforma-pro-text-extrabold-italic {
-    font-family: "Proforma Pro VF Regular Italic";
+    font-family: "Proforma Pro Tx ExtraBold Italic";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 10, 'wght' 800;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 
 
 .proforma-pro-black {
-    font-family: "Proforma Pro VF Regular";
+    font-family: "Proforma Pro Black";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 24, 'wght' 900;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 .proforma-pro-text-black {
-    font-family: "Proforma Pro VF Regular";
+    font-family: "Proforma Pro Tx Black";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 10, 'wght' 900;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 .proforma-pro-black-italic {
-    font-family: "Proforma Pro VF Regular Italic";
+    font-family: "Proforma Pro Black Italic";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 24, 'wght' 900;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 .proforma-pro-text-black-italic {
-    font-family: "Proforma Pro VF Regular Italic";
+    font-family: "Proforma Pro Tx Black Italic";
     font-style: normal;
     font-weight: 400;
-    font-variation-settings: 'opsz' 10, 'wght' 900;
-    line-height: 1.4em; 
-    letter-spacing: 0;
 }
 
 
@@ -2743,7 +2581,9 @@ button.buy-button:hover {
   cursor: pointer;
   user-select: none;
 
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+box-shadow:
+  0 0 8px rgba(0, 0, 0, 0.12),
+  0 8px 24px rgba(0, 0, 0, 0.12);
   transition:
     background-color 0.2s ease,
     transform 0.15s ease,
