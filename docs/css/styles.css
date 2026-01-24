@@ -2399,6 +2399,10 @@ div.image {
     padding-bottom: 15px;
 }
 
+.size28 + .features {
+    border-top: 0px;
+}
+
 div.responsiveShow {
     display: none;
 }
