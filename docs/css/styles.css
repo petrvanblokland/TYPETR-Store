@@ -2021,6 +2021,10 @@ header .navbar .current{
     color: #E31C79;  
 }
 
+.menuBox .current{
+    color: #E31C79;  
+}
+
 header .hamburger {
     position: absolute;
     top:0px;
