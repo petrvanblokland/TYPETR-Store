@@ -2171,12 +2171,12 @@ div.image {
     color: #E31C79;  
 }
 .popup-contentp p a:hover {
-    color: #E31C79;  
+    color: #4E76C0;  
 }
 
 .familyName:hover, .close:hover, .menuBox .close:hover, .navbar a:hover,
 .popup-content:hover .column a:hover {
-    color: #E31C79;  
+    color: #4E76C0;  
 }
 
 .close {
