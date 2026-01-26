@@ -2487,6 +2487,7 @@ fontdue-cart-button:active {
 }
 /* Buy button */
 
+
 button.buy-button {
     font-size: 1.5em;
     padding: 0.4em;
@@ -2502,7 +2503,7 @@ button.buy-button {
 
     outline: 1px solid transparent;
     outline-offset: 1px; /* optional: moves the outline away a bit */
-    transition: outline-color 0.2s ease;
+    transition: transform 0.2s cubic-bezier(.34,1.56,.64,1);
 }
 
 button.buy-button:hover {
@@ -2511,6 +2512,7 @@ button.buy-button:hover {
 
     border-radius: 6px;       /* small rounded corners */
     border: none;             /* optional: remove default border */
+    transform: scale(1.03);
 }
 
 #weightsStyles h1, #openTypeFeatures h1, div.responsiveHide h1{
