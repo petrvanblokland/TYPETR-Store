@@ -19,7 +19,7 @@ html {
   overscroll-behavior: contain;
 }
 
-html.page-home {
+html.page-home, html.three-items, html.two-items {
   --scroll-offset: 80px;
 }
 
@@ -2678,6 +2678,12 @@ h2 a:hover{
 @media (max-width: 768px) {
     html.page-admin {
       --scroll-offset: 195px;
+    }
+    html.two-items{
+      --scroll-offset: 170px;        
+    }
+    html.three-items{
+      --scroll-offset: 215px;        
     }
     .sticky {
         display: flex;
