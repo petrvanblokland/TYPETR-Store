@@ -2647,7 +2647,7 @@ h2 a:hover{
   container-type: inline-size;
   white-space: nowrap;
   overflow: hidden;
-  line-height: 1.5em;
+  line-height: 1.4em;
 }
 
 .features .specimen:first-of-type {
