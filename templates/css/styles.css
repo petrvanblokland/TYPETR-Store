@@ -2407,10 +2407,6 @@ div.image {
     padding-bottom: 15px;
 }
 
-.size28 + .features {
-    border-top: 0px;
-}
-
 div.responsiveShow {
     display: none;
 }
@@ -2645,6 +2641,23 @@ h2 a:hover{
 
 .specimen div {
   color: gray;
+}
+
+.specimen {
+  container-type: inline-size;
+  white-space: nowrap;
+  overflow: hidden;
+  line-height: 1.5em;
+  font-size: calc(var(--type-tester--adjustment, 1) * 48px);
+}
+
+.features .specimen:first-of-type {
+  color: #999;
+}
+
+.features .specimen:nth-of-type(2) {
+  color: black;
+  padding-bottom: 0px;
 }
 
 @media (min-width: 768px) {
@@ -2883,10 +2896,6 @@ h2 a:hover{
       position: relative;
       animation: slideDown .3s forwards;
     }
-    .specimen{
-        line-height: 1.4em;
-        font-size: 2.5vw;
-    }
     #menuBox{
         width: 50%;
     }
@@ -2965,10 +2974,6 @@ h2 a:hover{
       position: relative;
       animation: slideDown .3s forwards;
     }
-    .specimen{
-        line-height: 1.4em;
-        font-size: 4.5vw;
-    }
     #menuBox{
         width: 50%;
     }
@@ -3041,10 +3046,6 @@ h2 a:hover{
       position: relative;
       animation: slideDown .3s forwards;
     }
-    .specimen{
-        line-height: 1.4em;
-        font-size: 4.5vw;
-    }
 }
 /* Large Phones (480–599px) */
 @media (min-width: 480px) and (max-width: 599px) { 
@@ -3113,10 +3114,6 @@ h2 a:hover{
       border-bottom-right-radius: 0px;
       position: relative;
       animation: slideDown .3s forwards;
-    }
-    .specimen{
-        line-height: 1.4em;
-        font-size: 4.5vw;
     }
 }
 /* -------------------------------------------------------------- */
@@ -3190,10 +3187,6 @@ h2 a:hover{
       position: relative;
       animation: slideDown .3s forwards;
     }
-    .specimen{
-        line-height: 1.4em;
-        font-size: 4.5vw;
-    }
 }
 
 @media (min-width: 768px) and (max-width: 890px) { 
@@ -3253,10 +3246,6 @@ h2 a:hover{
     .contact-block {
         display: none;
     }
-    .specimen{
-        line-height: 1.4em;
-        font-size: 3.1vw;
-    }
     .name-title {
         font-size: 5em;  
     }
@@ -3313,10 +3302,6 @@ h2 a:hover{
     .contact-block {
         display: none;
     }
-    .specimen{
-        line-height: 1.4em;
-        font-size: 27pt;
-    }
     .name-title {
         font-size: 5em;  
     }
@@ -3350,10 +3335,6 @@ h2 a:hover{
     .contact-block {
         display: none;
     }
-    .specimen{
-        line-height: 1.4em;
-        font-size: 25pt;
-    }
     .name-title {
         font-size: 5em;  
     }
@@ -3382,10 +3363,6 @@ h2 a:hover{
     }
     .contact-block {
         display: none;
-    }
-    .specimen{
-        line-height: 1.4em;
-        font-size: 24pt;
     }
     .name-title {
         font-size: 5em;  
