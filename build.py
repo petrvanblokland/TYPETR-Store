@@ -17,7 +17,6 @@ from storeLib.data import FONTS, URL, IMAGES_PATH, ASSETS_PATH, TEMPLATES_PATH, 
 
 DO_BUILD = True
 
-
 #PORT = 8888
 PORT = 80
 
