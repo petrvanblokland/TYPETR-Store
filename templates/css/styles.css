@@ -19,8 +19,12 @@ html {
   overscroll-behavior: contain;
 }
 
-html.page-home, html.three-items, html.two-items {
+html.page-home,  html.two-items {
   --scroll-offset: 80px;
+}
+
+html.three-items {
+  --scroll-offset: 125px;
 }
 
 html.page-admin {
@@ -2642,6 +2646,9 @@ h2 a:hover{
 }
 
 @media (min-width: 768px) {
+    html.three-items, html.two-items{
+      --scroll-offset: 125px;        
+    }
     .sectionNavList {
         margin: 0 auto;
         width: 100%;
