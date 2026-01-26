@@ -2648,7 +2648,6 @@ h2 a:hover{
   white-space: nowrap;
   overflow: hidden;
   line-height: 1.5em;
-  font-size: calc(var(--type-tester--adjustment, 1) * 48px);
 }
 
 .features .specimen:first-of-type {
@@ -2694,6 +2693,9 @@ h2 a:hover{
     }
     .column14.ab {
       padding-bottom: 20px;
+    }
+    .specimen {
+      font-size: calc(var(--type-tester--adjustment, 1) * 48px);
     }
 }
 
@@ -2824,6 +2826,9 @@ h2 a:hover{
     div.type-tester {
         margin-bottom: 5px;
         padding-left: 5px;
+    }
+    .specimen {
+      font-size: calc(var(--type-tester--adjustment, 1) * 40px);
     }
 }
 
