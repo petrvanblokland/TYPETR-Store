@@ -2765,6 +2765,10 @@ h2 a:hover{
         display: none;
     }
 
+    .row:has(.column34) + .row .column34 {
+        padding-top: 0;
+    }
+
     div.column14, div.column34, div.column13, div.column23 {
         padding-top: 0px;
         padding-bottom: 0px;
