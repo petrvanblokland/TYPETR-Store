@@ -100,6 +100,11 @@ h4{
     font-size: 1.2em;
     margin-bottom: 10px;
 }
+
+.select{
+    font-weight: bold;
+}
+
 .character-viewer__block__character-list>div:hover{
     background-color: #3360B9;
 }
@@ -114,11 +119,13 @@ h1, h2, h3, h4, h5, h6, a, ol li, ul li, ol li, p, a {
  text-decoration: none;
 }
 
-h2 a:hover, .sectionNavList a:hover, .menuBox ul li:hover, ol li a, ul li a {
+h2 a:hover, .sectionNavList a:hover, .menuBox ul li:hover, ol li a, ul li a,
+.character-viewer__monitor__details>span>label {
     color: #4E76C0;  
 }
 
-h2 a:active, .sectionNavList a:active, .menuBox ul li:hover, ol li a:hover, ul li a:hover {
+h2 a:active, .sectionNavList a:active, .menuBox ul li:hover, ol li a:hover, ul li a:hover,
+.character-viewer__monitor__details>span>label:hover {
     color: #E31C79;  
 }
 
@@ -2485,7 +2492,6 @@ fontdue-cart-button:active {
     top: 170px;
 }
 /* Buy button */
-
 
 button.buy-button {
     font-size: 1.5em;
