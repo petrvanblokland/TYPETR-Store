@@ -2659,7 +2659,7 @@ h2 a:hover{
 
 .features .specimen:nth-of-type(2) {
   color: black;
-  padding-bottom: 0px;
+  padding-bottom: 10px;
 }
 
 @media (min-width: 768px) {
