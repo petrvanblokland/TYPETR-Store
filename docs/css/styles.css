@@ -101,10 +101,22 @@ h4{
     margin-bottom: 10px;
 }
 
-.select{
-    font-weight: bold;
+
+.character-viewer__monitor__details span:nth-child(odd) {
+  font-weight: 700; /* bold */
 }
 
+.select{
+    font-weight: bold;
+    display: inline-block;
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s cubic-bezier(.4, 0, .2, 1);
+}
+
+.select:hover{
+    transform: translateX(10px);
+}
 .character-viewer__block__character-list>div:hover{
     background-color: #3360B9;
 }
