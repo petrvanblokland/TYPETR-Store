@@ -2650,11 +2650,11 @@ h2 a:hover{
   container-type: inline-size;
   white-space: nowrap;
   overflow: hidden;
-  line-height: 1.4em;
+  line-height: 1.7em;
 }
 
 .features .specimen:first-of-type {
-  color: #999;
+  color: gray;
 }
 
 .features .specimen:nth-of-type(2) {
