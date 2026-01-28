@@ -106,6 +106,7 @@ h4{
   font-weight: 700; /* bold */
 }
 
+.type-tester__features-button__button,
 .character-viewer__monitor__details .select{
     font-weight: bold;
     display: inline-block;
@@ -117,6 +118,11 @@ h4{
 .character-viewer__monitor__details .select:hover{
     transform: translateX(10px);
 }
+
+.type-tester__features-button__button:hover{
+    transform: translateX(-10px);
+}
+
 .character-viewer__block__character-list>div:hover{
     background-color: #3360B9;
 }
@@ -132,12 +138,14 @@ h1, h2, h3, h4, h5, h6, a, ol li, ul li, ol li, p, a {
 }
 
 h2 a:hover, .sectionNavList a:hover, .menuBox ul li:hover, ol li a, ul li a,
-.character-viewer__monitor__details>span>label {
+.character-viewer__monitor__details>span>label,
+.type-tester__features-button__button {
     color: #4E76C0;  
 }
 
 h2 a:active, .sectionNavList a:active, .menuBox ul li:hover, ol li a:hover, ul li a:hover,
-.character-viewer__monitor__details>span>label:hover {
+.character-viewer__monitor__details>span>label:hover,
+.type-tester__features-button__button:hover {
     color: #E31C79;  
 }
 
