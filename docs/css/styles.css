@@ -2731,6 +2731,9 @@ h2 a:hover{
 }
 
 @media (max-width: 768px) {
+    html, body {
+      overflow-x: hidden;
+    }
     html.page-admin {
       --scroll-offset: 195px;
     }
