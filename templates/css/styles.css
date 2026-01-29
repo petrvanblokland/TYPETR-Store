@@ -11,6 +11,8 @@
   scroll-snap-align: start; 
 }
 
+
+
 html {
   --scroll-offset: 125px;
   scroll-behavior: smooth;
@@ -228,7 +230,8 @@ body {
   font-family: "Upgrade Regular", sans-serif; 
   margin: 0;
   padding: 0;
-  scroll-behavior: auto;
+  scroll-behavior: smooth;
+  overscroll-behavior: none;
   background-color: white;
   width: 100vw;
   overflow-x: hidden;
@@ -236,6 +239,8 @@ body {
   -webkit-text-size-adjust: none; 
   -moz-text-size-adjust: none;  
   text-size-adjust: none;  
+    -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 fontdue-cart-button,
