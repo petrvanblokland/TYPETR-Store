@@ -2687,9 +2687,17 @@ h2 a:hover{
 
 .specimen {
   container-type: inline-size;
+  container-name: specimen-text;
+
   white-space: nowrap;
   overflow: hidden;
-  line-height: 1.7em;
+
+  line-height: 1.6;
+  font-size: 1rem;
+
+  -webkit-mask-image: linear-gradient(to right, black 85%, transparent 100%);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;
 }
 
 .features .specimen:first-of-type {
