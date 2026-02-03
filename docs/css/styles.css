@@ -312,10 +312,16 @@ header {
     text-decoration: none;
     color: black;
     letter-spacing: 0;
-    transition: color 0.1s ease-out;
+      display: inline-block; /* nodig voor transform */
+      transform: scale(1);
+      transition:
+        transform 0.1s cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 1s cubic-bezier(0.4, 0, 0.2, 1);
+      transform-origin: center;
 }
 .name-title a:hover {
-    color: #E31C79;  
+  transform: scale(1.05); /* klein beetje groter */
+    color: #E31C79;
 }
 
 /* Font stuff */
