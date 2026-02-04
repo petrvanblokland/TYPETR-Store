@@ -2520,6 +2520,7 @@ fontdue-cart-button {
     font-family: "Upgrade Medium";
     font-size: 1.2em;
 }
+
 fontdue-cart-button:hover {
     color: #4E76C0;
 }
