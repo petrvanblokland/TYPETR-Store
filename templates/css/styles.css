@@ -86,6 +86,7 @@ h1, h2, h3, h4, h5, h6,
     font-weight: none; /* or 400 */
     font-synthesis: none; /* prevent browser from faking bold/italic */
 }
+
 h2 a:link, h2 a:visited, h2 a:active,
 .sectionNavList a:link, .sectionNavList a:visited, .sectionNavList a:active,
 .menuBox ul li:link, .menuBox ul li:visited, .menuBox ul li:active  {
@@ -2146,7 +2147,7 @@ h2 a.active {
     box-shadow: inset 0 -30px 35px -15px rgba(0, 0, 0, 0.25);
 }
 .titleImageSmall {
-    margin-top: 20px; 
+    margin-top: 0px; 
     width: 100%; 
     height: 350px; /* Fitting Bitcount animations */
     background-size: contain;
@@ -2870,8 +2871,17 @@ h2 a:hover{
     .name-title {
         font-size: 10vw;  
     }
+    .size64 {
+          font-size: 8.5vw;
+    }
+    .size68 {
+          font-size: 9vw;
+    }
     .size80 {
           font-size: 13vw;
+    }
+    .size82 {
+          font-size: 13.5vw;
     }
     .smallWeightTester{
         padding:10px;
