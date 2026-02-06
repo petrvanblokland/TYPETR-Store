@@ -138,6 +138,7 @@ h1, h2, h3, h4, h5, h6, a, ol li, ul li, ol li, p, a {
  text-decoration: none;
 }
 
+.type-tester__slider__handle:hover,
 h2 a:hover, .sectionNavList a:hover, .menuBox ul li:hover, ol li a, ul li a,
 .character-viewer__monitor__details>span>label,
 .type-tester__features-button__button {
