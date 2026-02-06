@@ -1034,6 +1034,24 @@ header {
     font-variation-settings: 'opsz' 8, 'wght' 900;
 }
 
+/* Promise - Beta versions */
+
+.promise {
+    font-family: "Promise Regular";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4em;
+}
+
+/* Prominence - Beta versions */
+
+.prominence {
+    font-family: "Prominence Regular";
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.4em;
+}
+
 /* Productus */
 
 .productus {
