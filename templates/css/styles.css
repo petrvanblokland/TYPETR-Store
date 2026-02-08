@@ -2509,7 +2509,7 @@ footer p {
 /* Type testers */
 
 div.type-tester {
-    padding: 1em;
+    padding: 10px;
     width: 100%;
     box-sizing: border-box;
 }
