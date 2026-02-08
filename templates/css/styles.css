@@ -106,8 +106,7 @@ h4{
 .character-viewer__monitor__details span:nth-child(odd) {
   font-weight: 700; /* bold */
 }
-
-.type-tester__features-button__button,
+.select__text, .type-tester__features-button__button,
 .character-viewer__monitor__details .select{
     font-weight: bold;
     display: inline-block;
@@ -2154,6 +2153,12 @@ h2 a.active {
 }
 
 
+.select_text svg path,
+.select_text svg text,
+.select_text svg line {
+  stroke-width: 2; 
+}
+
 /* Image cells */
 
 .titleImage {
@@ -2587,7 +2592,7 @@ button.buy-button:hover {
 }
 
 .type-tester__text__container{
-    padding-left: 10px;
+    padding-left: 0px;
 }
 /* Media Queries */
 
