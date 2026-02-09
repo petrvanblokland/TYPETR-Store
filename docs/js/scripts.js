@@ -135,3 +135,4 @@ window.addEventListener('scroll', () => {
         contact.classList.remove('sticky');
     }
 });
+
