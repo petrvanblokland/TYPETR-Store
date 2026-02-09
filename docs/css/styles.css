@@ -64,7 +64,6 @@ ul li, ol li {
     padding-top: 0.7em;
 }
 
-fontdue-cart-button, .cart-button__label,
 li a:link, li a:visited, li a:active, {
     font-family: "Upgrade Medium";    
     font-weight: 400;
@@ -81,7 +80,6 @@ a {
 
 
 h1, h2, h3, h4, h5, h6,
-fontdue-cart-button .cart-button__label,
 .sectionNavList a:link, .sectionNavList a:visited, .sectionNavList a:active,
 .menuBox ul li:link, .menuBox ul li:visited, .menuBox ul li:active  {
     font-style: normal;
@@ -90,7 +88,6 @@ fontdue-cart-button .cart-button__label,
 }
 
 h2 a:link, h2 a:visited, h2 a:active,
-fontdue-cart-button .cart-button__label,
 .sectionNavList a:link, .sectionNavList a:visited, .sectionNavList a:active,
 .menuBox ul li:link, .menuBox ul li:visited, .menuBox ul li:active  {
     font-family: "Upgrade Medium";    
@@ -98,10 +95,6 @@ fontdue-cart-button .cart-button__label,
     font-size: 1.1em;
     font-weight: 600;
     color: #202020;
-}
-
-fontdue-cart-button .cart-button__label{
-    font-size: 1em;    
 }
 
 h4{
@@ -151,18 +144,12 @@ h2 a:hover, .sectionNavList a:hover, .menuBox ul li:hover, ol li a, ul li a,
     color: #4E76C0;  
 }
 
-fontdue-cart-button, .cart-button__label:hover,
 .type-tester-select .select:hover,
 h2 a:active, .sectionNavList a:active, .menuBox ul li:hover, ol li a:hover, ul li a:hover,
 .character-viewer__monitor__details>span>label:hover,
 .type-tester__features-button__button:hover {
     color: #E31C79;  
 }
-
-fontdue-cart-button, .cart-button__label:hover{
-    font-size: 1em;
-}
-
 
 p a:link, p a:visited, p a:active {
     text-decoration: none;
@@ -254,6 +241,11 @@ body {
   text-size-adjust: none;  
     -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
+}
+
+fontdue-cart-button,
+.cart-button__label{
+  font-family: "Upgrade Regular", sans-serif; 
 }
 
 header {
@@ -2697,8 +2689,6 @@ box-shadow:
 
 }
 
-
- fontdue-cart-button .cart-button__label,
  h2 a, .sectionNavList li a{
     display: inline-block;
     transition:
@@ -2721,7 +2711,6 @@ box-shadow:
     transform: translateX(7px);
 }
 
-fontdue-cart-button, .cart-button__label:hover,
 h2 a:hover{
     transform: translateX(10px);
 }
