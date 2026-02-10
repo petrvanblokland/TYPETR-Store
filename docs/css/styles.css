@@ -2082,11 +2082,7 @@ header .navbar .current{
     color: #E31C79;  
 }
 
-.menuBox .current{
-    color: #E31C79;  
-}
-
-.menuBox .current{
+.menuBox .current, .ot:hover{
     color: #E31C79;  
 }
 
@@ -2732,6 +2728,14 @@ h2 a:hover{
   -webkit-mask-image: linear-gradient(to right, black 85%, transparent 100%);
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: 100% 100%;
+}
+
+.specimen .ot {
+  transition: color 0.2s ease;
+}
+
+.specimen .ot {
+  color: #E31C79;    
 }
 
 .features .specimen:first-of-type {
