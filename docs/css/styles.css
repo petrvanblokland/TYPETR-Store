@@ -106,6 +106,8 @@ h4{
 .character-viewer__monitor__details span:nth-child(odd) {
   font-weight: 700; /* bold */
 }
+
+
 .select__text, .type-tester__features-button__button,
 .character-viewer__monitor__details .select{
     font-weight: bold;
@@ -323,6 +325,8 @@ header {
   transform: scale(1.05); /* klein beetje groter */
     color: #E31C79;
 }
+
+
 
 /* Font stuff */
 
@@ -2728,6 +2732,13 @@ h2 a:hover{
   -webkit-mask-image: linear-gradient(to right, black 85%, transparent 100%);
   -webkit-mask-repeat: no-repeat;
   -webkit-mask-size: 100% 100%;
+}
+
+code{
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
 }
 
 .specimen .ot {
