@@ -105,8 +105,13 @@ h4{
 
 .character-viewer__monitor__details span:nth-child(odd) {
   font-weight: 700; /* bold */
+  width:125px;
 }
 
+
+.character-viewer__monitor__details .select__text .icon{
+    width:20px;
+}
 
 .select__text, .type-tester__features-button__button,
 .character-viewer__monitor__details .select{
@@ -2511,6 +2516,21 @@ footer p {
     margin: 0;
 }
 
+:root {
+  --fs-footer: clamp(0.95rem, 0.8rem + 0.5vw, 1.15rem);
+  --fs-footer-small: clamp(0.85rem, 0.7rem + 0.4vw, 1.05rem);
+}
+
+footer {
+  font-size: var(--fs-footer);
+  line-height: 1.5;
+}
+
+footer small,
+footer .meta {
+  font-size: var(--fs-footer-small);
+}
+
 /* Type testers */
 
 div.type-tester {
@@ -2909,6 +2929,10 @@ code{
     h1{
         margin: 0px;
         margin-top: 10px;
+      }
+
+      footer p{
+         display: block;
       }
 
     #weightsStyles h1, #openTypeFeatures h1, div.responsiveHide h1{
