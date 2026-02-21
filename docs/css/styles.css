@@ -2754,6 +2754,13 @@ h2 a:hover{
   -webkit-mask-size: 100% 100%;
 }
 
+.character-viewer__monitor__details > span > label{
+  -webkit-mask-image: linear-gradient(to right, black 85%, transparent 100%);
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: 100% 100%;    
+  width:100%;
+}
+
 code{
     white-space: nowrap;
     overflow: hidden;
