@@ -2770,13 +2770,22 @@ code{
 
 
 .ot {
-    animation: otBlink 2s infinite;
+  transition: color 0.1s linear;
+  animation: otBlink 8s infinite;
+}
+
+@keyframes otBlink {
+  0%, 50%, 100% {
+    color: black;
+  }
+  25%, 30% {
+   color: #E31C79;    
+  }
 }
 
 .specimen:hover .ot {
-  transition: color 0.1s ease;
   color: #E31C79;    
-  animation: none; /* stop animatie bij hover */
+  animation: none; 
 }
 
 .features .specimen:first-of-type {
