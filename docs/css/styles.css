@@ -257,7 +257,7 @@ fontdue-cart-button,
   font-weight: bold;
 }
 
-.cart-button__label{
+#menuBox .cart-button__label{
   font-family: "Upgrade Medium", sans-serif; 
   color:#202020;
 }
@@ -2716,7 +2716,16 @@ box-shadow:
 
 }
 
- h2 a, .sectionNavList li a, .cart-button__label{
+ h2 a, .sectionNavList li a {
+    display: inline-block;
+    transition:
+        background-color 0.2s ease,
+        transform 0.2s cubic-bezier(.4, 0, .2, 1);
+}
+
+#menuBox .cart-button__label{
+  font-family: "Upgrade Medium", sans-serif; 
+  color:#202020;
     display: inline-block;
     transition:
         background-color 0.2s ease,
