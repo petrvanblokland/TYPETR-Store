@@ -80,6 +80,7 @@ a {
 
 
 h1, h2, h3, h4, h5, h6,
+.cart-button__label,
 .sectionNavList a:link, .sectionNavList a:visited, .sectionNavList a:active,
 .menuBox ul li:link, .menuBox ul li:visited, .menuBox ul li:active  {
     font-style: normal;
@@ -253,6 +254,7 @@ body {
 fontdue-cart-button,
 .cart-button__label{
   font-family: "Upgrade Regular", sans-serif; 
+    font-weight: bold;
 }
 
 header {
@@ -2709,7 +2711,7 @@ box-shadow:
 
 }
 
- h2 a, .sectionNavList li a{
+ h2 a, .sectionNavList li a, .cart-button__label{
     display: inline-block;
     transition:
         background-color 0.2s ease,
@@ -2731,7 +2733,7 @@ box-shadow:
     transform: translateX(7px);
 }
 
-h2 a:hover{
+h2 a:hover, .cart-button__label:hover{
     transform: translateX(10px);
 }
 
