@@ -254,7 +254,12 @@ body {
 fontdue-cart-button,
 .cart-button__label{
   font-family: "Upgrade Regular", sans-serif; 
-    font-weight: bold;
+  font-weight: bold;
+}
+
+.cart-button__label{
+  font-family: "Upgrade Medium", sans-serif; 
+  color:#202020;
 }
 
 header {
