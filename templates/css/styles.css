@@ -2269,6 +2269,11 @@ div.image {
   font-weight: bold;
   color: white;
   cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.close:hover {
+  transform: rotate(90deg); /* kwartslag */
 }
 
 .menuBox .close{
@@ -2277,6 +2282,7 @@ div.image {
   font-weight: regular;
   animation: fadeIn 0.7s ease-out forwards;
   padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .row {
