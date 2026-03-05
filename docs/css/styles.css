@@ -2792,20 +2792,6 @@ code{
 }
 
 
-.ot {
-  transition: color 0.1s linear;
-  animation: otBlink 8s infinite;
-}
-
-@keyframes otBlink {
-  0%, 50%, 100% {
-    color: black;
-  }
-  25%, 30% {
-   color: #E31C79;    
-  }
-}
-
 .specimen:hover .ot {
   color: #E31C79;    
   animation: none; 
