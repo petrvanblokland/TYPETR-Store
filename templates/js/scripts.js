@@ -60,18 +60,13 @@ window.addEventListener('click', function (event) {
 //sticky 
 
 const nav = document.querySelector('.sectionNav');
-
-function getThreshold() {
-  return parseInt(
-    getComputedStyle(document.documentElement)
-      .getPropertyValue('--nav-scroll-trigger')
-  );
-}
+const trigger = document.querySelector('.type-tester');
 
 window.addEventListener('scroll', () => {
-  nav.classList.toggle('is-visible', window.scrollY >= getThreshold());
-});
+  const rect = trigger.getBoundingClientRect();
 
+  nav.classList.toggle('is-visible', rect.top <= 200);
+});
 
 //scroll in-page link - change color
 
