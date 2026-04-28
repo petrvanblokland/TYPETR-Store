@@ -2835,35 +2835,44 @@ code{
   padding-bottom: 10px;
 }
 
-/* 
-
 html.pro .titleImage{
     background-image: url('../images/2025/pro_ultra.png');
-    height: 350px;
+    height: 500px;
 }
 
 @media (max-width: 850px) {
     html.pro .titleImage{
         background-image: url('../images/2025/pro_desktop.png');
-        height: 450px;
+        height: 600px;
     }
 }
 
 @media (max-width: 720px) {
     html.pro .titleImage{
         background-image: url('../images/2025/pro_tablet.png');
-        height: 450px;
+        height: 600px;
     }
 }
 
 @media (max-width: 600px) {
     html.pro .titleImage{
         background-image: url('../images/2025/pro_phone.png');
-        height: 400px;
+        height: 650px;
     }
 }
 
-*/
+
+@media (max-width: 768px) {
+    html.pro .responsiveShow{
+        display: none;
+    }
+}
+
+@media (max-width: 420px) {
+    html.pro .titleImage {
+        height: 530px;
+    }
+}
 
 @media (min-width: 768px) {
     html.three-items, html.two-items{
