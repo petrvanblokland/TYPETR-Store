@@ -2656,7 +2656,14 @@ button.buy-button:hover {
 
 .type-tester__text__container{
     padding-left: 0px;
+    overflow:visible !important;
 }
+
+.type-tester,
+.type-tester__wrapper {
+    overflow:visible !important;
+}
+
 /* Media Queries */
 
 .box {
